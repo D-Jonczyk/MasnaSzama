@@ -18,7 +18,7 @@ public class MasnaSzamaApplication {
 		return String.format("Hello %s! Masna Szama wita", name);
 	}
 
-	@GetMapping("/restaurants")
+	@GetMapping("/users")
 	public String getRestaurants() {
 		return String.format("Nasze restauracje");
 	}
