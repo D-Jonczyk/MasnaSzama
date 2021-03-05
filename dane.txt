@@ -1,0 +1,99 @@
+** Zakres projektu "Serwis zamawiania jedzenia on-line": 
+
+  - Składanie zamówień przez klientów
+  - Wyszukiwanie restauracji po nazwie 
+  - Filtrowanie restauracji po wybranych kryteriach 
+  - Dodawanie menu, listy dań (właściciel restauracji wysyła request, admin rozpatruje i dodaje do systemu) 
+  - Dodawanie restauracji (właściciel restauracji wysyła request, admin rozpatruje i dodaje do systemu) 
+  - Obsługa płatności (przez API jakiegoś providera) 
+  - System ocen restauracji (komentarze i oceny w postaci skali np. Gwiazdek) 
+  - Wręczanie napiwków kurierom on-line 
+  - System rejestracji i logowania
+  - (opcjonalnie, jak się uda) system/serwer mailingowy wysyłający powiadomienia na temat zamówień
+
+** Kategorie użytkowników i funkcjonalności: 
+
+    * Klient: Paweł Kiełbasa
+	  - Jako klient chce miec dostep do listy restauracji, zeby zdecydowac skad chce zamówic. 
+	  - Jako klient chce miec dostep do listy dan w restauracji, zeby zdecydowac co chce zamówic. 
+	  - Jako klient chce oceniac restauracje, aby wyrazic swoje (nie)zadowolenie i pomoc innym. 
+	  - Jako klient chce widziec srednia ocen restauracji, zebym mógl latwiej podjac decyzje. 
+	  - Jako klient chce widziec ceny dan, zeby wiedziec na co mnie bedzie stac. 
+	  - Jako klient chce dodawac dania do koszyka, aby skompletowac zamowienie. 
+	  - Jako klient chce wybierac metode platnosci za zamowienie, zeby moc za nie zaplacic. 
+	  - Jako klient chce miec mozliwosc podania adresu na ktory dostarczone zostanie zamowienie. 
+	  - Jako klient chce miec mozliwosc zarejestrowania konta, aby móc zapisac swoje dane na stale. 
+	  - Jako klient chce miec mozliwosc wreczenia kurierowi napiwku on-line, aby ograniczyc kontakt. 
+	
+	* Pracownik restauracji: Damian Linek
+	  - Jako pracownik chcę potwierdzić przyjęcie zamówienia, aby klient wiedział, że zostanie ono zrealizowane. 
+	  - Jako pracownik chcę potwierdzić wykonanie zamówienia, aby poinformować kuriera o możliwości odbioru. 
+	  - Jako pracownik chcę mieć podglad  listy zamówień aby na bieżąco móc je wykonywać. 
+	  - Jako pracownik chce mieć podglad grafiku aby wiedzieć kiedy przyjść do pracy. 
+
+	* Właściciel restauracji: Damian Linek
+	  - Jako właściciel chcę móc dodać restaurację do systemu 
+	  - Jako właściciel chcę mieć możliwość dodawania karty dań  
+	  - Jako właściciel chcę widzieć utarg z dnia/tygodnia/miesiąca aby wiedzieć ile mam przychodu. 
+	  - Jako  właściciel chce móc zatrudnić nowego pracownika (wprowadzić jego dane do systemu i stawke godzinową) 
+		  aby mieć większy personel. 
+	  - Jako właściciel chce wiedziec ile dany pracownik przepracował godzin aby wypłacić mu odpowiednią pensję. 
+	  
+	//założenie: system przypisuje kurierowi aktualne zamówienia do dostarczenia, kurier moze wybrać konkretne z listy, 
+					jeśli w danym czasie nie wybierze to system automatycznie wybiera mu to z najbliższym czasem dostawy
+    * Kurier: Daniel Jończyk
+	  - Jako kurier chcę miec dostep do swojego grafiku, zebym wiedzial kiedy pracuje. 
+	  - Jako kurier chcę logowac sie w pracy, aby policzone zostaly mi godziny. 
+	  - Jako kurier chcę miec dostep do listy zlecen(to-do), aby moc wybrac najbardziej odpowiednie w danej chwili. 
+	  - Jako kurier chcę miec mozliwosc oznaczenia zamowienia jako 'dostarczone' aby zniknelo z mojej listy to-do. 
+	  - Jako kurier chcę wybrać konkretne zlecenie do zrealizowania z listy zamówień.
+	  - Jako kurier chcę oznaczyć zamówienie jako odebrane z restauracji - status: w trakcie dostarczania.
+	  - Jako kurier chcę oznaczyć zamówienie jako opłacone przy odbiorze - status: dostarczone.
+	  - Jako kurier chcę miec możliwosc oznaczenia jako 'nieodebrane' lub wymaga dalszej akcji supervisora - 
+		  status: wymaga weryfikacji, jakichs dodatkowych działań.
+	  - Jako kurier chcę miec dostep do ogolnej listy moich zamowien, aby sprawdzac za ktore zamowienie dostalem napiwek. (historia zamówień)
+	  - Jako kurier chcę mieć dostęp do okna czatu z koordynatorem, aby otrzymywać ważne informacje lub wytyczne.
+
+    * Admin (moderator treści): Kacper Jurek
+	  - Jako admin chcę rozpatrywać prośby o dodanie restauracji do systemu.	 
+	  - Jako admin chcę rozpatrywać prośby o dodanie menu do systemu.	 
+	  - Jako admin chcę przypisywać użytkowników do grup. (nadawać uprawnienia)
+	  - Jako admin chcę mieć możliwość dodawania i usuwania kont(np. do testów)
+	     * ogólniej: zarządzania kontami, np. poprzez panel admina, w razie gdyby potrzebne były manualne zmiany
+
+    * Koordynator/Dyspozytor: Kacper Jurek
+	  - Jako koordynator chce zatrudniac(dodawac do systemu) nowych kurierow, aby mial kto dostarczac zamowienia. 
+	  - Jako koordynator chce zwalniac kurierow, aby karac ich za niesubordynacje.	 
+	  - Jako koordynator chce ustalac grafik kurierow, aby organizowac ich prace. 
+	  - Jako koordynator chcę wyświetlać statystyki na temat kurierów 
+	  - Jako koordynator chcę wyświetlać statystyki dotyczące restauracji (liczba zamówień itp.)
+	  - Jako koordynator chcę miec mozliwosc zamkniecia systemu, aby wylaczyc mozliwosc skladania nowych zamowien.
+
+
+** Technologie: 
+
+	* Front-end: Html, CSS, JavaScript, Bootstrap, Angular 
+	* Back-end: Java, Spring MVC, Spring Boot, Hibernate 
+	* Baza danych: MySQL 
+	* Inne: Maven, Git, Github 
+
+ 
+** Skład zespołu
+	- Daniel Jończyk daniel.jonczyk.inf@gmail.com
+	- Paweł Kiełbasa pckielbasa@gmail.com
+	- Damian Linek damian_linekk@wp.pl
+	- Kacper Jurek kacperjurek99@wp.pl
+
+** Tematy z przedmiotu Podstawy inżynierii programowania: 
+
+Damian Linek – System zarządzania szkołą 
+
+Daniel Jończyk - System zarządzania szkołą 
+
+Paweł Kiełbasa - System zarządzania policją  
+
+Kacper Jurek – System zarządzania pizzerią 
+
+** Tematy z ISI/prac inżynierskich:
+
+Jeszcze nie wybrane.
