@@ -25,13 +25,13 @@
 	  - Jako klient chce miec mozliwosc zarejestrowania konta, aby móc zapisac swoje dane na stale. 
 	  - Jako klient chce miec mozliwosc wreczenia kurierowi napiwku on-line, aby ograniczyc kontakt. 
 	
-	* Pracownik restauracji: Damian Linek
+    * Pracownik restauracji: Damian Linek
 	  - Jako pracownik chcę potwierdzić przyjęcie zamówienia, aby klient wiedział, że zostanie ono zrealizowane. 
 	  - Jako pracownik chcę potwierdzić wykonanie zamówienia, aby poinformować kuriera o możliwości odbioru. 
 	  - Jako pracownik chcę mieć podglad  listy zamówień aby na bieżąco móc je wykonywać. 
 	  - Jako pracownik chce mieć podglad grafiku aby wiedzieć kiedy przyjść do pracy. 
 
-	* Właściciel restauracji: Damian Linek
+    * Właściciel restauracji: Damian Linek
 	  - Jako właściciel chcę móc dodać restaurację do systemu 
 	  - Jako właściciel chcę mieć możliwość dodawania karty dań  
 	  - Jako właściciel chcę widzieć utarg z dnia/tygodnia/miesiąca aby wiedzieć ile mam przychodu. 
