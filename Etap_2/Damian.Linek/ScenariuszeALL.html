@@ -1,0 +1,384 @@
+<!-- Scenariusz 1 *****************************************************************************************************************-->
+<table border="1">
+	<tbody><tr>
+		<th>Author name:</th>
+		<td style="width: 15cm;">
+			Damian
+		</td>
+	</tr>
+	<tr>
+		<th>Author surname:</th>
+		<td style="width: 15cm;">
+			Linek
+		</td>
+	</tr>
+	<tr>
+		<th>Author group:</th>
+		<td style="width: 15cm;">
+			3ID11A
+		</td>
+	</tr>
+	<tr>
+		<th>Subject:</th>
+		<td style="width: 15cm;">
+			PAI2
+		</td>
+	</tr>
+	<tr>
+		<th>Use Case:</th>
+		<td style="width: 15cm;">
+			Dodanie restauracji do systemu
+		</td>
+	</tr>
+	<tr>
+		<th>Language:</th>
+		<td style="width: 15cm;">
+			Polish
+		</td>
+	</tr>
+	<tr>
+		<th>Preconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Aktor jest zalogowany
+				</li>
+				<li>
+					Aktor posiada konto restauratora
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Postconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Wysłanie prośby o dodanie restauracji do systemu
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Actors:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Właściciel restauracji
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Main flow:</th>
+		<td style="width: 15cm;">
+			<ol>
+				<li>
+					Aktor otwiera podstronę "Panel restauratora"
+				</li>
+				<li>
+					Aktor naciska przycisk "Dodaj restauracje"
+				</li>
+				<li>
+					System wyświetla formularz zgłoszeniowy
+				</li>
+				<li>
+					Aktor wypełnia formularz danymi dotyczącymi restauracji
+				</li>
+				<li>
+					Aktor naciska przycisk "Zatwierdź"
+				</li>
+				<li>
+					System wyświetla prośbę o dokumenty potwierdzające, że aktor jest właścicielem restauracji
+				</li>
+				<li>
+					Aktor naciska przycisk "Wyślij zgłoszenie"
+				</li>
+				<li>
+					System wysyła formularz do administratora serwisu
+				</li>
+				<li>
+					Aktor otrzymuje powiadomienie o procesie weryfikacji dodawania restauracji do systemu
+				</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<th>Alternate flow:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					<span class="number">4</span>
+					<span class="condition">Błędne dane</span>
+					<span class="reaction-additional"></span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">3</span>
+				</li>
+				<li>
+					<span class="number">9</span>
+					<span class="condition">Odrzucono zgłoszenie. Błędne dane</span>
+					<span class="reaction-additional"></span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">3</span>
+				</li>
+				<li>
+					<span class="number">9</span>
+					<span class="condition">Odrzucono zgłoszenie. Brak wystarczających dokumentów potwierdzających posiadanie restauracji</span>
+					<span class="reaction-additional"></span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">6</span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+</tbody></table>
+
+<!-- Scenariusz 2 *****************************************************************************************************************-->
+<table border="1">
+	<tbody><tr>
+		<th>Author name:</th>
+		<td style="width: 15cm;">
+			Damian
+		</td>
+	</tr>
+	<tr>
+		<th>Author surname:</th>
+		<td style="width: 15cm;">
+			Linek
+		</td>
+	</tr>
+	<tr>
+		<th>Author group:</th>
+		<td style="width: 15cm;">
+			3ID11A
+		</td>
+	</tr>
+	<tr>
+		<th>Subject:</th>
+		<td style="width: 15cm;">
+			PAI2
+		</td>
+	</tr>
+	<tr>
+		<th>Use Case:</th>
+		<td style="width: 15cm;">
+			Modyfikowanie karty dań do restauracji
+		</td>
+	</tr>
+	<tr>
+		<th>Language:</th>
+		<td style="width: 15cm;">
+			Polish
+		</td>
+	</tr>
+	<tr>
+		<th>Preconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Aktor jest zalogowany
+				</li>
+				<li>
+					Aktor posiada konto restauratora
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Postconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Actors:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Właściciel restauracji
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Main flow:</th>
+		<td style="width: 15cm;">
+			<ol>
+				<li>
+					Aktor otwiera podstronę "Panel restauratora"
+				</li>
+				<li>
+					System wyświetla wszystkie restauracje, którymi obecnie zarządza aktor
+				</li>
+				<li>
+					Aktor naciska przycisk przyporządkowany danej restauracji
+				</li>
+				<li>
+					System wyświetla panel zarządzania danej restauracji
+				</li>
+				<li>
+					Aktor naciska przycisk "Modyfikuj kartę dań"
+				</li>
+				<li>
+					System wyświetla kartę dań
+				</li>
+				<li>
+					Aktor naciska przycisk przy daniu, które chcę zmodyfikować
+				</li>
+				<li>
+					System wyświetla formularz
+				</li>
+				<li>
+					Aktor modyfikuje dane dotyczące posiłku
+				</li>
+				<li>
+					Aktor naciska przycisk "Zatwierdź"
+				</li>
+				<li>
+					System zapisuję zmodyfikowaną pozycję do bazy danych
+				</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<th>Alternate flow:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					<span class="number">7</span>
+					<span class="condition">Aktor naciska naciska przycisk "Dodaj nowy element"</span>
+					<span class="reaction-additional"></span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">8</span>
+				</li>
+				<li>
+					<span class="number">7</span>
+					<span class="condition">Aktor naciska przycisk "Usuń" przy daniu, które chce usunąć</span>
+					<span class="reaction-additional"></span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">10</span>
+				</li>
+				<li>
+					<span class="number">10</span>
+					<span class="condition">Błędne dane</span>
+					<span class="reaction-additional"></span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">9</span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+</tbody></table>
+
+<!-- Scenariusz 3 *****************************************************************************************************************-->
+<table border="1">
+	<tbody><tr>
+		<th>Author name:</th>
+		<td style="width: 15cm;">
+			Damian
+		</td>
+	</tr>
+	<tr>
+		<th>Author surname:</th>
+		<td style="width: 15cm;">
+			Linek
+		</td>
+	</tr>
+	<tr>
+		<th>Author group:</th>
+		<td style="width: 15cm;">
+			3ID11A
+		</td>
+	</tr>
+	<tr>
+		<th>Subject:</th>
+		<td style="width: 15cm;">
+			PAI2
+		</td>
+	</tr>
+	<tr>
+		<th>Use Case:</th>
+		<td style="width: 15cm;">
+			Modyfikowanie stanu zamówienia
+		</td>
+	</tr>
+	<tr>
+		<th>Language:</th>
+		<td style="width: 15cm;">
+			Polish
+		</td>
+	</tr>
+	<tr>
+		<th>Preconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Aktor jest zalogowany
+				</li>
+				<li>
+					Aktor posiada konto pracownicze
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Postconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Actors:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Pracownik restauracji
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Main flow:</th>
+		<td style="width: 15cm;">
+			<ol>
+				<li>
+					Aktor otwiera podstronę "Panel restauracji"
+				</li>
+				<li>
+					System wyświetla wszystkie zamówienia dotyczące danej restauracji wraz z opisem i statusem płatności
+				</li>
+				<li>
+					Aktor naciska przycisk "Potwierdź" przy zamówieniu, które obecnie realizuje
+				</li>
+				<li>
+					System zmienia status zamówienia na "przyjęte"
+				</li>
+				<li>
+					Aktor po skompletowaniu zamówienia naciska przycisk "Zrealizowano"
+				</li>
+				<li>
+					System zmienia status zamówienia na "zrealizowano"
+				</li>
+				<li>
+					System wysyła informację do kuriera o zleceniu
+				</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<th>Alternate flow:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					<span class="number">3</span>
+					<span class="condition">Aktor naciska przycisk "Anuluj zamówienie", gdy stwierdza że zamówienie nie może zostać wykonane</span>
+					<span class="reaction-additional"></span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">2</span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+</tbody></table>
