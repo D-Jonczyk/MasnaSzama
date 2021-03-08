@@ -1,0 +1,114 @@
+<table border="1">
+	<tbody><tr>
+		<th>Author name:</th>
+		<td style="width: 15cm;">
+			Paweł
+		</td>
+	</tr>
+	<tr>
+		<th>Author surname:</th>
+		<td style="width: 15cm;">
+			Kiełbasa
+		</td>
+	</tr>
+	<tr>
+		<th>Author group:</th>
+		<td style="width: 15cm;">
+			3ID11B
+		</td>
+	</tr>
+	<tr>
+		<th>Subject:</th>
+		<td style="width: 15cm;">
+			PAI2
+		</td>
+	</tr>
+	<tr>
+		<th>Use Case:</th>
+		<td style="width: 15cm;">
+			Ocena restauracji
+		</td>
+	</tr>
+	<tr>
+		<th>Language:</th>
+		<td style="width: 15cm;">
+			Polish
+		</td>
+	</tr>
+	<tr>
+		<th>Preconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Klient musi zlozyc zamowienie w danej restauracji
+				</li>
+				<li>
+					Klient musi byc zalogowany
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Postconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Ocena restauracji po zamowieniu jedzenia
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Actors:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Klient
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Main flow:</th>
+		<td style="width: 15cm;">
+			<ol>
+				<li>
+					Klient po otrzymaniu zamowienia wybiera opcje ocen restauracje.
+				</li>
+				<li>
+					System wyswietla formularz do oceny restauracji.
+				</li>
+				<li>
+					Klient ocenia restauracje oraz wpisuje komentarz.
+				</li>
+				<li>
+					System dokonuje walidacji formularza.
+				</li>
+				<li>
+					System wraca do interfejsu uzytkownika.
+				</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<th>Alternate flow:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					<span class="number">4</span>
+					<span class="condition"></span>
+					<span class="reaction-additional">Musisz napisać komentarz.</span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">2</span>
+				</li>
+				<li>
+					<span class="number">4</span>
+					<span class="condition"></span>
+					<span class="reaction-additional">Nie wybrano oceny</span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">2</span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+</tbody></table>
