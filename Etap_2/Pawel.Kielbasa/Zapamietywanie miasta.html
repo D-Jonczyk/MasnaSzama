@@ -1,0 +1,108 @@
+
+<table border="1">
+	<tbody><tr>
+		<th>Author name:</th>
+		<td style="width: 15cm;">
+			Paweł
+		</td>
+	</tr>
+	<tr>
+		<th>Author surname:</th>
+		<td style="width: 15cm;">
+			Kiełbasa
+		</td>
+	</tr>
+	<tr>
+		<th>Author group:</th>
+		<td style="width: 15cm;">
+			3ID11A
+		</td>
+	</tr>
+	<tr>
+		<th>Subject:</th>
+		<td style="width: 15cm;">
+			PAI2
+		</td>
+	</tr>
+	<tr>
+		<th>Use Case:</th>
+		<td style="width: 15cm;">
+			Zapamiętywanie miasta.
+		</td>
+	</tr>
+	<tr>
+		<th>Language:</th>
+		<td style="width: 15cm;">
+			Polish
+		</td>
+	</tr>
+	<tr>
+		<th>Preconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Użytkownik musi być zalogowany.
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Postconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Zapamiętywanie miasta zalogowanego użytkownika.
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Actors:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Klient
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Main flow:</th>
+		<td style="width: 15cm;">
+			<ol>
+				<li>
+					Klient wybiera opcje dodaj miasto.
+				</li>
+				<li>
+					System wyświetla formularz do wpisania miasta.
+				</li>
+				<li>
+					Klient wpisuje miasto, które chce aby system zapamiętał jako domyślne.
+				</li>
+				<li>
+					System dokonuje walidacji formularza.
+				</li>
+				<li>
+					System ustawia wybrane miasto jako domyślne.
+				</li>
+				<li>
+					System powraca do panelu użytkownika.
+				</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<th>Alternate flow:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					<span class="number">4</span>
+					<span class="condition"></span>
+					<span class="reaction-additional">Nie ma takiego miasta na naszej liście.</span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">2</span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+</tbody></table>
