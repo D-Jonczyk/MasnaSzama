@@ -1,0 +1,148 @@
+<table border="1">
+	<tbody><tr>
+		<th>Author name:</th>
+		<td style="width: 15cm;">
+			Paweł
+		</td>
+	</tr>
+	<tr>
+		<th>Author surname:</th>
+		<td style="width: 15cm;">
+			Kiełbasa
+		</td>
+	</tr>
+	<tr>
+		<th>Author group:</th>
+		<td style="width: 15cm;">
+			3ID11A
+		</td>
+	</tr>
+	<tr>
+		<th>Subject:</th>
+		<td style="width: 15cm;">
+			PAI2
+		</td>
+	</tr>
+	<tr>
+		<th>Use Case:</th>
+		<td style="width: 15cm;">
+			Zamawianie jedzenia
+		</td>
+	</tr>
+	<tr>
+		<th>Language:</th>
+		<td style="width: 15cm;">
+			Polish
+		</td>
+	</tr>
+	<tr>
+		<th>Preconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Klient musi podać miasto po którym będą wyszukiwane restauracje.
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Postconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Zamawianie jedzenia z wybranej restauracji.
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Actors:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Klient
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Main flow:</th>
+		<td style="width: 15cm;">
+			<ol>
+				<li>
+					System wyświetla pole do wpisania miasta, aby mógł wyświetlić restauracje.
+				</li>
+				<li>
+					Klient wpisuje nazwę miasta.
+				</li>
+				<li>
+					System sprawdza czy aplikacja obsługuje Miasto.
+				</li>
+				<li>
+					System wyświetla listę restauracji.
+				</li>
+				<li>
+					Klient wybiera restauracj.
+				</li>
+				<li>
+					System wyświetla informacje o restauracji oraz wszystkie dania z cena.
+				</li>
+				<li>
+					Klient wybiera danie i dodaje je do zamówienia.
+				</li>
+				<li>
+					Klient wybiera opcje zapłać.
+				</li>
+				<li>
+					System wyświetla metody płatności.
+				</li>
+				<li>
+					Klient wybiera opcje płatności oraz wprowadza potrzebne dane.
+				</li>
+				<li>
+					System dokonuje walidacji formularza płatności.
+				</li>
+				<li>
+					System wyświetla prośbę o adres na który ma zostać dostarczone jedzenie.
+				</li>
+				<li>
+					Klient wprowadza adres i zatwierdza.
+				</li>
+				<li>
+					System sprawdza czy wszystkie dane zostały podane poprawnie.
+				</li>
+				<li>
+					System przenosi klienta na stronę startową.
+				</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<th>Alternate flow:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					<span class="number">3</span>
+					<span class="condition"></span>
+					<span class="reaction-additional">Nie ma takiego miasta</span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">1</span>
+				</li>
+				<li>
+					<span class="number">11</span>
+					<span class="condition"></span>
+					<span class="reaction-additional">Podano złe dane spróbuj jeszcze raz.</span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">9</span>
+				</li>
+				<li>
+					<span class="number">14</span>
+					<span class="condition"></span>
+					<span class="reaction-additional">Podano zły adres, spróbuj ponownie.</span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">12</span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+</tbody></table>
