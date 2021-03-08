@@ -13,8 +13,8 @@ public class MasnaSzamaApplication {
 		SpringApplication.run(MasnaSzamaApplication.class, args);
 	}
 
-	@GetMapping("/")
-	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
+	@GetMapping("/greeting")
+	public String greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return String.format("Hello %s! Masna Szama wita", name);
 	}
 
