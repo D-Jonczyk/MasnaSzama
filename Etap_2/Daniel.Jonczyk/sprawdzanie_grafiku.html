@@ -1,0 +1,104 @@
+<table border="1">
+	<tbody><tr>
+		<th>Author name:</th>
+		<td style="width: 15cm;">
+			Daniel
+		</td>
+	</tr>
+	<tr>
+		<th>Author surname:</th>
+		<td style="width: 15cm;">
+			Jończyk
+		</td>
+	</tr>
+	<tr>
+		<th>Author group:</th>
+		<td style="width: 15cm;">
+			3ID11A
+		</td>
+	</tr>
+	<tr>
+		<th>Subject:</th>
+		<td style="width: 15cm;">
+			PAI2
+		</td>
+	</tr>
+	<tr>
+		<th>Use Case:</th>
+		<td style="width: 15cm;">
+			Sprawdzanie grafiku
+		</td>
+	</tr>
+	<tr>
+		<th>Language:</th>
+		<td style="width: 15cm;">
+			Polish
+		</td>
+	</tr>
+	<tr>
+		<th>Preconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Kurier jest zalogowany na swoje konto
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Postconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Wyświetl grafik w panelu kuriera
+				</li>
+				<li>
+					Wyświetl komunikat "brak zmian"
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Actors:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Kurier
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Main flow:</th>
+		<td style="width: 15cm;">
+			<ol>
+				<li>
+					Kurier wybiera "Panel kuriera" na stronie głównej swojego profilu.
+				</li>
+				<li>
+					Kurier wybiera zakładkę "Grafik".
+				</li>
+				<li>
+					System wyświetla grafik kuriera na dany tydzień.
+				</li>
+				<li>
+					Kurier może przewijać tygodnie wprzód i wstecz.
+				</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<th>Alternate flow:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					<span class="number">3a</span>
+					<span class="condition">Wyświetl komunikat "brak zmian w danym tygodniu"</span>
+					<span class="reaction-additional"></span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">4</span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+</tbody></table>
