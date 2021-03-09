@@ -29,15 +29,13 @@
 	  - Jako pracownik chcę potwierdzić przyjęcie zamówienia, aby klient wiedział, że zostanie ono zrealizowane. 
 	  - Jako pracownik chcę potwierdzić wykonanie zamówienia, aby poinformować kuriera o możliwości odbioru. 
 	  - Jako pracownik chcę mieć podglad  listy zamówień aby na bieżąco móc je wykonywać. 
-	  - Jako pracownik chce mieć podglad grafiku aby wiedzieć kiedy przyjść do pracy. 
 
     * Właściciel restauracji: Damian Linek
 	  - Jako właściciel chcę móc dodać restaurację do systemu 
 	  - Jako właściciel chcę mieć możliwość dodawania karty dań  
 	  - Jako właściciel chcę widzieć utarg z dnia/tygodnia/miesiąca aby wiedzieć ile mam przychodu. 
 	  - Jako  właściciel chce móc zatrudnić nowego pracownika (wprowadzić jego dane do systemu i stawke godzinową) 
-		  aby mieć większy personel. 
-	  - Jako właściciel chce wiedziec ile dany pracownik przepracował godzin aby wypłacić mu odpowiednią pensję. 
+		  aby mieć większy personel.
 	  
 	//założenie: system przypisuje kurierowi aktualne zamówienia do dostarczenia, kurier moze wybrać konkretne z listy, 
 					jeśli w danym czasie nie wybierze to system automatycznie wybiera mu to z najbliższym czasem dostawy
