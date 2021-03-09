@@ -1,0 +1,124 @@
+<table border="1">
+	<tbody><tr>
+		<th>Author name:</th>
+		<td style="width: 15cm;">
+			Daniel
+		</td>
+	</tr>
+	<tr>
+		<th>Author surname:</th>
+		<td style="width: 15cm;">
+			Jończyk
+		</td>
+	</tr>
+	<tr>
+		<th>Author group:</th>
+		<td style="width: 15cm;">
+			3ID11A
+		</td>
+	</tr>
+	<tr>
+		<th>Subject:</th>
+		<td style="width: 15cm;">
+			PAI2
+		</td>
+	</tr>
+	<tr>
+		<th>Use Case:</th>
+		<td style="width: 15cm;">
+			Rejestracja godzin pracy kuriera
+		</td>
+	</tr>
+	<tr>
+		<th>Language:</th>
+		<td style="width: 15cm;">
+			Polish
+		</td>
+	</tr>
+	<tr>
+		<th>Preconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Kurier jest zalogowany na swoje konto
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Postconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Zapisanie godzin pracy kuriera w systemie
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Actors:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Kurier
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Main flow:</th>
+		<td style="width: 15cm;">
+			<ol>
+				<li>
+					Kurier klika przycisk "Zacznij zmianę" na stronie swojego profilu.
+				</li>
+				<li>
+					System zapisuje w bazie czas rozpoczęcia zmiany.
+				</li>
+				<li>
+					System zmienia status kuriera na "w pracy".
+				</li>
+				<li>
+					Strona główna profilu kuriera wyświetla czas pozostały do końca zmiany.
+				</li>
+				<li>
+					Na koniec zmiany kurier wybiera przycisk "Zakończ zmianę".
+				</li>
+				<li>
+					System zapisuje w bazie czas zakończenia zmiany.
+				</li>
+				<li>
+					System zmienia status kuriera na nieaktywny.
+				</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<th>Alternate flow:</th>
+		<td style="width: 18cm;">
+			<ul>
+				<li>
+					<span class="number">1a</span>
+					<span class="condition">Kurier próbuje się zalogować poza godzinami pracy</span>
+					<span class="reaction-additional"></span>
+					<span class="reaction-type">END FLOW</span>
+					<span class="reaction-goto"></span>
+				</li>
+				<li>
+					<span class="number">5a</span>
+					<span class="condition">Kurier nie nacisnął przycisku "Zakończ zmianę" przed końcem zmiany.</span>
+					<span class="reaction-additional"></span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">5b</span>
+				</li>
+				<li>
+					<span class="number">5b</span>
+					<span class="condition">Czas zakończenia zmiany = czas zakończenia według grafiku.</span>
+					<span class="reaction-additional"></span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">6</span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+</tbody></table>
