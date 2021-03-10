@@ -1,0 +1,120 @@
+<table border="1">
+	<tbody><tr>
+		<th>Author name:</th>
+		<td style="width: 15cm;">
+			Kacper 
+		</td>
+	</tr>
+	<tr>
+		<th>Author surname:</th>
+		<td style="width: 15cm;">
+			Jurek
+		</td>
+	</tr>
+	<tr>
+		<th>Author group:</th>
+		<td style="width: 15cm;">
+			3ID11B
+		</td>
+	</tr>
+	<tr>
+		<th>Subject:</th>
+		<td style="width: 15cm;">
+			PAI2
+		</td>
+	</tr>
+	<tr>
+		<th>Use Case:</th>
+		<td style="width: 15cm;">
+			Edycja grafiku kurierów
+		</td>
+	</tr>
+	<tr>
+		<th>Language:</th>
+		<td style="width: 15cm;">
+			Polish
+		</td>
+	</tr>
+	<tr>
+		<th>Preconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Koordynator musi byæ zalogowany do systemu
+				</li>
+				<li>
+					Dostêpnoœæ kurierów
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Postconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Przypisanie grafiku do kuriera
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Actors:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Koordynator
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Main flow:</th>
+		<td style="width: 15cm;">
+			<ol>
+				<li>
+					Koordynator wybiera dzieñ który chce edytowaæ
+				</li>
+				<li>
+					Koordynator wybiera zmianê któr¹ chcê edytowaæ
+				</li>
+				<li>
+					System wyœwietla listê kurierów dla danej zmiany
+				</li>
+				<li>
+					Koordynator wybiera kuriera
+				</li>
+				<li>
+					Koordynator wybiera opcje edycji
+				</li>
+				<li>
+					Zatwierdzenie edycji w systemie
+				</li>
+				<li>
+					System potwierdza aktualizacjê grafiku
+				</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<th>Alternate flow:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					<span class="number">6</span>
+					<span class="condition">Jeœli nie potwierdza</span>
+					<span class="reaction-additional"></span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">2</span>
+				</li>
+				<li>
+					<span class="number">6</span>
+					<span class="condition">Jeœli potwierdza</span>
+					<span class="reaction-additional"></span>
+					<span class="reaction-type">END FLOW</span>
+					<span class="reaction-goto">9</span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+</tbody></table>
