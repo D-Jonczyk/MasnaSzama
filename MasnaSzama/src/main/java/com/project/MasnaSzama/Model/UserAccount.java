@@ -2,29 +2,14 @@ package com.project.MasnaSzama.Model;
 
 import com.project.MasnaSzama.Model.Person.Person;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
-public class UserAccount extends Person {
-    @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer id;
-
+public class UserAccount extends Person{
     private String userName;
     private String password;
     private String registeredDate;
     private String lastLogin;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getUserName() {
         return userName;

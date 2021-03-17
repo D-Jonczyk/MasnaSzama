@@ -1,26 +1,31 @@
 package com.project.MasnaSzama.Model.Person;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.project.MasnaSzama.Model.UserAccount;
+
+import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
-public class Person {
-    @Id
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public class Person implements Serializable {
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer id;
+    @Id
+    private Long personId;
 
     private String emailAddress;
     private String firstName;
     private String lastName;
     private Integer phoneNumber;
 
-    public Integer getId() {
-        return id;
+    @OneToOne(cascade = CascadeType.ALL)
+    @PrimaryKeyJoinColumn
+    private UserAccount userAccount;
+
+    public Long getPersonId() {
+        return personId;
     }
-    public void setId(Integer id) {
-        this.id = id;
+    public void setPersonId(Long personId) {
+        this.personId = personId;
     }
     public String getFirstName() {
         return firstName;
