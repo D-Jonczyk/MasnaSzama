@@ -1,4 +1,4 @@
-package com.project.MasnaSzama.Model;
+package com.project.MasnaSzama.Model.User;
 
 import com.project.MasnaSzama.Model.Person.Person;
 

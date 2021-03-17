@@ -1,4 +1,4 @@
-package com.project.MasnaSzama.Model;
+package com.project.MasnaSzama.Model.User;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
