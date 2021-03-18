@@ -13,8 +13,8 @@ public class Courier extends Person{
     Integer averageDeliveryTime;
     Integer numberOfDeliveries;
 
-    @OneToMany(mappedBy = "courier")
-    private Set<Order> orders;
+    @ManyToMany(mappedBy = "couriers")
+    private Set<Order> orders = new HashSet<>();
 
     @ManyToMany(cascade = { CascadeType.ALL})
     @JoinTable(

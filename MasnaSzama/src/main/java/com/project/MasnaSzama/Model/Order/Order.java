@@ -18,12 +18,16 @@ public class Order {
     private Long orderId;
 
     @ManyToOne
-    @JoinColumn(name = "courier_id", nullable = false)
-    private Courier courier;
-
-    @ManyToOne
     @JoinColumn(name = "restaurant_id", nullable = false)
     private Restaurant restaurant;
+
+    @ManyToMany
+    @JoinTable(
+            name = "couriers_orders",
+            joinColumns = {@JoinColumn(name = "order_id")},
+            inverseJoinColumns = {@JoinColumn(name = "person_id")}
+    )
+    Set<Courier> couriers = new HashSet<>();
 
     @ManyToMany(cascade = { CascadeType.ALL})
     @JoinTable(
@@ -31,7 +35,7 @@ public class Order {
             joinColumns = { @JoinColumn(name = "order_id")},
             inverseJoinColumns = { @JoinColumn(name = "meal_id")}
     )
-    Set<Meal> orderMeals = new HashSet<>();
+    Set<Meal> orders = new HashSet<>();
 
     @OneToOne
     @JoinColumn(name = "opinion_id", nullable = false)
@@ -59,13 +63,5 @@ public class Order {
 
     public void setTip(Integer tip) {
         this.tip = tip;
-    }
-
-    public Courier getCourier() {
-        return courier;
-    }
-
-    public void setCourier(Courier courier) {
-        this.courier = courier;
     }
 }

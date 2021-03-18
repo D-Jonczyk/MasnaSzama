@@ -14,7 +14,7 @@ public class Meal {
     private String name;
     private BigDecimal price;
 
-    @ManyToMany(mappedBy = "orderMeals")
+    @ManyToMany(mappedBy = "orders")
     private Set<Order> orders = new HashSet<>();
 
     public Set<Order> getOrders() {
