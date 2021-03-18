@@ -2,16 +2,25 @@ package com.project.MasnaSzama.Model.Order;
 
 import com.project.MasnaSzama.Model.Person.Courier;
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
 @Table(name = "_order")
 public class Order {
+    private Integer tip;
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long orderId;
 
-    private Integer tip;
+    @ManyToMany(cascade = { CascadeType.ALL})
+    @JoinTable(
+            name = "orders_meals",
+            joinColumns = { @JoinColumn(name = "order_id")},
+            inverseJoinColumns = { @JoinColumn(name = "meal_id")}
+    )
+    Set<Meal> orderMeals = new HashSet<>();
 
     @ManyToOne
     @JoinColumn(name = "courier_id", nullable = false)
@@ -20,14 +29,6 @@ public class Order {
     public Order(){
         super();
     }
-
-    @ManyToMany(cascade = { CascadeType.ALL })
-    @JoinTable(
-            name = "order_meals",
-            joinColumns = { @JoinColumn(name = "order_id") },
-            inverseJoinColumns = { @JoinColumn(name = "meal_id") }
-    )
-    private Set<Meal> meals;
 
     @OneToOne
     @JoinColumn(name = "opinion_id", nullable = false)
