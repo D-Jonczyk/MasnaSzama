@@ -1,5 +1,6 @@
 package com.project.MasnaSzama.Model.Order;
 
+import com.project.MasnaSzama.Model.Payment.Payment;
 import com.project.MasnaSzama.Model.Person.Courier;
 import javax.persistence.*;
 import java.util.HashSet;
@@ -33,6 +34,10 @@ public class Order {
     @OneToOne
     @JoinColumn(name = "opinion_id", nullable = false)
     private Opinion opinion;
+
+    @OneToOne
+    @JoinColumn(name = "payment_id", nullable = false)
+    private Payment payment;
 
     public Long getOrderId() {
         return orderId;
