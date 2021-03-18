@@ -10,16 +10,16 @@ import java.io.Serializable;
 public class Person implements Serializable {
     @GeneratedValue(strategy= GenerationType.AUTO)
     @Id
-    private Long personId;
+    protected Long personId;
 
-    private String emailAddress;
-    private String firstName;
-    private String lastName;
-    private Integer phoneNumber;
+    protected String emailAddress;
+    protected String firstName;
+    protected String lastName;
+    protected Integer phoneNumber;
 
     @OneToOne(cascade = CascadeType.ALL)
     @PrimaryKeyJoinColumn
-    private UserAccount userAccount;
+    protected UserAccount userAccount;
 
     public Long getPersonId() {
         return personId;
