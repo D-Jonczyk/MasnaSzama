@@ -28,11 +28,10 @@ public class MainController {
 
     @PostMapping(path="/sendWorkingHours")
     public @ResponseBody String sendWorkingHours(@RequestParam String startingHour,
-                                                 @RequestParam String firstName)
+                                                 @RequestParam String firstName,
+                                                 @RequestParam String lastName)
     {
-        Courier c = new Courier();
-        c.setFirstName(firstName);
-        c.setStartingHour(startingHour);
+        Courier c = new Courier(firstName, lastName);
         courierRepository.save(c);
         return "Dodano godzine rozpoczecia: " + startingHour;
     }
