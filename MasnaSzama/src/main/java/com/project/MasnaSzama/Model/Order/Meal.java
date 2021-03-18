@@ -1,10 +1,11 @@
 package com.project.MasnaSzama.Model.Order;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.project.MasnaSzama.Model.Person.Customer;
+
+import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Meal {
@@ -15,6 +16,9 @@ public class Meal {
 
     private String name;
     private BigDecimal price;
+
+    @ManyToMany(mappedBy = "meals")
+    private Set<Order> orders;
 
     public Long getMealId() {
         return mealId;
