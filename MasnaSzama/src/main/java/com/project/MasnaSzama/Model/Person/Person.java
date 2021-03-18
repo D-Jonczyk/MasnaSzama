@@ -1,6 +1,6 @@
 package com.project.MasnaSzama.Model.Person;
 
-import com.project.MasnaSzama.Model.UserAccount;
+import com.project.MasnaSzama.Model.User.UserAccount;
 
 import javax.persistence.*;
 import java.io.Serializable;

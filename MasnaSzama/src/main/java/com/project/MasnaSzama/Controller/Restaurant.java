@@ -18,5 +18,6 @@ public class Restaurant {
 
     @GetMapping(path = "getbycity")
     public @ResponseBody Iterable<Restaurant> getRestaurantsByCity(@RequestParam String city){
+        return null;
     }
 }
