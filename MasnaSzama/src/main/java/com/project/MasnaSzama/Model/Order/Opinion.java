@@ -6,7 +6,6 @@ import javax.persistence.*;
 
 @Entity
 public class Opinion {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long opinionId;

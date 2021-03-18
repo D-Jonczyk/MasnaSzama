@@ -16,8 +16,4 @@ public class Customer extends Person{
             inverseJoinColumns = { @JoinColumn(name = "address_id") }
     )
     Set<Address> addresses = new HashSet<>();
-
-
-
-
 }

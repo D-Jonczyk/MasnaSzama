@@ -2,6 +2,8 @@ package com.project.MasnaSzama.Model.Order;
 
 import com.project.MasnaSzama.Model.Payment.Payment;
 import com.project.MasnaSzama.Model.Person.Courier;
+import com.project.MasnaSzama.Model.Restaurant.Restaurant;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -15,6 +17,14 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long orderId;
 
+    @ManyToOne
+    @JoinColumn(name = "courier_id", nullable = false)
+    private Courier courier;
+
+    @ManyToOne
+    @JoinColumn(name = "restaurant_id", nullable = false)
+    private Restaurant restaurant;
+
     @ManyToMany(cascade = { CascadeType.ALL})
     @JoinTable(
             name = "orders_meals",
@@ -23,14 +33,6 @@ public class Order {
     )
     Set<Meal> orderMeals = new HashSet<>();
 
-    @ManyToOne
-    @JoinColumn(name = "courier_id", nullable = false)
-    private Courier courier;
-
-    public Order(){
-        super();
-    }
-
     @OneToOne
     @JoinColumn(name = "opinion_id", nullable = false)
     private Opinion opinion;
@@ -38,6 +40,10 @@ public class Order {
     @OneToOne
     @JoinColumn(name = "payment_id", nullable = false)
     private Payment payment;
+
+    public Order(){
+        super();
+    }
 
     public Long getOrderId() {
         return orderId;
