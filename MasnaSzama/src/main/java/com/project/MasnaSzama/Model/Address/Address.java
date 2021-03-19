@@ -8,16 +8,16 @@ import java.util.Set;
 
 @Entity
 public class Address {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long addressId;
 
-    private String city;
-
     @ManyToMany(mappedBy = "addresses")
     private Set<Customer> customers = new HashSet<>();
 
+    private String city;
+    private String street;
+    private Integer number;
 
     public Long getAddressId() {
         return addressId;

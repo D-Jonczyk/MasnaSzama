@@ -8,15 +8,19 @@ import java.util.Set;
 
 @Entity
 public class Coordinator extends Person{
-
     @OneToMany(cascade = {CascadeType.ALL})
     @JoinTable(
-            name = "Schedule",
+            name = "coordinators_schedules",
             joinColumns = { @JoinColumn(name = "person_id") },
             inverseJoinColumns = { @JoinColumn(name = "schedule_id") }
     )
-    Set<Schedule> schedules = new HashSet<>();
+    Set<Schedule> coordinatorsSchedules = new HashSet<>();
+
+    public Set<Schedule> getCoordinatorsSchedules() {
+        return coordinatorsSchedules;
+    }
+
+    public void setCoordinatorsSchedules(Set<Schedule> coordinatorsSchedules) {
+        this.coordinatorsSchedules = coordinatorsSchedules;
+    }
 }
-
-
-
