@@ -12,8 +12,11 @@ public class Address {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long addressId;
 
-    @ManyToMany(mappedBy = "addresses")
-    private Set<Customer> customers = new HashSet<>();
+    @OneToOne(mappedBy = "address")
+    private Customer customer;
+
+    @OneToOne(mappedBy = "address")
+    private Restaurant restaurant;
 
     private String city;
     private String street;

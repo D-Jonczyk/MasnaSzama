@@ -13,8 +13,8 @@ public class Payment {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long paymentId;
 
-    @OneToMany(mappedBy="payment")
-    private Set<Order> orders;
+    @OneToOne(mappedBy="payment")
+    private Order orders;
 
 
 }

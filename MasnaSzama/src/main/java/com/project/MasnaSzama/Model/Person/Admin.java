@@ -11,7 +11,7 @@ import java.util.Set;
 @Entity
 public class Admin extends Person{
 
-    @OneToMany(mappedBy = "request")
+    @OneToMany(mappedBy = "admin")
     private Set<Request> request = new HashSet<>();
 
 }

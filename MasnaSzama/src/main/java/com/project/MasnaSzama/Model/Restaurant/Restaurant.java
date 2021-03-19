@@ -16,8 +16,9 @@ public class Restaurant {
     private Long restaurantId;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "address_id", referencedColumnName = "addressId")
+    @JoinColumn(name = "address_id", nullable = false)
     private Address address;
+
     private String name;
 
     @OneToMany(mappedBy = "restaurant")
@@ -25,11 +26,10 @@ public class Restaurant {
 
     @ManyToMany(cascade = { CascadeType.ALL })
     @JoinTable(
-            name = "menu",
+            name = "restaurant_meals",
             joinColumns = { @JoinColumn(name = "restaurant_id") },
             inverseJoinColumns = { @JoinColumn(name = "meal_id") }
     )
-
     private Set<Meal> meal;
 
     public Long getRestaurantId() {

@@ -1,5 +1,7 @@
 package com.project.MasnaSzama.Model.Order;
 
+import com.project.MasnaSzama.Model.Request.Request;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.HashSet;
@@ -16,6 +18,9 @@ public class Meal {
 
     @ManyToMany(mappedBy = "orders")
     private Set<Order> orders = new HashSet<>();
+
+    @OneToOne(mappedBy = "meal")
+    private Request request;
 
     public Set<Order> getOrders() {
         return orders;
