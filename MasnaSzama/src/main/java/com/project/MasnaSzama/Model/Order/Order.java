@@ -2,6 +2,7 @@ package com.project.MasnaSzama.Model.Order;
 
 import com.project.MasnaSzama.Model.Payment.Payment;
 import com.project.MasnaSzama.Model.Person.Courier;
+import com.project.MasnaSzama.Model.Person.Customer;
 import com.project.MasnaSzama.Model.Restaurant.Restaurant;
 
 import javax.persistence.*;
@@ -41,8 +42,14 @@ public class Order {
     @JoinColumn(name = "opinion_id", nullable = false)
     private Opinion opinion;
 
-    @OneToOne
-    @JoinColumn(name = "payment_id", nullable = false)
+
+
+    @ManyToOne
+    @JoinColumn(name="customer_id", nullable=false)
+    private Customer customer;
+
+    @ManyToOne
+    @JoinColumn(name="payment_id", nullable=false)
     private Payment payment;
 
     public Order(){
