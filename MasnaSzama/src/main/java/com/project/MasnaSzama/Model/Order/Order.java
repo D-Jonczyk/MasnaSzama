@@ -1,7 +1,7 @@
 package com.project.MasnaSzama.Model.Order;
 
 import com.project.MasnaSzama.Model.Payment.Payment;
-import com.project.MasnaSzama.Model.Person.Courier;
+import com.project.MasnaSzama.Model.Person.Employee.Courier;
 import com.project.MasnaSzama.Model.Person.Customer;
 import com.project.MasnaSzama.Model.Restaurant.Restaurant;
 
@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "_order")
+@Table(name = "order_")
 public class Order {
     private Integer tip;
 

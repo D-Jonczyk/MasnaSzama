@@ -1,7 +1,9 @@
 package com.project.MasnaSzama.Model.Schedule;
 
 import com.project.MasnaSzama.Model.Person.Coordinator;
-import com.project.MasnaSzama.Model.Person.Courier;
+import com.project.MasnaSzama.Model.Person.Employee.Courier;
+import com.project.MasnaSzama.Model.Person.Employee.Employee;
+import com.project.MasnaSzama.Model.Request.Request;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -13,11 +15,12 @@ public class Schedule {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long scheduleId;
 
-    @ManyToMany(mappedBy = "couriersSchedules")
-    private Set<Courier> couriers = new HashSet<>();
+    @ManyToOne
+    @JoinColumn (name= "person_id", nullable=false)
+    private Coordinator coordinator;
 
-    @ManyToMany(mappedBy = "coordinatorsSchedules")
-    private Set<Coordinator> coordinators = new HashSet<>();
+    @ManyToMany(mappedBy = "schedules")
+    private Set<Employee> employees = new HashSet<>();
 
     private String dateCreated;
     private String startTime;
@@ -40,12 +43,12 @@ public class Schedule {
         this.scheduleId = scheduleId;
     }
 
-    public Set<Courier> getCouriers() {
-        return couriers;
+    public Set<Employee> getEmployees() {
+        return employees;
     }
 
-    public void setCouriers(Set<Courier> couriers) {
-        this.couriers = couriers;
+    public void setEmployees(Set<Employee> employees) {
+        this.employees = employees;
     }
 
     public String getDateCreated() {
@@ -78,13 +81,5 @@ public class Schedule {
 
     public void setOtherDetails(String otherDetails) {
         this.otherDetails = otherDetails;
-    }
-
-    public Set<Coordinator> getCoordinators() {
-        return coordinators;
-    }
-
-    public void setCoordinators(Set<Coordinator> coordinators) {
-        this.coordinators = coordinators;
     }
 }

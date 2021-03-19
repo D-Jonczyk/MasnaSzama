@@ -1,0 +1,130 @@
+<table border="1">
+	<tbody><tr>
+		<th>Author name:</th>
+		<td style="width: 15cm;">
+			Daniel
+		</td>
+	</tr>
+	<tr>
+		<th>Author surname:</th>
+		<td style="width: 15cm;">
+			Jończyk
+		</td>
+	</tr>
+	<tr>
+		<th>Author group:</th>
+		<td style="width: 15cm;">
+			3ID11A
+		</td>
+	</tr>
+	<tr>
+		<th>Subject:</th>
+		<td style="width: 15cm;">
+			PAI2
+		</td>
+	</tr>
+	<tr>
+		<th>Use Case:</th>
+		<td style="width: 15cm;">
+			Dostarczenie zamówienia
+		</td>
+	</tr>
+	<tr>
+		<th>Language:</th>
+		<td style="width: 15cm;">
+			Polish
+		</td>
+	</tr>
+	<tr>
+		<th>Preconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Kurier jest zalogowany na swoje konto.
+				</li>
+				<li>
+					Kurier posiada zamówienie do zrealizowania na swoim koncie.
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Postconditions:</th>
+		<td style="width: 15cm;">
+			<ul>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Actors:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					Kurier
+				</li>
+				<li>
+					Klient
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th>Main flow:</th>
+		<td style="width: 15cm;">
+			<ol>
+				<li>
+					Kurier wybiera z listy zamówienie do zrealizowania.
+				</li>
+				<li>
+					Lista zamówień staje się niedostępna.
+				</li>
+				<li>
+					Zamiast listy pojawiają się dwa kafelki - jeden z z informacjami na temat restauracji, drugi na temat klienta.
+				</li>
+				<li>
+					Kurier odbiera zamówienie z restauracji i wybiera opcję 'potwierdź odebranie'.
+				</li>
+				<li>
+					Znika kafelek z informacjami nt. restauracji. Zostają tylko informacje na temat klienta.
+				</li>
+				<li>
+					Po dostarczeniu zamówienia, kurier wybiera opcję 'dostarczono'.
+				</li>
+				<li>
+					System zmienia status zamówienia na dostarczone.
+				</li>
+				<li>
+					Znika kafelek z informacjami klienta, ponownie wyświetla się lista zamówień do zrealizowania.
+				</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<th>Alternate flow:</th>
+		<td style="width: 15cm;">
+			<ul>
+				<li>
+					<span class="number">1a)</span>
+					<span class="condition">Kurier nie wybrał żadnego zamówienia w określonym czasie, system automatycznie przypisuje mu to z najbliższym czasem dostawy.</span>
+					<span class="reaction-additional"></span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">2</span>
+				</li>
+				<li>
+					<span class="number">6a)</span>
+					<span class="condition">Klient z jakiegoś powodu odmówił przyjęcia zamówienia. Kurier powiadamia koordynatora poprzez odpowiedni przycisk.</span>
+					<span class="reaction-additional"></span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">6b)</span>
+				</li>
+				<li>
+					<span class="number">6b)</span>
+					<span class="condition">Dalsze losy zamówienia zależą od koordynatora. System zmienia status zamówienia na 'nie odebrane'.</span>
+					<span class="reaction-additional"></span>
+					<span class="reaction-type">GOTO</span>
+					<span class="reaction-goto">8</span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+</tbody></table>
