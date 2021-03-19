@@ -1,9 +1,10 @@
 package com.project.MasnaSzama.Model.Payment;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.project.MasnaSzama.Model.Order.Order;
+import com.project.MasnaSzama.Model.Person.Customer;
+
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Payment {
@@ -11,6 +12,9 @@ public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long paymentId;
+
+    @OneToMany(mappedBy="payment")
+    private Set<Order> orders;
 
 
 }
