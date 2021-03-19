@@ -16,5 +16,4 @@ public class Payment {
     @OneToMany(mappedBy="payment")
     private Set<Order> orders;
 
-
 }

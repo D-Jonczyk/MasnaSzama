@@ -1,15 +1,19 @@
 package com.project.MasnaSzama.Model.Schedule;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.project.MasnaSzama.Model.Person.Employee.Employee;
+
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Timesheet {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long timesheetId;
+
+    @ManyToMany(mappedBy = "timesheets")
+    private Set<Employee> employees = new HashSet<>();
 
     private String startTime;
     private String endTime;

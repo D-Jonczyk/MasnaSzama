@@ -15,6 +15,4 @@ Integer RequestStatus;
     @JoinColumn (name= "admin_id", nullable=false)
     private Request request;
 
-
-
 }
