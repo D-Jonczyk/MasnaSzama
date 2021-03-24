@@ -20,6 +20,7 @@ public class Restaurant {
     private Address address;
 
     private String name;
+    private String description;
 
     @OneToMany(mappedBy = "restaurant")
     private Set<Order> orders = new HashSet<>();
@@ -42,6 +43,10 @@ public class Restaurant {
 
     public String getName() {
         return name;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     public Set<Order> getOrders() {

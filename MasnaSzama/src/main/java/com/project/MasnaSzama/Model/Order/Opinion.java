@@ -12,4 +12,7 @@ public class Opinion {
 
     private int rating;
     private String comment;
+
+    @OneToOne(mappedBy="opinion")
+    private Order orders;
 }
