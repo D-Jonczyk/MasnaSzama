@@ -12,3 +12,4 @@ for /F "tokens=3 delims=: " %%H in ('sc query "MySQL80" ^| findstr "        STAT
    @echo MySQL80 is up and running, proceeding...
   )
 )
+exit
