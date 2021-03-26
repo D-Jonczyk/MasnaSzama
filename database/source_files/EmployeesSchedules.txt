@@ -1,0 +1,9 @@
+LOAD DATA
+INFILE EmployeesSchedules.csv
+INTO TABLE Chief
+REPLACE
+FIELDS TERMINATED BY ","
+(
+EmployeeId FK,ScheduleId FK
+
+)

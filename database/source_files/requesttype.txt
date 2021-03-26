@@ -1,0 +1,9 @@
+LOAD DATA
+INFILE requesttype.csv
+INTO TABLE Chief
+REPLACE
+FIELDS TERMINATED BY ","
+(
+RequestTypeId,requestName
+
+)

@@ -1,0 +1,8 @@
+LOAD DATA
+INFILE request.csv
+INTO TABLE Chief
+REPLACE
+FIELDS TERMINATED BY ","
+(
+RequestId(PK),AdminId (FK),RestaurantId (FK),RequestDate,RequestCommentary,RequestStatus,MealId(FK)
+)
