@@ -1,0 +1,1001 @@
+﻿address_id,city,number,street
+1,Koszalin,0570,Ulica Prudnicka
+2,Zielona Gora,161,Ulica Dworcowa
+3,Krosno,653,Ulica Stanislawa Staszica
+4,Gorzow Wielkopolski,8646,Ulica ks. Jerzego Popieluszki
+5,Leszno,6370,Ulica Aleksandra Fredry
+6,Stargard,876,Ulica Pomorska
+7,Krakow,6,Ulica Obozowa
+8,Zamosc,0445,Ulica Bracka
+9,Przemysl,2841,Ulica Jana Kasprowicza
+10,Wloclawek,56193,Ulica Strzelecka
+11,Zielona Gora,8819,Ulica Bialoskornicza
+12,Zamosc,8,Ulica Fryderyka Chopina
+13,Plock,05,Ulica Wojska Polskiego
+14,Tomaszow Mazowiecki,65,Ulica Armii Krajowej
+15,Wieliczka,7,Ulica Lechicka
+16,Rzesow,491,Ulica Oswiecimska
+17,Zakopane,57,Ulica Grodzka
+18,Katowice,89935,Ulica Szpitalna
+19,Gdybia,46477,Ulica Jozefa Bema
+20,Czestochowa,9585,Ulica Artura Grottgera
+21,Gdybia,3594,Ulica Browarna
+22,Krosno,8,Ulica Sienna
+23,Zamosc,691,Ulica Jozefa Poniatowskiego
+24,Legnica,296,Ulica Sienna
+25,Leszno,2,Ulica Wroclawska
+26,Wroclaw,36238,Ulica Wolnosci
+27,Konin,1734,Ulica Gliwicka
+28,Szczecin,72071,Ulica Nowa
+29,Nowy Sacz,9,Ulica Wawelska
+30,Przemysl,49,Ulica Bracka
+31,Olsztyn,8043,Ulica Kolejowa
+32,Nowy Sacz,19,Ulica Szczecinska
+33,Wloclawek,76,Ulica Grodzka
+34,Leszno,5,Ulica Rycerska
+35,Sopot,6,Ulica Gdanska
+36,Biala Podlasa,31149,Ulica Polnocna
+37,Nowy Sacz,738,Ulica Dworcowa
+38,Nowy Sacz,6941,Ulica Zwyciestwa
+39,Lodz,5,Ulica Jacka Malczewskiego
+40,Katowice,6,Ulica Zwierzyniecka
+41,Sandomierz,58,Aleja Legionow
+42,Przemysl,27868,Ulica Zwyciestwa
+43,Lodz,07996,Ulica Bohaterow Monte Cassino
+44,Wroclaw,23,Ulica Jana Pawla II
+45,Kalisz,6847,Ulica Karmelicka
+46,Pila,67,Ulica Wladyslawa Sikorskiego
+47,Warszawa,7,Ulica Jozefa Poniatowskiego
+48,Zamosc,93065,Ulica Polnocna
+49,Olsztyn,6,Ulica Juliusza Slowackiego
+50,Zamosc,67389,Ulica Gnieznienska
+51,Czestochowa,47915,Ulica Brzeska
+52,Radom,2,Ulica Armii Krajowej
+53,Kalisz,2,Ulica Wincentego Witosa
+54,Chelm,1,Ulica Szewska
+55,Wroclaw,5,Ulica Gliwicka
+56,Radom,5520,Ulica 11 Listopada
+57,Lodz,61357,Ulica Ogrodowa
+58,Stargard,11,Ulica Czestochowska
+59,Wieliczka,607,Ulica Browarna
+60,Pila,78,Ulica Pomorska
+61,Kielce,162,Ulica Wita Stwosza
+62,Szczecin,5,Ulica Wawelska
+63,Kalisz,7571,Ulica Armii Krajowej
+64,Tarnow,9573,Ulica Zamkowa
+65,Olsztyn,5571,Ulica Katedralna
+66,Nowy Sacz,4774,Ulica Bytomska
+67,Lodz,76975,Ulica Siemianowicka
+68,Nowy Sacz,34,Ulica Gdanska
+69,Biala Podlasa,355,Ulica Zamkowa
+70,Bialystok,015,Ulica Pocztowa
+71,Zakopane,95046,Ulica Teatralna
+72,Katowice,6227,Ulica Jozefa Poniatowskiego
+73,Kalisz,3395,Ulica Jana z Kolna
+74,Biala Podlasa,23876,Ulica Klasztorna
+75,Jaslo,51,Ulica Stefana Zeromskiego
+76,Poznan,9932,Ulica Lechicka
+77,Lublin,4,Ulica Jana III Sobieskiego
+78,Gniezno,345,Ulica Stefana Czarnieckiego
+79,Katowice,32153,Ulica Golebia
+80,Chelm,19,Ulica Henryka Sienkiewicza
+81,Legnica,66348,Ulica Stefana Starzynskiego
+82,Plock,25620,Ulica Karola Olszewskiego
+83,Bialystok,193,Ulica Polnocna
+84,Wroclaw,0,Ulica Stefana Starzynskiego
+85,Legnica,013,Ulica Ignacego Paderewskiego
+86,Pila,4,Aleja Wolnosci
+87,Tomaszow Mazowiecki,812,Ulica Siemianowicka
+88,Przemysl,1,Ulica Opolska
+89,Kielce,9,Ulica Uniwersytecka
+90,Szczecin,793,Ulica Zeglarska
+91,Rzesow,982,Ulica Okopowa
+92,Lodz,7,Ulica Widok
+93,Biala Podlasa,3,Ulica Florianska
+94,Przemysl,42,Ulica Katedralna
+95,Bielski-Biala,63516,Ulica Starowiejska
+96,Jaslo,31626,Ulica Jana Kilinskiego
+97,Tarnow,26,Ulica Krolewska
+98,Wieliczka,6198,Ulica Zachodnia
+99,Bialystok,57,Ulica Fabryczna
+100,Krosno,53889,Ulica Senatorska
+101,Pila,420,Ulica Tadeusza Kosciuszki
+102,Leszno,6453,Ulica Stanislawa Staszica
+103,Szczecin,490,Ulica Jagiellonska
+104,Lodz,58959,Ulica Kijowska
+105,Katowice,74048,Ulica Poznanska
+106,Kielce,0,Ulica Wita Stwosza
+107,Czestochowa,257,Ulica Zeglarska
+108,Tarnow,290,Ulica Gdanska
+109,Gdybia,2048,Ulica Grunwaldzka
+110,Lublin,9,Ulica Boleslawa Chrobrego
+111,Koszalin,90,Ulica Wawelska
+112,Koszalin,2070,Aleja Niepodleglosci
+113,Koszalin,2529,Ulica Stanislawa Malachowskiego
+114,Gdansk,36069,Ulica Jana III Sobieskiego
+115,Kielce,1116,Ulica Chlodna
+116,Leszno,851,Ulica Piekna
+117,Gdansk,68911,Ulica Armii Krajowej
+118,Legnica,37,Ulica Krolowej Jadwigi
+119,Olsztyn,5968,Ulica Armii Krajowej
+120,Bialystok,10780,Ulica Zachodnia
+121,Poznan,4942,Ulica Jana III Sobieskiego
+122,Nowy Sacz,31,Ulica Andrzeja Struga
+123,Kielce,6,Ulica Piekna
+124,Krakow,21193,Ulica Wladyslawa Reymonta
+125,Biala Podlasa,231,Ulica Gnieznienska
+126,Krosno,5805,Aleja Legionow
+127,Olsztyn,33,Ulica Jezuicka
+128,Legnica,74,Ulica Chmielna
+129,Plock,7438,Ulica Piwna
+130,Gorzow Wielkopolski,820,Ulica sw. Barbary
+131,Bialystok,488,Ulica Kijowska
+132,Sandomierz,00135,Ulica Karola Swierczewskiego
+133,Przemysl,982,Ulica 3 Maja
+134,Zamosc,4174,Ulica Wincentego Witosa
+135,Czestochowa,51097,Ulica Hrubieszowska
+136,Radom,7,Ulica Krolewska
+137,Krosno,561,Ulica Swietokrzyska
+138,Zielona Gora,064,Ulica Garbarska
+139,Rzesow,05086,Ulica Kanonia
+140,Nowy Sacz,2228,Ulica Polnocna
+141,Koszalin,9913,Ulica Bozego Ciala
+142,Zielona Gora,441,Ulica Piwna
+143,Lublin,09,Ulica Mikolaja Kopernika
+144,Lublin,0452,Ulica Towarowa
+145,Lodz,88,Ulica Gliwicka
+146,Kielce,57157,Ulica Grunwaldzka
+147,Kielce,03941,Ulica Nowa
+148,Krakow,6743,Ulica Jana z Kolna
+149,Warszawa,919,Ulica Wawelska
+150,Gdybia,8,Ulica Franciszkanska
+151,Tarnow,4870,Ulica Bozego Ciala
+152,Jaslo,72256,Ulica Nowa
+153,Lodz,7,Ulica Francuska
+154,Gdybia,66,Ulica Rajska
+155,Bielski-Biala,31,Ulica Grodzka
+156,Lodz,0503,Ulica Mlynska
+157,Sopot,454,Ulica Karola Olszewskiego
+158,Koszalin,654,Ulica Wladyslawa Reymonta
+159,Gniezno,271,Ulica Starowiejska
+160,Leszno,18,Ulica Poznanska
+161,Biala Podlasa,360,Ulica Stanislawa Moniuszki
+162,Kalisz,5,Ulica Gliwicka
+163,Wroclaw,5,Ulica Swietokrzyska
+164,Biala Podlasa,959,Ulica Lodzka
+165,Krakow,07695,Ulica Mikolaja Kopernika
+166,Katowice,1,Ulica Stefana Zeromskiego
+167,Tomaszow Mazowiecki,3,Ulica 1 Maja
+168,Gniezno,67,Ulica Stefana Zeromskiego
+169,Szczecin,09446,Ulica Rycerska
+170,Chelm,69,Ulica Widok
+171,Gdansk,53,Ulica Zeglarska
+172,Wloclawek,99,Ulica Jagiellonska
+173,Konin,5618,Ulica Walowa
+174,Krosno,49,Ulica Krupnicza
+175,Zielona Gora,8816,Ulica Stefana Czarnieckiego
+176,Bielski-Biala,48,Ulica Niestachowska
+177,Gorzow Wielkopolski,3,Ulica Wiejska
+178,Wroclaw,31,Ulica Stefana Starzynskiego
+179,Plock,958,Ulica Piekarska
+180,Warszawa,483,Ulica Torunska
+181,Katowice,0,Ulica Chorzowska
+182,Plock,5,Ulica Jana Kasprowicza
+183,Plock,3,Ulica Poznanska
+184,Krosno,08359,Ulica Siemianowicka
+185,Wieliczka,38437,Ulica Boleslawa Limanowskiego
+186,Biala Podlasa,0312,Ulica Wladyslawa Reymonta
+187,Katowice,62,Ulica Siemianowicka
+188,Wloclawek,85,Ulica Jacka Malczewskiego
+189,Rzesow,516,Ulica Lipowa
+190,Nowy Sacz,1661,Ulica Stefana Zeromskiego
+191,Koszalin,9,Ulica Krupnicza
+192,Olsztyn,1847,Ulica Franciszkanska
+193,Bialystok,70468,Ulica Bozego Ciala
+194,Kielce,3869,Ulica Rwanska
+195,Katowice,2,Ulica Ignacego Paderewskiego
+196,Leszno,7419,Ulica Wincentego Janasa
+197,Czestochowa,3,Ulica Beskidzka
+198,Koszalin,9808,Ulica Lakowa
+199,Nowy Sacz,30328,Ulica Mariacka
+200,Gdybia,5,Ulica Towarowa
+201,Sopot,06372,Ulica Zytnia
+202,Tarnow,25,Ulica Wolnosci
+203,Bielski-Biala,48833,Ulica Adama Mickiewicza
+204,Olsztyn,14052,Ulica Gdanska
+205,Poznan,4,Aleja Wolnosci
+206,Zakopane,486,Ulica Dworcowa
+207,Zamosc,7742,Ulica Bytomska
+208,Gorzow Wielkopolski,30,Aleja Wolnosci
+209,Wieliczka,79573,Ulica Zeglarska
+210,Bielski-Biala,161,Ulica Stefana Czarnieckiego
+211,Tarnow,5249,Ulica Bartosza Glowackiego
+212,Gdybia,275,Ulica Lubelska
+213,Gdybia,51,Ulica Stanislawa Moniuszki
+214,Gdansk,6,Ulica Wladyslawa Reymonta
+215,Wloclawek,992,Ulica Stefana Zeromskiego
+216,Tomaszow Mazowiecki,5660,Ulica Niestachowska
+217,Jaslo,9,Ulica Wiejska
+218,Zielona Gora,4885,Ulica Krucza
+219,Wieliczka,187,Ulica Bernardynska
+220,Radom,8566,Ulica Rwanska
+221,Jaslo,3398,Ulica Ogrodowa
+222,Olsztyn,07,Ulica Dworcowa
+223,Gorzow Wielkopolski,0,Ulica Chorzowska
+224,Czestochowa,125,Ulica Jozefa Poniatowskiego
+225,Tarnow,5250,Ulica Franciszkanska
+226,Wroclaw,87156,Ulica Gliwicka
+227,Rzesow,0,Ulica Krakowska
+228,Leszno,20,Ulica Gabriela Narutowicza
+229,Stargard,62752,Ulica Jozefa Pilsudskiego
+230,Lodz,2604,Ulica Tadeusza Kosciuszki
+231,Bialystok,8285,Ulica Lwowska
+232,Tomaszow Mazowiecki,0,Ulica Bankowa
+233,Gorzow Wielkopolski,18,Ulica gen. Wladyslawa Andersa
+234,Lodz,3,Ulica Lakowa
+235,Olsztyn,7411,Ulica Warszawska
+236,Stargard,95,Ulica Jana III Sobieskiego
+237,Tomaszow Mazowiecki,96,Ulica Jozefa Bema
+238,Tarnow,6,Ulica Hrubieszowska
+239,Warszawa,4,Aleja Niepodleglosci
+240,Radom,5,Ulica Pijarska
+241,Poznan,135,Ulica Farna
+242,Stargard,5,Ulica Mikolaja Reja
+243,Sopot,2,Ulica Mlynska
+244,Gniezno,94756,Ulica Krucza
+245,Nowy Sacz,03,Ulica Browarna
+246,Kalisz,8616,Ulica Armii Krajowej
+247,Sopot,013,Ulica Jana III Sobieskiego
+248,Wloclawek,4,Ulica 3 Maja
+249,Kielce,4202,Ulica Kamienna
+250,Czestochowa,5558,Ulica Wolnosci
+251,Bielski-Biala,8,Ulica Jana Pawla II
+252,Tomaszow Mazowiecki,7630,Ulica Ciasna
+253,Gniezno,20024,Ulica Kanonia
+254,Plock,2424,Ulica gen. Wladyslawa Andersa
+255,Sopot,5,Ulica Lipowa
+256,Olsztyn,923,Ulica Szpitalna
+257,Biala Podlasa,973,Ulica Juliusza Slowackiego
+258,Sopot,894,Ulica Szczecinska
+259,Rzesow,78028,Ulica Uniwersytecka
+260,Jaslo,953,Ulica Armii Krajowej
+261,Zakopane,2969,Ulica ks. Jerzego Popieluszki
+262,Krosno,21533,Ulica Stanislawa Staszica
+263,Szczecin,99787,Ulica Wroclawska
+264,Poznan,5,Ulica Jana III Sobieskiego
+265,Wieliczka,6273,Ulica Jana Henryka Dabrowskiego
+266,Bielski-Biala,3226,Ulica Krolowej Jadwigi
+267,Czestochowa,91,Ulica Rwanska
+268,Koszalin,3759,Ulica Obornicka
+269,Szczecin,72,Ulica Slaska
+270,Legnica,4535,Ulica Pulawska
+271,Przemysl,11523,Ulica Mikolaja Kopernika
+272,Wloclawek,7,Ulica Obozowa
+273,Stargard,81,Ulica Bozego Ciala
+274,Gorzow Wielkopolski,0491,Ulica Pocztowa
+275,Biala Podlasa,25913,Ulica Fryderyka Chopina
+276,Bialystok,57947,Ulica Wiejska
+277,Lodz,87911,Ulica Karola Swierczewskiego
+278,Krakow,4,Ulica Jozefa Pilsudskiego
+279,Zakopane,55025,Ulica Boleslawa Chrobrego
+280,Jaslo,9058,Aleja Niepodleglosci
+281,Lodz,539,Ulica Garncarska
+282,Biala Podlasa,70,Ulica Bozego Ciala
+283,Konin,0381,Ulica Graniczna
+284,Sandomierz,15560,Ulica Krolewska
+285,Gorzow Wielkopolski,073,Ulica Stanislawa Staszica
+286,Pila,1,Ulica Jacka Malczewskiego
+287,Zamosc,2808,Ulica Swietojanska
+288,Rzesow,36,Ulica Bialoskornicza
+289,Zamosc,3,Ulica Slaska
+290,Leszno,0984,Ulica Browarna
+291,Tarnow,879,Ulica ks. Jerzego Popieluszki
+292,Zakopane,8337,Ulica Katowicka
+293,Pila,48,Ulica Stefana Starzynskiego
+294,Koszalin,9862,Ulica Lipowa
+295,Rzesow,4258,Ulica Krakowska
+296,Wroclaw,7166,Ulica Sienna
+297,Krosno,50,Ulica Dworcowa
+298,Wieliczka,1909,Ulica Krolowej Jadwigi
+299,Katowice,106,Ulica Graniczna
+300,Sandomierz,96,Ulica Jozefa Bema
+301,Nowy Sacz,014,Ulica Browarna
+302,Szczecin,37,Ulica Miodowa
+303,Tarnow,677,Ulica Janusza Korczaka
+304,Wloclawek,855,Ulica Stefana Starzynskiego
+305,Tarnow,59076,Ulica Rajska
+306,Stargard,3769,Ulica Wincentego Janasa
+307,Pila,64,Ulica Wladyslawa Sikorskiego
+308,Jaslo,61,Ulica Bozego Ciala
+309,Bialystok,66,Ulica Stefana Zeromskiego
+310,Kalisz,0,Ulica Bielska
+311,Kielce,79,Ulica Jozefa Pilsudskiego
+312,Kielce,996,Ulica Jana Pawla II
+313,Krakow,86,Ulica Piekna
+314,Czestochowa,662,Ulica Wiejska
+315,Chelm,37458,Ulica sw. Ducha
+316,Krosno,69305,Ulica Gliwicka
+317,Zamosc,678,Ulica Krucza
+318,Tomaszow Mazowiecki,0277,Ulica Strzelecka
+319,Radom,07,Ulica Senatorska
+320,Wloclawek,92,Aleja Solidarnosci
+321,Radom,388,Ulica Stefana Czarnieckiego
+322,Czestochowa,04,Ulica Krolewska
+323,Tarnow,228,Ulica Uniwersytecka
+324,Zielona Gora,0,Ulica Chlodna
+325,Gniezno,6553,Ulica Golebia
+326,Pila,7,Ulica Balonowa
+327,Radom,1,Ulica Katowicka
+328,Czestochowa,6232,Ulica Torunska
+329,Zamosc,91,Ulica Towarowa
+330,Jaslo,14604,Ulica Widok
+331,Tarnow,55,Ulica Pomorska
+332,Poznan,8732,Ulica Stanislawa Moniuszki
+333,Gdybia,63949,Ulica Teatralna
+334,Zielona Gora,32050,Ulica Krolewska
+335,Legnica,35,Ulica Adama Mickiewicza
+336,Leszno,1,Ulica Karola Olszewskiego
+337,Gdansk,397,Ulica Piwna
+338,Rzesow,4,Ulica Uniwersytecka
+339,Szczecin,71,Ulica Krolewska
+340,Radom,54,Ulica 1 Maja
+341,Krosno,0,Ulica Uniwersytecka
+342,Leszno,4,Ulica Zachodnia
+343,Krakow,87564,Ulica Pocztowa
+344,Chelm,872,Ulica Jana Pawla II
+345,Wloclawek,70735,Ulica Widok
+346,Stargard,56,Ulica Jozefa Poniatowskiego
+347,Wloclawek,1,Ulica Hrubieszowska
+348,Legnica,59,Ulica Szewska
+349,Tarnow,2,Ulica Obornicka
+350,Kielce,220,Ulica Mostowa
+351,Jaslo,5665,Ulica Zamkowa
+352,Gniezno,1,Ulica Henryka Sienkiewicza
+353,Sopot,4586,Ulica Wladyslawa Reymonta
+354,Radom,643,Ulica Senatorska
+355,Gdansk,1460,Ulica Swietokrzyska
+356,Zakopane,839,Ulica sw. Ducha
+357,Tarnow,1432,Ulica Oswiecimska
+358,Gdybia,76,Ulica Adama Mickiewicza
+359,Zakopane,90,Ulica Farna
+360,Gdybia,514,Ulica Dworcowa
+361,Przemysl,83332,Ulica Juliusza Slowackiego
+362,Biala Podlasa,7,Ulica Torunska
+363,Wloclawek,1210,Ulica 3 Maja
+364,Zielona Gora,05858,Ulica 1 Maja
+365,Rzesow,8,Ulica Piotra Skargi
+366,Jaslo,94486,Ulica Legionow
+367,Leszno,347,Ulica Zytnia
+368,Czestochowa,64923,Ulica Okopowa
+369,Zielona Gora,3,Ulica Swietokrzyska
+370,Chelm,023,Ulica Piekna
+371,Gdybia,7,Ulica Stanislawa Moniuszki
+372,Wroclaw,609,Ulica Grodzka
+373,Nowy Sacz,76296,Ulica Bielska
+374,Gdybia,1920,Ulica Kolejowa
+375,Katowice,966,Ulica Stanislawa Staszica
+376,Koszalin,3291,Ulica Janusza Korczaka
+377,Kalisz,4660,Ulica Jozefa Pilsudskiego
+378,Legnica,4845,Ulica Pomorska
+379,Przemysl,9446,Aleja Solidarnosci
+380,Przemysl,3,Ulica Wawelska
+381,Stargard,00335,Ulica Zwyciestwa
+382,Legnica,3,Ulica Prudnicka
+383,Szczecin,9432,Ulica Zytnia
+384,Lublin,3,Ulica Mlynska
+385,Radom,857,Ulica Stefana Czarnieckiego
+386,Gdansk,58477,Ulica Wawelska
+387,Kielce,83,Ulica Targowa
+388,Lodz,685,Ulica Wincentego Janasa
+389,Lublin,9598,Ulica Wolnosci
+390,Leszno,08,Ulica Gornoslaska
+391,Krosno,8398,Ulica Mostowa
+392,Tarnow,41,Ulica Bernardynska
+393,Sopot,421,Ulica Pocztowa
+394,Kielce,5347,Ulica Mlynska
+395,Leszno,6989,Ulica Krakowska
+396,Krakow,44,Ulica Zwyciestwa
+397,Olsztyn,68756,Ulica Francuska
+398,Poznan,792,Ulica Niestachowska
+399,Tarnow,1554,Ulica Kolejowa
+400,Koszalin,1,Aleja Wolnosci
+401,Pila,64403,Ulica Zwyciestwa
+402,Poznan,7062,Ulica Kijowska
+403,Olsztyn,950,Ulica Zlota
+404,Gdansk,96807,Ulica Hetmanska
+405,Bielski-Biala,4,Ulica Gdanska
+406,Koszalin,02470,Ulica Jana Kasprowicza
+407,Czestochowa,3067,Ulica Jana z Kolna
+408,Bielski-Biala,1836,Ulica Stefana Wyszynskiego
+409,Kielce,1884,Ulica Senatorska
+410,Lodz,7,Ulica Beskidzka
+411,Sandomierz,171,Ulica Stanislawa Malachowskiego
+412,Bialystok,142,Ulica Gornoslaska
+413,Gniezno,88166,Ulica Krakowska
+414,Czestochowa,1639,Aleja Legionow
+415,Lublin,086,Ulica Karmelicka
+416,Krosno,31,Ulica Chorzowska
+417,Biala Podlasa,4,Ulica Gdanska
+418,Pila,3,Ulica Karola Swierczewskiego
+419,Wloclawek,58,Ulica Farna
+420,Zamosc,5969,Ulica Ciasna
+421,Katowice,650,Ulica Kazimierza Pulaskiego
+422,Kielce,5410,Ulica Stefana Wyszynskiego
+423,Olsztyn,97224,Ulica Niestachowska
+424,Koszalin,96,Ulica Bracka
+425,Krosno,7,Ulica Mariacka
+426,Czestochowa,2649,Ulica Wincentego Janasa
+427,Pila,565,Ulica Kolejowa
+428,Krosno,9911,Ulica Zwyciestwa
+429,Gorzow Wielkopolski,15121,Ulica Armii Krajowej
+430,Legnica,36,Ulica Hallera
+431,Rzesow,83987,Ulica Stefana Zeromskiego
+432,Zamosc,5,Ulica Zamkowa
+433,Kalisz,8511,Ulica Jana z Kolna
+434,Gniezno,482,Ulica Nowa
+435,Legnica,126,Ulica Piwna
+436,Tomaszow Mazowiecki,2,Ulica Brzeska
+437,Wloclawek,448,Ulica Sandomierska
+438,Zakopane,59,Ulica Szpitalna
+439,Konin,520,Aleja Wolnosci
+440,Tarnow,56375,Ulica Krucza
+441,Olsztyn,19207,Ulica Henryka Sienkiewicza
+442,Krakow,2,Ulica Brzeska
+443,Radom,8100,Ulica Legionow
+444,Radom,05768,Ulica Grunwaldzka
+445,Sopot,128,Ulica Zytnia
+446,Zielona Gora,01,Ulica Wita Stwosza
+447,Gdybia,60,Ulica Jagiellonska
+448,Nowy Sacz,2,Ulica Jana Kilinskiego
+449,Krakow,767,Ulica Torunska
+450,Chelm,748,Ulica Balonowa
+451,Gniezno,57219,Ulica Stefana Starzynskiego
+452,Legnica,8421,Ulica Mikolaja Reja
+453,Szczecin,0640,Ulica Warszawska
+454,Poznan,0429,Ulica Chlodna
+455,Rzesow,07402,Ulica Obornicka
+456,Stargard,59,Ulica Jana Pawla II
+457,Gorzow Wielkopolski,85,Ulica Szpitalna
+458,Legnica,0545,Ulica sw. Jana
+459,Wroclaw,985,Ulica Beskidzka
+460,Nowy Sacz,233,Ulica Bozego Ciala
+461,Kielce,2094,Aleja Legionow
+462,Leszno,62,Ulica Garbarska
+463,Plock,3273,Ulica Bohaterow Monte Cassino
+464,Leszno,5,Ulica Lwowska
+465,Stargard,172,Ulica Siemianowicka
+466,Sandomierz,4814,Ulica Lipowa
+467,Stargard,828,Ulica Hetmanska
+468,Bielski-Biala,5614,Ulica Torunska
+469,Sopot,0341,Ulica Chlodna
+470,Czestochowa,1,Ulica Zeglarska
+471,Rzesow,6604,Ulica Jozefa Poniatowskiego
+472,Kalisz,8,Ulica Bielska
+473,Lodz,266,Ulica Stefana Czarnieckiego
+474,Sopot,69323,Ulica Zamkowa
+475,Wroclaw,014,Ulica Browarna
+476,Wieliczka,1,Ulica Czestochowska
+477,Plock,9437,Ulica Mariacka
+478,Wieliczka,08620,Ulica sw. Jana
+479,Jaslo,3,Ulica Ogrodowa
+480,Katowice,52620,Ulica Gdanska
+481,Radom,5,Ulica Boleslawa Prusa
+482,Gorzow Wielkopolski,36,Ulica Henryka Sienkiewicza
+483,Zakopane,39,Ulica Wiejska
+484,Stargard,6,Ulica Stefana Wyszynskiego
+485,Krosno,11,Ulica Swietego Idziego
+486,Tomaszow Mazowiecki,484,Ulica Fabryczna
+487,Kalisz,0893,Ulica Pulawska
+488,Koszalin,14060,Ulica Teatralna
+489,Plock,6,Ulica Bytomska
+490,Bialystok,3,Ulica Franciszkanska
+491,Pila,13119,Ulica Jozefa Bema
+492,Stargard,694,Ulica Wawelska
+493,Kielce,81,Ulica Chorzowska
+494,Rzesow,96,Ulica 3 Maja
+495,Krakow,04708,Ulica Balonowa
+496,Szczecin,9,Ulica Czestochowska
+497,Bielski-Biala,946,Ulica Poznanska
+498,Chelm,5112,Ulica Fabryczna
+499,Warszawa,26572,Ulica Fabryczna
+500,Nowy Sacz,0,Ulica Senatorska
+501,Zakopane,57,Ulica Polnocna
+502,Poznan,39225,Ulica Dworcowa
+503,Kielce,301,Ulica Karola Swierczewskiego
+504,Stargard,2653,Ulica Gdanska
+505,Gdybia,55703,Ulica Warszawska
+506,Kielce,7,Ulica Ciasna
+507,Plock,1,Ulica Zachodnia
+508,Warszawa,6,Ulica Szeroka
+509,Gniezno,2113,Ulica Adama Mickiewicza
+510,Katowice,53815,Ulica Jozefa Pilsudskiego
+511,Tarnow,711,Ulica Walowa
+512,Warszawa,153,Ulica Stefana Starzynskiego
+513,Olsztyn,36,Ulica Bernardynska
+514,Gdansk,3241,Ulica Jana Henryka Dabrowskiego
+515,Szczecin,05,Ulica Krolewska
+516,Gniezno,58,Ulica Jezuicka
+517,Zakopane,681,Ulica Sandomierska
+518,Bielski-Biala,67,Ulica Krolowej Jadwigi
+519,Wloclawek,1791,Ulica Stanislawa Staszica
+520,Pila,0498,Ulica Stefana Starzynskiego
+521,Konin,80,Ulica Mikolowska
+522,Wloclawek,56,Ulica Uniwersytecka
+523,Jaslo,90,Ulica Lakowa
+524,Katowice,69,Ulica Mlynska
+525,Zakopane,1682,Ulica Krucza
+526,Gorzow Wielkopolski,6,Ulica Karmelicka
+527,Chelm,11821,Ulica Mlynska
+528,Radom,3,Ulica sw. Ducha
+529,Rzesow,19360,Ulica Mikolaja Reja
+530,Czestochowa,89,Ulica Stefana Starzynskiego
+531,Warszawa,357,Ulica sw. Jana
+532,Sandomierz,6,Ulica Wincentego Witosa
+533,Plock,6,Ulica Zwierzyniecka
+534,Lublin,62879,Ulica Fryderyka Chopina
+535,Poznan,83,Ulica Bohaterow Monte Cassino
+536,Bielski-Biala,68026,Ulica Wincentego Witosa
+537,Lodz,49368,Ulica Opolska
+538,Legnica,989,Ulica Bohaterow Monte Cassino
+539,Nowy Sacz,76,Ulica Gdanska
+540,Pila,9,Ulica Pocztowa
+541,Szczecin,74676,Ulica Opolska
+542,Stargard,1,Ulica Lakowa
+543,Wloclawek,7913,Ulica Boleslawa Limanowskiego
+544,Kielce,77,Ulica Jana III Sobieskiego
+545,Chelm,050,Ulica Oswiecimska
+546,Lodz,26973,Ulica Szpitalna
+547,Warszawa,9,Ulica Gornoslaska
+548,Gdybia,29,Ulica Kijowska
+549,Sopot,436,Ulica Wolnosci
+550,Tarnow,81,Ulica Hetmanska
+551,Konin,1090,Ulica ks. Jerzego Popieluszki
+552,Bielski-Biala,98947,Ulica Kanonia
+553,Lodz,4,Ulica Lipowa
+554,Konin,52769,Ulica Zamkowa
+555,Gniezno,01243,Ulica Armii Krajowej
+556,Krosno,26595,Ulica Kazimierza Pulaskiego
+557,Zakopane,878,Ulica Bozego Ciala
+558,Bialystok,3,Ulica Wincentego Janasa
+559,Leszno,993,Ulica Klasztorna
+560,Tomaszow Mazowiecki,07067,Ulica Krolewska
+561,Krosno,92,Ulica Wroclawska
+562,Stargard,163,Ulica Mikolaja Reja
+563,Olsztyn,5246,Ulica Lubelska
+564,Wloclawek,74,Ulica Teatralna
+565,Chelm,261,Ulica Henryka Sienkiewicza
+566,Chelm,9,Ulica Prudnicka
+567,Radom,600,Ulica Jacka Malczewskiego
+568,Zielona Gora,99,Ulica Francuska
+569,Koszalin,22719,Ulica Widok
+570,Leszno,7585,Ulica Browarna
+571,Olsztyn,86,Ulica Jozefa Pilsudskiego
+572,Legnica,55,Ulica Balonowa
+573,Zakopane,71,Ulica Jacka Malczewskiego
+574,Czestochowa,8,Ulica Chorzowska
+575,Zielona Gora,7925,Ulica Wincentego Janasa
+576,Krosno,40332,Ulica Szpitalna
+577,Krosno,36,Ulica Zwyciestwa
+578,Zielona Gora,5,Ulica Prudnicka
+579,Kielce,37,Ulica Garncarska
+580,Sandomierz,55533,Ulica Artura Grottgera
+581,Chelm,3732,Ulica Bozego Ciala
+582,Bielski-Biala,13768,Ulica Tadeusza Kosciuszki
+583,Lodz,4135,Ulica Jagiellonska
+584,Tomaszow Mazowiecki,08,Aleja Solidarnosci
+585,Lublin,7,Ulica Kijowska
+586,Sopot,00,Ulica Lipowa
+587,Konin,3127,Ulica Kanonia
+588,Poznan,12478,Ulica Mariacka
+589,Zielona Gora,7072,Ulica Chlodna
+590,Gdybia,557,Ulica Wladyslawa Sikorskiego
+591,Stargard,93451,Ulica Tadeusza Kosciuszki
+592,Katowice,51,Ulica Klasztorna
+593,Olsztyn,53,Ulica Zytnia
+594,Legnica,02,Ulica Wladyslawa Reymonta
+595,Gdansk,03,Ulica Kolejowa
+596,Gdybia,87674,Ulica Armii Krajowej
+597,Radom,251,Ulica Brzeska
+598,Biala Podlasa,51217,Ulica Rwanska
+599,Czestochowa,21,Ulica Lodzka
+600,Zakopane,915,Ulica Obornicka
+601,Tarnow,22,Ulica Tamka
+602,Kielce,31,Ulica Mostowa
+603,Szczecin,6,Ulica Chmielna
+604,Zakopane,851,Ulica Zeglarska
+605,Szczecin,911,Ulica Farna
+606,Wloclawek,00,Ulica Dluga
+607,Sandomierz,7,Ulica Szewska
+608,Gdansk,38047,Ulica Adama Mickiewicza
+609,Tarnow,9517,Ulica Lipowa
+610,Gdansk,1580,Ulica Rycerska
+611,Bielski-Biala,40881,Ulica Chlodna
+612,Lublin,96,Ulica Rajska
+613,Przemysl,53473,Ulica Wolnosci
+614,Konin,844,Ulica Rycerska
+615,Kielce,1,Ulica Jana Henryka Dabrowskiego
+616,Sopot,65152,Ulica Gdanska
+617,Gdansk,80544,Aleja Niepodleglosci
+618,Czestochowa,203,Ulica Jozefa Pilsudskiego
+619,Poznan,12538,Ulica Garbarska
+620,Tomaszow Mazowiecki,4,Ulica Zlota
+621,Katowice,05442,Ulica Juliusza Slowackiego
+622,Lublin,1,Ulica Jana Kasprowicza
+623,Tarnow,86,Ulica Szczecinska
+624,Tarnow,76,Ulica Ogrodowa
+625,Biala Podlasa,852,Ulica Franciszkanska
+626,Kalisz,7,Ulica Niestachowska
+627,Gorzow Wielkopolski,43,Ulica Nowa
+628,Chelm,548,Ulica Zamkowa
+629,Stargard,82,Ulica Obozowa
+630,Nowy Sacz,6,Ulica Bartosza Glowackiego
+631,Stargard,4597,Ulica Hrubieszowska
+632,Sandomierz,94665,Ulica Szpitalna
+633,Zamosc,428,Ulica Fryderyka Chopina
+634,Biala Podlasa,7,Ulica Francuska
+635,Wroclaw,61525,Ulica Bankowa
+636,Wroclaw,4,Ulica Rwanska
+637,Sopot,68983,Ulica Bozego Ciala
+638,Chelm,5,Ulica Aleksandra Fredry
+639,Olsztyn,04,Ulica Wiejska
+640,Wroclaw,358,Ulica Bernardynska
+641,Stargard,2362,Ulica Kijowska
+642,Sopot,492,Ulica Krolowej Jadwigi
+643,Tarnow,972,Ulica Prudnicka
+644,Tarnow,72245,Ulica Tadeusza Kosciuszki
+645,Sopot,3277,Ulica Armii Krajowej
+646,Gniezno,92626,Ulica Jozefa Pilsudskiego
+647,Nowy Sacz,28,Ulica Miodowa
+648,Lublin,385,Ulica Hetmanska
+649,Czestochowa,138,Ulica Strzelecka
+650,Sandomierz,66,Ulica Piekarska
+651,Zielona Gora,48194,Ulica Bartosza Glowackiego
+652,Sandomierz,55,Ulica Legionow
+653,Krosno,62,Ulica Lechicka
+654,Rzesow,39,Ulica Teatralna
+655,Stargard,5972,Ulica Jozefa Poniatowskiego
+656,Krosno,94387,Ulica Stanislawa Staszica
+657,Pila,05638,Ulica Francuska
+658,Warszawa,09200,Ulica Lodzka
+659,Przemysl,81787,Ulica Swietojanska
+660,Jaslo,5,Ulica Wroclawska
+661,Tarnow,4659,Aleja Wolnosci
+662,Gdybia,312,Ulica Mikolowska
+663,Gniezno,7,Ulica Graniczna
+664,Szczecin,16,Ulica Zeglarska
+665,Gniezno,78540,Ulica Garbarska
+666,Wloclawek,62,Ulica Armii Krajowej
+667,Kielce,3024,Ulica Krakowska
+668,Gniezno,487,Ulica Karola Swierczewskiego
+669,Lublin,5399,Ulica Jagiellonska
+670,Krosno,91,Ulica 1 Maja
+671,Lodz,93,Ulica Bohaterow Monte Cassino
+672,Bialystok,45,Ulica Opolska
+673,Leszno,5426,Ulica Tamka
+674,Krosno,812,Ulica Niestachowska
+675,Zielona Gora,682,Ulica Aleksandra Fredry
+676,Radom,0868,Ulica Poznanska
+677,Radom,8258,Ulica Jana Henryka Dabrowskiego
+678,Sandomierz,3565,Ulica Warszawska
+679,Gdansk,9,Ulica Balonowa
+680,Sopot,042,Ulica Stefana Zeromskiego
+681,Chelm,88571,Ulica Florianska
+682,Olsztyn,6950,Aleja Niepodleglosci
+683,Gniezno,75278,Ulica Kolejowa
+684,Krosno,627,Ulica Mariacka
+685,Bielski-Biala,8,Ulica Niestachowska
+686,Chelm,64152,Aleja Legionow
+687,Czestochowa,885,Ulica 1 Maja
+688,Rzesow,0487,Ulica Kanonia
+689,Warszawa,4,Ulica sw. Barbary
+690,Lodz,89,Ulica Wroclawska
+691,Koszalin,98759,Ulica Jagiellonska
+692,Rzesow,7,Ulica Juliusza Slowackiego
+693,Kalisz,6,Ulica Juliusza Slowackiego
+694,Bialystok,016,Ulica Oswiecimska
+695,Rzesow,11,Ulica Karmelicka
+696,Kalisz,085,Ulica Pocztowa
+697,Krosno,5,Ulica Pomorska
+698,Koszalin,1,Ulica sw. Jana
+699,Konin,80230,Ulica Mikolaja Kopernika
+700,Czestochowa,8017,Ulica Boleslawa Chrobrego
+701,Stargard,372,Ulica Widok
+702,Koszalin,62340,Ulica Rycerska
+703,Biala Podlasa,92,Ulica Raclawicka
+704,Nowy Sacz,195,Ulica Wroclawska
+705,Lodz,877,Ulica Pomorska
+706,Bialystok,1789,Ulica Jana III Sobieskiego
+707,Legnica,25276,Ulica Karola Olszewskiego
+708,Olsztyn,8,Ulica Jana III Sobieskiego
+709,Rzesow,9110,Ulica Bielska
+710,Bialystok,362,Ulica Chorzowska
+711,Przemysl,880,Ulica Jana Henryka Dabrowskiego
+712,Wloclawek,36813,Ulica Aleksandra Fredry
+713,Sopot,7,Ulica Juliana Tuwima
+714,Nowy Sacz,21687,Ulica Jana III Sobieskiego
+715,Lublin,652,Ulica Karmelicka
+716,Sopot,4816,Ulica Wincentego Witosa
+717,Poznan,5,Ulica Gdanska
+718,Kielce,7,Ulica Wita Stwosza
+719,Zakopane,7822,Ulica Torunska
+720,Katowice,556,Ulica Boleslawa Chrobrego
+721,Gdansk,99,Ulica Oswiecimska
+722,Koszalin,7,Aleja Solidarnosci
+723,Plock,4,Ulica Hallera
+724,Czestochowa,5,Ulica Starowiejska
+725,Zamosc,236,Ulica Jozefa Poniatowskiego
+726,Przemysl,997,Ulica Teatralna
+727,Bialystok,7,Ulica Jana III Sobieskiego
+728,Leszno,015,Ulica Ciasna
+729,Zakopane,8458,Ulica Mariacka
+730,Wieliczka,313,Ulica Wawelska
+731,Tarnow,392,Ulica Hetmanska
+732,Bielski-Biala,8,Ulica Zachodnia
+733,Katowice,0142,Ulica Bytomska
+734,Radom,951,Ulica Bernardynska
+735,Gdybia,1,Ulica Zytnia
+736,Chelm,0,Ulica Zytnia
+737,Biala Podlasa,28449,Ulica Tadeusza Kosciuszki
+738,Pila,6,Ulica Bernardynska
+739,Gdybia,49,Ulica Pocztowa
+740,Bielski-Biala,218,Ulica Zwierzyniecka
+741,Sandomierz,05599,Ulica Wladyslawa Sikorskiego
+742,Krakow,47,Ulica Piotra Skargi
+743,Czestochowa,0006,Ulica Swietego Idziego
+744,Bialystok,5,Ulica Chlodna
+745,Sandomierz,212,Ulica Stefana Zeromskiego
+746,Bialystok,6,Ulica Zamkowa
+747,Leszno,176,Ulica Chlodna
+748,Konin,893,Ulica Opolska
+749,Wieliczka,5,Ulica Wita Stwosza
+750,Chelm,08,Ulica Kijowska
+751,Konin,6,Ulica Pomorska
+752,Wieliczka,1,Ulica Krolewska
+753,Zielona Gora,9,Ulica Wiejska
+754,Kalisz,4,Ulica Beskidzka
+755,Warszawa,637,Ulica Graniczna
+756,Olsztyn,1,Ulica Sienna
+757,Stargard,62997,Ulica Rwanska
+758,Kalisz,53766,Ulica Rajska
+759,Poznan,84,Ulica Lubelska
+760,Biala Podlasa,3,Ulica Stefana Czarnieckiego
+761,Zielona Gora,64,Ulica Zeglarska
+762,Bialystok,2741,Ulica Juliusza Slowackiego
+763,Gdybia,7,Ulica Obozowa
+764,Koszalin,0,Ulica Swietokrzyska
+765,Gorzow Wielkopolski,17750,Ulica Krucza
+766,Gdybia,99848,Ulica Farna
+767,Tomaszow Mazowiecki,5,Ulica Wolnosci
+768,Szczecin,7061,Ulica Szczecinska
+769,Koszalin,561,Ulica Karola Swierczewskiego
+770,Gdybia,71486,Aleja Solidarnosci
+771,Chelm,81,Ulica Niestachowska
+772,Konin,04,Ulica Rycerska
+773,Wieliczka,02858,Ulica Senatorska
+774,Wloclawek,30,Ulica Pulawska
+775,Legnica,82162,Ulica Boleslawa Limanowskiego
+776,Rzesow,0,Ulica Zamkowa
+777,Warszawa,04,Ulica Teatralna
+778,Jaslo,0,Ulica Legionow
+779,Wroclaw,78,Ulica Opolska
+780,Stargard,5,Ulica Zachodnia
+781,Biala Podlasa,01,Ulica Ciasna
+782,Katowice,97,Ulica Krolewska
+783,Czestochowa,92,Ulica 3 Maja
+784,Wieliczka,1,Ulica Stefana Wyszynskiego
+785,Wloclawek,2,Ulica Walowa
+786,Tarnow,3124,Ulica Polnocna
+787,Pila,30977,Ulica Rycerska
+788,Czestochowa,2,Ulica Obozowa
+789,Koszalin,89,Ulica Wojska Polskiego
+790,Rzesow,42392,Ulica Pulawska
+791,Poznan,70,Ulica Zamkowa
+792,Kalisz,142,Ulica Browarna
+793,Chelm,4729,Ulica Mikolowska
+794,Konin,80363,Ulica Krolewska
+795,Wroclaw,97,Ulica Uniwersytecka
+796,Lublin,56650,Ulica Zlota
+797,Biala Podlasa,8915,Ulica Jana Kilinskiego
+798,Zamosc,6189,Ulica Starowiejska
+799,Wroclaw,60,Ulica Rycerska
+800,Konin,23950,Ulica Tadeusza Kosciuszki
+801,Przemysl,18,Ulica Lodzka
+802,Czestochowa,7,Ulica Zeglarska
+803,Katowice,2,Ulica Hetmanska
+804,Wloclawek,0565,Ulica Opolska
+805,Lodz,07,Ulica Czestochowska
+806,Gniezno,9,Ulica Zwyciestwa
+807,Pila,58,Ulica Lakowa
+808,Gdybia,82350,Ulica Krucza
+809,Stargard,1452,Ulica Pijarska
+810,Sopot,70,Ulica Jana z Kolna
+811,Kielce,3594,Ulica ks. Jerzego Popieluszki
+812,Krakow,232,Ulica Obozowa
+813,Wloclawek,852,Ulica Zeglarska
+814,Bielski-Biala,6,Ulica Krupnicza
+815,Stargard,02330,Ulica Uniwersytecka
+816,Zielona Gora,35,Ulica Lubelska
+817,Tarnow,3,Ulica Wladyslawa Sikorskiego
+818,Krakow,2,Ulica Artura Grottgera
+819,Kielce,2750,Ulica Zamkowa
+820,Lodz,5271,Ulica Krolewska
+821,Radom,7,Ulica Czestochowska
+822,Legnica,38728,Aleja Legionow
+823,Stargard,035,Ulica Targowa
+824,Sopot,3418,Ulica Jozefa Pilsudskiego
+825,Radom,7356,Ulica Jozefa Poniatowskiego
+826,Zamosc,25663,Ulica Sienna
+827,Krosno,0280,Ulica Kijowska
+828,Konin,226,Ulica Gornoslaska
+829,Gorzow Wielkopolski,2,Ulica Szczecinska
+830,Gdansk,0,Ulica Bozego Ciala
+831,Zamosc,2,Ulica Farna
+832,Nowy Sacz,082,Ulica Adama Mickiewicza
+833,Gniezno,640,Ulica Kamienna
+834,Sandomierz,314,Ulica Raclawicka
+835,Czestochowa,6526,Ulica Uniwersytecka
+836,Tarnow,2359,Ulica Karola Olszewskiego
+837,Chelm,3,Aleja Wolnosci
+838,Plock,32672,Ulica Stefana Czarnieckiego
+839,Jaslo,55,Ulica Jezuicka
+840,Zamosc,960,Ulica Lubelska
+841,Legnica,2303,Ulica Starowiejska
+842,Chelm,49,Ulica Starowiejska
+843,Gdansk,8,Ulica Krucza
+844,Tarnow,7285,Ulica Ciasna
+845,Koszalin,656,Ulica Hallera
+846,Szczecin,61,Ulica Jagiellonska
+847,Kalisz,4,Ulica Karmelicka
+848,Gdansk,732,Ulica Jana Pawla II
+849,Gorzow Wielkopolski,62,Ulica Kazimierza Pulaskiego
+850,Bialystok,7034,Ulica Prudnicka
+851,Sandomierz,4,Ulica Mikolaja Reja
+852,Wieliczka,6,Ulica Fryderyka Chopina
+853,Leszno,3,Ulica Raclawicka
+854,Tomaszow Mazowiecki,0085,Ulica Juliana Tuwima
+855,Krakow,140,Ulica Niestachowska
+856,Czestochowa,614,Ulica Gabriela Narutowicza
+857,Gorzow Wielkopolski,80,Ulica Bielska
+858,Wroclaw,1939,Ulica Uniwersytecka
+859,Przemysl,24901,Ulica sw. Barbary
+860,Plock,476,Ulica Mlynska
+861,Tomaszow Mazowiecki,4,Ulica Krupnicza
+862,Krosno,3841,Ulica Jozefa Pilsudskiego
+863,Gdansk,65,Ulica Jagiellonska
+864,Nowy Sacz,213,Ulica Beskidzka
+865,Gorzow Wielkopolski,925,Ulica Okopowa
+866,Stargard,66,Ulica Tadeusza Kosciuszki
+867,Koszalin,482,Ulica Piwna
+868,Lublin,362,Ulica Katedralna
+869,Gorzow Wielkopolski,3439,Ulica Boleslawa Chrobrego
+870,Lublin,9242,Ulica Balonowa
+871,Chelm,6,Ulica Pijarska
+872,Jaslo,31417,Ulica Wladyslawa Sikorskiego
+873,Poznan,099,Ulica Beskidzka
+874,Kielce,43,Ulica Gnieznienska
+875,Lodz,30,Ulica Bialoskornicza
+876,Jaslo,112,Ulica gen. Wladyslawa Andersa
+877,Gniezno,301,Ulica Bracka
+878,Tarnow,5090,Ulica sw. Barbary
+879,Gorzow Wielkopolski,332,Aleja Legionow
+880,Kielce,685,Ulica Oswiecimska
+881,Tarnow,535,Ulica Miodowa
+882,Wloclawek,6502,Ulica Lodzka
+883,Szczecin,0399,Ulica Klasztorna
+884,Olsztyn,427,Ulica Chmielna
+885,Krakow,20832,Ulica Jana Pawla II
+886,Koszalin,3,Ulica Balonowa
+887,Krakow,454,Ulica Karola Olszewskiego
+888,Chelm,089,Ulica Bytomska
+889,Radom,34,Ulica Szpitalna
+890,Olsztyn,38529,Ulica Wita Stwosza
+891,Gorzow Wielkopolski,9,Ulica Jozefa Bema
+892,Wroclaw,8696,Aleja Solidarnosci
+893,Warszawa,23714,Ulica Niestachowska
+894,Poznan,1,Ulica Bankowa
+895,Leszno,1428,Ulica Lodzka
+896,Kalisz,70,Ulica Wojska Polskiego
+897,Radom,3,Ulica Opolska
+898,Gdansk,1,Ulica Krolowej Jadwigi
+899,Lublin,073,Ulica Grunwaldzka
+900,Kalisz,235,Ulica Krolewska
+901,Kielce,0,Ulica Targowa
+902,Konin,30298,Ulica Mikolowska
+903,Wieliczka,5,Ulica sw. Barbary
+904,Tomaszow Mazowiecki,77,Ulica Juliusza Slowackiego
+905,Sandomierz,7,Ulica Prudnicka
+906,Biala Podlasa,0,Ulica Rwanska
+907,Gdybia,966,Ulica Jana III Sobieskiego
+908,Jaslo,06,Ulica Lodzka
+909,Chelm,677,Ulica Bernardynska
+910,Krakow,2,Ulica Boleslawa Limanowskiego
+911,Wloclawek,548,Ulica Walowa
+912,Jaslo,2,Ulica Sienna
+913,Wloclawek,0,Ulica Opolska
+914,Rzesow,70753,Ulica Swietokrzyska
+915,Poznan,42,Ulica Bozego Ciala
+916,Leszno,760,Ulica Obozowa
+917,Kielce,5,Ulica Obozowa
+918,Pila,76,Ulica Kijowska
+919,Kielce,55,Ulica sw. Jana
+920,Pila,96075,Ulica Graniczna
+921,Krakow,777,Ulica Opolska
+922,Chelm,25382,Ulica Franciszkanska
+923,Tomaszow Mazowiecki,3631,Ulica Czestochowska
+924,Rzesow,4168,Ulica Jana III Sobieskiego
+925,Nowy Sacz,89584,Ulica Boleslawa Chrobrego
+926,Tomaszow Mazowiecki,38109,Ulica Hrubieszowska
+927,Sandomierz,82610,Ulica Wladyslawa Sikorskiego
+928,Zakopane,25,Ulica Mikolaja Reja
+929,Radom,94,Ulica Graniczna
+930,Gniezno,80828,Ulica Mikolowska
+931,Bialystok,855,Ulica Grodzka
+932,Gniezno,1584,Ulica Zytnia
+933,Zamosc,71386,Ulica Bartosza Glowackiego
+934,Tomaszow Mazowiecki,0603,Ulica Rwanska
+935,Olsztyn,87820,Ulica Bernardynska
+936,Sopot,302,Ulica Janusza Korczaka
+937,Koszalin,4837,Ulica Lubelska
+938,Bielski-Biala,310,Ulica Janusza Korczaka
+939,Lodz,76980,Ulica Stefana Starzynskiego
+940,Jaslo,665,Ulica Bielska
+941,Bialystok,802,Ulica Janusza Korczaka
+942,Szczecin,71,Ulica gen. Wladyslawa Andersa
+943,Kielce,43159,Ulica Dluga
+944,Leszno,279,Ulica Henryka Sienkiewicza
+945,Jaslo,8976,Ulica Karola Swierczewskiego
+946,Rzesow,8593,Ulica Krakowska
+947,Gdansk,697,Ulica Balonowa
+948,Lublin,340,Ulica Jana Kilinskiego
+949,Sopot,9,Ulica Jana Kilinskiego
+950,Rzesow,857,Ulica Piekna
+951,Stargard,56125,Ulica Wawelska
+952,Legnica,95,Ulica Mikolaja Reja
+953,Wloclawek,86,Ulica Lwowska
+954,Szczecin,0315,Aleja Wolnosci
+955,Zielona Gora,98236,Ulica Bernardynska
+956,Konin,906,Ulica Klasztorna
+957,Kalisz,7885,Ulica Zachodnia
+958,Sandomierz,2056,Ulica Fryderyka Chopina
+959,Bielski-Biala,6,Ulica Kanonia
+960,Plock,0,Ulica Chmielna
+961,Tarnow,8258,Ulica Farna
+962,Bialystok,71288,Ulica Wroclawska
+963,Radom,8918,Ulica Grodzka
+964,Szczecin,37,Ulica Jozefa Pilsudskiego
+965,Gdybia,2000,Ulica Stefana Starzynskiego
+966,Lodz,05015,Ulica Graniczna
+967,Warszawa,4149,Ulica Pocztowa
+968,Katowice,63,Ulica Bozego Ciala
+969,Poznan,98,Ulica Zlota
+970,Sandomierz,604,Aleja Niepodleglosci
+971,Jaslo,67,Ulica Garncarska
+972,Lodz,00,Ulica Jana Henryka Dabrowskiego
+973,Radom,6579,Ulica Grunwaldzka
+974,Zakopane,956,Ulica Aleksandra Fredry
+975,Chelm,834,Ulica Jacka Malczewskiego
+976,Przemysl,725,Ulica Jacka Malczewskiego
+977,Gorzow Wielkopolski,9,Ulica Okopowa
+978,Olsztyn,853,Ulica Farna
+979,Gniezno,55,Ulica Garbarska
+980,Zamosc,2738,Ulica Oswiecimska
+981,Krosno,5056,Ulica Sandomierska
+982,Kielce,53912,Ulica Chorzowska
+983,Zielona Gora,65,Ulica Rwanska
+984,Zielona Gora,8,Ulica Dworcowa
+985,Lublin,9329,Ulica Stefana Wyszynskiego
+986,Tomaszow Mazowiecki,72,Aleja Wolnosci
+987,Legnica,1,Ulica Niestachowska
+988,Olsztyn,41676,Ulica Zamkowa
+989,Czestochowa,8935,Ulica Sandomierska
+990,Kalisz,8,Ulica Beskidzka
+991,Bielski-Biala,19776,Ulica Lodzka
+992,Pila,9,Ulica Mlynska
+993,Wloclawek,34,Ulica Opolska
+994,Katowice,2,Ulica Jagiellonska
+995,Wieliczka,57282,Ulica Andrzeja Struga
+996,Gniezno,1955,Ulica Rycerska
+997,Zielona Gora,843,Ulica Jana Kasprowicza
+998,Lodz,5926,Ulica Okopowa
+999,Przemysl,81431,Ulica Walowa
+1000,Chelm,41,Ulica Zwierzyniecka

@@ -1,0 +1,501 @@
+﻿opinion_id,comment,rating
+1,"Turtle, snake-necked",4
+2,"Owl, snowy",2
+3,"Owl, madagascar hawk",5
+4,"Puma, south american",3
+5,"Booby, blue-faced",1
+6,"Wallaroo, common",4
+7,"Stork, white-necked",3
+8,"Vulture, white-headed",1
+9,Tyrant flycatcher,5
+10,Woodrat (unidentified),4
+11,Eastern grey kangaroo,1
+12,"Shark, blue",3
+13,White-necked stork,5
+14,Trumpeter swan,1
+15,"Macaque, pig-tailed",3
+16,King cormorant,2
+17,Tree porcupine,5
+18,"Lemur, brown",2
+19,"Goldeneye, barrows",5
+20,"Heron, green",1
+21,Ringtail cat,4
+22,Osprey,1
+23,"Lizard, mexican beaded",2
+24,"Kiskadee, great",1
+25,Water moccasin,4
+26,"Heron, grey",2
+27,"Gull, kelp",1
+28,Red howler monkey,3
+29,Western spotted skunk,1
+30,Prairie falcon,5
+31,"Possum, ring-tailed",4
+32,African porcupine,2
+33,Prehensile-tailed porcupine,2
+34,Puma,4
+35,"Rattlesnake, dusky",3
+36,South African hedgehog,1
+37,"Wambenger, red-tailed",5
+38,"Gull, lava",1
+39,Silver-backed fox,3
+40,"Zebra, plains",5
+41,Dabchick,2
+42,Grison,5
+43,Tiger snake,2
+44,"Gull, silver",1
+45,Levaillant's barbet,5
+46,"Lorikeet, scaly-breasted",1
+47,Superb starling,4
+48,"Armadillo, common long-nosed",4
+49,"Eagle, golden",5
+50,"Squirrel, arctic ground",1
+51,Black-tailed tree creeper,4
+52,Stanley bustard,4
+53,Little blue penguin,1
+54,"Penguin, fairy",3
+55,"Vulture, lappet-faced",4
+56,"Zebra, common",5
+57,Comb duck,3
+58,"Heron, green",4
+59,Little grebe,4
+60,"Lizard, blue-tongued",2
+61,Purple grenadier,4
+62,Greylag goose,2
+63,"Sheep, american bighorn",2
+64,Rhesus macaque,5
+65,"Possum, common brushtail",2
+66,"Squirrel, european red",4
+67,"Cat, miner's",2
+68,Red-tailed wambenger,4
+69,Marabou stork,4
+70,Ocelot,5
+71,"Coatimundi, ring-tailed",4
+72,"Anteater, giant",5
+73,"Siskin, pine",5
+74,"Dolphin, common",4
+75,Flying fox (unidentified),1
+76,Wolf spider,3
+77,Brush-tailed phascogale,3
+78,Pine siskin,4
+79,Greater rhea,3
+80,"Puffin, horned",1
+81,Rose-ringed parakeet,3
+82,"Buffalo, wild water",3
+83,"Sparrow, house",4
+84,"Antechinus, brown",5
+85,Common seal,5
+86,"Lion, steller's sea",2
+87,Red-tailed cockatoo,4
+88,"Alligator, mississippi",5
+89,"Wapiti, elk,",3
+90,Civet cat,2
+91,"Squirrel, richardson's ground",3
+92,Azara's zorro,1
+93,"Robin, white-throated",4
+94,South American meadowlark (unidentified),2
+95,"Flicker, field",1
+96,Mandras tree shrew,2
+97,"Vulture, white-rumped",1
+98,Madagascar fruit bat,4
+99,"Bushbaby, large-eared",1
+100,"Rhea, greater",1
+101,Savanna baboon,4
+102,"Turtle, eastern box",5
+103,"Jackal, asiatic",2
+104,"Siskin, yellow-rumped",1
+105,Cottonmouth,5
+106,Currasow (unidentified),3
+107,Bleeding heart monkey,5
+108,Black spider monkey,1
+109,Indian mynah,3
+110,"Tortoise, galapagos",5
+111,Indian giant squirrel,4
+112,Violet-eared waxbill,5
+113,"Badger, european",2
+114,Western bearded dragon,4
+115,"Cobra, egyptian",4
+116,Brown lemur,4
+117,"Capuchin, weeper",4
+118,Bennett's wallaby,5
+119,"Egret, snowy",5
+120,Australian pelican,3
+121,Yellow-billed stork,5
+122,Blue-tongued skink,3
+123,"Lion, steller sea",4
+124,Emerald green tree boa,3
+125,"Cockatoo, long-billed",5
+126,"Egret, great",3
+127,African porcupine,2
+128,Black-collared barbet,3
+129,Bonnet macaque,5
+130,Lizard (unidentified),1
+131,"Gonolek, burchell's",2
+132,"Deer, spotted",3
+133,"Badger, european",1
+134,Egyptian vulture,3
+135,Common waterbuck,3
+136,Cape raven,4
+137,Bontebok,2
+138,"Parakeet, rose-ringed",4
+139,"Otter, african clawless",5
+140,Fairy penguin,5
+141,Spur-winged goose,1
+142,King cormorant,5
+143,Dama wallaby,2
+144,"Shark, blue",4
+145,Brazilian tapir,3
+146,"Gecko, ring-tailed",4
+147,Blue catfish,2
+148,"Squirrel, african bush",2
+149,"Baboon, yellow",3
+150,"Wombat, common",4
+151,Pale white-eye,5
+152,Ibex,1
+153,Campo flicker,2
+154,Little brown dove,2
+155,Crown of thorns starfish,1
+156,"Bear, sloth",3
+157,Brown lemur,3
+158,Striated heron,4
+159,Chimpanzee,5
+160,"Hartebeest, red",2
+161,"Fox, north american red",3
+162,"Owl, burrowing",3
+163,Slender-billed cockatoo,3
+164,"Plover, blacksmith",3
+165,"Ass, asiatic wild",3
+166,Sage grouse,3
+167,"Fox, blue",5
+168,American buffalo,3
+169,Magnificent frigate bird,4
+170,European spoonbill,5
+171,"Monkey, bleeding heart",2
+172,Barking gecko,4
+173,Monitor lizard (unidentified),1
+174,"Hornbill, red-billed",3
+175,"Pelican, australian",4
+176,Indian peacock,4
+177,"Armadillo, seven-banded",1
+178,Red-tailed wambenger,4
+179,"Antelope, four-horned",2
+180,"Alligator, american",1
+181,Pig-tailed macaque,4
+182,"Bandicoot, short-nosed",4
+183,Small-toothed palm civet,2
+184,"Capuchin, black-capped",1
+185,"Vulture, white-headed",5
+186,Eurasian red squirrel,4
+187,"Dolphin, striped",5
+188,African bush squirrel,1
+189,Woolly-necked stork,4
+190,"Bustard, denham's",3
+191,"Bettong, brush-tailed",5
+192,European spoonbill,5
+193,"Polecat, african",1
+194,Black rhinoceros,1
+195,Tasmanian devil,2
+196,"Kookaburra, laughing",1
+197,Common raccoon,1
+198,"White-eye, pale",1
+199,"Lion, african",3
+200,Brown brocket,4
+201,Native cat,3
+202,"Civet, common palm",3
+203,"Tortoise, desert",2
+204,Malleefowl,2
+205,Burchell's gonolek,5
+206,Old world fruit bat (unidentified),2
+207,Osprey,4
+208,Lappet-faced vulture,3
+209,Spectacled caiman,2
+210,"Turtle, eastern box",1
+211,Swallow (unidentified),4
+212,African jacana,3
+213,"Capuchin, white-fronted",5
+214,"Woodpecker, downy",4
+215,Raccoon dog,5
+216,"Bird, bare-faced go away",2
+217,"Dolphin, common",2
+218,"Skink, blue-tongued",5
+219,Yellow-throated sandgrouse,1
+220,Polar bear,1
+221,"Bird, secretary",5
+222,Masked booby,4
+223,Baleen whale,2
+224,"Dove, emerald-spotted wood",2
+225,White-browed sparrow weaver,4
+226,Groundhog,4
+227,Coqui partridge,3
+228,Gray duiker,3
+229,"Butterfly, canadian tiger swallowtail",2
+230,Goliath heron,4
+231,"Eagle, white-bellied sea",3
+232,"Magpie, australian",5
+233,Black rhinoceros,2
+234,Blue fox,2
+235,"Lemur, lesser mouse",4
+236,"Hawk, galapagos",2
+237,"Vulture, king",2
+238,"Vulture, white-headed",5
+239,"Francolin, swainson's",5
+240,"Nighthawk, common",5
+241,Frog (unidentified),1
+242,"Pintail, bahama",4
+243,"Buffalo, american",1
+244,Kafue flats lechwe,2
+245,"Screamer, crested",3
+246,Malay squirrel (unidentified),3
+247,Aardwolf,3
+248,Tropical buckeye butterfly,4
+249,Common seal,3
+250,Cottonmouth,4
+251,Egyptian viper,5
+252,Common wallaroo,5
+253,"Eagle, crowned",1
+254,Gerenuk,1
+255,"Kingfisher, pied",1
+256,Cheetah,3
+257,"Duck, blue",2
+258,"White-eye, cape",4
+259,"Skunk, western spotted",2
+260,Cape cobra,5
+261,Least chipmunk,1
+262,"Squirrel, arctic ground",1
+263,Campo flicker,4
+264,Fringe-eared oryx,3
+265,"Hedgehog, south african",4
+266,Giant otter,2
+267,"Macaque, rhesus",1
+268,Ringtail,2
+269,"Squirrel, nelson ground",1
+270,"Partridge, coqui",5
+271,"Kingfisher, pied",3
+272,"Monster, gila",4
+273,"Magpie, australian",5
+274,Sacred ibis,3
+275,"Macaw, blue and gold",4
+276,"Gecko, bent-toed",2
+277,"Heron, gray",2
+278,Tarantula,5
+279,Giraffe,1
+280,"Camel, dromedary",4
+281,Blesbok,4
+282,Numbat,4
+283,"Eagle, white-bellied sea",1
+284,Blue-breasted cordon bleu,4
+285,"Gonolek, burchell's",2
+286,King cormorant,5
+287,Brazilian otter,1
+288,Pacific gull,3
+289,Sociable weaver,2
+290,"Deer, swamp",4
+291,"Dove, galapagos",3
+292,"Fox, savanna",2
+293,"Bandicoot, short-nosed",1
+294,Cape wild cat,4
+295,Grey phalarope,2
+296,"Robin, white-throated",2
+297,"Monitor, two-banded",5
+298,"Owl, australian masked",4
+299,"Langur, hanuman",2
+300,"Spoonbill, white",1
+301,"Cat, long-tailed spotted",3
+302,"Screamer, crested",4
+303,"Peacock, blue",3
+304,"Pelican, brown",4
+305,Openbill stork,1
+306,Puma,3
+307,Thomson's gazelle,4
+308,"Duiker, gray",3
+309,Long-tailed spotted cat,1
+310,"Cormorant, little",4
+311,Red-knobbed coot,2
+312,Yellow mongoose,4
+313,"Duck, white-faced whistling",2
+314,White stork,3
+315,Long-billed corella,2
+316,Wild turkey,4
+317,"Wagtail, african pied",5
+318,Sarus crane,3
+319,Red-tailed cockatoo,3
+320,Common genet,2
+321,Black-footed ferret,1
+322,"Glider, sugar",1
+323,"Falcon, peregrine",4
+324,African wild cat,5
+325,"Lion, mountain",4
+326,Crowned hawk-eagle,2
+327,Turtle (unidentified),3
+328,Verreaux's sifaka,5
+329,Yellow-billed hornbill,4
+330,"Snake, green vine",5
+331,"Hare, arctic",3
+332,"Goose, canada",3
+333,"Heron, striated",4
+334,"Stork, yellow-billed",2
+335,Common dolphin,4
+336,"Bat, asian false vampire",4
+337,"Boa, malagasy ground",1
+338,Spotted-tailed quoll,1
+339,"Hen, sage",4
+340,"Phalarope, red-necked",4
+341,Barasingha deer,4
+342,"Fox, cape",2
+343,"Gecko, barking",3
+344,Greater kudu,1
+345,Crested bunting,5
+346,Red-legged pademelon,2
+347,"Cormorant, pied",4
+348,"Alligator, mississippi",2
+349,"Bandicoot, short-nosed",1
+350,Egyptian cobra,5
+351,Mara,5
+352,Two-toed tree sloth,1
+353,Pygmy possum,4
+354,"Oryx, fringe-eared",2
+355,Pied cormorant,1
+356,"Dragon, frilled",4
+357,Water monitor,2
+358,"Macaw, green-winged",2
+359,Dusky gull,3
+360,"Trumpeter, dark-winged",3
+361,Lesser mouse lemur,4
+362,Adouri (unidentified),2
+363,"Wallaby, dama",2
+364,Mexican wolf,1
+365,"Pigeon, wood",2
+366,"Shark, blue",2
+367,Bee-eater (unidentified),5
+368,"Kangaroo, black-faced",1
+369,Onager,5
+370,"Vulture, oriental white-backed",5
+371,Indian star tortoise,3
+372,Golden eagle,5
+373,Gerbil (unidentified),4
+374,"Lemming, arctic",3
+375,White-tailed deer,4
+376,Griffon vulture,1
+377,"Wolf, mexican",2
+378,Red-knobbed coot,3
+379,"Pademelon, red-legged",4
+380,"Gorilla, western lowland",5
+381,Blue fox,3
+382,Galapagos hawk,3
+383,Yellow-necked spurfowl,5
+384,Neotropic cormorant,1
+385,"Baboon, yellow",5
+386,"Squirrel, uinta ground",2
+387,"Snake, green vine",5
+388,"Eagle, crowned",5
+389,Puna ibis,2
+390,Carmine bee-eater,5
+391,Helmeted guinea fowl,3
+392,"Fox, north american red",2
+393,Hanuman langur,2
+394,"Shelduck, common",5
+395,Python (unidentified),4
+396,Cheetah,1
+397,Blue and gold macaw,5
+398,"Camel, dromedary",2
+399,Arboral spiny rat,2
+400,Bushpig,5
+401,Steller sea lion,2
+402,Hudsonian godwit,4
+403,Yellow-rumped siskin,3
+404,Silver-backed jackal,2
+405,Red-legged pademelon,1
+406,"Deer, barasingha",1
+407,Galapagos penguin,3
+408,Squirrel glider,2
+409,"Parrot, hawk-headed",1
+410,"Macaw, blue and yellow",3
+411,"Buffalo, asian water",1
+412,Green-winged trumpeter,3
+413,Emerald green tree boa,3
+414,Great cormorant,3
+415,"Parrot, hawk-headed",3
+416,"Iguana, marine",1
+417,Roseat flamingo,4
+418,Nubian bee-eater,4
+419,"Nuthatch, red-breasted",1
+420,Blue-footed booby,1
+421,"Moccasin, water",2
+422,Nile crocodile,5
+423,"Pheasant, ring-necked",4
+424,Platypus,5
+425,Western patch-nosed snake,5
+426,Australian sea lion,5
+427,"Waxbill, black-cheeked",2
+428,Stone sheep,4
+429,"Falcon, prairie",4
+430,"Raven, white-necked",2
+431,"Snake, carpet",5
+432,Brush-tailed rat kangaroo,5
+433,"Gull, dusky",3
+434,"Lion, southern sea",1
+435,Two-toed tree sloth,1
+436,Blue waxbill,3
+437,Silver gull,2
+438,"Cockatoo, long-billed",5
+439,White-browed owl,3
+440,Nile crocodile,1
+441,"Seal, common",1
+442,"Fox, grey",2
+443,"Marmot, hoary",3
+444,Snowy sheathbill,2
+445,Southern white-crowned shrike,4
+446,Common boubou shrike,1
+447,"Gecko, bent-toed",1
+448,Collared lemming,5
+449,"Eagle, long-crested hawk",3
+450,Feral rock pigeon,1
+451,"Monster, gila",3
+452,Sage grouse,2
+453,"Owl, white-browed",4
+454,"Wallaby, bennett's",3
+455,Northern elephant seal,3
+456,"Gull, southern black-backed",2
+457,"Stork, jabiru",2
+458,Common turkey,4
+459,"Brocket, brown",5
+460,"Whale, killer",1
+461,Capybara,1
+462,"Bleu, blue-breasted cordon",3
+463,"Heron, black-crowned night",3
+464,Komodo dragon,4
+465,White-tailed jackrabbit,1
+466,Serval,5
+467,"Lion, southern sea",1
+468,"Legaan, Monitor (unidentified)",3
+469,"Gecko, ring-tailed",1
+470,Long-nosed bandicoot,2
+471,"Buffalo, asian water",5
+472,Brazilian otter,2
+473,"Pademelon, red-legged",2
+474,Square-lipped rhinoceros,4
+475,Common genet,4
+476,"Dolphin, striped",2
+477,Cougar,2
+478,Black rhinoceros,2
+479,"Hen, sage",1
+480,Red hartebeest,2
+481,"Antelope, roan",4
+482,Common grenadier,4
+483,Sarus crane,5
+484,Southern sea lion,1
+485,"Rat, desert kangaroo",1
+486,Golden eagle,5
+487,Impala,4
+488,Roe deer,1
+489,Crowned hawk-eagle,1
+490,"Cat, miner's",5
+491,Stanley bustard,1
+492,"Moccasin, water",1
+493,Kaffir cat,2
+494,"Heron, boat-billed",4
+495,Gambel's quail,3
+496,Salmon pink bird eater tarantula,5
+497,"Tortoise, indian star",4
+498,"Possum, golden brush-tailed",1
+499,"Mongoose, javan gold-spotted",1
+500,"Lynx, african",2
