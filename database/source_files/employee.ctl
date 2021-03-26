@@ -1,10 +1,9 @@
 LOAD DATA
 INFILE employee.csv
-INTO TABLE employee
+INTO TABLE Chief
 REPLACE
 FIELDS TERMINATED BY ","
 (
-	person_id,email_address,first_name,last_name,phone_number
-
+EmployeeId (FK),hiredDate,firedDate,hoursOfWork
 
 )
