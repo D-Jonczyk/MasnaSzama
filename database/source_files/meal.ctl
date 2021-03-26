@@ -5,5 +5,4 @@ REPLACE
 FIELDS TERMINATED BY ","
 (
 	meal_id,name,price
-
 )

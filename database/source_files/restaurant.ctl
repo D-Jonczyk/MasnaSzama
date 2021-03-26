@@ -5,7 +5,4 @@ REPLACE
 FIELDS TERMINATED BY ","
 (
 	restaurant_id,description,name,address_id
-
-
-
 )
