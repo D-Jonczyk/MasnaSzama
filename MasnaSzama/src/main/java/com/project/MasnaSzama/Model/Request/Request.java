@@ -3,17 +3,15 @@ import com.project.MasnaSzama.Model.Order.Meal;
 import com.project.MasnaSzama.Model.Person.Admin;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.Date;
 
 @Entity
 public class Request {
-
     @Id
-    private Long RequestId;
-    Integer RequestData;
-    Integer RequestCommentary;
-    Integer RequestStatus;
+    private Long requestId;
+    Date requestDate;
+    String requestCommentary;
+    Boolean requestStatus;
 
     @ManyToOne
     @JoinColumn (name= "admin_id", nullable=false)
@@ -22,5 +20,4 @@ public class Request {
     @OneToOne
     @JoinColumn(name = "meal_id", nullable = false)
     private Meal meal;
-
 }

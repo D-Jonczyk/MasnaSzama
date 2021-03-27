@@ -21,13 +21,14 @@ public class Restaurant {
 
     private String name;
     private String description;
+    private Integer averageOpinion;
 
     @OneToMany(mappedBy = "restaurant")
     private Set<Order> orders = new HashSet<>();
 
     @ManyToMany(cascade = { CascadeType.ALL })
     @JoinTable(
-            name = "restaurant_meals",
+            name = "restaurants_meals",
             joinColumns = { @JoinColumn(name = "restaurant_id") },
             inverseJoinColumns = { @JoinColumn(name = "meal_id") }
     )
