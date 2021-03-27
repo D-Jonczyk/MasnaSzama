@@ -38,9 +38,7 @@ public class Order {
     )
     Set<Meal> orders = new HashSet<>();
 
-    @OneToOne
-    @JoinColumn(name = "opinion_id", nullable = false)
-    private Opinion opinion;
+
 
     @ManyToOne
     @JoinColumn(name="customer_id", nullable=false)
