@@ -1,8 +1,0 @@
-LOAD DATA
-INFILE OrderMeal.csv
-INTO TABLE Chief
-REPLACE
-FIELDS TERMINATED BY ","
-(
-Orderid(FK),Productid(FK),amount
-)

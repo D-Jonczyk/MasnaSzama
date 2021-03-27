@@ -1,4 +1,4 @@
-EmployeeId FK,ScheduleId FK
+employee_id,timesheet_id
 1,1
 2,2
 3,3

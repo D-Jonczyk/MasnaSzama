@@ -1,9 +1,0 @@
-LOAD DATA
-INFILE address.csv
-INTO TABLE Chief
-REPLACE
-FIELDS TERMINATED BY ","
-(
-CourierId FK,OrderId FK,deliveryTime,distance
-
-)

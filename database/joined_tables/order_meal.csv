@@ -1,4 +1,4 @@
-Orderid(FK),Productid(FK),amount
+order_id,product_id,amount
 1,1,13
 2,2,8
 3,3,18

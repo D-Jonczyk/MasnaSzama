@@ -1,4 +1,4 @@
-EmployeeId (FK),hiredDate,firedDate,hoursOfWork
+employee_id,hired_date,fired_date,hours_of_work
 1,6/10/2020,4/25/2019,8:39
 2,10/11/2020,6/9/2019,18:42
 3,4/25/2019,11/11/2020,14:17

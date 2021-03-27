@@ -1,4 +1,4 @@
-RequestDate,RequestCommentary,RequestStatus,RequestId(PK),AdminId(FK),RestaurantId(FK),MealId(FK)
+request_date,request_commentary,request_status,request_id,admin_id,restaurant_id,meal_id
 6/5/2019,Robust hybrid firmware,false,1,1,1,1
 3/21/2020,Re-contextualized modular leverage,true,2,2,2,2
 3/1/2021,Configurable 24/7 concept,false,3,3,3,3

@@ -1,4 +1,4 @@
-CourierId FK,OrderId FK,deliveryTime,distance
+courier_id,order_id,delivery_time,distance
 1,1,16,270
 2,2,27,4880
 3,3,34,6756
