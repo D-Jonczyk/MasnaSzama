@@ -252,6 +252,8 @@
     }
   </style>
 </head>
+
+
 <body>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css" integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc=" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
@@ -259,12 +261,12 @@
   <div class="row">
     <div class="col-lg-4 col-xl-4">
       <div class="card-box text-center">
-        <h4 class="mb-0">Imię kuriera</h4>
+        <h4 class="mb-0">Witaj (imie kuriera)!</h4>
 
         <div class="text-left mt-3">
           <ul class="nav nav-pills navtab-bg">
             <li class="nav-item">
-              <a href="#Nawigacja" data-toggle="tab" aria-expanded="false" class="nav-link">
+              <a href="#navigation" data-toggle="tab" aria-expanded="false" class="nav-link">
                 <i class="mdi mdi-settings-outline mr-1"></i>Nawigacja <br>
               </a>
             </li>
@@ -299,62 +301,10 @@
             </li>
           </ul>
         </div>
-      </div> <!-- end card-box -->
+      </div>
+    </div>
 
-      <!--
-      <div class="card-box">
-        <h4 class="header-title">Skills</h4>
-        <p class="mb-3">Everyone realizes why a new common language would be desirable</p>
-
-        <div class="pt-1">
-          <h6 class="text-uppercase mt-0">HTML5 <span class="float-right">90%</span></h6>
-          <div class="progress progress-sm m-0">
-            <div class="progress-bar bg-purple" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-              <span class="sr-only">90% Complete</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-2 pt-1">
-          <h6 class="text-uppercase">PHP <span class="float-right">67%</span></h6>
-          <div class="progress progress-sm m-0">
-            <div class="progress-bar bg-purple" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width: 67%">
-              <span class="sr-only">67% Complete</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-2 pt-1">
-          <h6 class="text-uppercase">WordPress <span class="float-right">48%</span></h6>
-          <div class="progress progress-sm m-0">
-            <div class="progress-bar bg-purple" role="progressbar" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100" style="width: 48%">
-              <span class="sr-only">48% Complete</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-2 pt-1">
-          <h6 class="text-uppercase">Laravel <span class="float-right">95%</span></h6>
-          <div class="progress progress-sm m-0">
-            <div class="progress-bar bg-purple" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
-              <span class="sr-only">95% Complete</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-2 pt-1">
-          <h6 class="text-uppercase">ReactJs <span class="float-right">72%</span></h6>
-          <div class="progress progress-sm m-0">
-            <div class="progress-bar bg-purple" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%">
-              <span class="sr-only">72% Complete</span>
-            </div>
-          </div>
-        </div>
-
-      </div> -->
-
-    </div> <!-- end col-->
-
+    <!-- content -->
     <div class="col-lg-8 col-xl-8">
       <div class="card-box">
         <ul class="nav nav-pills navtab-bg">
@@ -366,11 +316,13 @@
         </ul>
 
         <div class="tab-content">
-
-          <div class="tab-pane show active" id="about-me">
-
+          <h4 class="mb-0">Lista zamówień: </h4>
+          <div *ngFor="let order of orders">
+            <!-- orderId działa bo jest kluczem głównym chyba a nie obcym, a ta reszta to obce, sprawdzic czy trzeba to jakoś ogarniać w
+             angularze -->
+            <div>order.id: {{order.orderId}}, order.tip: '{{order.tip}}', customer.id: '{{order.customer_id}}',
+              opinion.id: '{{order.opinion_id}}', payment.id: '{{order.payment_id}}', restaurant.id: '{{order.restaurant_id}}'</div>
           </div>
-          <!-- end timeline content-->
 
         </div> <!-- end tab-content -->
       </div> <!-- end card-box-->
