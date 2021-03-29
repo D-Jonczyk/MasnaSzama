@@ -1,6 +1,10 @@
 package com.project.MasnaSzama.Model.Request;
 import com.project.MasnaSzama.Model.Order.Meal;
 import com.project.MasnaSzama.Model.Person.Admin;
+import jdk.jfr.BooleanFlag;
+import org.hibernate.type.StringType;
+import org.hibernate.type.descriptor.sql.LongVarcharTypeDescriptor;
+import org.hibernate.type.descriptor.sql.SmallIntTypeDescriptor;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -10,8 +14,8 @@ public class Request {
     @Id
     private Long requestId;
     Date requestDate;
-    String requestCommentary;
-    Boolean requestStatus;
+    StringType requestCommentary;
+    Integer requestStatus;
 
     @ManyToOne
     @JoinColumn (name= "admin_id", nullable=false)

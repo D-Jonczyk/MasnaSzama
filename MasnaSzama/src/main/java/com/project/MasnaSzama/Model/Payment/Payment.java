@@ -4,11 +4,11 @@ import com.project.MasnaSzama.Model.Order.Order;
 import com.project.MasnaSzama.Model.Person.Customer;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.Set;
 
 @Entity
 public class Payment {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long paymentId;
@@ -16,4 +16,5 @@ public class Payment {
     @OneToOne(mappedBy="payment")
     private Order orders;
 
+    private Date paymentDate;
 }
