@@ -15,7 +15,7 @@ public class Person implements Serializable {
     protected String emailAddress;
     protected String firstName;
     protected String lastName;
-    protected Integer phoneNumber;
+    protected Long phoneNumber;
 
     @OneToOne(cascade = CascadeType.ALL)
     @PrimaryKeyJoinColumn
@@ -39,10 +39,10 @@ public class Person implements Serializable {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-    public Integer getPhoneNumber() {
+    public Long getPhoneNumber() {
         return phoneNumber;
     }
-    public void setPhoneNumber(Integer phoneNumber) {
+    public void setPhoneNumber(Long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
     public String getEmailAddress() {
