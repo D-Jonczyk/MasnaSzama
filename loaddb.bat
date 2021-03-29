@@ -1,7 +1,7 @@
 @echo off
 setlocal enableDelayedExpansion 
 
-if not exist logs mkdir 
+if not exist logs mkdir logs
 
 set MYDIR=%cd%\database\1_base_tables
 
