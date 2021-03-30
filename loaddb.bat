@@ -4,6 +4,7 @@ setlocal enableDelayedExpansion
 if not exist logs mkdir logs
 
 set MYDIR=%cd%\database\1_base_tables
+set password=masnofest
 
 @echo Loading base tables data.
 for /F %%x in ('dir /B/D %MYDIR%') do (
@@ -18,7 +19,7 @@ for /F %%x in ('dir /B/D %MYDIR%') do (
   set tablename=%%x
   set tablename=!tablename:.csv=!
   @echo Inserting into !tablename!... >> logs\!tablename!.log
-  mysqlsh mysql://masnaszamauser@localhost:3306/masnaszama?local-infile=1 --sql^
+  mysqlsh mysql://masnaszamauser@localhost:3306/masnaszama?local-infile=1 --sql --password=!password!^
 	--execute="SET GLOBAL local_infile = true; LOAD DATA LOCAL INFILE '!f!' INTO TABLE !tablename! FIELDS TERMINATED BY ',' IGNORE 1 LINES; SHOW WARNINGS" >> logs\!tablename!.log
 )
 
@@ -37,7 +38,7 @@ for /F %%x in ('dir /B/D %MYDIR%') do (
   set tablename=%%x
   set tablename=!tablename:.csv=!
   @echo Inserting into !tablename!... >> logs\!tablename!.log
-  mysqlsh mysql://masnaszamauser@localhost:3306/masnaszama?local-infile=1 --sql^
+  mysqlsh mysql://masnaszamauser@localhost:3306/masnaszama?local-infile=1 --sql --password=!password!^
 	--execute="SET GLOBAL local_infile = true; LOAD DATA LOCAL INFILE '!f!' INTO TABLE !tablename! FIELDS TERMINATED BY ',' IGNORE 1 LINES; SHOW WARNINGS" >> logs\!tablename!.log
 )
 
@@ -56,7 +57,7 @@ for /F %%x in ('dir /B/D %MYDIR%') do (
   set tablename=%%x
   set tablename=!tablename:.csv=!
   @echo Inserting into !tablename!... >> logs\!tablename!.log
-  mysqlsh mysql://masnaszamauser@localhost:3306/masnaszama?local-infile=1 --sql^
+  mysqlsh mysql://masnaszamauser@localhost:3306/masnaszama?local-infile=1 --sql --password=!password!^
 	--execute="SET GLOBAL local_infile = true; LOAD DATA LOCAL INFILE '!f!' INTO TABLE !tablename! FIELDS TERMINATED BY ',' IGNORE 1 LINES; SHOW WARNINGS" >> logs\!tablename!.log
 )
 
