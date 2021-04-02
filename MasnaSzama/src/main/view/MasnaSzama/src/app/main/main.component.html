@@ -1,0 +1,10 @@
+<p>main works!</p>
+
+<div id="address-form" class="address-form">
+
+  <form [formGroup]="addressForm" (ngSubmit)="onSubmit()">
+    <input type="text" id="city" placeholder="city" formControlName="adr">
+    <button class="button" type="submit">Szukaj</button>
+  </form>
+
+</div>

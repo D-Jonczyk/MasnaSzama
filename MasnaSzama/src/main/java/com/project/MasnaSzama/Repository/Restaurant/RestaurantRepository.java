@@ -9,11 +9,10 @@ import java.util.List;
 public interface RestaurantRepository extends CrudRepository<Restaurant, Long> {
 
     @Query(value =  "SELECT new com.project.MasnaSzama.DTO.RestaurantSummaryDTO" +
-                    "(r.name, r.description)" +
+                    "(r.name, r.description, r.averageOpinion)" +
                     "FROM Restaurant r " +
                     "JOIN Address a ON a.addressId = r.address.addressId " +
-                    "WHERE a.city = ?1 " +
-                    "GROUP BY r.name, r.description")
+                    "WHERE a.city = ?1")
     List<RestaurantSummaryDTO> getRestaurantByCity(String city);
 
 }

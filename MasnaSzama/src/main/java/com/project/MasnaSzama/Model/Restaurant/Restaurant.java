@@ -57,4 +57,8 @@ public class Restaurant {
     public void setOrders(Set<Order> orders) {
         this.orders = orders;
     }
+
+    public Integer getAverageOpinion() {
+        return averageOpinion;
+    }
 }

@@ -1,0 +1,21 @@
+Inserting into coordinator... 
+Inserting into coordinator... 
+Save password for 'masnaszamauser@localhost:3306'? [Y]es/[N]o/Ne[v]er (default No): 
+Records: 5  Deleted: 0  Skipped: 5  Warnings: 5
+Level	Code	Message
+Warning	1062	Duplicate entry '6' for key 'coordinator.PRIMARY'
+Warning	1062	Duplicate entry '7' for key 'coordinator.PRIMARY'
+Warning	1062	Duplicate entry '8' for key 'coordinator.PRIMARY'
+Warning	1062	Duplicate entry '9' for key 'coordinator.PRIMARY'
+Warning	1062	Duplicate entry '10' for key 'coordinator.PRIMARY'
+
+Inserting into coordinator... 
+Save password for 'masnaszamauser@localhost:3306'? [Y]es/[N]o/Ne[v]er (default No): 
+Records: 5  Deleted: 0  Skipped: 5  Warnings: 5
+Level	Code	Message
+Warning	1062	Duplicate entry '6' for key 'coordinator.PRIMARY'
+Warning	1062	Duplicate entry '7' for key 'coordinator.PRIMARY'
+Warning	1062	Duplicate entry '8' for key 'coordinator.PRIMARY'
+Warning	1062	Duplicate entry '9' for key 'coordinator.PRIMARY'
+Warning	1062	Duplicate entry '10' for key 'coordinator.PRIMARY'
+
