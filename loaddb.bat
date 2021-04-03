@@ -2,11 +2,10 @@
 setlocal enableDelayedExpansion 
 
 if not exist logs mkdir logs
-set /p password=Enter database password
 
 @echo Creating triggers...
 set MYDIR=%cd%\database\triggers.sql
-mysqlsh mysql://masnaszamauser@localhost:3306/masnaszama?local-infile=1 --sql --password=!password! -f !MYDIR!
+mysqlsh mysql://masnaszamauser@localhost:3306/masnaszama?local-infile=1 --sql -f !MYDIR!
 @echo Triggers created.
 pause
 
@@ -24,9 +23,10 @@ for /F %%x in ('dir /B/D %MYDIR%') do (
 	
   set tablename=%%x
   set tablename=!tablename:.csv=!
-  @echo Inserting into !tablename!... >> logs\!tablename!.log
-  mysqlsh mysql://masnaszamauser@localhost:3306/masnaszama?local-infile=1 --sql --password=!password!^
-	--execute="SET GLOBAL local_infile = true; LOAD DATA LOCAL INFILE '!f!' INTO TABLE !tablename! FIELDS TERMINATED BY ',' IGNORE 1 LINES; SHOW WARNINGS" >> logs\!tablename!.log
+  @echo Inserting into !tablename!...
+  @echo Inserting into !tablename!... > logs\!tablename!.log
+  mysqlsh mysql://masnaszamauser@localhost:3306/masnaszama?local-infile=1 --sql --force^
+	--execute="LOAD DATA LOCAL INFILE '!f!' IGNORE INTO TABLE !tablename! FIELDS TERMINATED BY ',' IGNORE 1 LINES; SHOW WARNINGS" >> logs\!tablename!.log
 )
 
 set MYDIR=%cd%\database\2_referenced_tables
@@ -43,9 +43,9 @@ for /F %%x in ('dir /B/D %MYDIR%') do (
 	
   set tablename=%%x
   set tablename=!tablename:.csv=!
-  @echo Inserting into !tablename!... >> logs\!tablename!.log
-  mysqlsh mysql://masnaszamauser@localhost:3306/masnaszama?local-infile=1 --sql --password=!password!^
-	--execute="SET GLOBAL local_infile = true; LOAD DATA LOCAL INFILE '!f!' INTO TABLE !tablename! FIELDS TERMINATED BY ',' IGNORE 1 LINES; SHOW WARNINGS" >> logs\!tablename!.log
+  @echo Inserting into !tablename!... > logs\!tablename!.log
+  mysqlsh mysql://masnaszamauser@localhost:3306/masnaszama?local-infile=1 --sql^
+	--execute="LOAD DATA LOCAL INFILE '!f!' IGNORE INTO TABLE !tablename! FIELDS TERMINATED BY ',' IGNORE 1 LINES; SHOW WARNINGS" >> logs\!tablename!.log
 )
 
 set MYDIR=%cd%\database\3_join_tables
@@ -62,9 +62,9 @@ for /F %%x in ('dir /B/D %MYDIR%') do (
 	
   set tablename=%%x
   set tablename=!tablename:.csv=!
-  @echo Inserting into !tablename!... >> logs\!tablename!.log
-  mysqlsh mysql://masnaszamauser@localhost:3306/masnaszama?local-infile=1 --sql --password=!password!^
-	--execute="SET GLOBAL local_infile = true; LOAD DATA LOCAL INFILE '!f!' INTO TABLE !tablename! FIELDS TERMINATED BY ',' IGNORE 1 LINES; SHOW WARNINGS" >> logs\!tablename!.log
+  @echo Inserting into !tablename!... > logs\!tablename!.log
+  mysqlsh mysql://masnaszamauser@localhost:3306/masnaszama?local-infile=1 --sql^
+	--execute="LOAD DATA LOCAL INFILE '!f!' IGNORE INTO TABLE !tablename! FIELDS TERMINATED BY ',' IGNORE 1 LINES; SHOW WARNINGS" >> logs\!tablename!.log
 )
 
 pause

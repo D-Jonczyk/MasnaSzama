@@ -1,4 +1,5 @@
 use masnaszama;
+SET GLOBAL local_infile = true;
 
 DELIMITER //
 DROP TRIGGER IF EXISTS customer_person_ai//
