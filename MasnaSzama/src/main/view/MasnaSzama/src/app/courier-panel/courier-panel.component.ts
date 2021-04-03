@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {Courier} from "../Person/Employee/courier";
-import {Order} from "../Order/order";
-import {OrderService} from "../Order/order.service";
-import {HttpErrorResponse} from "@angular/common/http";
+import {Courier} from '../Person/Employee/courier';
+import {Order} from '../Order/order';
+import {OrderService} from '../Order/order.service';
+import {HttpErrorResponse} from '@angular/common/http';
 
 @Component({
   selector: 'app-courier-panel',

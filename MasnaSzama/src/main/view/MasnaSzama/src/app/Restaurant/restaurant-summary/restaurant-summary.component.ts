@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RestaurantSummary } from '../model/restaurant-summary.model';
-import { RestaurantSummaryService } from "../service/restaurant-summary.service";
-import {Observable} from "rxjs";
+import { RestaurantSummaryService } from '../service/restaurant-summary.service';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-restaurant-summary',

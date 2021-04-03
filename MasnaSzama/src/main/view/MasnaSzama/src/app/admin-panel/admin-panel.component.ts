@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {concatMap} from "rxjs/operators";
+import {concatMap} from 'rxjs/operators';
 
 @Component({
   selector: 'app-admin-panel',
