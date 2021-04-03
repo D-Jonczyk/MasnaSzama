@@ -10,11 +10,15 @@ import java.io.Serializable;
 public class Person implements Serializable {
     @GeneratedValue(strategy= GenerationType.AUTO)
     @Id
+    @Column(nullable = false)
     protected Long personId;
 
+    @Column(nullable = false)
     protected String emailAddress;
+    @Column(nullable = false)
     protected String firstName;
     protected String lastName;
+    @Column(nullable = false)
     protected Long phoneNumber;
 
     @OneToOne(cascade = CascadeType.ALL)
