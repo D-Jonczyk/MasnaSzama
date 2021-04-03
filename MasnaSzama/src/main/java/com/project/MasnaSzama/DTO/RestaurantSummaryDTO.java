@@ -4,11 +4,12 @@ public class RestaurantSummaryDTO {
 
     private String name;
     private String description;
+    private int averageOpinion;
 
-
-    public RestaurantSummaryDTO(String name, String description) {
+    public RestaurantSummaryDTO(String name, String description, int averageOpinion) {
         this.name = name;
         this.description = description;
+        this.averageOpinion = averageOpinion;
 
     }
 
@@ -20,6 +21,7 @@ public class RestaurantSummaryDTO {
         return description;
     }
 
-
-
+    public int getAverageOpinion() {
+        return averageOpinion;
+    }
 }
