@@ -2,9 +2,15 @@
 setlocal enableDelayedExpansion 
 
 if not exist logs mkdir logs
+set /p password=Enter database password
+
+@echo Creating triggers...
+set MYDIR=%cd%\database\triggers.sql
+mysqlsh mysql://masnaszamauser@localhost:3306/masnaszama?local-infile=1 --sql --password=!password! -f !MYDIR!
+@echo Triggers created.
+pause
 
 set MYDIR=%cd%\database\1_base_tables
-set password=masnofest
 
 @echo Loading base tables data.
 for /F %%x in ('dir /B/D %MYDIR%') do (
