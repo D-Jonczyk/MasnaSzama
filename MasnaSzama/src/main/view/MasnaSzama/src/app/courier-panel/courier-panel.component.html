@@ -320,8 +320,8 @@
           <div *ngFor="let order of orders">
             <!-- orderId działa bo jest kluczem głównym chyba a nie obcym, a ta reszta to obce, sprawdzic czy trzeba to jakoś ogarniać w
              angularze -->
-            <div>order.id: {{order.orderId}}, order.tip: '{{order.tip}}', customer.id: '{{order.customer_id}}',
-              opinion.id: '{{order.opinion_id}}', payment.id: '{{order.payment_id}}', restaurant.id: '{{order.restaurant_id}}'</div>
+            <div>order.id: {{order.orderId}}, order.tip: '{{order.tip}}', customer.id: '{{order.customerId}}',
+              payment.id: '{{order.paymentId}}', restaurant.id: '{{order.restaurantId}}'</div>
           </div>
 
         </div> <!-- end tab-content -->

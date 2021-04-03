@@ -1,5 +1,5 @@
 export interface Courier{
-  id: number;
+  personId: number;
   emailAddress: string;
   firstName: string;
   lastName: string;

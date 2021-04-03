@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {Observable} from "rxjs";
-import {RestaurantSummary} from "../Restaurant/model/restaurant-summary.model";
-import {FormBuilder} from "@angular/forms";
-import {Router} from "@angular/router";
-import {RestaurantSummaryService} from "../Restaurant/service/restaurant-summary.service";
+import {Observable} from 'rxjs';
+import {RestaurantSummary} from '../Restaurant/model/restaurant-summary.model';
+import {FormBuilder} from '@angular/forms';
+import {Router} from '@angular/router';
+import {RestaurantSummaryService} from '../Restaurant/service/restaurant-summary.service';
 
 @Component({
   selector: 'app-main',
@@ -18,8 +18,12 @@ export class MainComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder,
               private router: Router,
-              private restaurantSummaryService: RestaurantSummaryService) { }
+              private restaurantSummaryService: RestaurantSummaryService)
+  { }
 
+  btnClick(): void {
+    this.router.navigateByUrl('/courier-panel');
+  }
   ngOnInit(): void {
   }
   onSubmit(): void {

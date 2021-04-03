@@ -1,8 +1,7 @@
 export interface Order {
-  id: number;
+  orderId: number;
   tip: number;
-  customer_id: number;
-  opinion_id: number;
-  payment_id: number;
-  restaurant_id: number;
+  customerId: number;
+  paymentId: number;
+  restaurantId: number;
 }

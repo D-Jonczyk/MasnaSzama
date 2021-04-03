@@ -5,7 +5,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { CourierPanelComponent } from './courier-panel/courier-panel.component';
-import { AdminPanelComponent} from "./admin-panel/admin-panel.component";
+import { AdminPanelComponent} from './admin-panel/admin-panel.component';
 import { RestaurantSummaryComponent } from './Restaurant/restaurant-summary/restaurant-summary.component';
 import { MainComponent } from './main/main.component';
 

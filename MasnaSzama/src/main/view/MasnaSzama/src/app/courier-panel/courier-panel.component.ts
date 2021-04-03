@@ -31,5 +31,4 @@ export class CourierPanelComponent implements OnInit {
   ngOnInit(): void {
     this.getOrders();
   }
-
 }
