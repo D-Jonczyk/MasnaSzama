@@ -314,20 +314,9 @@
             </a>
           </li>
         </ul>
-
-        <div class="tab-content">
-          <h4 class="mb-0">Lista zamówień: </h4>
-          <div *ngFor="let order of orders">
-            <!-- orderId działa bo jest kluczem głównym chyba a nie obcym, a ta reszta to obce, sprawdzic czy trzeba to jakoś ogarniać w
-             angularze -->
-            <div>order.id: {{order.orderId}}, order.tip: '{{order.tip}}', customer.id: '{{order.customerId}}',
-              payment.id: '{{order.paymentId}}', restaurant.id: '{{order.restaurantId}}'</div>
-          </div>
-
-        </div> <!-- end tab-content -->
-      </div> <!-- end card-box-->
-    </div> <!-- end col -->
-  </div>
+      </div> <!-- end tab-content -->
+    </div> <!-- end card-box-->
+  </div> <!-- end col -->
 </div>
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

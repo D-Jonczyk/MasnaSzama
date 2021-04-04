@@ -3,6 +3,8 @@ import {Courier} from '../Person/Employee/courier';
 import {Order} from '../Order/order';
 import {OrderService} from '../Order/order.service';
 import {HttpErrorResponse} from '@angular/common/http';
+import {RestaurantSummary} from '../Restaurant/model/restaurant-summary.model';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-courier-panel',
@@ -14,7 +16,9 @@ export class CourierPanelComponent implements OnInit {
   public couriers: Courier[];
   public orders: Order[];
 
+  orders$: Observable<Order[]>;
   constructor(private orderService: OrderService) {
+    this.orders$ = orderService.getOrder();
   }
 
   public getOrders(): void {
@@ -29,6 +33,5 @@ export class CourierPanelComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getOrders();
   }
 }

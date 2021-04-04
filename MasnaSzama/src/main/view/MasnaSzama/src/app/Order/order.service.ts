@@ -9,11 +9,14 @@ import {Courier} from '../Person/Employee/courier';
   providedIn: 'root'
 })
 export class OrderService {
-  private apiServerUrl = environment.apiBaseUrl;
+  private apiServerUrl = environment.apiBaseUrl + '/order';
 
   constructor(private http: HttpClient) {}
 
+  public getOrder(): Observable<Order[]> {
+    return this.http.get<Order[]>(this.apiServerUrl + '/getby/customer?customerId=');
+  }
   public getOrders(): Observable<Order[]> {
-    return this.http.get<Order[]>(this.apiServerUrl + '/orders/get/all');
+    return this.http.get<Order[]>(this.apiServerUrl + '/order/get/all');
   }
 }
