@@ -24,6 +24,19 @@ export class MainComponent implements OnInit {
   btnClick(): void {
     this.router.navigateByUrl('/courier-panel');
   }
+
+  clnClick(): void {
+      this.router.navigateByUrl('/client-panel');
+    }
+
+  lgnClick(): void {
+         this.router.navigateByUrl('/login-panel');
+       }
+
+  rgsClick(): void {
+      this.router.navigateByUrl('/register-panel');
+    }
+
   ngOnInit(): void {
   }
   onSubmit(): void {

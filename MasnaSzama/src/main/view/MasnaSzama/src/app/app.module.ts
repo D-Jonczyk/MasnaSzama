@@ -8,6 +8,9 @@ import { CourierPanelComponent } from './courier-panel/courier-panel.component';
 import { AdminPanelComponent} from './admin-panel/admin-panel.component';
 import { RestaurantSummaryComponent } from './Restaurant/restaurant-summary/restaurant-summary.component';
 import { MainComponent } from './main/main.component';
+import { ClientPanelComponent } from './client-panel/client-panel.component';
+import { LoginPanelComponent } from './login-panel/login-panel.component';
+import { RegisterPanelComponent } from './register-panel/register-panel.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { MainComponent } from './main/main.component';
     CourierPanelComponent,
     AdminPanelComponent,
     RestaurantSummaryComponent,
-    MainComponent
+    MainComponent,
+    ClientPanelComponent,
+    LoginPanelComponent,
+    RegisterPanelComponent
   ],
   imports: [
     BrowserModule,
