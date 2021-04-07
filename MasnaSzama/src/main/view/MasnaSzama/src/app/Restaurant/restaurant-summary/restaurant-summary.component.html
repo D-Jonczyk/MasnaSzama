@@ -1,9 +1,14 @@
 <p>restaurant-summary works!</p>
 
-<li *ngFor="let restaurant of restaurants$ | async">
-  <div> {{restaurant.name}}
-        {{restaurant.description}}
-        {{restaurant.averageOpinion}}
-  </div>
-</li>
+<nav>
+
+    <div class="restaurant-item" *ngFor="let restaurant of restaurants$ | async">
+      <a routerLink="/restaurant-menu/{{restaurant.id}}">
+        <h4 class="name">{{restaurant.name}}</h4>
+        <p class="description">{{restaurant.description}}</p>
+        <p class="opinion">Ocena:{{restaurant.averageOpinion}}</p>
+      </a>
+    </div>
+
+</nav>
 

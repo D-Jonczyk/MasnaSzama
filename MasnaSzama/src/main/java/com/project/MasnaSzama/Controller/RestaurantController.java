@@ -1,6 +1,8 @@
 package com.project.MasnaSzama.Controller;
 
+import com.project.MasnaSzama.DTO.RestaurantMealDTO;
 import com.project.MasnaSzama.DTO.RestaurantSummaryDTO;
+import com.project.MasnaSzama.Model.Order.Meal;
 import com.project.MasnaSzama.Model.Restaurant.Restaurant;
 import com.project.MasnaSzama.Repository.Restaurant.RestaurantRepository;
 import com.project.MasnaSzama.Service.RestaurantService;
@@ -24,6 +26,12 @@ public class RestaurantController {
     @GetMapping(path = "/getbycity")
     public List<RestaurantSummaryDTO> getRestaurantByCity(@RequestParam String city){
 
-        return restaurantService.getRestaurantByCity(city);
+        return restaurantService.getRestaurantsByCity(city);
+    }
+
+    @GetMapping(path = "/getmeals")
+    public List<RestaurantMealDTO> getMeals(@RequestParam Long id){
+
+        return restaurantService.getMealsByRestaurantId(id);
     }
 }

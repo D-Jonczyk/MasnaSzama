@@ -8,13 +8,9 @@ import {Router} from '@angular/router';
 })
 export class AppComponent implements OnInit{
 
-  title = 'Masna Szama';
-
-  constructor(private router: Router) {}
+  constructor() {}
 
   ngOnInit(): void {
-    this.router.navigate(['/main']);
   }
-
 
 }
