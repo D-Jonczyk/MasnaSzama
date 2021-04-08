@@ -284,13 +284,12 @@
       <div class="card-box text-center">
         <h4 class="mb-0">Witaj (imie kuriera)!</h4>
 
-        <!-- your navs bound to current route fragments -->
         <nav>
-        <ul ngbNav [activeId]="route.fragment | async" class="nav-tabs">
-          <li [ngbNavItem]="link.fragment" *ngFor="let link of links">
-            <a ngbNavLink data-toggle="collapse" [routerLink]="[link.fragment]" routerLinkActive="active">{{ link.title }}</a>
-          </li>
-        </ul>
+          <ul ngbNav [activeId]="route.fragment | async" class="nav-tabs">
+            <li [ngbNavItem]="link.fragment" *ngFor="let link of links">
+              <a ngbNavLink data-toggle="collapse" [routerLink]="[link.fragment]" routerLinkActive="active">{{ link.title }}</a>
+            </li>
+          </ul>
         </nav>
         <router-outlet> </router-outlet>
 
@@ -303,10 +302,49 @@
 
         <button class="start-shift">Zacznij zmianę</button>
 
-    <div class="tab-content" id="ngbNav">
-      <div class="tab-pane fade show active" id="schedule" role="tabpanel">asdsa</div>
-    </div>
+        <div class="tab-content" id="ngbNav">
+          <div class="tab-pane fade show active" id="schedule" role="tabpanel">Grafik na tydzień: {{ currentDate | date: 'w' }}</div>
+        </div>
 
+        <div>Data: {{currentDate | date }}</div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-default">
+                  <div class="panel panel-primary">
+
+                    <h3 class="text-center">
+                      Grafik</h3>
+
+                    <div class="panel">
+
+                      <table class="table table-striped table-condensed">
+                        <thead>
+                        <tr>
+                          <th>Dzień</th>
+                          <th>Start</th>
+                          <th>Koniec</th>
+                          <th>Dyspozycyjność</th>
+
+                        </tr>
+                        </thead>
+                        <div *ngFor="let number of numbers">
+                          <tr>
+
+                            <td>{{ firstDayOfTheWeek.setDate(first + number)| date: 'EEEE, MMMM d' }}</td>
+                            <td>8:00</td>
+                            <td>16:00</td>
+
+                            <td><a href="#" class="btn btn-sm btn-primary btn-block" role="button">Dodaj</a></td>
+
+                          </tr>
+                        </div>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div></div></div>
       </div> <!-- end tab-content -->
     </div> <!-- end card-box-->
   </div> <!-- end col -->

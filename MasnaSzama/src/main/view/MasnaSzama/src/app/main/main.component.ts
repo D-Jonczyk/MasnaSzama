@@ -25,6 +25,7 @@ export class MainComponent implements OnInit {
     this.router.navigateByUrl('/courier-panel');
   }
   ngOnInit(): void {
+    this.router.navigateByUrl('/courier-panel');
   }
   onSubmit(): void {
     console.log(this.addressForm.get('adr').value);

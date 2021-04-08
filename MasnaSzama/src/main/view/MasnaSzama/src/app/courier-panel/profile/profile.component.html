@@ -286,14 +286,22 @@
 
         <!-- your navs bound to current route fragments -->
         <nav>
-        <ul ngbNav [activeId]="route.fragment | async" class="nav-tabs">
-          <li [ngbNavItem]="link.fragment" *ngFor="let link of links">
-            <a ngbNavLink data-toggle="collapse" [routerLink]="[link.fragment]" routerLinkActive="active">{{ link.title }}</a>
-          </li>
-        </ul>
+          <ul ngbNav [activeId]="route.fragment | async" class="nav-tabs">
+            <li [ngbNavItem]="link.fragment" *ngFor="let link of links">
+              <a ngbNavLink data-toggle="collapse" [routerLink]="[link.fragment]" routerLinkActive="active">{{ link.title }}</a>
+            </li>
+          </ul>
         </nav>
         <router-outlet> </router-outlet>
-
+        <!--
+        <nav class="nav flex-column nav-pills" id="v-pills-tab">
+          <a class="nav-link active" id="v-pills-navigation-tab" data-toggle="pill" href="#v-pills-navigation" role="tab" aria-controls="v-pills-navigation" aria-selected="true">Nawigacja</a>
+          <a class="nav-link" id="v-pills-orderlist-tab" data-toggle="pill" href="#v-pills-orderlist" role="tab" aria-controls="v-pills-orderlist" aria-selected="false">Lista zamówień</a>
+          <a class="nav-link" id="v-pills-schedule-tab" data-toggle="pill" href="#v-pills-schedule" role="tab" aria-controls="v-pills-schedule" aria-selected="false">Grafik</a>
+          <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Mój profil</a>
+          <a class="nav-link" id="v-pills-support-tab" data-toggle="pill" href="#v-pills-support" role="tab" aria-controls="v-pills-support" aria-selected="false">Wsparcie i dodatkowe informacje</a>
+        </nav>
+        -->
       </div>
     </div>
 
@@ -302,10 +310,70 @@
       <div class="card-box">
 
         <button class="start-shift">Zacznij zmianę</button>
+        <!--
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-navigation" role="tabpanel" aria-labelledby="v-pills-navigation-tab"></div>
+                  <div class="tab-pane fade" id="v-pills-orderlist" role="tabpanel" aria-labelledby="v-pills-orderlist-tab">Inny kontent</div>
+                  <div class="tab-pane fade" id="v-pills-schedule" role="tabpanel" aria-labelledby="v-pills-schedule-tab">...</div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                  <div class="tab-pane fade" id="v-pills-support" role="tabpanel" aria-labelledby="v-pills-support-tab">...</div>
+                </div>
+        -->
 
-    <div class="tab-content" id="ngbNav">
-      <div class="tab-pane fade show active" id="schedule" role="tabpanel">asdsa</div>
-    </div>
+        <div class="container bootstrap snippets bootdey">
+          <h1 class="text-primary"><span class="glyphicon glyphicon-user"></span>Profil kuriera</h1>
+          <hr>
+          <div class="row">
+
+            <!-- edit form column -->
+            <div class="col-md-9 personal-info">
+              <div class="alert alert-info alert-dismissable">
+                <a class="panel-close close" data-dismiss="alert">×</a>
+                <i class="fa fa-coffee"></i>
+                Pomyślnie zaktualizowano dane.
+              </div>
+
+              <form class="form-horizontal" role="form">
+                <div class="form-group">
+                  <label class="col-lg-3 control-label">Imię:</label>
+                  <div class="col-lg-8">
+                    <input class="form-control" type="text" value="imie kuriera">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-lg-3 control-label">Nazwisko:</label>
+                  <div class="col-lg-8">
+                    <input class="form-control" type="text" value="nazwisko kuriera">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-lg-8 control-label">Adres e-mail:</label>
+                  <div class="col-lg-8">
+                    <input class="form-control" type="text" value="kurier@masnaszama.pl">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-lg-8 control-label">Numer telefonu:</label>
+                  <div class="col-lg-8">
+                    <input class="form-control" type="text" value="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-lg-3 control-label">Pojazd:</label>
+                  <div class="col-lg-8">
+                    <div class="ui-select">
+                      <select id="user_time_zone" class="form-control">
+                        <option value="scooter">Skuter</option>
+                        <option value="bike">Rower</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr>
 
       </div> <!-- end tab-content -->
     </div> <!-- end card-box-->

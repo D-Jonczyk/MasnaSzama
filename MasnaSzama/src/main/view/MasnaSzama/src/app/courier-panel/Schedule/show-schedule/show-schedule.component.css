@@ -1,0 +1,26 @@
+body
+{
+}
+.form-signin {
+  padding: 15px;
+  margin:100px;
+  margin-top:70px;
+}
+.input-group-addon
+{
+  background-color: rgb(50, 118, 177);
+  border-color: rgb(40, 94, 142);
+  color: rgb(255, 255, 255);
+}
+
+.form-signup input[type="text"],.form-signup input[type="password"] { border: 1px solid rgb(50, 118, 177); }
+.fullscreen_bg {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url('http://www.banisite.com/sample-sirenadentist/theme/images/slider/slider-8.jpg');
+  background-repeat:repeat;
+}
