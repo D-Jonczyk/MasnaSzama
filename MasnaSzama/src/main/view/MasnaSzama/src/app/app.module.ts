@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { CourierPanelComponent } from './courier-panel/courier-panel.component';
@@ -13,6 +13,8 @@ import { SendAvailabilitiesComponent } from './courier-panel/Schedule/send-avail
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProfileComponent } from './courier-panel/profile/profile.component';
 import { OrderlistComponent } from './courier-panel/orderlist/orderlist.component';
+import { RestaurantMenuComponent } from './Restaurant/restaurant-menu/restaurant-menu.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { OrderlistComponent } from './courier-panel/orderlist/orderlist.componen
     ShowScheduleComponent,
     SendAvailabilitiesComponent,
     ProfileComponent,
-    OrderlistComponent
+    OrderlistComponent,
+    RestaurantMenuComponent
   ],
   imports: [
     BrowserModule,

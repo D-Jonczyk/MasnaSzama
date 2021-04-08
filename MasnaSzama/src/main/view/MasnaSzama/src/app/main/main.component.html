@@ -1,11 +1,19 @@
-<button class="button" (click)="btnClick();">Courier Panel</button>
 <p>main works!</p>
 
-<div id="address-form" class="address-form">
+<nav>
+  <button class="button" (click)="btnClick();">Courier Panel</button>
+</nav>
+
+<main>
 
   <form [formGroup]="addressForm" (ngSubmit)="onSubmit()">
-    <input type="text" id="city" placeholder="city" formControlName="adr">
+    <input class="form-input" type="text" placeholder="Miasto, adres" formControlName="adr">
     <button class="button" type="submit">Szukaj</button>
   </form>
 
-</div>
+
+  <input type="text" [(ngModel)]="name">
+  <p>{{name}}</p>
+</main>
+
+

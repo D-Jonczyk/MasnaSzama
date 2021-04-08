@@ -1,0 +1,14 @@
+.restaurant-item {
+  width: 800px;
+  height: 100px;
+  border-radius: 5px;
+  margin: 1% auto;
+  padding: 1%;
+  background: #ece7d4;
+}
+
+.restaurant-item:hover {
+  transform: translateX(15px);
+}
+
+

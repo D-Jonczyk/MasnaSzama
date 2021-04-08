@@ -1,0 +1,7 @@
+<p>restaurant-menu works!</p>
+
+<div class="menu-item" *ngFor="let meal of meals$ | async">
+    <h4 class="name">Nazwa:{{meal.name}}</h4>
+    <p class="description">Cena:{{meal.price}}</p>
+  <hr>
+</div>

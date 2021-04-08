@@ -19,8 +19,4 @@ export class RestaurantSummaryService {
     return this.http.get<RestaurantSummary[]>
     (this.restaurantSummaryUrl + this.address.toString());
   }
-
-  /*setAddress(adr): void { // nie określa się typu ? wtf
-    this.address = adr;
-  }*/
 }

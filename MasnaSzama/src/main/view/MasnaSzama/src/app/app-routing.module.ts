@@ -7,16 +7,20 @@ import {MainComponent} from './main/main.component';
 import {ShowScheduleComponent} from './courier-panel/Schedule/show-schedule/show-schedule.component';
 import {ProfileComponent} from './courier-panel/profile/profile.component';
 import {OrderlistComponent} from './courier-panel/orderlist/orderlist.component';
+import {RestaurantMenuComponent} from './Restaurant/restaurant-menu/restaurant-menu.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: '/main', pathMatch: 'full'},
+  {path: 'main', component: MainComponent},
   {path: 'courier-panel', component: CourierPanelComponent},
   {path: 'show-schedule', component: ShowScheduleComponent},
   {path: 'admin-panel', component: AdminPanelComponent},
   {path: 'restaurant-summary', component: RestaurantSummaryComponent},
   {path: 'profile', component: ProfileComponent},
   {path: 'main', component: MainComponent},
-  {path: 'orderlist', component: OrderlistComponent}
+  {path: 'orderlist', component: OrderlistComponent},
   // {path: '', redirectTo: '/courier-panel', pathMatch: 'full'}
+  {path: 'restaurant-menu/:id', component: RestaurantMenuComponent}
 ];
 
 @NgModule({
