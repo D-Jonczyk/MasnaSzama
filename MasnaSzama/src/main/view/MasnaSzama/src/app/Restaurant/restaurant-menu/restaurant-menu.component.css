@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 1400px;
+  border: 1px solid #17a2b8;
+}
+
+.menu-item {
+  width: 400px;
+  height: 150px;
+  border-radius: 5px;
+  margin: 1%;
+  padding: 1%;
+  background: #ece7d4;
+}
+

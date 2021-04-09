@@ -1,19 +1,17 @@
-<p>main works!</p>
-
 <nav>
-  <button class="button" (click)="btnClick();">Courier Panel</button>
+  <button class="btn btn-info" (click)="btnClick();">Courier Panel</button>
+  <button class="btn btn-info" (click)="goToAdmin();">Admin Panel</button>
 </nav>
+
+<hr>
 
 <main>
 
   <form [formGroup]="addressForm" (ngSubmit)="onSubmit()">
-    <input class="form-input" type="text" placeholder="Miasto, adres" formControlName="adr">
-    <button class="button" type="submit">Szukaj</button>
+    <input class="form-control form-control" type="text" placeholder="Miasto, adres" formControlName="adr">
+    <button type="submit" class="btn btn-info">Szukaj</button>
   </form>
 
-
-  <input type="text" [(ngModel)]="name">
-  <p>{{name}}</p>
 </main>
 
 

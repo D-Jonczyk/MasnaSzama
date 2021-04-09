@@ -1,54 +1,6 @@
 body {
-  background-image: linear-gradient(to top, #b2edea 50%, #fed6e3 76%);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-
   height: 1080px;
   width: 1920px;
-
-  font-family: 'Vibur', cursive;
-  /*   the main font */
-  font-family: 'Abel', sans-serif;
-  opacity: .90;
-  /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
-}
-
-button {
-  color: #252537;
-
-  width: 240px;
-  height: 50px;
-
-  margin-top: 2%;
-  padding: 15px;
-
-  font-size: 16px;
-  font-family: 'Abel', sans-serif;
-  color: #5E6472;
-
-  outline: none;
-  border: none;
-
-  border-radius: 0px 5px 5px 0px;
-  transition: 0.2s linear;
-}
-
-button:hover {
-  transform: translatey(3px);
-  box-shadow: none;
-}
-
-/* buttons hover Animation */
-button:hover {
-  animation: ani9 0.4s ease-in-out infinite alternate;
-}
-@keyframes ani9 {
-  0% {
-    transform: translateY(3px);
-  }
-  100% {
-    transform: translateY(-3px);
-  }
 }
 
 form {
@@ -59,33 +11,4 @@ form {
   margin: 1% auto;
   padding: 1%;
   background: #ece7d4;
-}
-
-input[type="text"].form-input{
-  width: 240px;
-  height: 20px;
-
-  margin-top: 2%;
-  padding: 15px;
-
-  font-size: 16px;
-  font-family: 'Abel', sans-serif;
-  color: #5E6472;
-
-  outline: none;
-  border: none;
-
-  border-radius: 0px 5px 5px 0px;
-  transition: 0.2s linear;
-
-}
-
-input:focus {
-  transform: translateY(-5px);
-  border-radius: 5px;
-}
-
-select:focus {
-  transform: translateY(-5px);
-  border-radius: 5px;
 }
