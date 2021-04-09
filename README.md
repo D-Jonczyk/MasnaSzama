@@ -15,5 +15,4 @@ https://github.com/D-Jonczyk/MasnaSzama/tree/main/MasnaSzama/src/main/java/com/p
 
 Graficzne przedstawienie bazy:
 
-![db_schema](https://github.com/D-Jonczyk/MasnaSzama/blob/main/Etap_3/database_prototype.png?raw=true)
-
+![db_schema](https://raw.githubusercontent.com/D-Jonczyk/MasnaSzama/main/Etap_3/database_prototype.png?raw=true)
