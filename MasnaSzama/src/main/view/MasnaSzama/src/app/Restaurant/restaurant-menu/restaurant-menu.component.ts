@@ -12,17 +12,30 @@ import {Meal} from "../model/meal.model";
 export class RestaurantMenuComponent implements OnInit {
 
   meals$: Observable<Meal[]>;
+  orderMeals: Meal[];
+  sum: number;
 
   constructor(private route: ActivatedRoute,
               private restaurantMenuService: RestaurantMenuService) { }
 
   ngOnInit(): void {
+    this.orderMeals = [];
+    this.sum = 0;
     this.getMenu();
   }
 
   getMenu(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.meals$ = this.restaurantMenuService.getMeals(id);
+  }
+
+  addToOrder(meal): void {
+    this.orderMeals.push(meal);
+
+  }
+
+  sumOrder(): void {
+      this.sum += this.orderMeals[this.orderMeals.length - 1].price;
   }
 
 }

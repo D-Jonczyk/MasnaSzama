@@ -1,11 +1,28 @@
 <div class="container">
-  <div class="menu-item" *ngFor="let meal of meals$ | async">
+
+  <div class="col-4 float-right"> <!--basket-->
+    <p><b>Twoje zamówienie:</b></p>
+    <hr>
+    <div class="row" *ngFor="let orderMeal of orderMeals">
+      <p><b>{{orderMeal.name}}</b>&nbsp;
+      <i>Cena: {{orderMeal.price}}</i></p>
+    </div>
+    <hr>
+    <b>Razem: {{sum | currency:'PLN'}}</b>
+    <hr>
+    <button type="button" class="btn btn-info">Zamawiam</button>
+  </div>
+
+  <div class="col-8 " *ngFor="let meal of meals$ | async"> <!--menu-->
     <h4 class="name">{{meal.name}}</h4>
     <hr>
     <h6 class="price">Cena: {{meal.price}}</h6>
-    <button type="button" class="btn btn-info">Dodaj</button>
+    <button type="button" (click)="addToOrder(meal)" (click)="sumOrder()" class="btn btn-info btn-block">Dodaj</button>
+    <hr>
   </div>
+
 </div>
+
 
 
 

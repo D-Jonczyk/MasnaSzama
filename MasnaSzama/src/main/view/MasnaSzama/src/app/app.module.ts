@@ -14,11 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProfileComponent } from './courier-panel/profile/profile.component';
 import { OrderlistComponent } from './courier-panel/orderlist/orderlist.component';
 import { RestaurantMenuComponent } from './Restaurant/restaurant-menu/restaurant-menu.component';
-import { UpdateRestoComponent } from './admin-panel/update-resto/update-resto.component';
-import { LoginComponent } from './admin-panel/login/login.component';
-import { RegisterComponent } from './admin-panel/register/register.component';
-import { AddRestoComponent } from './admin-panel/add-resto/add-resto.component';
-import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
+import { CurrencyPipe} from '@angular/common';
 
 
 @NgModule({
@@ -32,12 +28,7 @@ import { ListRestoComponent } from './admin-panel/list-resto/list-resto.componen
     SendAvailabilitiesComponent,
     ProfileComponent,
     OrderlistComponent,
-    RestaurantMenuComponent,
-    UpdateRestoComponent,
-    LoginComponent,
-    RegisterComponent,
-    AddRestoComponent,
-    ListRestoComponent
+    RestaurantMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -45,9 +36,10 @@ import { ListRestoComponent } from './admin-panel/list-resto/list-resto.componen
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [CurrencyPipe]
 })
 export class AppModule
 {
