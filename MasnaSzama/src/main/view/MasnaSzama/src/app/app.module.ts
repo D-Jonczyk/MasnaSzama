@@ -28,7 +28,12 @@ import { CurrencyPipe} from '@angular/common';
     SendAvailabilitiesComponent,
     ProfileComponent,
     OrderlistComponent,
-    RestaurantMenuComponent
+    RestaurantMenuComponent,
+   // AddRestoComponent,
+   // ListRestoComponent,
+   // RegisterComponent,
+    //LoginComponent,
+    //UpdateRestoComponent,
   ],
   imports: [
     BrowserModule,

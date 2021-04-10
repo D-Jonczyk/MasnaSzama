@@ -25,9 +25,9 @@ const routes: Routes = [
   {path: 'main', component: MainComponent},
   {path: 'orderlist', component: OrderlistComponent},
   // {path: '', redirectTo: '/courier-panel', pathMatch: 'full'}
-  //{path: 'restaurant-menu/:id', component: RestaurantMenuComponent},
+ // {path: 'restaurant-menu/:id', component: RestaurantMenuComponent},
  // {path: 'add-resto', component: AddRestoComponent},
- // {path: 'list-resto', component: ListRestoComponent},
+  //{path: 'list-resto', component: ListRestoComponent},
   //{path: 'register', component: RegisterComponent},
   //{path: 'login', component: LoginComponent},
   //{path: 'update-resto', component: UpdateRestoComponent},
