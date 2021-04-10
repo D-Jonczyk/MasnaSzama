@@ -1,18 +1,14 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  height: 1400px;
-  border: 1px solid #17a2b8;
+.col-8 {
+  background-color: #ece7d4;
 }
 
-.menu-item {
-  width: 400px;
-  height: 150px;
-  border-radius: 5px;
-  margin: 1%;
-  padding: 1%;
-  background: #ece7d4;
+.col-4 {
+  background-color: #daceb7;
+}
+
+.col-4.float-right {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 

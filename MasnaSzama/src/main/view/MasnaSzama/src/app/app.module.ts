@@ -14,6 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProfileComponent } from './courier-panel/profile/profile.component';
 import { OrderlistComponent } from './courier-panel/orderlist/orderlist.component';
 import { RestaurantMenuComponent } from './Restaurant/restaurant-menu/restaurant-menu.component';
+import { CurrencyPipe} from '@angular/common';
 
 
 @NgModule({
@@ -35,9 +36,10 @@ import { RestaurantMenuComponent } from './Restaurant/restaurant-menu/restaurant
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [CurrencyPipe]
 })
 export class AppModule
 {
