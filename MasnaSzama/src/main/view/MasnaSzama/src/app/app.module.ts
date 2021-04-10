@@ -14,6 +14,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProfileComponent } from './courier-panel/profile/profile.component';
 import { OrderlistComponent } from './courier-panel/orderlist/orderlist.component';
 import { RestaurantMenuComponent } from './Restaurant/restaurant-menu/restaurant-menu.component';
+import { UpdateRestoComponent } from './admin-panel/update-resto/update-resto.component';
+import { LoginComponent } from './admin-panel/login/login.component';
+import { RegisterComponent } from './admin-panel/register/register.component';
+import { AddRestoComponent } from './admin-panel/add-resto/add-resto.component';
+import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
 
 
 @NgModule({
@@ -27,7 +32,12 @@ import { RestaurantMenuComponent } from './Restaurant/restaurant-menu/restaurant
     SendAvailabilitiesComponent,
     ProfileComponent,
     OrderlistComponent,
-    RestaurantMenuComponent
+    RestaurantMenuComponent,
+    UpdateRestoComponent,
+    LoginComponent,
+    RegisterComponent,
+    AddRestoComponent,
+    ListRestoComponent
   ],
   imports: [
     BrowserModule,

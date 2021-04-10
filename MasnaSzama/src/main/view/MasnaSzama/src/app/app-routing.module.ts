@@ -20,7 +20,7 @@ const routes: Routes = [
   {path: 'main', component: MainComponent},
   {path: 'orderlist', component: OrderlistComponent},
   // {path: '', redirectTo: '/courier-panel', pathMatch: 'full'}
-  {path: 'restaurant-menu/:id', component: RestaurantMenuComponent}
+  {path: 'restaurant-menu/:id', component: RestaurantMenuComponent},
 ];
 
 @NgModule({

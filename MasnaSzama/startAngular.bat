@@ -7,3 +7,4 @@ cd src/main/view/MasnaSzama
 @echo Starting Angular...
 call ng serve
 cd ../../../../
+pause
