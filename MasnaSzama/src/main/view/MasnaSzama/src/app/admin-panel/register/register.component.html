@@ -1,0 +1,25 @@
+<div class="jumbotron">
+    <h1 class="text-center">Register User For Restaurant App</h1>
+</div>
+<!-- <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success !</strong> Your data added successfully !.
+  <button (click)=" closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div> -->
+<form [formGroup]="createUser" (ngSubmit)= "regUser()">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" placeholder="Enter Name" formControlName="name">
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" placeholder="Enter Address" formControlName="password">
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="text" class="form-control" placeholder="Enter Email" formControlName="email">
+      </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

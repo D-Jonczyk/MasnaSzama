@@ -15,6 +15,11 @@ import { ProfileComponent } from './courier-panel/profile/profile.component';
 import { OrderlistComponent } from './courier-panel/orderlist/orderlist.component';
 import { RestaurantMenuComponent } from './Restaurant/restaurant-menu/restaurant-menu.component';
 import { CurrencyPipe} from '@angular/common';
+import { AddRestoComponent } from './admin-panel/add-resto/add-resto.component';
+import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
+import { LoginComponent } from './admin-panel/login/login.component';
+import { RegisterComponent } from './admin-panel/register/register.component';
+import { UpdateRestoComponent } from './admin-panel/update-resto/update-resto.component';
 
 
 @NgModule({
@@ -29,11 +34,12 @@ import { CurrencyPipe} from '@angular/common';
     ProfileComponent,
     OrderlistComponent,
     RestaurantMenuComponent,
-   // AddRestoComponent,
-   // ListRestoComponent,
-   // RegisterComponent,
-    //LoginComponent,
-    //UpdateRestoComponent,
+    AddRestoComponent,
+    ListRestoComponent,
+    LoginComponent,
+    RegisterComponent,
+    UpdateRestoComponent,
+
   ],
   imports: [
     BrowserModule,

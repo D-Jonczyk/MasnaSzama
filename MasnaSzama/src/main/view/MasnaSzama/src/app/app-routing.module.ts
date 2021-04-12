@@ -8,11 +8,11 @@ import {ShowScheduleComponent} from './courier-panel/Schedule/show-schedule/show
 import {ProfileComponent} from './courier-panel/profile/profile.component';
 import {OrderlistComponent} from './courier-panel/orderlist/orderlist.component';
 import {RestaurantMenuComponent} from './Restaurant/restaurant-menu/restaurant-menu.component';
-//import {AddRestoComponent} from './admin-panel/add-resto/add-resto.component';
-//import {ListRestoComponent} from './admin-panel/list-resto/list-resto.component';
-//import {UpdateRestoComponent} from './admin-panel/update-resto/update-resto.component';
-//import {LoginComponent} from './admin-panel/login/login.component';
-//import {RegisterComponent} from './admin-panel/register/register.component';
+import { AddRestoComponent } from './admin-panel/add-resto/add-resto.component';
+import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
+import { LoginComponent } from './admin-panel/login/login.component';
+import { RegisterComponent } from './admin-panel/register/register.component';
+import { UpdateRestoComponent } from './admin-panel/update-resto/update-resto.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/main', pathMatch: 'full'},
@@ -24,15 +24,14 @@ const routes: Routes = [
   {path: 'profile', component: ProfileComponent},
   {path: 'main', component: MainComponent},
   {path: 'orderlist', component: OrderlistComponent},
-  // {path: '', redirectTo: '/courier-panel', pathMatch: 'full'}
- // {path: 'restaurant-menu/:id', component: RestaurantMenuComponent},
- // {path: 'add-resto', component: AddRestoComponent},
-  //{path: 'list-resto', component: ListRestoComponent},
-  //{path: 'register', component: RegisterComponent},
-  //{path: 'login', component: LoginComponent},
-  //{path: 'update-resto', component: UpdateRestoComponent},
+   //{path: '', redirectTo: '/courier-panel', pathMatch: 'full'}
+  {path: 'restaurant-menu/:id', component: RestaurantMenuComponent},
+  {path: 'add-resto', component: AddRestoComponent},
+  {path: 'list-resto', component: ListRestoComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
+  {path: 'update-resto', component: UpdateRestoComponent},
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
