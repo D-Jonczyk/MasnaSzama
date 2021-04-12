@@ -17,21 +17,21 @@ public class Meal {
     private String name;
     private BigDecimal price;
 
-    @ManyToMany(mappedBy = "orders")
-    private Set<Order> orders = new HashSet<>();
-
     @ManyToMany(mappedBy = "meal")
     private Set<Restaurant> restaurants;
 
     @OneToOne(mappedBy = "meal")
     private Request request;
 
-    public Set<Order> getOrders() {
-        return orders;
+    @OneToMany(mappedBy = "meal")
+    private Set<OrdersMeals> ordersMeals = new HashSet<>();
+
+    public Set<OrdersMeals> getOrdersMeals() {
+        return ordersMeals;
     }
 
-    public void setOrders(Set<Order> orders) {
-        this.orders = orders;
+    public void setOrdersMeals(Set<OrdersMeals> ordersMeals) {
+        this.ordersMeals = ordersMeals;
     }
 
     public Long getMealId() {

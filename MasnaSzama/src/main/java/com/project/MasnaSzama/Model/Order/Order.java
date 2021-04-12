@@ -13,6 +13,7 @@ import java.util.Set;
 @Table(name = "order_")
 public class Order {
     private Integer tip;
+    private Integer orderPrice;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -30,23 +31,28 @@ public class Order {
     )
     Set<Courier> couriers = new HashSet<>();
 
-    @ManyToMany(cascade = { CascadeType.ALL})
-    @JoinTable(
-            name = "orders_meals",
-            joinColumns = { @JoinColumn(name = "order_id")},
-            inverseJoinColumns = { @JoinColumn(name = "meal_id")}
-    )
-    Set<Meal> orders = new HashSet<>();
-
-
-
     @ManyToOne
     @JoinColumn(name="customer_id", nullable=false)
     private Customer customer;
 
+    @OneToMany(mappedBy = "order")
+    private Set<OrdersMeals> ordersMeals = new HashSet<>();
+
+    public Set<OrdersMeals> getOrdersMeals() {
+        return ordersMeals;
+    }
+
     @OneToOne
     @JoinColumn(name="payment_id", nullable=false)
     private Payment payment;
+
+    @OneToOne
+    @JoinColumn(name="status_id", nullable=false)
+    private Status orderStatus;
+
+    public void setOrdersMeals(Set<OrdersMeals> ordersMeals) {
+        this.ordersMeals = ordersMeals;
+    }
 
     public Order(){
         super();
@@ -66,5 +72,13 @@ public class Order {
 
     public void setTip(Integer tip) {
         this.tip = tip;
+    }
+
+    public Integer getOrderPrice() {
+        return orderPrice;
+    }
+
+    public void setOrderPrice(Integer orderPrice) {
+        this.orderPrice = orderPrice;
     }
 }

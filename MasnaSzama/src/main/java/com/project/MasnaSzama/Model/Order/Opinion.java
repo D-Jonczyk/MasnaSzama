@@ -10,8 +10,9 @@ public class Opinion {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long opinionId;
 
+    @OneToOne(mappedBy="opinion")
+    private OrdersMeals ordersMeals;
+
     private int rating;
     private String comment;
-
-
 }
