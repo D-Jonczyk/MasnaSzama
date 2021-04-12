@@ -8,7 +8,7 @@ import {concatMap} from 'rxjs/operators';
   styleUrls: ['./admin-panel.component.css']
 })
 export class AdminPanelComponent implements OnInit {
-
+title = 'Admin dashboard'
   constructor(
     private route: ActivatedRoute,
   ) { }
