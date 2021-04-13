@@ -16,6 +16,18 @@ public class OrdersMeals {
     @JoinColumn(name = "order_id", nullable = false)
     private Order order;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "meal_id")
+    private Meal meal;
+
+    @OneToOne
+    @JoinColumn(name="opinion_id", nullable=false)
+    private Opinion opinion;
+
+    public Meal getMeal() {
+        return meal;
+    }
+
     public Order getOrder() {
         return order;
     }
@@ -23,18 +35,6 @@ public class OrdersMeals {
     public void setOrder(Order order) {
         this.order = order;
     }
-
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "meal_id")
-    private Meal meal;
-
-    public Meal getMeal() {
-        return meal;
-    }
-
-    @OneToOne
-    @JoinColumn(name="opinion_id", nullable=false)
-    private Opinion opinion;
 
     public void setMeal(Meal meal) {
         this.meal = meal;

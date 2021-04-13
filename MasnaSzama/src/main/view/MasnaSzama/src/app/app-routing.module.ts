@@ -13,6 +13,7 @@ import { ListRestoComponent } from './admin-panel/list-resto/list-resto.componen
 import { LoginComponent } from './admin-panel/login/login.component';
 import { RegisterComponent } from './admin-panel/register/register.component';
 import { UpdateRestoComponent } from './admin-panel/update-resto/update-resto.component';
+import { RestaurantOrdersComponent} from "./Restaurant/restaurant-orders/restaurant-orders.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/main', pathMatch: 'full'},
@@ -24,7 +25,7 @@ const routes: Routes = [
   {path: 'profile', component: ProfileComponent},
   {path: 'main', component: MainComponent},
   {path: 'orderlist', component: OrderlistComponent},
-   //{path: '', redirectTo: '/courier-panel', pathMatch: 'full'}
+  {path: 'restaurant-orders', component: RestaurantOrdersComponent},
   {path: 'restaurant-menu/:id', component: RestaurantMenuComponent},
   {path: 'add-resto', component: AddRestoComponent},
   {path: 'list-resto', component: ListRestoComponent},

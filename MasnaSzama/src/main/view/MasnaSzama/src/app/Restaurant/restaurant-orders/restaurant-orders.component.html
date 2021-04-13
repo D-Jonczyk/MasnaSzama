@@ -1,0 +1,10 @@
+<div class="container">
+
+  <div class="row">
+    <div  class="col-4" *ngFor="let order of restaurantOrders$ | async">
+      {{order.orderId}}
+      {{order.name}}
+    </div>
+  </div>
+
+</div>

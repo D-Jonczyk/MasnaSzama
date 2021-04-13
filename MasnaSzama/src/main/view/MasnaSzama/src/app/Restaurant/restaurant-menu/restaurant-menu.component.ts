@@ -31,11 +31,7 @@ export class RestaurantMenuComponent implements OnInit {
 
   addToOrder(meal): void {
     this.orderMeals.push(meal);
-
-  }
-
-  sumOrder(): void {
-      this.sum += this.orderMeals[this.orderMeals.length - 1].price;
+    this.sum += this.orderMeals[this.orderMeals.length - 1].price;
   }
 
 }

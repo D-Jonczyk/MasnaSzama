@@ -3,12 +3,9 @@
 }
 
 .col-4 {
-  background-color: #daceb7;
-}
-
-.col-4.float-right {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  background-color: #daceb7;
 }
 

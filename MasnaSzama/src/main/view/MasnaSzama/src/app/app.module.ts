@@ -20,6 +20,7 @@ import { ListRestoComponent } from './admin-panel/list-resto/list-resto.componen
 import { LoginComponent } from './admin-panel/login/login.component';
 import { RegisterComponent } from './admin-panel/register/register.component';
 import { UpdateRestoComponent } from './admin-panel/update-resto/update-resto.component';
+import { RestaurantOrdersComponent } from './Restaurant/restaurant-orders/restaurant-orders.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { UpdateRestoComponent } from './admin-panel/update-resto/update-resto.co
     LoginComponent,
     RegisterComponent,
     UpdateRestoComponent,
+    RestaurantOrdersComponent,
 
   ],
   imports: [

@@ -16,8 +16,6 @@ export class MainComponent implements OnInit {
     adr: ''
   });
 
-  name = 'Damian';
-
   constructor(private formBuilder: FormBuilder,
               private router: Router,
               private restaurantSummaryService: RestaurantSummaryService)
@@ -29,6 +27,10 @@ export class MainComponent implements OnInit {
 
   goToAdmin(): void {
     this.router.navigateByUrl('/admin-panel');
+  }
+
+  goToRestaurantOrders(): void {
+    this.router.navigateByUrl('/restaurant-orders');
   }
 
   ngOnInit(): void {

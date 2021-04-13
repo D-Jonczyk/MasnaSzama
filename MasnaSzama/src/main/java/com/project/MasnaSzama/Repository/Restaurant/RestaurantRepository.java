@@ -24,8 +24,7 @@ public interface RestaurantRepository extends CrudRepository<Restaurant, Long> {
                     "(m.mealId, m.name, m.price) " +
                     "FROM Meal m " +
                     "JOIN m.restaurants r " +
-                    "WHERE r.restaurantId = ?1"
-    )
+                    "WHERE r.restaurantId = ?1")
     List<RestaurantMealDTO> getMealsByRestaurantId(Long id);
 }
 
