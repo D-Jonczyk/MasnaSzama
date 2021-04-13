@@ -21,7 +21,7 @@ import { LoginComponent } from './admin-panel/login/login.component';
 import { RegisterComponent } from './admin-panel/register/register.component';
 import { UpdateRestoComponent } from './admin-panel/update-resto/update-resto.component';
 import { RestaurantOrdersComponent } from './Restaurant/restaurant-orders/restaurant-orders.component';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -50,6 +50,7 @@ import { RestaurantOrdersComponent } from './Restaurant/restaurant-orders/restau
     HttpClientModule,
     ReactiveFormsModule,
     NgbModule,
+    FontAwesomeModule,
   ],
   bootstrap: [AppComponent],
   providers: [CurrencyPipe]

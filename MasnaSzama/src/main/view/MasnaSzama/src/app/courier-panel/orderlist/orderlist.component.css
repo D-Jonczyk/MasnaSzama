@@ -4,6 +4,10 @@ body{
 .payments-item img.mr-3 {
   width: 47px;
 }
+.float-right .btn-primary{
+  margin-left: 5px;
+  padding-block: 5px;
+}
 .order-list .btn {
   border-radius: 2px;
   min-width: 121px;
@@ -25,7 +29,7 @@ body{
   line-height: 29px;
   font-size: 15px;
   border-radius: 50px;
-  margin: 0 7px 0 0px;
+  margin: 0 7px 0 0;
   color: #fff;
 }
 .osahan-account-page-left .nav-link.active {
@@ -37,9 +41,6 @@ body{
 }
 .osahan-user-media img {
   width: 90px;
-}
-.card offer-card h5.card-title {
-  border: 2px dotted #000;
 }
 .card.offer-card h5 {
   border: 1px dotted #daceb7;
@@ -94,10 +95,6 @@ body{
   object-fit: cover;
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
   border-radius: 2px;
-}
-.osahan-cart-item p.text-gray.float-right {
-  margin: 3px 0 0 0;
-  font-size: 12px;
 }
 .osahan-cart-item .food-item {
   vertical-align: bottom;
