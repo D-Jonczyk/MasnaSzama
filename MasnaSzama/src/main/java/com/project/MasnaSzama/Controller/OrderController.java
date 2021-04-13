@@ -3,6 +3,7 @@ package com.project.MasnaSzama.Controller;
 import com.project.MasnaSzama.DTO.OrdersDTO;
 import com.project.MasnaSzama.DTO.RestaurantOrdersDTO;
 import com.project.MasnaSzama.Model.Order.Order;
+import com.project.MasnaSzama.Model.Views.OrdersDelivery;
 import com.project.MasnaSzama.Service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -38,5 +39,10 @@ public class OrderController {
     @GetMapping(path = "/getbyRestaurantId")
     public List<RestaurantOrdersDTO> getOrdersByRestaurantId(@RequestParam Long restaurantId){
         return orderService.getOrdersByRestaurantId(restaurantId);
+    }
+
+    @GetMapping(path = "/getDeliveryByCourierId")
+    public List<OrdersDelivery> getOrdersToDeliverByCourierId(@RequestParam Long courierId){
+        return orderService.getOrdersToDeliverByCourierId(courierId);
     }
 }

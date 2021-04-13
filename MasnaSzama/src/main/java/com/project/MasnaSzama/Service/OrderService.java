@@ -3,6 +3,7 @@ package com.project.MasnaSzama.Service;
 import com.project.MasnaSzama.DTO.OrdersDTO;
 import com.project.MasnaSzama.DTO.RestaurantOrdersDTO;
 import com.project.MasnaSzama.Model.Order.Order;
+import com.project.MasnaSzama.Model.Views.OrdersDelivery;
 import com.project.MasnaSzama.Repository.OrderRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,12 +24,15 @@ public class OrderService {
     }
 
     public List<OrdersDTO> getOrderByCustomerId(Long personId) {
-        List<OrdersDTO> orders = orderRepo.getOrderByCustomerId(personId);
-        return orders;
+        return orderRepo.getOrderByCustomerId(personId);
     }
 
     public List<RestaurantOrdersDTO> getOrdersByRestaurantId(Long restaurantId) {
-        List<RestaurantOrdersDTO> orders = orderRepo.getOrdersByRestaurantId(restaurantId);
-        return orders;
+        return orderRepo.getOrdersByRestaurantId(restaurantId);
     }
+
+    public List<OrdersDelivery> getOrdersToDeliverByCourierId(Long courierId){
+        return orderRepo.getOrdersToDeliverByCourierId(courierId);
+    }
+
 }
