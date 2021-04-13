@@ -1,0 +1,6 @@
+status_id,name
+1,requested
+2,being_prepared
+3,delivery
+4,finished
+5,denied
