@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import {CourierPanelComponent} from '../courier-panel.component';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css']
+  styleUrls: ['../courier-panel.component.css', './profile.component.css']
 })
-export class ProfileComponent implements OnInit {
-  active = 'profile';
+export class ProfileComponent extends CourierPanelComponent implements OnInit {
   links = [
     { title: 'Nawigacja', fragment: '/navigation' },
     { title: 'Lista zamówień', fragment: '/orderlist'},
@@ -16,7 +16,9 @@ export class ProfileComponent implements OnInit {
     { title: 'Wsparcie kuriera', fragment: '/support'}
   ];
 
-  constructor(public route: ActivatedRoute) { }
+  constructor(public route: ActivatedRoute) {
+    super();
+  }
 
   ngOnInit(): void {
   }
