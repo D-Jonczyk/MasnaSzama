@@ -15,8 +15,8 @@ public class Timesheet {
     @ManyToMany(mappedBy = "timesheets")
     private Set<Employee> employees = new HashSet<>();
 
-    private String startTime;
-    private String endTime;
+    private String startTime = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
+    private String endTime = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
     private String notes;
 
     public Long getTimesheetId() {
@@ -49,6 +49,14 @@ public class Timesheet {
 
     public void setNotes(String notes) {
         this.notes = notes;
+    }
+
+    public Set<Employee> getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(Set<Employee> employees) {
+        this.employees = employees;
     }
 }
 

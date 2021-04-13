@@ -4,8 +4,10 @@ import com.project.MasnaSzama.Model.Payment.Payment;
 import com.project.MasnaSzama.Model.Person.Employee.Courier;
 import com.project.MasnaSzama.Model.Person.Customer;
 import com.project.MasnaSzama.Model.Restaurant.Restaurant;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,6 +16,9 @@ import java.util.Set;
 public class Order {
     private Integer tip;
     private Integer orderPrice;
+
+    private String orderedTime = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
+    private String desiredDeliveryTime = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -80,5 +85,29 @@ public class Order {
 
     public void setOrderPrice(Integer orderPrice) {
         this.orderPrice = orderPrice;
+    }
+
+    public Set<Courier> getCouriers() {
+        return couriers;
+    }
+
+    public void setCouriers(Set<Courier> couriers) {
+        this.couriers = couriers;
+    }
+
+    public String getOrderedTime() {
+        return orderedTime;
+    }
+
+    public void setOrderedTime(String orderedTime) {
+        this.orderedTime = orderedTime;
+    }
+
+    public String getDesiredDeliveryTime() {
+        return desiredDeliveryTime;
+    }
+
+    public void setDesiredDeliveryTime(String desiredDeliveryTime) {
+        this.desiredDeliveryTime = desiredDeliveryTime;
     }
 }

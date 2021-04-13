@@ -21,7 +21,7 @@ public class OrdersMeals {
     private Meal meal;
 
     @OneToOne
-    @JoinColumn(name="opinion_id", nullable=false)
+    @JoinColumn(name="opinion_id")
     private Opinion opinion;
 
     public Meal getMeal() {

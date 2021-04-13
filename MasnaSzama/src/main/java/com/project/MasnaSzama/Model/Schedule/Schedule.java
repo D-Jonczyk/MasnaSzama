@@ -22,9 +22,9 @@ public class Schedule {
     @ManyToMany(mappedBy = "schedules")
     private Set<Employee> employees = new HashSet<>();
 
-    private String dateCreated;
-    private String startTime;
-    private String endTime;
+    private String dateCreated = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
+    private String startTime = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
+    private String endTime = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
     private String otherDetails;
 
     public Schedule(){

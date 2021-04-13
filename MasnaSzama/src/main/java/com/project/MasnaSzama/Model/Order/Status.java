@@ -3,8 +3,10 @@ package com.project.MasnaSzama.Model.Order;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "status_")
 public class Status {
     private Long statusId;
     private String name;
