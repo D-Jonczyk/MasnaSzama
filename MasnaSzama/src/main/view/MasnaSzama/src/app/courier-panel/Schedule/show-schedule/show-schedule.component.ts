@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {DatePipe, WeekDay} from '@angular/common';
+import {CourierPanelComponent} from '../../courier-panel.component';
 
 @Component({
   selector: 'app-show-schedule',
   templateUrl: './show-schedule.component.html',
-  styleUrls: ['./show-schedule.component.css']
+  styleUrls: ['../../courier-panel.component.css', './show-schedule.component.css']
 })
-export class ShowScheduleComponent implements OnInit {
-  active = 'schedule';
+export class ShowScheduleComponent extends CourierPanelComponent implements OnInit {
   links = [
     { title: 'Nawigacja', fragment: '/navigation' },
     { title: 'Lista zamówień', fragment: '/orderlist'},
@@ -29,7 +28,10 @@ export class ShowScheduleComponent implements OnInit {
   months: string[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   days: string[] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   numbers: number[] = [1, 2, 3, 4, 5, 6, 7];
-  constructor(public route: ActivatedRoute) { }
+  constructor(public route: ActivatedRoute) {
+    super();
+  }
+
   ngOnInit(): void {
   }
 
