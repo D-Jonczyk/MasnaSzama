@@ -3,7 +3,7 @@ import {CommonService } from '../common.service';
 import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
-  selector: 'app-add-resto',
+  selector: 'admin-panel-add-resto',
   templateUrl: './add-resto.component.html',
   styleUrls: ['./add-resto.component.css']
 })
