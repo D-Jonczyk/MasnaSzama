@@ -13,7 +13,8 @@ import { ListRestoComponent } from './admin-panel/list-resto/list-resto.componen
 import { LoginComponent } from './admin-panel/login/login.component';
 import { RegisterComponent } from './admin-panel/register/register.component';
 import { UpdateRestoComponent } from './admin-panel/update-resto/update-resto.component';
-import { RestaurantOrdersComponent} from "./Restaurant/restaurant-orders/restaurant-orders.component";
+import { RestaurantOrdersComponent} from './Restaurant/restaurant-orders/restaurant-orders.component';
+import {NavigationComponent} from './courier-panel/navigation/navigation.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/main', pathMatch: 'full'},
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'update-resto', component: UpdateRestoComponent},
+  {path: 'navigation', component: NavigationComponent}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

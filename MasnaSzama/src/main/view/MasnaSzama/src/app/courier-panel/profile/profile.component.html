@@ -12,13 +12,11 @@
   <div class="row">
     <div class="col-lg-3 col-xl-3">
       <div class="card-box text-center">
-        <h4 class="mb-0"><a [routerLink]="['/courier-panel']"> Witaj Kurierze! </a></h4>
+        <h4 class="mb-0">Witaj (imie kuriera)!</h4>
 
         <nav>
-          <button class="start-shift"><fa-icon [icon]="['far', 'play-circle']"> </fa-icon> Zacznij zmianę</button>
-          <hr/>
           <ul ngbNav class="nav-tabs">
-            <li class="btn-block" [ngbNavItem]="link.fragment" *ngFor="let link of links">
+            <li [ngbNavItem]="link.fragment" *ngFor="let link of links">
               <a ngbNavLink data-toggle="collapse" [routerLink]="[link.fragment]" routerLinkActive="active">{{ link.title }}</a>
             </li>
           </ul>
@@ -31,8 +29,10 @@
     <div class="col-lg-9 col-xl-9">
       <div class="card-box">
 
+        <button class="start-shift">Zacznij zmianę</button>
+
         <div class="container bootstrap snippets bootdey">
-          <h4 class="font-weight-bold mt-0">Profil kuriera</h4>
+          <h1 class="text-primary"><span class="glyphicon glyphicon-user"></span>Profil kuriera</h1>
           <hr>
           <div class="row">
 
