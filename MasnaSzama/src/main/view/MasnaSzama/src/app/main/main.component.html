@@ -1,6 +1,8 @@
 <nav>
   <button class="btn btn-info" (click)="btnClick();">Courier Panel</button>
   <button class="btn btn-info" (click)="goToAdmin();">Admin Panel</button>
+  <button class="btn btn-info" (click)="goToClient();">Client Panel</button>
+
   <button class="btn btn-info" (click)="goToRestaurantOrders();">Zamowienia dla restauracji</button>
 </nav>
 
@@ -11,8 +13,13 @@
   <form [formGroup]="addressForm" (ngSubmit)="onSubmit()">
     <input class="form-control form-control" type="text" placeholder="Miasto, adres" formControlName="adr">
     <button type="submit" class="btn btn-info">Szukaj</button>
+
   </form>
 
+  <div class="container">
+
+
+  </div>
 </main>
 
 

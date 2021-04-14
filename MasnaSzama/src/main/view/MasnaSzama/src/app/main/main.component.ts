@@ -33,6 +33,12 @@ export class MainComponent implements OnInit {
     this.router.navigateByUrl('/restaurant-orders');
   }
 
+  goToClient(): void {
+    this.router.navigateByUrl('/client-panel');
+  }
+
+
+
   ngOnInit(): void {
     //this.router.navigateByUrl('/courier-panel');
   }

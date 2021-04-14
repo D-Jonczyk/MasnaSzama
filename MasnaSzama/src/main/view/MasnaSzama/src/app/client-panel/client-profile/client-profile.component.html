@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Client Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-xl-3">
+      <div class="card-box text-center">
+        <h2>Co chcesz zrobic?</h2>
+        <!-- your navs bound to current route fragments -->
+        <ul>
+        <nav>
+
+          <button class="button" (click)="uploadClick();">Zmien awatar</button>
+          <button class="button" (click)="logoutClick();">Powrot</button>
+
+        </nav>
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="col-lg-9 col-xl-9">
+      <div class="card-box">
+
+        <div class="tab-content" id="ngbNav">
+          <div class="tab-pane fade show active" id="schedule" role="tabpanel">W tej zakladce mozna edytowac swoj profil</div>
+        </div>
+
+      </div> <!-- end tab-content -->
+    </div> <!-- end card-box-->
+  </div> <!-- end col -->
+</div>
+</body>
+</html>
