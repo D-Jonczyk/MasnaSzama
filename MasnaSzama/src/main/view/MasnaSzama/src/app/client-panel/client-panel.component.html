@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Client Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-xl-3">
+      <div class="card-box text-center">
+        <h4 class="mb-0"><a [routerLink]="['/client-profile']"> Witaj (imie klienta)! </a></h4>
+
+        <nav>
+
+          <hr/>
+          <ul ngbNav class="nav-tabs">
+            <li class="btn-block" [ngbNavItem]="link.fragment" *ngFor="let link of links">
+              <a ngbNavLink data-toggle="collapse" [routerLink]="[link.fragment]" routerLinkActive="active">{{ link.title }}</a>
+            </li>
+          </ul>
+        </nav>
+        <router-outlet> </router-outlet>
+
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="col-lg-9 col-xl-9">
+      <div class="card-box">
+
+
+
+        <div class="tab-content" id="ngbNav">
+          <div class="tab-pane fade show active" id="schedule" role="tabpanel">Tutaj beda podstawowe informacje</div>
+        </div>
+
+      </div> <!-- end tab-content -->
+    </div> <!-- end card-box-->
+  </div> <!-- end col -->
+</div>
+</body>
+</html>

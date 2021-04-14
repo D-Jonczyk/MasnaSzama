@@ -16,6 +16,15 @@ import { UpdateRestoComponent } from './admin-panel/update-resto/update-resto.co
 import { RestaurantOrdersComponent} from './Restaurant/restaurant-orders/restaurant-orders.component';
 import {NavigationComponent} from './courier-panel/navigation/navigation.component';
 
+// client imports
+import {ClientPanelComponent} from './client-panel/client-panel.component';
+import { ClientAdressComponent } from './client-panel/client-adress/client-adress.component';
+import { ClientProfileComponent } from './client-panel/client-profile/client-profile.component';
+import { OrderHistoryComponent } from './client-panel/order-history/order-history.component';
+import { LogoutComponent } from './client-panel/logout/logout.component';
+import { UploadComponent } from './client-panel/upload/upload.component';
+
+
 const routes: Routes = [
   {path: '', redirectTo: '/main', pathMatch: 'full'},
   {path: 'main', component: MainComponent},
@@ -33,6 +42,16 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'update-resto', component: UpdateRestoComponent},
+
+  //Client Paths
+  {path: 'client-panel', component: ClientPanelComponent},
+  {path: 'client-adress', component: ClientAdressComponent},
+  {path: 'client-profile', component: ClientProfileComponent},
+  {path: 'order-history', component: OrderHistoryComponent},
+  {path: 'logout', component: LogoutComponent},
+  {path: 'upload', component: UploadComponent},
+
+
   {path: 'navigation', component: NavigationComponent}
 ];
 @NgModule({
