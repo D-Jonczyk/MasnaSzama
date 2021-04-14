@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Client Adress</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+<div class="container">
+  <div class="row">
+
+
+    <!-- content -->
+    <div class="col-lg-9 col-xl-9">
+      <div class="card-box">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="tab-pane active show" id="orders" role="tabpanel" aria-labelledby="orders-tab">
+
+                <h4 class="font-weight-bold mt-0 mb-4">Historia zamowien</h4>
+
+
+                <div class="bg-white card mb-4 order-list shadow-sm">
+                  <div class="gold-members p-3">
+                    <div class="media">
+                      <div class="media-body">
+                              <span class="float-right font-weight-bold">
+                                <fa-icon [icon]="['fas', 'truck-loading']"> </fa-icon>
+                                Data zamowienia</span>
+                        <h6 class="mb-2">
+                          <fa-icon [icon]="['fas', 'location-arrow']"> </fa-icon>
+                          <a href="#" class="text-black"> Nazwa restauracji</a>
+                        </h6>
+                        <hr/>
+                        <p class="text-gray mb-1"><fa-icon [icon]="['fas', 'map-marker-alt']"> </fa-icon> Adres zamowienia
+                          <span class="float-right">
+                                <fa-icon [icon]="['far', 'clock']"> </fa-icon>
+                                  <span class="font-weight-bold">
+                                    Godzina dostarczenia
+                                  </span>
+                              </span>
+                        </p>
+                        <p class="text-gray mb-3"><fa-icon [icon]="['fas', 'clipboard-list']"> </fa-icon> Nr. zamówienia  </p>
+                        <p class="text-gray mb-3"><fa-icon [icon]="['fas', 'clipboard-list']"> </fa-icon> Lista zamowienia  </p>
+
+                        <p class="text-gray mb-1"><fa-icon [icon]="['fas', 'info']" > </fa-icon>
+                          <span class="text-info">Komentarz</span>
+                        </p>
+
+                        <hr/>
+
+                        <div class="float-right">
+                          <a class="btn btn-sm btn-primary btn-primary px-2" href="#"><fa-icon [icon]="['far', 'check-circle']" > </fa-icon> Usun z historii</a>
+                        </div>
+                        <a class="btn btn-sm btn-outline-primary px-2" href="#"><fa-icon [icon]="['fas', 'phone-alt']" > </fa-icon> Ponow zamowienie</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="bg-white card mb-4 order-list shadow-sm">
+                  <div class="gold-members p-3">
+                    <div class="media">
+                      <div class="media-body">
+                              <span class="float-right font-weight-bold">
+                                <fa-icon [icon]="['fas', 'truck-loading']"> </fa-icon>
+                                Data zamowienia</span>
+                        <h6 class="mb-2">
+                          <fa-icon [icon]="['fas', 'location-arrow']"> </fa-icon>
+                          <a href="#" class="text-black"> Nazwa restauracji</a>
+                        </h6>
+                        <hr/>
+                        <p class="text-gray mb-1"><fa-icon [icon]="['fas', 'map-marker-alt']"> </fa-icon> Adres zamowienia
+                          <span class="float-right">
+                                <fa-icon [icon]="['far', 'clock']"> </fa-icon>
+                                  <span class="font-weight-bold">
+                                    Godzina dostarczenia
+                                  </span>
+                              </span>
+                        </p>
+                        <p class="text-gray mb-3"><fa-icon [icon]="['fas', 'clipboard-list']"> </fa-icon> Nr. zamówienia  </p>
+                        <p class="text-gray mb-3"><fa-icon [icon]="['fas', 'clipboard-list']"> </fa-icon> Lista zamowienia  </p>
+
+                        <p class="text-gray mb-1"><fa-icon [icon]="['fas', 'info']" > </fa-icon>
+                          <span class="text-info">Komentarz</span>
+                        </p>
+
+                        <hr/>
+
+                        <div class="float-right">
+                          <a class="btn btn-sm btn-primary btn-primary px-2" href="#"><fa-icon [icon]="['far', 'check-circle']" > </fa-icon> Usun z historii</a>
+                        </div>
+                        <a class="btn btn-sm btn-outline-primary px-2" href="#"><fa-icon [icon]="['fas', 'phone-alt']" > </fa-icon> Ponow zamowienie</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-info" (click)="logoutClick();">Powrot do strony glownej</button>
+      </div> <!-- end tab-content -->
+    </div> <!-- end card-box-->
+  </div> <!-- end col -->
+</div>
+</body>
+</html>

@@ -8,7 +8,7 @@ import { CourierPanelComponent } from './courier-panel/courier-panel.component';
 import { AdminPanelComponent} from './admin-panel/admin-panel.component';
 import { RestaurantSummaryComponent } from './Restaurant/restaurant-summary/restaurant-summary.component';
 import { MainComponent } from './main/main.component';
-import {ShowScheduleComponent} from './courier-panel/Schedule/show-schedule/show-schedule.component';
+import { ShowScheduleComponent } from './courier-panel/Schedule/show-schedule/show-schedule.component';
 import { SendAvailabilitiesComponent } from './courier-panel/Schedule/send-availabilities/send-availabilities.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProfileComponent } from './courier-panel/profile/profile.component';
@@ -20,9 +20,20 @@ import { ListRestoComponent } from './admin-panel/list-resto/list-resto.componen
 import { LoginComponent } from './admin-panel/login/login.component';
 import { RegisterComponent } from './admin-panel/register/register.component';
 import { UpdateRestoComponent } from './admin-panel/update-resto/update-resto.component';
+
+//Client imports
+import { ClientAdressComponent } from './client-panel/client-adress/client-adress.component';
+import { ClientProfileComponent } from './client-panel/client-profile/client-profile.component';
+import { OrderHistoryComponent } from './client-panel/order-history/order-history.component';
+import { ClientPanelComponent } from './client-panel/client-panel.component';
+import { LogoutComponent } from './client-panel/logout/logout.component';
+import { UploadComponent } from './client-panel/upload/upload.component';
+
+
 import { RestaurantOrdersComponent } from './Restaurant/restaurant-orders/restaurant-orders.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavigationComponent } from './courier-panel/navigation/navigation.component';
+
 
 @NgModule({
   declarations: [
@@ -43,6 +54,17 @@ import { NavigationComponent } from './courier-panel/navigation/navigation.compo
     UpdateRestoComponent,
     RestaurantOrdersComponent,
     NavigationComponent,
+
+
+
+//Client modules
+     ClientAdressComponent,
+     ClientPanelComponent,
+     OrderHistoryComponent,
+     ClientProfileComponent,
+     LogoutComponent,
+     UploadComponent,
+
   ],
   imports: [
     BrowserModule,
