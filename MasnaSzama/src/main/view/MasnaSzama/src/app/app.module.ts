@@ -24,6 +24,7 @@ import { RestaurantOrdersComponent } from './Restaurant/restaurant-orders/restau
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavigationComponent } from './courier-panel/navigation/navigation.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
