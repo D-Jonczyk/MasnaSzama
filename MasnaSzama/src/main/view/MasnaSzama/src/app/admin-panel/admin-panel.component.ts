@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import {concatMap} from 'rxjs/operators';
 
 @Component({
-  selector: 'app-admin-panel',
+  selector: 'app-root',
   templateUrl: './admin-panel.component.html',
   styleUrls: ['./admin-panel.component.css']
 })
