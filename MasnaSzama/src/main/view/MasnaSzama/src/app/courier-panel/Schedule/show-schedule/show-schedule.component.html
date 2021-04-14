@@ -12,11 +12,13 @@
   <div class="row">
     <div class="col-lg-3 col-xl-3">
       <div class="card-box text-center">
-        <h4 class="mb-0">Witaj (imie kuriera)!</h4>
+        <h4 class="mb-0"><a [routerLink]="['/courier-panel']"> Witaj Kurierze! </a></h4>
 
         <nav>
+          <button class="start-shift"><fa-icon [icon]="['far', 'play-circle']"> </fa-icon> Zacznij zmianę</button>
+          <hr/>
           <ul ngbNav class="nav-tabs">
-            <li [ngbNavItem]="link.fragment" *ngFor="let link of links">
+            <li class="btn-block" [ngbNavItem]="link.fragment" *ngFor="let link of links">
               <a ngbNavLink data-toggle="collapse" [routerLink]="[link.fragment]" routerLinkActive="active">{{ link.title }}</a>
             </li>
           </ul>
@@ -29,9 +31,6 @@
     <!-- content -->
     <div class="col-lg-9 col-xl-9">
       <div class="card-box">
-
-        <button class="start-shift">Zacznij zmianę</button>
-
           <div class="container">
             <h3 class="text-center">Grafik (tydzień {{ currentDate | date: 'w' }})</h3>
             <div class="row">
@@ -64,6 +63,7 @@
                   </div>
                 </div>
               </div></div></div>
+
       </div> <!-- end tab-content -->
     </div> <!-- end card-box-->
   </div> <!-- end col -->
