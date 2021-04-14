@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {CourierPanelComponent} from '../courier-panel.component';
+import {FaIconLibrary} from '@fortawesome/angular-fontawesome';
+import {faPlayCircle} from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['../courier-panel.component.css', './profile.component.css']
 })
-export class ProfileComponent extends CourierPanelComponent implements OnInit {
+export class ProfileComponent implements OnInit {
   links = [
     { title: 'Nawigacja', fragment: '/navigation' },
     { title: 'Lista zamówień', fragment: '/orderlist'},
@@ -16,10 +17,9 @@ export class ProfileComponent extends CourierPanelComponent implements OnInit {
     { title: 'Wsparcie kuriera', fragment: '/support'}
   ];
 
-  constructor(public route: ActivatedRoute) {
-    super();
+  constructor(public route: ActivatedRoute, private library: FaIconLibrary) {
+    library.addIcons(faPlayCircle);
   }
-
   ngOnInit(): void {
   }
 

@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {CourierPanelComponent} from '../../courier-panel.component';
+import {FaIconLibrary} from '@fortawesome/angular-fontawesome';
+import {faPlayCircle} from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-show-schedule',
   templateUrl: './show-schedule.component.html',
   styleUrls: ['../../courier-panel.component.css', './show-schedule.component.css']
 })
-export class ShowScheduleComponent extends CourierPanelComponent implements OnInit {
+export class ShowScheduleComponent implements OnInit {
   links = [
     { title: 'Nawigacja', fragment: '/navigation' },
     { title: 'Lista zamówień', fragment: '/orderlist'},
@@ -28,8 +29,8 @@ export class ShowScheduleComponent extends CourierPanelComponent implements OnIn
   months: string[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   days: string[] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   numbers: number[] = [1, 2, 3, 4, 5, 6, 7];
-  constructor(public route: ActivatedRoute) {
-    super();
+  constructor(public route: ActivatedRoute, private library: FaIconLibrary) {
+    library.addIcons(faPlayCircle);
   }
 
   ngOnInit(): void {
