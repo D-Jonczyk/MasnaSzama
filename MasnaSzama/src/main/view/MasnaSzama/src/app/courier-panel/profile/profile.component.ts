@@ -2,6 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {FaIconLibrary} from '@fortawesome/angular-fontawesome';
 import {faPauseCircle, faPlayCircle} from '@fortawesome/free-regular-svg-icons';
+import {LINKS} from '../courier-panel.component';
+import {
+  faCalendarAlt,
+  faComments,
+  faHistory,
+  faListAlt,
+  faLocationArrow,
+  faQuestionCircle,
+  faUserCircle
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-profile',
@@ -11,16 +21,11 @@ import {faPauseCircle, faPlayCircle} from '@fortawesome/free-regular-svg-icons';
 export class ProfileComponent implements OnInit {
   isClicked = true;
   isWorking = false;
-  links = [
-    { title: 'Nawigacja', fragment: '/navigation' },
-    { title: 'Lista zamówień', fragment: '/orderlist'},
-    { title: 'Grafik', fragment: '/show-schedule'},
-    { title: 'Mój profil', fragment: '/profile'},
-    { title: 'Wsparcie kuriera', fragment: '/support'}
-  ];
-
+  links = LINKS;
   constructor(public route: ActivatedRoute, private library: FaIconLibrary) {
-    library.addIcons(faPlayCircle, faPauseCircle);
+    library.addIcons(faPlayCircle, faPauseCircle,
+      faListAlt, faLocationArrow, faCalendarAlt, faUserCircle, faQuestionCircle,
+      faComments, faHistory);
   }
   ngOnInit(): void {
   }

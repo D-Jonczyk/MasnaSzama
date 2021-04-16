@@ -1,19 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {
+  faCalendarAlt,
   faCheckSquare, faClipboardList,
-  faCoffee, faHeadset,
-  faInfo,
+  faCoffee, faComments, faFingerprint, faHandMiddleFinger, faHeadset, faHistory,
+  faInfo, faListAlt,
   faLocationArrow,
-  faMapMarkerAlt, faPhoneAlt,
+  faMapMarkerAlt, faPhoneAlt, faQuestionCircle, faSearch,
   faSquare,
-  faTruckLoading
+  faTruckLoading, faUserCircle
 } from '@fortawesome/free-solid-svg-icons';
 import {FaIconLibrary} from '@fortawesome/angular-fontawesome';
 import {faGithub, faMedium} from '@fortawesome/free-brands-svg-icons';
 import {faCheckCircle, faClock, faPlayCircle} from '@fortawesome/free-regular-svg-icons';
-import {ShowScheduleComponent} from '../Schedule/show-schedule/show-schedule.component';
 import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import { LINKS } from '../courier-panel.component';
 
 @Component({
   selector: 'app-orderlist',
@@ -24,13 +25,8 @@ export class OrderlistComponent implements OnInit {
   isFinished = false;
   faCoffee = faCoffee;
   closeResult = '';
-  links = [
-    { title: 'Nawigacja', fragment: '/navigation' },
-    { title: 'Lista zamówień', fragment: '/orderlist'},
-    { title: 'Grafik', fragment: '/show-schedule'},
-    { title: 'Mój profil', fragment: '/profile'},
-    { title: 'Wsparcie kuriera', fragment: '/support'}
-  ];
+  fas = 'fas';
+  links = LINKS;
   private static getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
       return 'by pressing ESC';
@@ -40,9 +36,11 @@ export class OrderlistComponent implements OnInit {
       return `with: ${reason}`;
     }
   }
-  constructor(public route: ActivatedRoute, public library: FaIconLibrary, private modalService: NgbModal) {
+  constructor(public route: ActivatedRoute, public library: FaIconLibrary,
+              private modalService: NgbModal) {
     library.addIcons(faSquare, faCheckSquare, faMedium, faGithub, faClock, faMapMarkerAlt, faLocationArrow, faInfo, faTruckLoading,
-      faClipboardList, faHeadset, faPhoneAlt, faCheckCircle, faPlayCircle);
+      faClipboardList, faHeadset, faPhoneAlt, faCheckCircle, faPlayCircle, faListAlt, faLocationArrow,
+      faCalendarAlt, faUserCircle, faQuestionCircle, faComments, faHistory);
   }
 
   ngOnInit(): void {

@@ -3,6 +3,16 @@ import {ActivatedRoute} from '@angular/router';
 import {FaIconLibrary} from '@fortawesome/angular-fontawesome';
 import {faPlayCircle} from '@fortawesome/free-regular-svg-icons';
 import {ModalDismissReasons, NgbModal, NgbTimeStruct} from '@ng-bootstrap/ng-bootstrap';
+import {
+  faCalendarAlt, faComments,
+  faFingerprint,
+  faHandMiddleFinger, faHistory,
+  faListAlt,
+  faLocationArrow, faQuestionCircle,
+  faSearch,
+  faUserCircle
+} from '@fortawesome/free-solid-svg-icons';
+import { LINKS } from '../../courier-panel.component';
 
 @Component({
   selector: 'app-show-schedule',
@@ -11,17 +21,12 @@ import {ModalDismissReasons, NgbModal, NgbTimeStruct} from '@ng-bootstrap/ng-boo
 })
 export class ShowScheduleComponent implements OnInit {
   constructor(public route: ActivatedRoute, private library: FaIconLibrary, private modalService: NgbModal) {
-    library.addIcons(faPlayCircle);
+    library.addIcons(faPlayCircle, faHandMiddleFinger,
+      faFingerprint, faSearch, faListAlt, faLocationArrow, faCalendarAlt, faUserCircle, faQuestionCircle,
+      faComments, faHistory);
   }
   closeResult = '';
-  links = [
-    { title: 'Nawigacja', fragment: '/navigation' },
-    { title: 'Lista zamówień', fragment: '/orderlist'},
-    { title: 'Grafik', fragment: '/show-schedule'},
-    { title: 'Mój profil', fragment: '/profile'},
-    { title: 'Wsparcie kuriera', fragment: '/support'}
-  ];
-
+  links = LINKS;
   startTime: NgbTimeStruct = {hour: 13, minute: 30, second: 0};
   endTime: NgbTimeStruct = {hour: 13, minute: 30, second: 0};
   hourStep = 1;

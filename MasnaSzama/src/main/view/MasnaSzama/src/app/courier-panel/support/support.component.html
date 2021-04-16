@@ -8,18 +8,21 @@
 </head>
 
 <body>
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-lg-3 col-xl-3">
-      <div class="card-box text-center">
-        <h4 class="mb-0"><a [routerLink]="['/courier-panel']"> Witaj Kurierze! </a></h4>
-
+    <div class="col-lg-3 float-left">
+      <div class="left-navbar text-center">
+        <h4 class="mb-0"> Witaj Kurierze!</h4>
+        <!-- <a [routerLink]="['/courier-panel']"> -->
         <nav>
           <button class="start-shift"><fa-icon [icon]="['far', 'play-circle']"> </fa-icon> Zacznij zmianę</button>
           <hr/>
-          <ul ngbNav class="nav-tabs">
-            <li class="btn-block" [ngbNavItem]="link.fragment" *ngFor="let link of links">
-              <a ngbNavLink data-toggle="collapse" [routerLink]="[link.fragment]" routerLinkActive="active">{{ link.title }}</a>
+          <ul ngbNav>
+            <li class="btn-block border-white" [ngbNavItem]="link.fragment" *ngFor="let link of links">
+
+              <a ngbNavLink data-toggle="collapse" [routerLink]="[link.fragment]" routerLinkActive="active" class="float-left">
+                <fa-icon class="float-left" icon="{{ link.icon }}"> </fa-icon> {{ link.title }}
+              </a>
             </li>
           </ul>
         </nav>
@@ -29,8 +32,8 @@
     </div>
 
     <!-- content -->
-    <div class="col-lg-9 col-xl-9">
-      <div class="card-box">
+    <div class="col-lg-9">
+      <div class="card-box col-lg-9">
 
 
 
