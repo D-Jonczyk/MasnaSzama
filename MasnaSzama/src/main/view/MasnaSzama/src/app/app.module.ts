@@ -33,6 +33,7 @@ import { UploadComponent } from './client-panel/upload/upload.component';
 import { RestaurantOrdersComponent } from './Restaurant/restaurant-orders/restaurant-orders.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavigationComponent } from './courier-panel/navigation/navigation.component';
+import { OrderCheckoutComponent } from './order-checkout/order-checkout.component';
 
 
 @NgModule({
@@ -64,6 +65,7 @@ import { NavigationComponent } from './courier-panel/navigation/navigation.compo
      ClientProfileComponent,
      LogoutComponent,
      UploadComponent,
+     OrderCheckoutComponent,
 
   ],
   imports: [

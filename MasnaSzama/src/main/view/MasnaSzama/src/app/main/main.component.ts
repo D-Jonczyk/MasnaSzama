@@ -37,15 +37,12 @@ export class MainComponent implements OnInit {
     this.router.navigateByUrl('/client-panel');
   }
 
-
-
   ngOnInit(): void {
-    //this.router.navigateByUrl('/courier-panel');
   }
+
   onSubmit(): void {
-    console.log(this.addressForm.get('adr').value);
     this.restaurantSummaryService.address = this.addressForm.get('adr').value.toString();
-    this.router.navigate(['/restaurant-summary']);
+    this.router.navigateByUrl('/restaurant-summary');
   }
 
   get address(): string {

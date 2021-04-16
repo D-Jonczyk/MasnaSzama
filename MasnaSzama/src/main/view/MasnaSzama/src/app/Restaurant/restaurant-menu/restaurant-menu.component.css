@@ -9,3 +9,7 @@
   background-color: #daceb7;
 }
 
+#btn-delete {
+  height: 40px;
+  text-align: center;
+}

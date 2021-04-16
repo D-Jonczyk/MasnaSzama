@@ -4,9 +4,24 @@
   <div class="col-4 float-right"> <!--basket-->
     <p><b>Twoje zamówienie:</b></p>
     <hr>
-    <div class="row" *ngFor="let orderMeal of orderMeals">
-      <p><b>{{orderMeal.name}}</b>&nbsp;
-        <i>Cena: {{orderMeal.price}}</i></p>
+    <div class="row">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Nazwa</th>
+            <th scope="col">Cena</th>
+            <th scope="col">#</th>
+          </tr>
+        </thead>
+          <tbody>
+            <tr *ngFor="let orderMeal of orderMeals">
+              <td>{{orderMeal.name}}</td>
+              <td>{{orderMeal.price}}</td>
+              <button type="button" class="btn btn-danger btn-sm" id="btn-delete" (click)="deleteFromOrder(orderMeal.id);">X</button>
+            </tr>
+          </tbody>
+
+      </table>
     </div>
     <hr>
     <b>Razem: {{sum | currency:'PLN'}}</b>
@@ -17,7 +32,7 @@
   <div class="col-8 " *ngFor="let meal of meals$ | async"> <!--menu-->
     <h4 class="name">{{meal.name}}</h4>
     <hr>
-    <h6 class="price">Cena: {{meal.price}}</h6>
+    <h6 class="price">Cena: {{meal.price}} zł</h6>
     <button type="button" (click)="addToOrder(meal)" class="btn btn-info btn-block">Dodaj</button>
     <hr>
   </div>
