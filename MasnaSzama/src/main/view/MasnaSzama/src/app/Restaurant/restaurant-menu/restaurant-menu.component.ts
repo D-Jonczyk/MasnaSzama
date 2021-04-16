@@ -34,4 +34,9 @@ export class RestaurantMenuComponent implements OnInit {
     this.sum += this.orderMeals[this.orderMeals.length - 1].price;
   }
 
+  deleteFromOrder(id): void {
+    let removeIndex = this.orderMeals.findIndex(meal => meal.id === id);
+    this.sum = this.sum - this.orderMeals[removeIndex].price;
+    this.orderMeals.splice(removeIndex, 1);
+  }
 }

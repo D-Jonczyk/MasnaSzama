@@ -1,25 +1,42 @@
-<div class="jumbotron">
-    <h1 class="text-center">Register User For Restaurant App</h1>
-</div>
-<!-- <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
-  <strong>Success !</strong> Your data added successfully !.
-  <button (click)=" closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div> -->
-<form [formGroup]="createUser" (ngSubmit)= "regUser()">
-    <div class="form-group">
-      <label>Name</label>
-      <input type="text" class="form-control" placeholder="Enter Name" formControlName="name">
-    </div>
-    <div class="form-group">
-        <label>Password</label>
-        <input type="password" class="form-control" placeholder="Enter Address" formControlName="password">
-      </div>
-      <div class="form-group">
-        <label>Email</label>
-        <input type="text" class="form-control" placeholder="Enter Email" formControlName="email">
-      </div>
+<div id="login">
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+  <h1><strong>Witaj!</strong> Proszę podać dane rejestracji</h1>
+
+  <form action="#" method="get">
+
+    <fieldset>
+
+      <p><input type="text" required value="Nazwa użytownika" placeholder="Nazwa użytownika"></p>
+
+      <p><input type="password" required value="Hasło" placeholder="Hasło"></p>
+
+      <p><a href="#">Powtórz hasło</a></p>
+
+      <p><input type="password" required value="Hasło" placeholder="Hasło"></p>
+
+      <p><input type="submit" value="Login"></p>
+
+    </fieldset>
+
   </form>
+
+  <p><span class="btn-round">lub</span></p>
+
+  <p>
+
+    <a class="facebook-before"><span class="fontawesome-facebook"></span></a>
+    <button class="facebook">Zaloguj przez facebooka</button>
+
+  </p>
+
+  <p>
+
+    <a class="twitter-before"><span class="fontawesome-twitter"></span></a>
+    <button class="twitter">Zaloguj przez Twittera</button>
+
+  </p>
+
+</div>
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>

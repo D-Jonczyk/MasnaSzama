@@ -1,139 +1,187 @@
-<div *ngIf="alert" class="alert alert-danger alert-dismissible fade show" role="alert">
-  <strong>Deleted</strong> Successfull ! ☺.
-  <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-<table class="table">
-    <thead>
+<header>
+  <!-- navigation -->
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/6227/restaurant-list-logo.png" width="30" height="30" class="d-inline-block align-top" alt="Lista restauracji">
 
-    </thead>
-    <tbody>
+        Lista restauracji
+      </a>
+    </div>
+  </nav>
 
-    </tbody>
-  </table>
-<div class="container">
-  <h1 class="text-center">Edytuj i zapisz listę restauracji</h1>
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="osahan-account-page-right shadow-sm bg-white p-4 h-100">
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane  fade  active show" id="orders" role="tabpanel" aria-labelledby="orders-tab">
-            <h4 class="font-weight-bold mt-0 mb-4">Lista restauracji</h4>
-            <div class="bg-white card mb-4 order-list shadow-sm">
-              <div class="gold-members p-4">
-                <a href="#">
-                </a>
-                <div class="media">
-                  <div class="media-body">
-                    <a href="#">
-                    </a>
-                    <h6 class="mb-2">
-                      <a href="#"></a>
-                      <a href="#" class="text-black">KFC Galeria Echo Kielce</a>
-                    </h6>
-                    <p class="text-gray mb-1"><i class="icofont-location-arrow"></i>Świętokrzyska 20, 25-406 Kielce
-                    </p>
-                    <p class="text-gray mb-3"><i class="icofont-list"></i>Adres email: KFC.tu.kielce.pl </p>
-                    <hr>
-                    <div class="float-middle">
-                      <a class="btn btn-sm btn-outline-primary" href="#"><i class="icofont-headphone-alt"></i> Pomoc</a>
-                      <a class="btn btn-sm btn-primary" href="#"><i class="icofont-check-circled text-success"></i> Potwierdź dostarczenie</a>
-                    </div>
-                    <a class="btn btn-sm btn-outline-primary" href="#"><i class="icofont-iphone"></i> Zadzwoń do klienta</a>
-                  </div>
-                </div>
+  <div class="banner"></div>
+</header>
 
-              </div>
-            </div>
-            <div class="bg-white card mb-4 order-list shadow-sm">
-              <div class="gold-members p-4">
-                <a href="#">
-                </a>
-                <div class="media">
-                  <div class="media-body">
-                    <a href="#">
-                      <span class="float-right text-info">Odbiór: 14:24</span>
-                    </a>
-                    <h6 class="mb-2">
-                      <a href="#"></a>
-                      <a href="#" class="text-black">Kebab Kielce, ul. Warszawska</a>
-                    </h6>
-                    <p class="text-gray mb-1"><i class="icofont-location-arrow"></i>ul. Warszawska 99, 12-324
-                    </p>
-                    <p class="text-gray mb-3"><i class="icofont-list"></i> Numer zamówienia #25102589748 <i class="icofont-clock-time ml-2"></i>15:00</p>
-                    <p class="text-dark"> order info
-                    </p>
-                    <hr>
-                    <div class="float-right">
-                      <a class="btn btn-sm btn-outline-primary" href="#"><i class="icofont-headphone-alt"></i> Pomoc</a>
-                      <a class="btn btn-sm btn-primary" href="#"><i class="icofont-check-circled text-success"></i> Potwierdź dostarczenie</a>
-                    </div>
-                    <a class="btn btn-sm btn-outline-primary" href="#"><i class="icofont-iphone"></i> Zadzwoń do klienta</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="bg-white card mb-4 order-list shadow-sm">
-              <div class="gold-members p-4">
-                <a href="#">
-                </a>
-                <div class="media">
-                  <div class="media-body">
-                    <a href="#">
-                      <span class="float-right text-info">Odbiór: 14:24</span>
-                    </a>
-                    <h6 class="mb-2">
-                      <a href="#"></a>
-                      <a href="#" class="text-black">Kebab Kielce, ul. Warszawska</a>
-                    </h6>
-                    <p class="text-gray mb-1"><i class="icofont-location-arrow"></i>ul. Warszawska 99, 12-324
-                    </p>
-                    <p class="text-gray mb-3"><i class="icofont-list"></i> Numer zamówienia #25102589748 <i class="icofont-clock-time ml-2"></i>15:00</p>
-                    <p class="text-dark"> order info
-                    </p>
-                    <hr>
-                    <div class="float-right">
-                      <a class="btn btn-sm btn-outline-primary" href="#"><i class="icofont-headphone-alt"></i> Pomoc</a>
-                      <a class="btn btn-sm btn-primary" href="#"><i class="icofont-check-circled text-success"></i> Potwierdź dostarczenie</a>
-                    </div>
-                    <a class="btn btn-sm btn-outline-primary" href="#"><i class="icofont-iphone"></i> Zadzwoń do klienta</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="bg-white card mb-4 order-list shadow-sm">
-              <div class="gold-members p-4">
-                <a href="#">
-                </a>
-                <div class="media">
-                  <div class="media-body">
-                    <a href="#">
-                      <span class="float-right text-info">Odbiór: 14:24</span>
-                    </a>
-                    <h6 class="mb-2">
-                      <a href="#"></a>
-                      <a href="#" class="text-black">Kebab Kielce, ul. Warszawska</a>
-                    </h6>
-                    <p class="text-gray mb-1"><i class="icofont-location-arrow"></i>ul. Warszawska 99, 12-324
-                    </p>
-                    <p class="text-gray mb-3"><i class="icofont-list"></i> Numer zamówienia #25102589748 <i class="icofont-clock-time ml-2"></i>15:00</p>
-                    <p class="text-dark"> order info
-                    </p>
-                    <hr>
-                    <div class="float-right">
-                      <a class="btn btn-sm btn-outline-primary" href="#"><i class="icofont-headphone-alt"></i> Pomoc</a>
-                      <a class="btn btn-sm btn-primary" href="#"><i class="icofont-check-circled text-success"></i> Potwierdź dostarczenie</a>
-                    </div>
-                    <a class="btn btn-sm btn-outline-primary" href="#"><i class="icofont-iphone"></i> Zadzwoń do klienta</a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
+<!-- search bar -->
+<div class="container search-bar">
+  <div class="search-bar-outer">
+    <div class="search-bar-inner">
+      <form action="/search">
+        <div class="input-group">
+          <input type="text" name="keyword" class="form-control" placeholder="Podaj nazwę i kategorię" aria-label="Restaurant Name..." value="" aria-describedby="search-button">
+          <div class="input-group-append">
+            <button class="btn btn-major" type="submit" id="search-button"><i class="fas fa-search"></i></button>
           </div>
         </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- restaurant list -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-10 col-12 mx-auto">
+      <div class="card-columns">
+        <a href="/restaurants/1" class="text-secondary">
+          <div class="card mb-3">
+            <img class="card-img-top" src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5635/01.jpg" alt="Sababa 沙巴巴中東美食">
+            <div class="card-body p-3">
+              <h6 class="card-title mb-1">Kebab Mahir</h6>
+
+              <div class="restaurant-category mb-1">
+                <i class="fas fa-utensils pr-2"></i>Kuchnia bliskowschodnia
+              </div>
+
+              <span class="badge badge-pill badge-danger font-weight-normal">
+                4.1
+                <i class="fas fa-star fa-xs"></i>
+              </span>
+
+            </div>
+          </div>
+        </a>
+        <a href="/restaurants/2" class="text-secondary">
+          <div class="card mb-3">
+            <img class="card-img-top" src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5628/02.jpg" alt="Yami Sushi">
+            <div class="card-body p-3">
+              <h6 class="card-title mb-1">Yami sushi</h6>
+
+              <div class="restaurant-category mb-1">
+                <i class="fas fa-utensils pr-2"></i>Kuchnia japońska
+              </div>
+
+              <span class="badge badge-pill badge-danger font-weight-normal">
+                4.3
+                <i class="fas fa-star fa-xs"></i>
+              </span>
+
+            </div>
+          </div>
+        </a>
+        <a href="/restaurants/3" class="text-secondary">
+          <div class="card mb-3">
+            <img class="card-img-top" src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5629/03.jpg" alt="ZIGA ZIGA">
+            <div class="card-body p-3">
+              <h6 class="card-title mb-1">Pub Boży</h6>
+
+              <div class="restaurant-category mb-1">
+                <i class="fas fa-utensils pr-2"></i> Puby i bary
+              </div>
+
+              <span class="badge badge-pill badge-danger font-weight-normal">
+                4.2
+                <i class="fas fa-star fa-xs"></i>
+              </span>
+
+            </div>
+          </div>
+        </a>
+        <a href="/restaurants/4" class="text-secondary">
+          <div class="card mb-3">
+            <img class="card-img-top" src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5630/04.jpg" alt="艾朋牛排餐酒館">
+            <div class="card-body p-3">
+              <h6 class="card-title mb-1">Restauracja bistro włoska</h6>
+
+              <div class="restaurant-category mb-1">
+                <i class="fas fa-utensils pr-2"></i> Włoska
+              </div>
+
+              <span class="badge badge-pill badge-danger font-weight-normal">
+                4.2
+                <i class="fas fa-star fa-xs"></i>
+              </span>
+
+            </div>
+          </div>
+        </a>
+        <a href="/restaurants/5" class="text-secondary">
+          <div class="card mb-3">
+            <img class="card-img-top" src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5631/05.jpg" alt="Gusto Pizza">
+            <div class="card-body p-3">
+              <h6 class="card-title mb-1">Gusto Pizza</h6>
+
+              <div class="restaurant-category mb-1">
+                <i class="fas fa-utensils pr-2"></i>Włoska
+              </div>
+
+              <span class="badge badge-pill badge-danger font-weight-normal">
+                4.7
+                <i class="fas fa-star fa-xs"></i>
+              </span>
+
+            </div>
+          </div>
+        </a>
+        <a href="/restaurants/6" class="text-secondary">
+          <div class="card mb-3">
+            <img class="card-img-top" src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5632/06.jpg" alt="WXYZ Bar">
+            <div class="card-body p-3">
+              <h6 class="card-title mb-1">Shisha Bar</h6>
+
+              <div class="restaurant-category mb-1">
+                <i class="fas fa-utensils pr-2"></i> Bar
+              </div>
+
+              <span class="badge badge-pill badge-danger font-weight-normal">
+                4.3
+                <i class="fas fa-star fa-xs"></i>
+              </span>
+
+            </div>
+          </div>
+        </a>
+        <a href="/restaurants/7" class="text-secondary">
+          <div class="card mb-3">
+            <img class="card-img-top" src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5633/07.jpg" alt="Fika Fika Cafe">
+            <div class="card-body p-3">
+              <h6 class="card-title mb-1">Czarna Kawka</h6>
+
+              <div class="restaurant-category mb-1">
+                <i class="fas fa-utensils pr-2"></i> Kawiarnia
+              </div>
+
+              <span class="badge badge-pill badge-danger font-weight-normal">
+                4.3
+                <i class="fas fa-star fa-xs"></i>
+              </span>
+
+            </div>
+          </div>
+        </a>
+        <a href="/restaurants/8" class="text-secondary">
+          <div class="card mb-3">
+            <img class="card-img-top" src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5634/08.jpg" alt="布娜飛比利時啤酒餐廳">
+            <div class="card-body p-3">
+              <h6 class="card-title mb-1">Belgijska restauracja</h6>
+
+              <div class="restaurant-category mb-1">
+                <i class="fas fa-utensils pr-2"></i>Kuchnia belgijska
+              </div>
+
+              <span class="badge badge-pill badge-danger font-weight-normal">
+                4.7
+                <i class="fas fa-star fa-xs"></i>
+              </span>
+
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   </div>
 </div>
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>

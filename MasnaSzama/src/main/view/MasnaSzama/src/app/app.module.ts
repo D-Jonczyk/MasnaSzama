@@ -21,7 +21,7 @@ import { LoginComponent } from './admin-panel/login/login.component';
 import { RegisterComponent } from './admin-panel/register/register.component';
 import { UpdateRestoComponent } from './admin-panel/update-resto/update-resto.component';
 
-//Client imports
+// Client imports
 import { ClientAdressComponent } from './client-panel/client-adress/client-adress.component';
 import { ClientProfileComponent } from './client-panel/client-profile/client-profile.component';
 import { OrderHistoryComponent } from './client-panel/order-history/order-history.component';
@@ -34,6 +34,7 @@ import { RestaurantOrdersComponent } from './Restaurant/restaurant-orders/restau
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavigationComponent } from './courier-panel/navigation/navigation.component';
 import { SupportComponent } from './courier-panel/support/support.component';
+import { OrderCheckoutComponent } from './order-checkout/order-checkout.component';
 
 
 @NgModule({
@@ -64,6 +65,7 @@ import { SupportComponent } from './courier-panel/support/support.component';
      LogoutComponent,
      UploadComponent,
      SupportComponent,
+     OrderCheckoutComponent,
 
   ],
   imports: [
