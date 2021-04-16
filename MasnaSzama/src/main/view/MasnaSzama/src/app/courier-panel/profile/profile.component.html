@@ -15,7 +15,8 @@
         <h4 class="mb-0"><a [routerLink]="['/courier-panel']"> Witaj Kurierze! </a></h4>
 
         <nav>
-          <button class="start-shift"><fa-icon [icon]="['far', 'play-circle']"> </fa-icon> Zacznij zmianę</button>
+          <button class="start-shift" [hidden]="isWorking" (click)="toggleShiftButton()"><fa-icon [icon]="['far', 'play-circle']"> </fa-icon> Zacznij zmianę</button>
+          <button class="start-shift" [hidden]="!isWorking" (click)="toggleShiftButton()"><fa-icon [icon]="['far', 'pause-circle']"> </fa-icon> Zakończ zmianę</button>
           <hr/>
           <ul ngbNav class="nav-tabs">
             <li class="btn-block" [ngbNavItem]="link.fragment" *ngFor="let link of links">
@@ -38,9 +39,8 @@
 
             <!-- edit form column -->
             <div class="col-md-9 personal-info">
-              <div class="alert alert-info alert-dismissable">
-                <a class="panel-close close" data-dismiss="alert">×</a>
-                <i class="fa fa-coffee"></i>
+              <div class="alert alert-info alert-dismissable" [hidden]="isClicked">
+                <a class="panel-close close" data-dismiss="alert" (click)="toggleDisplay()">×</a>
                 Pomyślnie zaktualizowano dane.
               </div>
 
@@ -83,7 +83,9 @@
               </form>
             </div>
           </div>
+          <button type="button" class="btn btn-outline-primary offset-0" (click)="toggleDisplay()">Zatwierdź zmiany</button>
         </div>
+
         <hr>
 
       </div> <!-- end tab-content -->

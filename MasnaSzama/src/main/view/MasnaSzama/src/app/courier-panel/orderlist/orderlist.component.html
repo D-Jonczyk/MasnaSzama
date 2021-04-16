@@ -77,7 +77,7 @@
                     </div>
 
 
-                    <div class="bg-white card mb-4 order-list shadow-sm">
+                    <div class="bg-white card mb-4 order-list shadow-sm" [hidden]="isFinished">
                       <div class="gold-members p-3">
                         <div class="media">
                           <div class="media-body">
@@ -107,12 +107,46 @@
                             <hr/>
 
                             <div class="float-right">
-                              <a class="btn btn-sm btn-outline-primary" href="#"><fa-icon [icon]="['fas', 'headset']" > </fa-icon> Pomoc</a>
-                              <a class="btn btn-sm btn-primary btn-primary px-2" href="#"><fa-icon [icon]="['far', 'check-circle']" > </fa-icon> Potwierdź dostarczenie</a>
+                              <button type="button" class="btn btn-sm btn-outline-primary" (click)="openCallCoordinator(contentCallCoordinator)"><fa-icon [icon]="['fas', 'headset']" > </fa-icon> Pomoc</button>
+                              <button type="button" class="btn btn-sm btn-primary btn-primary px-2" (click)="toggleDisplay()"><fa-icon [icon]="['far', 'check-circle']" > </fa-icon> Potwierdź dostarczenie</button>
                             </div>
-                            <a class="btn btn-sm btn-outline-primary px-2" href="#"><fa-icon [icon]="['fas', 'phone-alt']" > </fa-icon> Zadzwoń do klienta</a>
+                            <button type="button" class="btn btn-sm btn-outline-primary px-2" (click)="openCallTheClient(contentCallTheClient)"><fa-icon [icon]="['fas', 'phone-alt']" > </fa-icon> Zadzwoń do klienta</button>
                           </div>
                         </div>
+
+                        <ng-template #contentCallTheClient let-modal>
+                          <div class="modal-header">
+                            <h4 class="modal-title" id="modal-call-client">Numer telefonu klienta</h4>
+                            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+
+                          <div class="modal-body">
+                            123-432-235
+                          </div>
+
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')"><fa-icon [icon]="['fas', 'phone-alt']" > </fa-icon> Zadzwoń</button>
+                          </div>
+                        </ng-template>
+
+                        <ng-template #contentCallCoordinator let-modal>
+                          <div class="modal-header">
+                            <h4 class="modal-title" id="modal-call-coordinator">Numer telefonu koordynatora</h4>
+                            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+
+                          <div class="modal-body">
+                            123-432-235
+                          </div>
+
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')"><fa-icon [icon]="['fas', 'phone-alt']" > </fa-icon> Zadzwoń</button>
+                          </div>
+                        </ng-template>
 
                       </div>
                     </div>

@@ -1,0 +1,15 @@
+Inserting into couriers_orders... 
+
+Records: 1000  Deleted: 0  Skipped: 11  Warnings: 11
+Level	Code	Message
+Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`couriers_orders`, CONSTRAINT `FK81k145s3ngpq6wo0hljadxlrs` FOREIGN KEY (`person_id`) REFERENCES `courier` (`person_id`))
+Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`couriers_orders`, CONSTRAINT `FK81k145s3ngpq6wo0hljadxlrs` FOREIGN KEY (`person_id`) REFERENCES `courier` (`person_id`))
+Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`couriers_orders`, CONSTRAINT `FK81k145s3ngpq6wo0hljadxlrs` FOREIGN KEY (`person_id`) REFERENCES `courier` (`person_id`))
+Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`couriers_orders`, CONSTRAINT `FK81k145s3ngpq6wo0hljadxlrs` FOREIGN KEY (`person_id`) REFERENCES `courier` (`person_id`))
+Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`couriers_orders`, CONSTRAINT `FK81k145s3ngpq6wo0hljadxlrs` FOREIGN KEY (`person_id`) REFERENCES `courier` (`person_id`))
+Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`couriers_orders`, CONSTRAINT `FK81k145s3ngpq6wo0hljadxlrs` FOREIGN KEY (`person_id`) REFERENCES `courier` (`person_id`))
+Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`couriers_orders`, CONSTRAINT `FK81k145s3ngpq6wo0hljadxlrs` FOREIGN KEY (`person_id`) REFERENCES `courier` (`person_id`))
+Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`couriers_orders`, CONSTRAINT `FKngso872desi3cq7vvg47ct1y7` FOREIGN KEY (`order_id`) REFERENCES `order_` (`order_id`))
+Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`couriers_orders`, CONSTRAINT `FK81k145s3ngpq6wo0hljadxlrs` FOREIGN KEY (`person_id`) REFERENCES `courier` (`person_id`))
+Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`couriers_orders`, CONSTRAINT `FK81k145s3ngpq6wo0hljadxlrs` FOREIGN KEY (`person_id`) REFERENCES `courier` (`person_id`))
+Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`couriers_orders`, CONSTRAINT `FK81k145s3ngpq6wo0hljadxlrs` FOREIGN KEY (`person_id`) REFERENCES `courier` (`person_id`))

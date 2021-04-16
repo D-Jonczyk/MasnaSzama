@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {FaIconLibrary} from '@fortawesome/angular-fontawesome';
-import {faPlayCircle} from '@fortawesome/free-regular-svg-icons';
+import {faPauseCircle, faPlayCircle} from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-profile',
@@ -9,6 +9,8 @@ import {faPlayCircle} from '@fortawesome/free-regular-svg-icons';
   styleUrls: ['../courier-panel.component.css', './profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+  isClicked = true;
+  isWorking = false;
   links = [
     { title: 'Nawigacja', fragment: '/navigation' },
     { title: 'Lista zamówień', fragment: '/orderlist'},
@@ -18,9 +20,14 @@ export class ProfileComponent implements OnInit {
   ];
 
   constructor(public route: ActivatedRoute, private library: FaIconLibrary) {
-    library.addIcons(faPlayCircle);
+    library.addIcons(faPlayCircle, faPauseCircle);
   }
   ngOnInit(): void {
   }
-
+  toggleDisplay(): void {
+    this.isClicked = !this.isClicked;
+  }
+  toggleShiftButton(): void {
+    this.isWorking = !this.isWorking;
+  }
 }

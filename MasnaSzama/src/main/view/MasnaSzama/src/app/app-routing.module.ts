@@ -23,6 +23,7 @@ import { ClientProfileComponent } from './client-panel/client-profile/client-pro
 import { OrderHistoryComponent } from './client-panel/order-history/order-history.component';
 import { LogoutComponent } from './client-panel/logout/logout.component';
 import { UploadComponent } from './client-panel/upload/upload.component';
+import {SupportComponent} from './courier-panel/support/support.component';
 
 
 const routes: Routes = [
@@ -42,6 +43,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'update-resto', component: UpdateRestoComponent},
+  {path: 'support', component: SupportComponent},
 
   //Client Paths
   {path: 'client-panel', component: ClientPanelComponent},
