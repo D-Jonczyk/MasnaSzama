@@ -1,15 +1,40 @@
-.col-8 {
-  background-color: #ece7d4;
+body {
+  background-color: #fea935;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
-.col-4 {
+.col-5 {
+  background-color: #FFFFFF;
+}
+
+.col-2 {
+  background-color: #f4f7f9;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  background-color: #daceb7;
-}
-
-#btn-delete {
-  height: 40px;
   text-align: center;
 }
+
+button {
+  background-color: #fea935;
+  color: #FFFFFF;
+  border: 0;
+}
+
+button:hover {
+  background-color: #c48329;
+  color: #FFFFFF;
+  border: 0;
+}
+
+fa-icon {
+  color: #fea935;
+  font-size: 30px;
+}
+fa-icon.delete {
+  color: #fea935;
+  font-size: 20px;
+}
+
+
+

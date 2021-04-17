@@ -34,7 +34,7 @@ import { RestaurantOrdersComponent } from './Restaurant/restaurant-orders/restau
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavigationComponent } from './courier-panel/navigation/navigation.component';
 import { SupportComponent } from './courier-panel/support/support.component';
-import { OrderCheckoutComponent } from './order-checkout/order-checkout.component';
+import { OrderCheckoutComponent } from './Restaurant/order-checkout/order-checkout.component';
 
 
 @NgModule({
@@ -56,6 +56,7 @@ import { OrderCheckoutComponent } from './order-checkout/order-checkout.componen
     UpdateRestoComponent,
     RestaurantOrdersComponent,
     NavigationComponent,
+    OrderCheckoutComponent,
 
 // Client modules
      ClientAdressComponent,

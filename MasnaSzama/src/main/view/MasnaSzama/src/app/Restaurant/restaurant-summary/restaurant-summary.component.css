@@ -1,16 +1,14 @@
-.restaurant-item {
-  width: 800px;
-  height: 200px;
-  border-radius: 5px;
-  margin: 1%;
-  padding: 1%;
-  background: #ece7d4;
+body {
+  background-color: #fea935;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
-.restaurant-item:hover {
-  border: 2px solid #17a2b8;
-  box-shadow: 5px 5px #5E6472;
-  transform: translateX(15px);
+.col-3 {
+  background-color: #f4f7f9;
+}
+
+.col-6 {
+  background-color: #ffffff;
 }
 
 

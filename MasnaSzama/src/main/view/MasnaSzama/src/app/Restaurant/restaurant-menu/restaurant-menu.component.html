@@ -1,43 +1,64 @@
+<html>
+<body>
+<div class="container-fluid">
 
-<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-5 "> <!--menu-->
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th scope="col">Nazwa</th>
+          <th scope="col">Opis</th>
+          <th scope="col">Cena</th>
+          <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let meal of meals$ | async">
+          <td class="align-middle">{{meal.name}}</td>
+          <td class="align-middle">{{meal.name}}</td>
+          <td class="align-middle">{{meal.price}}</td>
+          <td class="align-middle"><fa-icon icon="plus-square"
+                                            (click)="addToOrder(meal);"></fa-icon></td>
+        </tr>
+        </tbody>
 
-  <div class="col-4 float-right"> <!--basket-->
-    <p><b>Twoje zamówienie:</b></p>
-    <hr>
-    <div class="row">
-      <table class="table">
-        <thead class="thead-dark">
+      </table>
+    </div> <!-- menu end -->
+
+    <div class="col-2"> <!--basket-->
+
+      <b>Koszyk</b>
+      <hr>
+
+        <table class="table">
+          <thead class="thead-dark">
           <tr>
             <th scope="col">Nazwa</th>
             <th scope="col">Cena</th>
-            <th scope="col">#</th>
+            <th scope="col"></th>
           </tr>
-        </thead>
+          </thead>
           <tbody>
-            <tr *ngFor="let orderMeal of orderMeals">
-              <td>{{orderMeal.name}}</td>
-              <td>{{orderMeal.price}}</td>
-              <button type="button" class="btn btn-danger btn-sm" id="btn-delete" (click)="deleteFromOrder(orderMeal.id);">X</button>
-            </tr>
+          <tr *ngFor="let orderMeal of orderMeals">
+            <td class="align-middle">{{orderMeal.name}}</td>
+            <td class="align-middle">{{orderMeal.price}}</td>
+            <td class="align-middle"><fa-icon icon="trash-alt"
+                                              class="delete"
+                         (click)="deleteFromOrder(orderMeal.id);"></fa-icon></td>
+          </tr>
           </tbody>
+        </table>
 
-      </table>
-    </div>
-    <hr>
-    <b>Razem: {{sum | currency:'PLN'}}</b>
-    <hr>
-    <button type="button" class="btn btn-info">Zamawiam</button>
-  </div>
+      <hr>
+      <b>Razem: {{sum | currency:'PLN'}}</b>
+      <hr>
+      <button type="button" class="btn" routerLink="/order-checkout">Zamawiam</button>
+    </div> <!-- basket end -->
 
-  <div class="col-8 " *ngFor="let meal of meals$ | async"> <!--menu-->
-    <h4 class="name">{{meal.name}}</h4>
-    <hr>
-    <h6 class="price">Cena: {{meal.price}} zł</h6>
-    <button type="button" (click)="addToOrder(meal)" class="btn btn-info btn-block">Dodaj</button>
-    <hr>
-  </div>
+  </div> <!-- row end -->
 
-</div>
-
-
+</div> <!-- container end -->
+</body>
+</html>
 

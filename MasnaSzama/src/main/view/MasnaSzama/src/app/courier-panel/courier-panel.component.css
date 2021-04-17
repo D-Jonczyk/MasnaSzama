@@ -1,6 +1,12 @@
  button{
 
 }
+
+ .container-fluid {
+   height: 100vh;
+ }
+
+
 .start-shift {
   color: #fff;
   background-color: #1abc9c;
@@ -9,11 +15,7 @@
   padding: .6rem;
   border-radius: .25rem;
 }
-body{
-  color: black;
-  background-color: #f5f6f8;
-  margin-top:20px;
-}
+
 .card-box {
   background-color: #d2d5d9;
   background-clip: border-box;

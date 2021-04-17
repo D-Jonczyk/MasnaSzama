@@ -1,3 +1,5 @@
+<html>
+<body>
 <div class="container-fluid">
   <nav>
 
@@ -18,24 +20,27 @@
 
     </div>
 
-</nav>
+  </nav>
 
-<hr>
+  <hr>
 
-<main>
-  <div class="row">
-    <div class="col-12">
+  <main>
+    <div class="row justify-content-center">
+      <div class="col-8 text-center">
 
-      <div class="d-flex justify-content-center">
-        <form class="form-inline" [formGroup]="addressForm" (ngSubmit)="onSubmit()">
-          <input class="form-control" type="text" placeholder="Miasto, adres" formControlName="adr">
-          <button type="submit" class="btn btn-info">Szukaj</button>
-        </form>
+          <h2>Zamów jedzenie online już teraz</h2>
+          <h4>Zjedz smacznie nie wychodząc z domu</h4>
+
+          <form class="form-inline justify-content-center" [formGroup]="addressForm" (ngSubmit)="onSubmit()">
+            <input class="form-control-lg" type="text" placeholder="Miasto, adres" formControlName="adr">
+            <button type="submit" class="btn btn-light btn-lg">Szukaj</button>
+          </form>
+
       </div>
 
     </div>
-  </div>
-
-</main>
+  </main>
 
 </div>
+</body>
+</html>

@@ -3,6 +3,8 @@ import {ActivatedRoute} from "@angular/router";
 import {RestaurantMenuService} from "../restaurant-menu-service/restaurant-menu.service";
 import {Observable} from "rxjs";
 import {Meal} from "../model/meal.model";
+import {FaIconLibrary} from "@fortawesome/angular-fontawesome";
+import {faPlusSquare, faShoppingCart, faTrashAlt} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-restaurant-menu',
@@ -16,7 +18,10 @@ export class RestaurantMenuComponent implements OnInit {
   sum: number;
 
   constructor(private route: ActivatedRoute,
-              private restaurantMenuService: RestaurantMenuService) { }
+              private restaurantMenuService: RestaurantMenuService,
+              public library: FaIconLibrary) {
+    library.addIcons(faPlusSquare, faTrashAlt, faShoppingCart);
+  }
 
   ngOnInit(): void {
     this.orderMeals = [];

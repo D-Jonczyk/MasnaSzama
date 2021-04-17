@@ -1,9 +1,35 @@
-.d-flex.justify-content-center {
-  width: 100%;
-  min-height: 300px;
-  border-radius: 10px;
-  padding: 1%;
-  background: #ece7d4;
+body {
+  background-color: #FFFFFF;
+  font-family: 'Trebuchet MS', sans-serif;
 }
+
+.col-8 {
+  width: 80%;
+  background: #FEA935;
+  border-radius: 20px;
+}
+
+h2, h4 {
+  color: #FFFFFF;
+  text-shadow: 1px 1px #5a5656;
+}
+
+.col-8.text-center {
+  min-height: 400px;
+}
+
+form {
+  margin-top: 50px;
+}
+
+input {
+  border-width: 0px;
+  margin: 5px;
+}
+
+
+
+
+
 
 

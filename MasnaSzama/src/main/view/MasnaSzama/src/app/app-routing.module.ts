@@ -24,6 +24,7 @@ import { OrderHistoryComponent } from './client-panel/order-history/order-histor
 import { LogoutComponent } from './client-panel/logout/logout.component';
 import { UploadComponent } from './client-panel/upload/upload.component';
 import {SupportComponent} from './courier-panel/support/support.component';
+import {OrderCheckoutComponent} from "./Restaurant/order-checkout/order-checkout.component";
 
 
 const routes: Routes = [
@@ -44,6 +45,7 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'update-resto', component: UpdateRestoComponent},
   {path: 'support', component: SupportComponent},
+  {path: 'order-checkout', component: OrderCheckoutComponent},
 
   //Client Paths
   {path: 'client-panel', component: ClientPanelComponent},
