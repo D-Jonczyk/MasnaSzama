@@ -24,7 +24,8 @@ import { OrderHistoryComponent } from './client-panel/order-history/order-histor
 import { LogoutComponent } from './client-panel/logout/logout.component';
 import { UploadComponent } from './client-panel/upload/upload.component';
 import {SupportComponent} from './courier-panel/support/support.component';
-import {OrderCheckoutComponent} from "./Restaurant/order-checkout/order-checkout.component";
+import {ChatComponent} from './courier-panel/chat/chat.component';
+import {CourierOrderhistoryComponent} from './courier-panel/courier-orderhistory/courier-orderhistory.component';
 
 
 const routes: Routes = [
@@ -45,18 +46,17 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'update-resto', component: UpdateRestoComponent},
   {path: 'support', component: SupportComponent},
-  {path: 'order-checkout', component: OrderCheckoutComponent},
 
-  //Client Paths
+  // Client Paths
   {path: 'client-panel', component: ClientPanelComponent},
   {path: 'client-adress', component: ClientAdressComponent},
   {path: 'client-profile', component: ClientProfileComponent},
   {path: 'order-history', component: OrderHistoryComponent},
   {path: 'logout', component: LogoutComponent},
   {path: 'upload', component: UploadComponent},
-
-
-  {path: 'navigation', component: NavigationComponent}
+  {path: 'chat', component: ChatComponent},
+  {path: 'navigation', component: NavigationComponent},
+  {path: 'orderhistory', component: CourierOrderhistoryComponent}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

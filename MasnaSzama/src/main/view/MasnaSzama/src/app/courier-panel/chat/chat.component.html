@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title></title>
@@ -17,14 +17,14 @@
         <nav>
           <button class="start-shift"><fa-icon [icon]="['far', 'play-circle']"> </fa-icon> Zacznij zmianę</button>
           <hr/>
-        <ul ngbNav>
-          <li class="btn-block border-white" [ngbNavItem]="link.fragment" *ngFor="let link of links">
+          <ul ngbNav>
+            <li class="btn-block border-white" [ngbNavItem]="link.fragment" *ngFor="let link of links">
 
               <a ngbNavLink data-toggle="collapse" [routerLink]="[link.fragment]" routerLinkActive="active" class="float-left">
                 <fa-icon class="float-left" icon="{{ link.icon }}"> </fa-icon> {{ link.title }}
               </a>
-          </li>
-        </ul>
+            </li>
+          </ul>
         </nav>
         <router-outlet> </router-outlet>
 
@@ -35,13 +35,11 @@
     <div class="col-lg-9">
       <div class="card-box col-lg-9">
 
+        <div class="tab-content" id="ngbNav">
+          <div class="tab-pane fade show active" id="schedule" role="tabpanel">asdsa
+            ążęółćń <fa-icon [icon]="['fas', 'hand-middle-finger']"> </fa-icon></div>
+        </div>
 
-
-    <div class="tab-content" id="ngbNav">
-      <div class="tab-pane fade show active" id="schedule" role="tabpanel">asdsa
-      ążęółćń
-      </div>
-    </div>
       </div> <!-- end tab-content -->
     </div> <!-- end card-box-->
   </div> <!-- end col -->

@@ -34,7 +34,9 @@ import { RestaurantOrdersComponent } from './Restaurant/restaurant-orders/restau
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavigationComponent } from './courier-panel/navigation/navigation.component';
 import { SupportComponent } from './courier-panel/support/support.component';
-import { OrderCheckoutComponent } from './Restaurant/order-checkout/order-checkout.component';
+import { OrderCheckoutComponent } from './order-checkout/order-checkout.component';
+import { ChatComponent } from './courier-panel/chat/chat.component';
+import { CourierOrderhistoryComponent } from './courier-panel/courier-orderhistory/courier-orderhistory.component';
 
 
 @NgModule({
@@ -56,7 +58,6 @@ import { OrderCheckoutComponent } from './Restaurant/order-checkout/order-checko
     UpdateRestoComponent,
     RestaurantOrdersComponent,
     NavigationComponent,
-    OrderCheckoutComponent,
 
 // Client modules
      ClientAdressComponent,
@@ -67,6 +68,8 @@ import { OrderCheckoutComponent } from './Restaurant/order-checkout/order-checko
      UploadComponent,
      SupportComponent,
      OrderCheckoutComponent,
+     ChatComponent,
+     CourierOrderhistoryComponent,
 
   ],
   imports: [
