@@ -1,0 +1,40 @@
+
+<div class="jumbotron animated zoomIn">
+    <h2>Tạo món mới</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+
+      <div class="form-group" [ngClass]="{'has-error':!form.controls['itemName'].valid && form.controls['itemName'].touched}">
+        <label>Tên món ăn:</label>
+        <input [(ngModel)] ="itemName" class="form-control" type="text" placeholder="Chã cá" [formControl]="form.controls['itemName']" >
+        <div *ngIf="form.controls['itemName'].hasError('required') && form.controls['itemName'].touched" class="alert alert-danger">Vui lòng nhập tên</div>
+        <div *ngIf="form.controls['itemName'].hasError('minlength') && form.controls['itemName'].touched" class="alert alert-danger">Tên quá ngắn</div>
+        <div *ngIf="form.controls['itemName'].hasError('maxlength') && form.controls['itemName'].touched" class="alert alert-danger">Tên quá dài</div>
+        <div *ngIf="form.controls['itemName'].hasError('pattern') && form.controls['itemName'].touched" class="alert alert-danger">Tên không hợp lệ</div> 
+      </div>
+
+      <div class="form-group" [ngClass]="{'has-error':!form.controls['itemPrice'].valid && form.controls['itemPrice'].touched}">
+        <label>Giá:</label>
+        <input [(ngModel)] ="itemPrice" class="form-control number DauPhay " type="text" placeholder="25" [formControl]="form.controls['itemPrice']"  >
+        <div *ngIf="form.controls['itemPrice'].hasError('required') && form.controls['itemPrice'].touched" class="alert alert-danger">Vui lòng nhập giá tiền</div>
+        <div *ngIf="form.controls['itemPrice'].hasError('pattern') && form.controls['itemPrice'].touched" class="alert alert-danger">Số không hợp lệ</div> 
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Tạo món</button>
+      </div>
+
+    </form>
+
+    <modal #myModal [keyboard]="false" [backdrop]="'static'">
+          <modal-header [show-close]="false">
+              <h2 class="modal-title">{{mess}}</h2>
+          </modal-header>
+          <modal-body>
+              <h4>{{mess_content}}</h4>
+          </modal-body>
+          <modal-footer [show-default-buttons]="false">
+             <button type="button" class="btn btn-default" data-dismiss="modal" (click)="dismiss()">Không</button>
+             <button type="button" class="btn btn-info" (click)="close()">Xác nhận</button>
+          </modal-footer>
+      </modal>
+</div>

@@ -1,0 +1,89 @@
+
+
+<app-nav-bar></app-nav-bar>
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-3">
+      <div>
+      <a routerLink="/select-table"> 
+        <button  *ngIf="!isInfo" class ="btn-lg btn-success"><span class="glyphicon glyphicon-arrow-left"></span></button>
+      </a>
+        <button  *ngIf="isInfo" (click)="switch()" class ="btn-lg btn-success"><span class="glyphicon glyphicon-arrow-left"></span></button>
+      </div>
+      <h2 *ngIf="this.tableService.getMenuListTotalPrice(this.id) == 0">Tổng cộng: 0.000 VNĐ</h2>
+      <h2 *ngIf="this.tableService.getMenuListTotalPrice(this.id) != 0">Tổng cộng: {{this.numberWithCommas(this.tableService.getMenuListTotalPrice(this.id))}} VNĐ</h2>
+      <a [routerLink] = "['/receipt', this.id]">
+      <button *ngIf="isInfo" type="button" class="btn btn-primary">Thanh toán</button>
+      </a>   
+      <button *ngIf="!isInfo" type="button" (click)="info()" class="btn btn-default">Thông tin bàn {{this.id}}</button>   
+      <button (click) ="open()"type="button" class="btn btn-danger pull-right">Hủy</button>
+      </div>
+
+    <div class="col-sm-9" >
+      <h2 *ngIf="!isInfo">Menu</h2>
+      <table *ngIf="!isInfo" class="table table-striped" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="rowsOnPage">
+        <thead>
+          <tr>
+            <th >Món</th>
+            <th >Giá</th>
+            <th >Số lượng</th>
+            <th >Thêm</th>
+            <th >Bớt</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of mf.data; let i = index" class="{{this.isHighlight[i]}}">
+            <td>{{item.itemName}}</td>
+            <td>{{this.numberWithCommas(item.itemPrice)}}</td>
+            <td> {{item.itemQuantity}} </td>
+            <td><button (click)="increaseClick(item,i)" type="button" class="btn btn-info">+</button></td>
+            <td><button (click)="decreaseClick(item,i)" type="button" class="btn btn-warning">-</button></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+              <td colspan="4">
+                  <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+              </td>
+          </tr>
+          </tfoot>
+      </table>
+
+      <h2 *ngIf="isInfo">Món hiện có</h2>
+      <table *ngIf="isInfo" class="table table-striped">
+        <thead>
+          <tr>
+            <th >Món</th>
+            <th >Giá</th>
+            <th >Số lượng</th>
+            <th >Thành tiền</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of this.finalList">
+            <td>{{item.itemName}}</td>
+            <td> {{this.numberWithCommas(item.itemPrice)}} </td>
+            <td> {{item.itemQuantity}} </td>
+            <td> {{this.numberWithCommas(item.itemQuantity * item.itemPrice)}} </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+
+<modal #myModal [keyboard]="false" [backdrop]="'static'">
+          <modal-header [show-close]="false">
+              <h2 class="modal-title">Hủy bàn ?</h2>
+          </modal-header>
+          
+          <modal-footer [show-default-buttons]="false">
+             <button type="button" class="btn btn-default" data-dismiss="modal" (click)="dismiss()">Không</button>
+             <button type="button" class="btn btn-info" (click)="close()">Xác nhận</button>
+          </modal-footer>
+</modal>
+
+

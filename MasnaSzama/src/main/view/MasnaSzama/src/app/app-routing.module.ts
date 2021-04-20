@@ -23,22 +23,7 @@ import {ChatComponent} from './courier-panel/chat/chat.component';
 import {CourierOrderhistoryComponent} from './courier-panel/courier-orderhistory/courier-orderhistory.component';
 import {OrderCheckoutComponent} from "./Restaurant/order-checkout/order-checkout.component";
 
-import { ComponentsComponent } from './admin-panel/components/components.component';
-import { ModelsComponent } from './admin-panel/models/models.component';
-import { ServicesComponent } from './admin-panel/services/services.component';
-import { SharedComponent } from './admin-panel/shared/shared.component';
-import { CategoriesComponent } from './admin-panel/components/categories/categories.component';
-import { DailyeatingsComponent } from './admin-panel/components/dailyeatings/dailyeatings.component';
-import { FoodsComponent } from './admin-panel/components/foods/foods.component';
-import { MenuComponent } from './admin-panel/components/menu/menu.component';
-import { UsersComponent } from './admin-panel/components/users/users.component';
-import { InterfacesComponent } from './admin-panel/services/interfaces/interfaces.component';
 
-import { FoodListComponent } from "./admin-panel/components/foods/list.component";
-import { AddFoodComponent } from "./admin-panel/components/foods/add.component";
-import { AddCategoryComponent } from "./admin-panel/components/categories/add.component";
-import { ListCategoriesComponent } from "./admin-panel/components/categories/list.component";
-import { AddDailyEatingComponent } from "./admin-panel/components/dailyeatings/add.component";
 
 
 const routes: Routes = [
@@ -54,23 +39,7 @@ const routes: Routes = [
   {path: 'restaurant-orders', component: RestaurantOrdersComponent},
   {path: 'restaurant-menu/:id', component: RestaurantMenuComponent},
   {path: 'support', component: SupportComponent},
-  {path: 'components', component: ComponentsComponent},
-  {path: 'models', component: ModelsComponent},
-  {path: 'services', component: ServicesComponent},
-  {path: 'shared', component: SharedComponent},
-  {path: 'categories', component: CategoriesComponent},
-  {path: 'dailyeatings', component: DailyeatingsComponent},
-  {path: 'foods', component: FoodsComponent},
-  {path: 'menu', component: MenuComponent},
-  {path: 'users', component: UsersComponent},
-  {path: 'interfaces', component: InterfacesComponent},
-  {path: 'foods', component: FoodListComponent },
-  {path: 'foods/create', component: AddFoodComponent },
-  {path: 'foods/create/:id', component: AddFoodComponent },
-  {path: 'categories', component: ListCategoriesComponent },
-  {path: 'categories/create', component: AddCategoryComponent },
-  {path: 'categories/create/:id', component: AddCategoryComponent },
-  {path: 'dailyeatings', component: AddDailyEatingComponent },
+
 
 
 

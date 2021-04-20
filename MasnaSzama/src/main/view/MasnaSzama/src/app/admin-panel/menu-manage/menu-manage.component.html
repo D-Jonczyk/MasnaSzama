@@ -1,0 +1,25 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+      <div>
+      <a routerLink="/home">
+        <button class ="btn-lg btn-success"><span class="glyphicon glyphicon-arrow-left"></span></button>
+      </a>&nbsp; <br *ngIf="insertBreak"> <br *ngIf="insertBreak">
+      <a [routerLink] = "['create']">
+        <button type="btn-lg" class="btn btn-default">Thêm món</button>
+      </a>&nbsp; <br *ngIf="insertBreak"> <br *ngIf="insertBreak"> 
+      <a [routerLink] = "['edit']"> 
+        <button type="btn-lg" class="btn btn-default">Điều chỉnh</button>
+      </a>
+      </div>
+    </div>
+    <div class="col-sm-9" >
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-sm-1">
+      
+    </div>
+  </div>
+</div>

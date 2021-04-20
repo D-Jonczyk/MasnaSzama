@@ -1,0 +1,52 @@
+<app-nav-bar></app-nav-bar>
+
+<div class ="container">
+    <div class ="row">
+        <div class="col-sm-2" >
+            <a routerLink="/home">
+              <button class ="btn-lg btn-success"><span class="glyphicon glyphicon-arrow-left"></span></button>
+            </a><br><br>
+        </div>
+        <div class="col-sm-10" >
+          <!-- form -->
+          <div class="jumbotron animated zoomIn">
+            <h2>Report</h2>
+            <form class ="form-inline" [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+
+              <div class="form-group" [ngClass]="{'has-error':!form.controls['fromDate'].valid && form.controls['fromDate'].touched}">
+                <label>Từ ngày:</label>
+                <input [(ngModel)] ="fromDate" class="form-control" type="date" placeholder="25" [formControl]="form.controls['fromDate']"  >
+                <div *ngIf="form.controls['fromDate'].hasError('required') && form.controls['fromDate'].touched" class="alert alert-danger">Ngày không hợp lệ</div>
+              </div>
+
+              <div class="form-group" [ngClass]="{'has-error':!form.controls['toDate'].valid && form.controls['toDate'].touched}">
+                <label>Đến ngày:</label>
+                <input [(ngModel)] ="toDate" class="form-control" type="date" placeholder="25" [formControl]="form.controls['toDate']"  >
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="btn btn-default" [disabled]="!form.valid">Search</button>
+              </div>
+            </form>
+    </div>
+    <table *ngIf="this.reportService.listRecords != null" class="table table-striped">
+              <thead>
+                <tr>
+                  <th >Mã số</th>
+                  <th >Số lượng</th>
+                  <th >Ngày</th>
+                  <th >Tháng</th>
+                  <th >Chi tiết</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of this.reportService.listRecords">
+                  <td>{{item.uid}}</td>
+                  <td>{{item.quantity}}</td>
+                  <td>{{item.day}} </td>
+                  <td>{{item.month}}</td>
+                  <td>{{item.date}}</td>
+                </tr>
+              </tbody>
+            </table>
+</div>

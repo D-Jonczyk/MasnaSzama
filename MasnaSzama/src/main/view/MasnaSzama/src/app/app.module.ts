@@ -26,17 +26,6 @@ import { LogoutComponent } from './client-panel/logout/logout.component';
 import { UploadComponent } from './client-panel/upload/upload.component';
 
 
-import { ComponentsComponent } from './admin-panel/components/components.component';
-import { ModelsComponent } from './admin-panel/models/models.component';
-import { ServicesComponent } from './admin-panel/services/services.component';
-import { SharedComponent } from './admin-panel/shared/shared.component';
-import { CategoriesComponent } from './admin-panel/components/categories/categories.component';
-import { DailyeatingsComponent } from './admin-panel/components/dailyeatings/dailyeatings.component';
-import { FoodsComponent } from './admin-panel/components/foods/foods.component';
-import { MenuComponent } from './admin-panel/components/menu/menu.component';
-import { UsersComponent } from './admin-panel/components/users/users.component';
-import { InterfacesComponent } from './admin-panel/services/interfaces/interfaces.component';
-
 import { RestaurantOrdersComponent } from './Restaurant/restaurant-orders/restaurant-orders.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavigationComponent } from './courier-panel/navigation/navigation.component';
@@ -44,6 +33,20 @@ import { SupportComponent } from './courier-panel/support/support.component';
 import { OrderCheckoutComponent } from './Restaurant/order-checkout/order-checkout.component';
 import { ChatComponent } from './courier-panel/chat/chat.component';
 import { CourierOrderhistoryComponent } from './courier-panel/courier-orderhistory/courier-orderhistory.component';
+import { CreateMenuComponent } from './admin-panel/create-menu/create-menu.component';
+import { CreateTableComponent } from './admin-panel/create-table/create-table.component';
+import { EditItemComponent } from './admin-panel/edit-item/edit-item.component';
+import { EditMenuComponent } from './admin-panel/edit-menu/edit-menu.component';
+import { LogInComponent } from './admin-panel/log-in/log-in.component';
+import { MenuManageComponent } from './admin-panel/menu-manage/menu-manage.component';
+import { MyHomeComponent } from './admin-panel/my-home/my-home.component';
+import { NavBarComponent } from './admin-panel/nav-bar/nav-bar.component';
+import { ReceipViewComponent } from './admin-panel/receip-view/receip-view.component';
+import { ReportMenuComponent } from './admin-panel/report-menu/report-menu.component';
+import { RouterComponent } from './admin-panel/router/router.component';
+import { SelectTableComponent } from './admin-panel/select-table/select-table.component';
+import { SignUpComponent } from './admin-panel/sign-up/sign-up.component';
+import { TableDetailsComponent } from './admin-panel/table-details/table-details.component';
 
 @NgModule({
   declarations: [
@@ -72,16 +75,20 @@ import { CourierOrderhistoryComponent } from './courier-panel/courier-orderhisto
      OrderCheckoutComponent,
      ChatComponent,
      CourierOrderhistoryComponent,
-     ComponentsComponent,
-     ModelsComponent,
-     ServicesComponent,
-     SharedComponent,
-     CategoriesComponent,
-     DailyeatingsComponent,
-     FoodsComponent,
-     MenuComponent,
-     UsersComponent,
-     InterfacesComponent,
+     CreateMenuComponent,
+     CreateTableComponent,
+     EditItemComponent,
+     EditMenuComponent,
+     LogInComponent,
+     MenuManageComponent,
+     MyHomeComponent,
+     NavBarComponent,
+     ReceipViewComponent,
+     ReportMenuComponent,
+     RouterComponent,
+     SelectTableComponent,
+     SignUpComponent,
+     TableDetailsComponent,
 
   ],
   imports: [

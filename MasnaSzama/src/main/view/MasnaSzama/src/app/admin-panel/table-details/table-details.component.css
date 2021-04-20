@@ -1,0 +1,9 @@
+.container{
+    overflow: scroll;
+    width: 100%;
+    background-color: ghostwhite;
+}
+
+h2{
+    text-align: center;
+}

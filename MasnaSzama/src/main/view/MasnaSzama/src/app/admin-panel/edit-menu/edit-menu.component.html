@@ -1,0 +1,45 @@
+<div class="container animated zoomIn">
+  <div class="row">
+    <div class="col-sm-1">
+      <div>
+
+      </div>
+    </div>
+    <div class="col-sm-9" >
+      <h1>Menu hiện tại</h1>
+      <table class="table table-striped">
+    <thead>
+      <tr>
+        <th >Món</th>
+        <th >Giá</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of this.tableService.menuList">
+        <td>{{item.itemName}}</td>
+        <td>{{this.numberWithCommas(item.itemPrice)}}</td>
+        <td><a [routerLink] = "['../edit-item', item.itemUID]"><button (click)="editClick(item)" type="button" class="btn btn-info">chỉnh</button></a></td>
+        <td><button (click)="open(item)" type="button" class="btn btn-warning">xóa</button></td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+    <div class="col-sm-2">
+      <modal #myModal [keyboard]="false" [backdrop]="'static'">
+          <modal-header [show-close]="false">
+              <h4 class="modal-title">Xác nhận xóa</h4>
+          </modal-header>
+          <modal-body>
+              Món: {{this.name}}
+          </modal-body>
+          <modal-footer [show-default-buttons]="false">
+             <button type="button" class="btn btn-default" data-dismiss="modal" (click)="dismiss()">Hủy</button>
+             <button type="button" class="btn btn-danger" (click)="close()">Xác nhận</button>
+          </modal-footer>
+      </modal>
+    </div>
+  </div>
+</div>
+
+
+

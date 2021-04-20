@@ -1,0 +1,30 @@
+<app-nav-bar></app-nav-bar>
+
+<div class ="container">
+    <div class ="row">
+        <div class="col-sm-2" >
+            <a routerLink="/home">
+                <button class ="btn-lg btn-success"><span class="glyphicon glyphicon-arrow-left"></span></button>
+            </a>
+                <button (click)="refreshList()" class ="btn-lg btn-default pull-right"><span class="glyphicon glyphicon-refresh"></span></button>
+            <br><br>
+        </div>
+        <div class="col-sm-8" >
+            <div *ngIf="!isAvailable"> 
+                <a class="btn btn-danger btn-sm disabled" role="button">Đang lấy thông tin menu...</a>
+            </div><br>
+            <div *ngIf="isAvailable"  class="btn-toolbar" role="toolbar" aria-label="...">
+            <div *ngFor="let item of tableService.tableList" class ="btn-group btn-group-lg" role="group">
+                <a [routerLink] = "['/table-details', item.tableNo]">
+                    <button *ngIf="item.isActive"(click)="updateStatus(item)"type="button" class="btn-lg btn-danger">bàn {{item.tableNo}}</button>
+                </a>
+                <a [routerLink] = "['/table-details', item.tableNo]">
+                    <button *ngIf="!item.isActive"(click)="updateStatus(item)"type="button" class="btn-lg btn-primary">bàn {{item.tableNo}}</button>
+                </a> <br><br>
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-2" >
+        </div>
+    </div>
+</div>

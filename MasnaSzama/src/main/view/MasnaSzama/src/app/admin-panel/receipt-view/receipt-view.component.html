@@ -1,0 +1,35 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-3" id="printableArea">
+      <a [routerLink] = "['/table-details', this.id]">
+        <button class ="btn-lg btn-success"><span class="glyphicon glyphicon-arrow-left"></span></button>
+      </a>
+      <a [routerLink] = "['/receipt', this.id]">
+      <button (click)="onConfirm()" type="button" class="btn-lg btn-primary pull-right">Tính tiền</button>
+      </a>
+    </div>
+
+    <div class="col-sm-9"  >
+      <h1>Bàn số: {{this.id}}</h1>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th >Món</th>
+            <th >Số lượng</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of this.finalList">
+            <td>{{item.itemName}}</td>
+            <td> {{item.itemQuantity}} </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
