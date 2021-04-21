@@ -1,0 +1,8 @@
+<br>
+<h4>Current Orders</h4>
+
+<div class="card-group" *ngFor="let order of orders">
+  <app-order-item *ngFor="let orderinfo of order.orderData;" [item]="orderinfo">
+  </app-order-item>
+</div>
+

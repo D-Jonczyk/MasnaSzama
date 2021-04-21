@@ -1,0 +1,65 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+    <form [formGroup]="optionCreatorForm" (ngSubmit)="onSubmit()">
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          formControlName="name"
+          class="form-control">
+      </div>
+
+      <div formArrayName="optionsArray">
+        <button
+          class="btn btn-info"
+          type="button"
+          (click)="onAddOption()">Add Option</button>
+        <div *ngFor="let optionControl of optionCreatorForm.get('optionsArray').controls; let i=index">
+          <div [formGroupName]="i">
+            <input formControlName="optionName" placeholder="Option Name">
+            <input formControlName="optionPrice" placeholder="Option Price">
+
+          </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div *ngFor="let optionControl of optionCreatorForm.get('optionsArray').controls; let i=index">
+          <div [formGroupName]="i">
+            <input formControlName="optionName" placeholder="Option Name">
+            <input formControlName="optionPrice" placeholder="Option Price">
+
+          </div>
+        </div>
+
+      </div>
+      <hr>
+      <div>Rules</div>
+      <div class="form-check">
+        <input type="checkbox"
+               id="requireRule"
+               formControlName="requireRule"
+               class="form-check-input">
+        <label class="form-check-label" for="requireRule">Require customers to choose items</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox"
+               id="totalRule"
+               formControlName="totalRule"
+               class="form-check-input">
+        <label class="form-check-label" for="totalRule">How many total items can customer choose?</label>
+        <input
+          type="number"
+          id="totalRuleNumber"
+          formControlName="totalRuleNumber"
+          class="form-control">
+      </div>
+
+      <button class="btn btn-primary" type="submit">Save</button>
+    </form>
+  </div>
+</div>

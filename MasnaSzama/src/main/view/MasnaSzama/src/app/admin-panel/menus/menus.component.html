@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+    <form [formGroup]="menuCreatorForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <br>
+        <label for="name"><h4>Create New Menu Name</h4></label>
+        <p>(Example: Dinner Menu)</p>
+        <input
+          type="text"
+          id="name"
+          formControlName="name"
+          class="form-control"
+          required>
+        <br>
+        <button class="btn btn-primary" type="submit" [disabled]="!menuCreatorForm.valid">Save</button>
+        &nbsp;
+        <button class="btn btn-primary" type="reset" (click)="reset()">Reset</button>
+
+      </div>
+    </form>
+  </div>
+</div>
