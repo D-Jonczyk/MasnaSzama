@@ -13,7 +13,7 @@ export class ReceiptViewComponent implements OnInit {
   private sub: any;
   tableService: any;
 
-  date: any;
+  date: any;S
 
   receiptItemList: any;
   finalList: any = [];
@@ -28,13 +28,13 @@ export class ReceiptViewComponent implements OnInit {
   phut: any;
   giay: any;
 
-  constructor(private route: ActivatedRoute, tableService: TableService) { 
+  constructor(private route: ActivatedRoute, tableService: TableService) {
     this.tableService = tableService;
     this.sub = this.route.params.subscribe(params => {
        this.id = +params['id']; // (+) converts string 'id' to a number
 
        // In a real app: dispatch action to load the details here.
-    });  
+    });
     this.temp = new Date();
     this.ngay = this.temp.getDate();
     this.thang = this.temp.getMonth()+1;
@@ -49,8 +49,8 @@ export class ReceiptViewComponent implements OnInit {
   }
 
   ngOnInit() {
-    //window.print(); 
-    
+    //window.print();
+
   }
 
   ngOnDestroy() {
@@ -100,7 +100,7 @@ export class ReceiptViewComponent implements OnInit {
         console.log(JSON.stringify(suc.message));
         //this.mess = JSON.stringify(suc.message);
         //this.tableService.refreshMenuListService();
-        
+
       },
       err => {console.log(err);}
     );
