@@ -2,8 +2,38 @@
 <body>
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-8">
-        xxx
+      <div class="col-5">
+        <form [formGroup]="orderForm">
+          <div class="form-group">
+            <label for="city">Miasto</label>
+            <input type="text" class="form-control" id="city" placeholder="Miasto">
+
+            <label for="postCode">Kod pocztowy</label>
+            <input type="text" class="form-control" id="postCode" placeholder="Kod pocztowy">
+
+            <label for="street">Ulica</label>
+            <input type="text" class="form-control" id="street" placeholder="Ulica">
+
+            <label for="houseNumber">Numer domu</label>
+            <input type="text" class="form-control" id="houseNumber" placeholder="Numer domu">
+
+            <label for="email">Adres mailowy</label>
+            <input type="text" class="form-control" id="email" placeholder="nazwa@gmail.com">
+
+            <label for="phonenumber">Numer telefonu</label>
+            <input type="text" class="form-control" id="phonenumber" placeholder="000000000">
+
+            <hr>
+
+            <div class="text-center">
+              <button type="submit" class="btn">Zamawiam i płacę({{totalCost | currency:'PLN'}})<fa-icon icon="shopping-cart"></fa-icon></button>
+              <!-- redirect to payment system -->
+            </div>
+
+            <button type="button" class="btn" (click)="backToPreviousPage();">Powrót</button>
+
+          </div>
+        </form>
       </div>
     </div>
   </div>

@@ -3,11 +3,37 @@
 <div class="container-fluid">
   <div class="row justify-content-center">
 
-    <div class="col-3">
+    <div class="col-3"> <!-- left-menu start -->
 
+      <div class="form-group">
+
+        <div class="form-row align-items-center">
+          <div class="col-auto my-1">
+            <label class="mr-sm-2" for="inlineFormCustomSelect">Sortuj</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+              <option value="topRated" selected>Najwyżej oceniane</option>
+              <option value="minOrderPrice">Minimalna kwota zamówienia</option>
+              <option value="deliveryTime">Przewidywany czas dostawy</option>
+              <option value="alpha">Alfabetycznie</option>
+              <option value="deliveryCost">Koszt dostawy</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="openedNow">
+          <label class="custom-control-label" for="openedNow">Otwarte teraz</label>
+        </div>
+
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="freeDelivery">
+          <label class="custom-control-label" for="freeDelivery">Bezpłatna dostawa</label>
+        </div>
+
+      </div> <!-- form-group end -->
     </div> <!-- left-menu end -->
 
-    <div class="col-6">
+    <div class="col-6"> <!-- restaurants-summary start -->
       <table class="table table-hover">
         <thead>
         <tr>

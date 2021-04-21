@@ -15,7 +15,7 @@ export class RestaurantMenuComponent implements OnInit {
 
   meals$: Observable<Meal[]>;
   orderMeals: Meal[];
-  sum: number;
+  total: number;
 
   constructor(private route: ActivatedRoute,
               private restaurantMenuService: RestaurantMenuService,
@@ -25,7 +25,7 @@ export class RestaurantMenuComponent implements OnInit {
 
   ngOnInit(): void {
     this.orderMeals = [];
-    this.sum = 0;
+    this.total = 0;
     this.getMenu();
   }
 
@@ -36,12 +36,14 @@ export class RestaurantMenuComponent implements OnInit {
 
   addToOrder(meal): void {
     this.orderMeals.push(meal);
-    this.sum += this.orderMeals[this.orderMeals.length - 1].price;
+    this.total += this.orderMeals[this.orderMeals.length - 1].price;
+    this.restaurantMenuService.totalCost = this.total;
   }
 
   deleteFromOrder(id): void {
     let removeIndex = this.orderMeals.findIndex(meal => meal.id === id);
-    this.sum = this.sum - this.orderMeals[removeIndex].price;
+    this.total = this.total - this.orderMeals[removeIndex].price;
     this.orderMeals.splice(removeIndex, 1);
+    this.restaurantMenuService.totalCost = this.total;
   }
 }

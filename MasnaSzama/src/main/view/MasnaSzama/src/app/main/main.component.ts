@@ -45,7 +45,4 @@ export class MainComponent implements OnInit {
     this.router.navigateByUrl('/restaurant-summary');
   }
 
-  get address(): string {
-    return this.restaurantSummaryService.address;
-  }
 }

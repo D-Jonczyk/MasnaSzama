@@ -9,6 +9,7 @@ import {Meal} from '../model/meal.model';
 export class RestaurantMenuService {
 
   private mealUrl = 'http://localhost:8080/restaurant/getmeals?id=';
+  totalCost: number;
 
   constructor(
     private http: HttpClient) { }

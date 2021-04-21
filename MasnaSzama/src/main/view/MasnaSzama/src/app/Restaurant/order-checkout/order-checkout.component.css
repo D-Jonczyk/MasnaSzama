@@ -1,3 +1,22 @@
-.col-8 {
+body {
+  min-height: 100vh;
+  background-color: #fea935;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.col-5 {
   border: 1px solid;
+  background-color: #f4f7f9;
+}
+
+button {
+  background-color: #fea935;
+  color: #FFFFFF;
+  border: 0;
+}
+
+button:hover {
+  background-color: #c48329;
+  color: #FFFFFF;
+  border: 0;
 }

@@ -1,4 +1,5 @@
 body {
+  min-height: 100vh;
   background-color: #fea935;
   font-family: 'Trebuchet MS', sans-serif;
 }
@@ -10,5 +11,3 @@ body {
 .col-6 {
   background-color: #ffffff;
 }
-
-

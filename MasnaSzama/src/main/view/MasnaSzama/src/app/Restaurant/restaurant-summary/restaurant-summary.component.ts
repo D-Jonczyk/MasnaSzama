@@ -21,7 +21,7 @@ export class RestaurantSummaryComponent implements OnInit {
   ngOnInit(): void {}
 
   showMenu() : void {
-    this.router.navigate(['/restaurant-menu']);
+    this.router.navigateByUrl('/restaurant-menu');
   }
 
 }

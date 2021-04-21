@@ -14,7 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProfileComponent } from './courier-panel/profile/profile.component';
 import { OrderlistComponent } from './courier-panel/orderlist/orderlist.component';
 import { RestaurantMenuComponent } from './Restaurant/restaurant-menu/restaurant-menu.component';
-import { CurrencyPipe} from '@angular/common';
+import {CurrencyPipe, Location} from '@angular/common';
 import { AddRestoComponent } from './admin-panel/add-resto/add-resto.component';
 import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
 import { LoginComponent } from './admin-panel/login/login.component';
@@ -37,7 +37,6 @@ import { SupportComponent } from './courier-panel/support/support.component';
 import { OrderCheckoutComponent } from './Restaurant/order-checkout/order-checkout.component';
 import { ChatComponent } from './courier-panel/chat/chat.component';
 import { CourierOrderhistoryComponent } from './courier-panel/courier-orderhistory/courier-orderhistory.component';
-
 
 @NgModule({
   declarations: [
@@ -80,7 +79,7 @@ import { CourierOrderhistoryComponent } from './courier-panel/courier-orderhisto
     HttpClientModule,
     ReactiveFormsModule,
     NgbModule,
-    FontAwesomeModule,
+    FontAwesomeModule
   ],
   bootstrap: [AppComponent],
   providers: [CurrencyPipe]

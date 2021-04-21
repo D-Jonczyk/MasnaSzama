@@ -1,10 +1,18 @@
-<div class="container">
-
+<div class="container-fluid">
   <div class="row">
-    <div  class="col-4" *ngFor="let order of restaurantOrders$ | async">
-      {{order.orderId}}
-      {{order.name}}
+    <div class="col-2"  *ngFor="let order of restaurantOrders">
+
+        {{order.orderId}}
+      <span class="todo-wrap" *ngFor="let meal of order.name; let j = index">
+        <input type="checkbox" id="{{order.orderId+j + order.name.toString()}}"/>
+        <label for="{{order.orderId+j + order.name.toString()}}" class="todo">
+          <i class="fa fa-check"><fa-icon icon="check"></fa-icon></i>
+          {{meal}}
+        </label>
+      </span>
+
+      <button type="button" class="btn btn-info" (click)="setDone(order.orderId);">Gotowe</button>
+
     </div>
   </div>
-
 </div>
