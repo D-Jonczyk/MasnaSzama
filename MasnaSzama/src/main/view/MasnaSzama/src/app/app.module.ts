@@ -15,6 +15,9 @@ import { ProfileComponent } from './courier-panel/profile/profile.component';
 import { OrderlistComponent } from './courier-panel/orderlist/orderlist.component';
 import { RestaurantMenuComponent } from './Restaurant/restaurant-menu/restaurant-menu.component';
 import {CurrencyPipe, Location} from '@angular/common';
+import { MenuMakerService } from './admin-panel/menu-maker.service';
+import { OrderService } from './admin-panel/overview/order.service';
+import { MenuMakerComponent } from './admin-panel/menu-maker.component';
 
 // Client imports
 import { ClientAdressComponent } from './client-panel/client-adress/client-adress.component';
@@ -55,6 +58,7 @@ import { OrderItemComponent } from './admin-panel/overview/order-item/order-item
     RestaurantOrdersComponent,
     NavigationComponent,
     OrderCheckoutComponent,
+    MenuMakerComponent,
 
 // Client modules
      ClientAdressComponent,
@@ -83,10 +87,11 @@ import { OrderItemComponent } from './admin-panel/overview/order-item/order-item
     HttpClientModule,
     ReactiveFormsModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterModule.forRoot(appRoutes),
   ],
   bootstrap: [AppComponent],
-  providers: [CurrencyPipe]
+  providers: [CurrencyPipe, MenuMakerService, OrderService]
 })
 export class AppModule
 {
