@@ -32,6 +32,13 @@ import { SupportComponent } from './courier-panel/support/support.component';
 import { OrderCheckoutComponent } from './Restaurant/order-checkout/order-checkout.component';
 import { ChatComponent } from './courier-panel/chat/chat.component';
 import { CourierOrderhistoryComponent } from './courier-panel/courier-orderhistory/courier-orderhistory.component';
+import { CategoriesComponent } from './admin-panel/categories/categories.component';
+import { HeroComponent } from './admin-panel/hero/hero.component';
+import { ItemsComponent } from './admin-panel/items/items.component';
+import { MenusComponent } from './admin-panel/menus/menus.component';
+import { OptionsComponent } from './admin-panel/options/options.component';
+import { OverviewComponent } from './admin-panel/overview/overview.component';
+import { OrderItemComponent } from './admin-panel/overview/order-item/order-item.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +67,13 @@ import { CourierOrderhistoryComponent } from './courier-panel/courier-orderhisto
      OrderCheckoutComponent,
      ChatComponent,
      CourierOrderhistoryComponent,
+     CategoriesComponent,
+     HeroComponent,
+     ItemsComponent,
+     MenusComponent,
+     OptionsComponent,
+     OverviewComponent,
+     OrderItemComponent,
 
   ],
   imports: [

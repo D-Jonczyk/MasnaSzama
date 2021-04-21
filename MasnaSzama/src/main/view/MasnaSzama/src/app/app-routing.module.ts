@@ -23,6 +23,11 @@ import {ChatComponent} from './courier-panel/chat/chat.component';
 import {CourierOrderhistoryComponent} from './courier-panel/courier-orderhistory/courier-orderhistory.component';
 import {OrderCheckoutComponent} from "./Restaurant/order-checkout/order-checkout.component";
 
+import { ItemsComponent } from './admin-panel/items/items.component';
+import { MenusComponent } from './admin-panel/menus/menus.component';
+import { OptionsComponent } from './admin-panel/options/options.component';
+import { OverviewComponent } from './admin-panel/overview/overview.component';
+import { CategoriesComponent } from './admin-panel/categories/categories.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/main', pathMatch: 'full'},
@@ -37,8 +42,12 @@ const routes: Routes = [
   {path: 'restaurant-orders', component: RestaurantOrdersComponent},
   {path: 'restaurant-menu/:id', component: RestaurantMenuComponent},
   {path: 'support', component: SupportComponent},
-  {path: 'order-checkout', component: OrderCheckoutComponent},
-
+  {path: 'categories', component: CategoriesComponent},
+  {path: 'items', component: ItemsComponent },
+  {path: 'menus', component: MenusComponent },
+  {path: 'options', component: OptionsComponent },
+  {path: 'overview', component: OverviewComponent },
+  {path: '', component:OverviewComponent},
   // Client Paths
   {path: 'client-panel', component: ClientPanelComponent},
   {path: 'client-adress', component: ClientAdressComponent},
