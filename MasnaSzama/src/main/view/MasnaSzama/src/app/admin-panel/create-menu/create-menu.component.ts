@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { JwtHelper} from 'angular2-jwt';
 import { TableService } from '../table.service';
 import { AbstractControl, FormArray, FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
-import { ModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
+import { BsModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
 
 
 @Component({
@@ -28,7 +28,7 @@ export class CreateMenuComponent implements OnInit {
   public mess_content;
   public check;
 
-  constructor(public fb: FormBuilder, public router: Router, public tableService: TableService) { 
+  constructor(public fb: FormBuilder, public router: Router, public tableService: TableService) {
     this.jwt = localStorage.getItem('id_token');
     this.decodedJwt = this.jwtHelper.decodeToken(this.jwt);
     this.jwtDate = this.jwtHelper.getTokenExpirationDate(this.jwt);
@@ -41,7 +41,7 @@ export class CreateMenuComponent implements OnInit {
 
   }
 
-   
+
   public onSubmit(item: any): void {
     console.log('Reactive Form Data: ');
     //format input string for price
@@ -50,7 +50,7 @@ export class CreateMenuComponent implements OnInit {
     //get next available item UID
     var get_last_id = this.tableService.menuList[this.tableService.menuList.length-1];
     let last_id: number = get_last_id.itemUID;
-    last_id++;    
+    last_id++;
     item['itemUID'] = last_id;
 
     console.log(item);
@@ -72,7 +72,7 @@ export class CreateMenuComponent implements OnInit {
   //decide status of the request
   private checkRes(x)
   {
-    //shit code 
+    //shit code
     var c = JSON.stringify(x);
     var temp = JSON.parse(c);
 
@@ -90,21 +90,21 @@ export class CreateMenuComponent implements OnInit {
       this.form.reset();
     }
   }
-  
+
   ngOnInit() {
-    
+
   }
 
   //ModalComponent
   @ViewChild('myModal')
-    modal: ModalComponent;
-    animation: boolean = true;    
+    modal: BsModalComponent;
+    animation: boolean = true;
 
     close() {
         this.modal.close();
     }
-    
-    open() { 
+
+    open() {
         this.modal.open();
     }
 

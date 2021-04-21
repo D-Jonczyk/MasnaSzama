@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import {  JwtHelper} from 'angular2-jwt';
 import { TableService } from '../table.service';
 import { AbstractControl, FormArray, FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
-import { ModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
+import { BsModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
 
 
 
@@ -32,7 +32,7 @@ export class CreateTableComponent implements OnInit {
 
 
 
-  constructor(public fb: FormBuilder ,tableServie: TableService, public router: Router, public tableService: TableService) { 
+  constructor(public fb: FormBuilder ,tableServie: TableService, public router: Router, public tableService: TableService) {
     this.jwt = localStorage.getItem('id_token');
     this.decodedJwt = this.jwtHelper.decodeToken(this.jwt);
     this.jwtDate = this.jwtHelper.getTokenExpirationDate(this.jwt);
@@ -49,7 +49,7 @@ export class CreateTableComponent implements OnInit {
     item['isActive'] = false;
     item['command'] = 1;
     //console.log(item);
-    
+
     this.tableService.modifyTable(item).subscribe(
       suc => {
         //console.log(JSON.stringify(suc.message));
@@ -84,7 +84,7 @@ export class CreateTableComponent implements OnInit {
   }
 
   ngOnInit() {
-    
+
   }
 
   ngDoCheck(){
@@ -93,9 +93,9 @@ export class CreateTableComponent implements OnInit {
   }
 
   @ViewChild('myModal')
-    modal: ModalComponent;
-    animation: boolean = true; 
-    temp: any;   
+    modal: BsModalComponent;
+    animation: boolean = true;
+    temp: any;
 
     close() {
         this.modal.close();
@@ -111,8 +111,8 @@ export class CreateTableComponent implements OnInit {
           err => {console.log(err);}
         );
     }
-    
-    open(item) { 
+
+    open(item) {
         this.modal.open();
         this.temp = item;
     }

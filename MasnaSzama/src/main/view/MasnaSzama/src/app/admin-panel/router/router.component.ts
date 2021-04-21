@@ -38,4 +38,3 @@ export const routes: Routes = [
   {path: 'report', component: ReportMenuComponent, canActivate: [AuthGuardService]},
   {path:'**', redirectTo: ''}
   ];
-

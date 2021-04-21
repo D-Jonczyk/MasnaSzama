@@ -41,7 +41,7 @@ import { LogInComponent } from './admin-panel/log-in/log-in.component';
 import { MenuManageComponent } from './admin-panel/menu-manage/menu-manage.component';
 import { MyHomeComponent } from './admin-panel/my-home/my-home.component';
 import { NavBarComponent } from './admin-panel/nav-bar/nav-bar.component';
-import { ReceipViewComponent } from './admin-panel/receip-view/receip-view.component';
+import { ReceiptViewComponent } from './admin-panel/receipt-view/receipt-view.component';
 import { ReportMenuComponent } from './admin-panel/report-menu/report-menu.component';
 import { RouterComponent } from './admin-panel/router/router.component';
 import { SelectTableComponent } from './admin-panel/select-table/select-table.component';
@@ -83,7 +83,7 @@ import { TableDetailsComponent } from './admin-panel/table-details/table-details
      MenuManageComponent,
      MyHomeComponent,
      NavBarComponent,
-     ReceipViewComponent,
+     ReceiptViewComponent,
      ReportMenuComponent,
      RouterComponent,
      SelectTableComponent,

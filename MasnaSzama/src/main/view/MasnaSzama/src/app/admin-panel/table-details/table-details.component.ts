@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TableService } from '../table.service';
-import { ModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
+import { BsModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
 
 
 @Component({
@@ -42,17 +42,17 @@ export class TableDetailsComponent implements OnInit {
        this.tableService.addMenuList(this.id);
        this.data = this.tableService.getMenuList(this.id) ;
 
-    }); 
+    });
     //initiate array for storing highlights
     for(var item in this.tableService.menuList){
          //console.log(item);
          this.isHighlight.push("");
-    } 
+    }
   }
 
   ngDoCheck(){
     //console.log(this.uniqueMenuList);
-    
+
   }
 
   ngOnDestroy() {
@@ -62,7 +62,7 @@ export class TableDetailsComponent implements OnInit {
   private increaseClick(item,index){
     //get the specific object and increase the quantity
     this.data.filter(x => x == item)[0].itemQuantity += 1;
-    
+
     //calculate total price
     let totalPrice = 0;
     totalPrice = parseInt(this.data.filter(x => x == item)[0].itemPrice);
@@ -70,7 +70,7 @@ export class TableDetailsComponent implements OnInit {
 
     this.stringPrice = this.tableService.getMenuListTotalPrice(this.id);
 
-    //put the highlight index 
+    //put the highlight index
     this.isHighlight[index] = "success";
   }
 
@@ -87,7 +87,7 @@ export class TableDetailsComponent implements OnInit {
 
        this.stringPrice = this.tableService.getMenuListTotalPrice(this.id);
 
-       //put the highlight index 
+       //put the highlight index
     }
     if(this.data.filter(x => x == item)[0].itemQuantity == 0) this.isHighlight[index] = "";
   }
@@ -138,22 +138,22 @@ export class TableDetailsComponent implements OnInit {
     this.finalList = [];
   }
 
-    //format number to currency 
+    //format number to currency
   public numberWithCommas(x) {
       return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
   //ModalComponent
   @ViewChild('myModal')
-    modal: ModalComponent;
-    animation: boolean = true;    
+    modal: BsModalComponent;
+    animation: boolean = true;
 
     close() {
         this.modal.close();
         this.cancelTable();
     }
-    
-    open() { 
+
+    open() {
         this.modal.open();
     }
 
