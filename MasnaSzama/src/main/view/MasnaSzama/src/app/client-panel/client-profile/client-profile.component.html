@@ -2,41 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>Client Profile</title>
+  <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
 
-
 <body>
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-lg-3 col-xl-3">
-      <div class="card-box text-center">
-        <h2>Co chcesz zrobic?</h2>
-        <!-- your navs bound to current route fragments -->
-        <ul>
+    <div class="col-lg-3 float-left">
+      <div class="left-navbar text-center">
+
         <nav>
 
-          <button class="button" (click)="uploadClick();">Zmien awatar</button>
-          <button class="button" (click)="logoutClick();">Powrot</button>
+          <img class="displayed" [src]="accountIcon" alt="accountIcon">
+          <h4 class="mb-0"> Imie i nazwisko klienta</h4>
+          <hr/>
+          <ul ngbNav>
+            <li class="btn-block border-white" [ngbNavItem]="link.fragment" *ngFor="let link of links">
 
+              <a ngbNavLink data-toggle="collapse" [routerLink]="[link.fragment]" routerLinkActive="active" class="float-left">
+                <fa-icon class="float-left" icon="{{ link.icon }}"> </fa-icon> {{ link.title }}
+              </a>
+            </li>
+          </ul>
         </nav>
+        <router-outlet> </router-outlet>
 
-        </ul>
       </div>
     </div>
 
     <!-- content -->
-    <div class="col-lg-9 col-xl-9">
-      <div class="card-box">
+    <div class="col-lg-9">
+      <div class="card-box col-lg-9">
+
+
 
         <div class="tab-content" id="ngbNav">
-          <div class="tab-pane fade show active" id="schedule" role="tabpanel">W tej zakladce mozna edytowac swoj profil</div>
-        </div>
+          <div class="tab-pane fade show active" id="schedule" role="tabpanel">Edytowanie profilu
 
+          </div>
+        </div>
       </div> <!-- end tab-content -->
     </div> <!-- end card-box-->
   </div> <!-- end col -->

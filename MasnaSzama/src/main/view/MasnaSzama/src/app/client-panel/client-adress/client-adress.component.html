@@ -2,62 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>Client Adress</title>
+  <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
 
-
 <body>
-<div class="container">
+<div class="container-fluid">
   <div class="row">
+    <div class="col-lg-3 float-left">
+      <div class="left-navbar text-center">
 
+        <!-- <a [routerLink]="['/courier-panel']"> -->
+        <nav>
+          <img class="displayed" [src]="accountIcon" alt="accountIcon">
+          <h4 class="mb-0"> Imie i nazwisko klienta</h4>
+          <hr/>
+          <ul ngbNav>
+            <li class="btn-block border-white" [ngbNavItem]="link.fragment" *ngFor="let link of links">
+
+              <a ngbNavLink data-toggle="collapse" [routerLink]="[link.fragment]" routerLinkActive="active" class="float-left">
+                <fa-icon class="float-left" icon="{{ link.icon }}"> </fa-icon> {{ link.title }}
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <router-outlet> </router-outlet>
+
+      </div>
+    </div>
 
     <!-- content -->
-    <div class="col-lg-9 col-xl-9">
-      <div class="card-box">
+    <div class="col-lg-9">
+      <div class="card-box col-lg-9">
+
 
 
         <div class="tab-content" id="ngbNav">
-          <h3>Lista zapisanych adresow: </h3>
-          <nav>
+          <div class="tab-content" id="ngbNav">
+            <h3>Lista zapisanych adresow: </h3>
+            <nav>
 
-            <ol>
-              <li>Nazwa adresu 1
-                <ul>
-                  <li>Miasto</li>
-                  <li>Ulica</li>
-                  <li>Numer bloku</li>
-                  <li>numer mieszkania</li>
+              <ol>
+                <li>Nazwa adresu 1
+                  <ul>
+                    <li>Miasto</li>
+                    <li>Ulica</li>
+                    <li>Numer bloku</li>
+                    <li>numer mieszkania</li>
 
-                </ul>
-              </li>
-              <li>Nazwa adresu 3
-                <ul>
-                  <li>Miasto</li>
-                  <li>Ulica</li>
-                  <li>Numer bloku</li>
-                  <li>numer mieszkania</li>
+                  </ul>
+                </li>
+                <li>Nazwa adresu 3
+                  <ul>
+                    <li>Miasto</li>
+                    <li>Ulica</li>
+                    <li>Numer bloku</li>
+                    <li>numer mieszkania</li>
 
-                </ul>
-              </li>
-              <li>Nazwa adresu 3
-                <ul>
-                  <li>Miasto</li>
-                  <li>Ulica</li>
-                  <li>Numer bloku</li>
-                  <li>numer mieszkania</li>
+                  </ul>
+                </li>
+                <li>Nazwa adresu 3
+                  <ul>
+                    <li>Miasto</li>
+                    <li>Ulica</li>
+                    <li>Numer bloku</li>
+                    <li>numer mieszkania</li>
 
-                </ul>
-              </li>
-            </ol>
+                  </ul>
+                </li>
+              </ol>
 
-            <button class="btn btn-info" (click)="logoutClick();">Powrot do strony glownej</button>
-          </nav>
+            </nav>
+          </div>
         </div>
-
       </div> <!-- end tab-content -->
     </div> <!-- end card-box-->
   </div> <!-- end col -->

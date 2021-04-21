@@ -49,6 +49,7 @@ const routes: Routes = [
   {path: 'support', component: SupportComponent},
   {path: 'order-checkout', component: OrderCheckoutComponent},
 
+
   // Client Paths
   {path: 'client-panel', component: ClientPanelComponent},
   {path: 'client-adress', component: ClientAdressComponent},

@@ -59,6 +59,7 @@ import { CourierOrderhistoryComponent } from './courier-panel/courier-orderhisto
     NavigationComponent,
     OrderCheckoutComponent,
 
+
 // Client modules
      ClientAdressComponent,
      ClientPanelComponent,
