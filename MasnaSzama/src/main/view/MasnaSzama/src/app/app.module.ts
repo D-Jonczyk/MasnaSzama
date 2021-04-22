@@ -88,7 +88,7 @@ import { OrderItemComponent } from './admin-panel/overview/order-item/order-item
     ReactiveFormsModule,
     NgbModule,
     FontAwesomeModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(Routes),
   ],
   bootstrap: [AppComponent],
   providers: [CurrencyPipe, MenuMakerService, OrderService]
