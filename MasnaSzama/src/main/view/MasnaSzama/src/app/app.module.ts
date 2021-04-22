@@ -43,6 +43,7 @@ import { OptionsComponent } from './admin-panel/options/options.component';
 import { OverviewComponent } from './admin-panel/overview/overview.component';
 import { OrderItemComponent } from './admin-panel/overview/order-item/order-item.component';
 import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
+import { ManualregisterComponent } from './admin-panel/manualregister/manualregister.component';
 
 @NgModule({
   declarations: [
@@ -90,7 +91,7 @@ import { ListRestoComponent } from './admin-panel/list-resto/list-resto.componen
     ReactiveFormsModule,
     NgbModule,
     FontAwesomeModule,
-    RouterModule.forRoot(Routes),
+
   ],
   bootstrap: [AppComponent],
   providers: [CurrencyPipe, MenuMakerService, OrderService]
