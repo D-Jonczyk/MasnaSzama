@@ -1,0 +1,82 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+    <form [formGroup]="itemCreatorForm" (ngSubmit)="onSubmit()">
+
+      <div class="form-group">
+        <br>
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/6227/restaurant-list-logo.png" width="30" height="30" class="d-inline-block align-top" alt="Lista restauracji">
+        <label for="name"><h4>Dodaj nowe danie</h4></label>
+        <br>
+        <label for="name">Nazwa</label>
+        <input
+          type="text"
+          id="name"
+          formControlName="name"
+          class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="description">Opis, np: składniki</label>
+        <input
+          type="text"
+          id="description"
+          formControlName="description"
+          class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="price">Cena</label>
+        <input
+          type="number"
+          id="price"
+          formControlName="price"
+          class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="imagePath">(ścieżka do zdjęcia)</label>
+        <input
+          type="text"
+          id="imagePath"
+          formControlName="imagePath"
+          class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="categories">Kategoria dania</label>
+        <select
+          id="categories"
+          formControlName="category"
+          class="form-control">
+          <option *ngFor="let category of categories"
+                  [ngValue]="category">{{category.categoryName}} </option>
+        </select>
+      </div>
+      <!--
+      <div class="form-group">
+        <label for="optionsTitle">Extra Option Title</label>
+        <input
+          type="text"
+          id="optionsTitle"
+          formControlName="optionsTitle"
+          class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="choiceName">Option Name</label>
+        <input
+          type="text"
+          id="choiceName"
+          formControlName="choiceName"
+          class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="choicePrice">Option Price</label>
+        <input
+          type="text"
+          id="choicePrice"
+          formControlName="choicePrice"
+          class="form-control">
+      </div>
+      -->
+      <button class="btn btn-primary" type="submit">Zapisz</button>
+      <button class="btn btn-primary" type="reset" (click)="reset()">Reset</button>
+    </form>
+  </div>
+</div>

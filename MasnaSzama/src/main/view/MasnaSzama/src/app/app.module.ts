@@ -15,11 +15,9 @@ import { ProfileComponent } from './courier-panel/profile/profile.component';
 import { OrderlistComponent } from './courier-panel/orderlist/orderlist.component';
 import { RestaurantMenuComponent } from './Restaurant/restaurant-menu/restaurant-menu.component';
 import {CurrencyPipe, Location} from '@angular/common';
-import { AddRestoComponent } from './admin-panel/add-resto/add-resto.component';
-import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
-import { LoginComponent } from './admin-panel/login/login.component';
-import { RegisterComponent } from './admin-panel/register/register.component';
-import { UpdateRestoComponent } from './admin-panel/update-resto/update-resto.component';
+import { MenuMakerService } from './admin-panel/menu-maker.service';
+import { OrderService } from './admin-panel/overview/order.service';
+import { MenuMakerComponent } from './admin-panel/menu-maker.component';
 
 // Client imports
 import { ClientAdressComponent } from './client-panel/client-adress/client-adress.component';
@@ -28,7 +26,6 @@ import { OrderHistoryComponent } from './client-panel/order-history/order-histor
 import { ClientPanelComponent } from './client-panel/client-panel.component';
 import { LogoutComponent } from './client-panel/logout/logout.component';
 import { UploadComponent } from './client-panel/upload/upload.component';
-import { FavoriteRestaurantComponent } from './client-panel/favorite-restaurant/favorite-restaurant.component';
 
 
 import { RestaurantOrdersComponent } from './Restaurant/restaurant-orders/restaurant-orders.component';
@@ -38,6 +35,14 @@ import { SupportComponent } from './courier-panel/support/support.component';
 import { OrderCheckoutComponent } from './Restaurant/order-checkout/order-checkout.component';
 import { ChatComponent } from './courier-panel/chat/chat.component';
 import { CourierOrderhistoryComponent } from './courier-panel/courier-orderhistory/courier-orderhistory.component';
+import { CategoriesComponent } from './admin-panel/categories/categories.component';
+import { HeroComponent } from './admin-panel/hero/hero.component';
+import { ItemsComponent } from './admin-panel/items/items.component';
+import { MenusComponent } from './admin-panel/menus/menus.component';
+import { OptionsComponent } from './admin-panel/options/options.component';
+import { OverviewComponent } from './admin-panel/overview/overview.component';
+import { OrderItemComponent } from './admin-panel/overview/order-item/order-item.component';
+import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
 
 @NgModule({
   declarations: [
@@ -51,15 +56,10 @@ import { CourierOrderhistoryComponent } from './courier-panel/courier-orderhisto
     ProfileComponent,
     OrderlistComponent,
     RestaurantMenuComponent,
-    AddRestoComponent,
-    ListRestoComponent,
-    LoginComponent,
-    RegisterComponent,
-    UpdateRestoComponent,
     RestaurantOrdersComponent,
     NavigationComponent,
     OrderCheckoutComponent,
-
+    MenuMakerComponent,
 
 // Client modules
      ClientAdressComponent,
@@ -72,7 +72,14 @@ import { CourierOrderhistoryComponent } from './courier-panel/courier-orderhisto
      OrderCheckoutComponent,
      ChatComponent,
      CourierOrderhistoryComponent,
-     FavoriteRestaurantComponent,
+     CategoriesComponent,
+     HeroComponent,
+     ItemsComponent,
+     MenusComponent,
+     OptionsComponent,
+     OverviewComponent,
+     OrderItemComponent,
+     ListRestoComponent,
 
   ],
   imports: [
@@ -82,10 +89,11 @@ import { CourierOrderhistoryComponent } from './courier-panel/courier-orderhisto
     HttpClientModule,
     ReactiveFormsModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+     RouterModule.forRoot(appRoutes)
   ],
   bootstrap: [AppComponent],
-  providers: [CurrencyPipe]
+  providers: [CurrencyPipe, MenuMakerService, OrderService]
 })
 export class AppModule
 {

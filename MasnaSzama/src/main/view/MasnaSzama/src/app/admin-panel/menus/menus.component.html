@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+
+    <form [formGroup]="menuCreatorForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <br>
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/6227/restaurant-list-logo.png" width="30" height="30" class="d-inline-block align-top" alt="Lista restauracji">
+        <label for="name"><h4>Stwórz nazwę menu</h4></label>
+
+        <p>(Przykładowo: Menu wegańskie)</p>
+        <input
+          type="text"
+          id="name"
+          formControlName="name"
+          class="form-control"
+          required>
+        <br>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+    <form [formGroup]="menuCreatorForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <br>
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/6227/restaurant-list-logo.png" width="30" height="30" class="d-inline-block align-top" alt="Lista restauracji">
+        <label for="name"><h4>Stwórz nową kategorię </h4></label>
+        <p>(Przykładowo:Kuchnia włoska)</p>
+        <input
+          type="text"
+          id="name"
+          formControlName="name"
+          class="form-control"
+          required>
+        <br>
+        <button class="btn btn-primary" type="submit" [disabled]="!categoryCreatorForm.valid">Zapisz</button>
+        &nbsp;
+        <button class="btn btn-primary" type="reset" (click)="reset()">Reset</button>
+
+      </div>
+    </form>
+  </div>
+</div>
