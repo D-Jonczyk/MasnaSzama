@@ -72,7 +72,7 @@ hr {
 }
 
 /* Set a style for the submit button */
-.registerbtn {
+.clientBtn {
   background-color: #4CAF50;
   color: white;
   padding: 16px 20px;
@@ -124,14 +124,6 @@ input {
   margin: 5px;
 }
 
-.statuteButton{
-  padding: 5px 10px;
-  margin: 5px;
-  background-color: black;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-}
 .modalCol {
   min-height: 65px;
   text-align: center;
@@ -139,8 +131,16 @@ input {
   padding-top: 10px;
   vertical-align: middle;
 }
+.statuteBody{
+  margin-left: auto;
+  margin-right: auto;
 
-
+}
+.statuteObject{
+  height: 650px;
+  width: 450px;
+  text-align:center
+}
 
 
 

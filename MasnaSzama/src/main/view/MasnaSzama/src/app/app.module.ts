@@ -28,6 +28,7 @@ import { OrderHistoryComponent } from './client-panel/order-history/order-histor
 import { ClientPanelComponent } from './client-panel/client-panel.component';
 import { LogoutComponent } from './client-panel/logout/logout.component';
 import { UploadComponent } from './client-panel/upload/upload.component';
+import { FavoriteRestaurantComponent } from './client-panel/favorite-restaurant/favorite-restaurant.component';
 
 
 import { RestaurantOrdersComponent } from './Restaurant/restaurant-orders/restaurant-orders.component';
@@ -71,6 +72,7 @@ import { CourierOrderhistoryComponent } from './courier-panel/courier-orderhisto
      OrderCheckoutComponent,
      ChatComponent,
      CourierOrderhistoryComponent,
+     FavoriteRestaurantComponent,
 
   ],
   imports: [

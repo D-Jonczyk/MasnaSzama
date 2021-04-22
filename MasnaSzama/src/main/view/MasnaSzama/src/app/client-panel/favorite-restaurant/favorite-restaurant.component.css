@@ -1,0 +1,109 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  color: black;
+  background-color: #f5f6f8;
+  height: 1080px;
+}
+::ng-deep * {
+  margin: 0;
+  padding: 0;
+}
+.start-shift {
+  color: #000000;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border: 2px solid #000000;
+  padding: .6rem;
+  border-radius: 5px 5px;
+  font-family: "Trebuchet MS", sans-serif;
+}
+.col-lg-3 {
+  padding-left: 0px;
+  border-left-width: 0px;
+  max-width: 266px;
+}
+.card-box {
+  background-color: #fafafa;
+  background-clip: border-box;
+  border: 1px solid #e7eaed;
+  padding: 1.5rem;
+  margin-bottom: 24px;
+  border-radius: .25rem;
+  position: absolute;
+  float: left;
+}
+.left-navbar {
+  background-color: #06163c;
+  background-clip: border-box;
+  padding: 1.5rem;
+  margin-bottom: 24px;
+  border-radius: .25rem;
+  color: #f1f5f7;
+  height: 1080px;
+}
+.rounded-circle {
+  border-radius: 50%!important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #1abc9c;
+}
+.nav-pills .nav-link {
+  border-radius: .25rem;
+  color: #fff;
+  background-color: #1abc9c;
+  margin-bottom: 5px;
+}
+.navtab-bg li>a {
+  background-color: #3f35bf;
+  margin: 0 5px;
+}
+fa-icon.float-left{
+  margin-right: 20px;
+}
+.nav-pills>li>a, .nav-tabs>li>a {
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #06163c;
+  margin-bottom: 10px;
+  position: relative;
+  horiz-align: center;
+  text-align: center;
+  border-radius: 15px 15px;
+  font-family: "Trebuchet MS", sans-serif;
+}
+li.btn-block>a{
+  color: #f1f5f7;
+}
+.mb-4, .my-4 {
+  margin-bottom: 2.25rem!important;
+}
+.tab-content {
+  padding: 20px 0 0 0;
+  font-family: "Trebuchet MS", sans-serif;
+}
+.m-0 {
+  margin: 0!important;
+}
+.mb-0 {
+  padding-bottom: 20px;
+}
+.table .thead-light th {
+  color: #6c757d;
+  background-color: #093a81;
+  border-color: #dee2e6;
+}
+.text-purple {
+  color: #6559cc!important;
+}
+.border-purple {
+  border-color: #6559cc!important;
+}
+IMG.displayed {
+  width:120px;
+  height:120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}

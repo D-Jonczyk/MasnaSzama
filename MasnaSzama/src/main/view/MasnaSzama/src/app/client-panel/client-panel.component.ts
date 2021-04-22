@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FaIconLibrary} from '@fortawesome/angular-fontawesome';
 import {faPlayCircle} from '@fortawesome/free-regular-svg-icons';
 import {
-  faCalendarAlt, faComments,
+  faCalendarAlt, faComments, faCrown,
   faFingerprint,
   faHandMiddleFinger, faHistory,
   faListAlt,
@@ -18,6 +18,7 @@ export const LINKS: object[] = [
   { title: 'Moj profil', fragment: '/client-profile', icon: 'user-circle' },
   { title: 'Lista Adresow', fragment: '/client-adress', icon: 'list-alt'},
   { title: 'Historia zamowien', fragment: '/order-history', icon: 'history'},
+  { title: 'Ulubione', fragment: '/favorite-restaurant', icon: 'crown'},
   { title: 'Wyloguj', fragment: '/logout', icon: 'sign-out-alt'},
 
 ];
@@ -38,7 +39,7 @@ export class ClientPanelComponent implements OnInit {
   constructor(private library: FaIconLibrary) {
     library.addIcons(faPlayCircle, faSearch,
       faListAlt, faLocationArrow, faCalendarAlt, faUserCircle, faQuestionCircle,
-      faComments, faHistory, faSignOutAlt);
+      faComments, faHistory, faSignOutAlt, faCrown);
   }
 
   ngOnInit(): void {

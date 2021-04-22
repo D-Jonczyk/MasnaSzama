@@ -27,6 +27,7 @@ import {SupportComponent} from './courier-panel/support/support.component';
 import {ChatComponent} from './courier-panel/chat/chat.component';
 import {CourierOrderhistoryComponent} from './courier-panel/courier-orderhistory/courier-orderhistory.component';
 import {OrderCheckoutComponent} from "./Restaurant/order-checkout/order-checkout.component";
+import { FavoriteRestaurantComponent } from './client-panel/favorite-restaurant/favorite-restaurant.component';
 
 
 const routes: Routes = [
@@ -49,7 +50,6 @@ const routes: Routes = [
   {path: 'support', component: SupportComponent},
   {path: 'order-checkout', component: OrderCheckoutComponent},
 
-
   // Client Paths
   {path: 'client-panel', component: ClientPanelComponent},
   {path: 'client-adress', component: ClientAdressComponent},
@@ -59,7 +59,9 @@ const routes: Routes = [
   {path: 'upload', component: UploadComponent},
   {path: 'chat', component: ChatComponent},
   {path: 'navigation', component: NavigationComponent},
-  {path: 'orderhistory', component: CourierOrderhistoryComponent}
+  {path: 'orderhistory', component: CourierOrderhistoryComponent},
+  {path: 'favorite-restaurant', component: FavoriteRestaurantComponent}
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

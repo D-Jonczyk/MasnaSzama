@@ -13,6 +13,7 @@ import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 })
 export class MainComponent implements OnInit {
 
+
   logoFacebook:string="assets/facebook-logo.png";
 
   addressForm = this.formBuilder.group({
@@ -50,12 +51,9 @@ export class MainComponent implements OnInit {
     this.router.navigateByUrl('/client-panel');
   }
   registerAcc(): void {
-    this.router.navigateByUrl('/client-panel');
+    this.router.navigateByUrl('/main');
   }
 
-  openScrollableContent(statute) {
-    this.modalService.open(statute, { scrollable: true });
-  }
   ngOnInit(): void {
   }
 
@@ -67,8 +65,16 @@ export class MainComponent implements OnInit {
   openLogin(login) {
     this.modalService.open(login, { centered: true });
   }
-  openRegister(login) {
-    this.modalService.open(login, { centered: true });
+  openRegister(register) {
+    this.modalService.open(register, { centered: true });
+  }
+  openRegisterInfo(registerInfo) {
+    this.modalService.open(registerInfo, { centered: true });
+  }
+
+
+  openScrollableContent(longContent) {
+    this.modalService.open(longContent, { scrollable: true });
   }
 
 

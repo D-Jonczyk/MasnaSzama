@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-3 float-left">
+      <div class="left-navbar text-center">
+
+        <nav>
+
+          <img class="displayed" [src]="accountIcon" alt="accountIcon">
+          <h4 class="mb-0"> Imie i nazwisko klienta</h4>
+          <hr/>
+          <ul ngbNav>
+            <li class="btn-block border-white" [ngbNavItem]="link.fragment" *ngFor="let link of links">
+
+              <a ngbNavLink data-toggle="collapse" [routerLink]="[link.fragment]" routerLinkActive="active" class="float-left">
+                <fa-icon class="float-left" icon="{{ link.icon }}"> </fa-icon> {{ link.title }}
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <router-outlet> </router-outlet>
+
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="col-lg-9">
+      <div class="card-box col-lg-9">
+
+
+
+        <div class="tab-content" id="ngbNav">
+          <div class="tab-pane fade show active" id="schedule" role="tabpanel">Ulubione restauracje klienta
+
+          </div>
+        </div>
+      </div> <!-- end tab-content -->
+    </div> <!-- end card-box-->
+  </div> <!-- end col -->
+</div>
+</body>
+</html>
