@@ -28,6 +28,7 @@ import { MenusComponent } from './admin-panel/menus/menus.component';
 import { OptionsComponent } from './admin-panel/options/options.component';
 import { OverviewComponent } from './admin-panel/overview/overview.component';
 import { CategoriesComponent } from './admin-panel/categories/categories.component';
+import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/main', pathMatch: 'full'},
@@ -57,7 +58,8 @@ const routes: Routes = [
   {path: 'upload', component: UploadComponent},
   {path: 'chat', component: ChatComponent},
   {path: 'navigation', component: NavigationComponent},
-  {path: 'orderhistory', component: CourierOrderhistoryComponent}
+  {path: 'orderhistory', component: CourierOrderhistoryComponent},
+  {path: 'list-resto', component: ListRestoComponent},
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

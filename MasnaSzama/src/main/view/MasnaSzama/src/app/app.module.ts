@@ -42,6 +42,7 @@ import { MenusComponent } from './admin-panel/menus/menus.component';
 import { OptionsComponent } from './admin-panel/options/options.component';
 import { OverviewComponent } from './admin-panel/overview/overview.component';
 import { OrderItemComponent } from './admin-panel/overview/order-item/order-item.component';
+import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
 
 @NgModule({
   declarations: [
@@ -78,6 +79,7 @@ import { OrderItemComponent } from './admin-panel/overview/order-item/order-item
      OptionsComponent,
      OverviewComponent,
      OrderItemComponent,
+     ListRestoComponent,
 
   ],
   imports: [
