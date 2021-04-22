@@ -1,34 +1,23 @@
 <div class="row">
   <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-    <form [formGroup]="categoryCreatorForm" (ngSubmit)="onSubmit()">
-
+    <form [formGroup]="menuCreatorForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <br>
-        <label for="name"><h4>Create New Category Name</h4></label>
-        <p>(Example: Appetizers)</p>
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/6227/restaurant-list-logo.png" width="30" height="30" class="d-inline-block align-top" alt="Lista restauracji">
+        <label for="name"><h4>Stwórz nową kategorię </h4></label>
+        <p>(Przykładowo:Kuchnia włoska)</p>
         <input
           type="text"
           id="name"
           formControlName="name"
           class="form-control"
           required>
+        <br>
+        <button class="btn btn-primary" type="submit" [disabled]="!categoryCreatorForm.valid">Zapisz</button>
+        &nbsp;
+        <button class="btn btn-primary" type="reset" (click)="reset()">Reset</button>
+
       </div>
-      <br>
-      <div class="form-group">
-        <div for="name"><h5>Add Category to Menus</h5></div>
-
-         <div formArrayName="menusControlArray" *ngFor="let menuControl of categoryCreatorForm.controls.menusControlArray.controls; let i = index">
-          <input type="checkbox" [formControlName]="i">
-
-        </div>
-      </div>
-
-      <button class="btn btn-primary" type="submit" [disabled]="!categoryCreatorForm.valid">Save</button>
-      &nbsp;
-      <button class="btn btn-primary" type="reset" (click)="reset()">Reset</button>
     </form>
   </div>
 </div>
-
-
-
