@@ -90,7 +90,6 @@ import { ListRestoComponent } from './admin-panel/list-resto/list-resto.componen
     ReactiveFormsModule,
     NgbModule,
     FontAwesomeModule,
-     RouterModule.forRoot(appRoutes)    // kompilujemy, usuwamy, kompilujemy 2 raz, działa i wklejamy na nowo XD
   ],
   bootstrap: [AppComponent],
   providers: [CurrencyPipe, MenuMakerService, OrderService]

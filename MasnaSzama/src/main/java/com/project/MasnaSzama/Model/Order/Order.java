@@ -108,4 +108,12 @@ public class Order {
     public void setDesiredDeliveryTime(String desiredDeliveryTime) {
         this.desiredDeliveryTime = desiredDeliveryTime;
     }
+
+    public Status getOrderStatus() {
+        return orderStatus;
+    }
+
+    public void setOrderStatus(Status orderStatus) {
+        this.orderStatus = orderStatus;
+    }
 }
