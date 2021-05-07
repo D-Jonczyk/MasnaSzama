@@ -15,10 +15,10 @@ export class CategoriesComponent implements OnInit {
 
   constructor(private menuMakerService: MenuMakerService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.categoryCreatorForm = new FormGroup({
-      'name': new FormControl('', [Validators.required]),
-      'menusControlArray': new FormArray([], [Validators.required]),
+      name: new FormControl('', [Validators.required]),
+      menusControlArray: new FormArray([], [Validators.required]),
     });
 
 
@@ -34,32 +34,15 @@ export class CategoriesComponent implements OnInit {
   }
 
   /*Loop through menus array and create control array for reactive form usage*/
-  private addCheckboxes() {
+  private addCheckboxes(): void {
     this.menus.map(() => {
       const control = new FormControl();
-      (<FormArray>this.categoryCreatorForm.get('menusControlArray')).push(control);
+      (this.categoryCreatorForm.get('menusControlArray') as FormArray).push(control);
     });
   }
 
-  reset() {
+  reset(): void {
     this.categoryCreatorForm.reset();
-  }
-
-
-  onSubmit() {
-
-    const menusArray = this.categoryCreatorForm.controls.menusControlArray.value;
-    for (let i = 0; i < menusArray.length; i++) {
-      if (menusArray[i] === true) {
-        this.outputMenus.push(this.menus[i]);
-      }
-    }
-
-    const category = {categoryName: this.categoryCreatorForm.value.name, Menus: this.outputMenus};
-
-    this.menuMakerService.saveCategory(category);
-
-    this.reset();
   }
 
 }

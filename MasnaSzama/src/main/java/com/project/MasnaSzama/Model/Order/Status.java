@@ -14,6 +14,10 @@ public class Status {
     @OneToOne(mappedBy="orderStatus")
     private Order order;
 
+    public Status() {
+
+    }
+
     public String getName() {
         return name;
     }
@@ -29,5 +33,9 @@ public class Status {
     @Id
     public Long getStatusId() {
         return statusId;
+    }
+
+    public Status(Long statusId){
+        this.statusId = statusId;
     }
 }

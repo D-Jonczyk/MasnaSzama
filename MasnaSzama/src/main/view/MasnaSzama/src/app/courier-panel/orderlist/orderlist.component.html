@@ -40,68 +40,28 @@
                   <div class="tab-pane active show" id="orders" role="tabpanel" aria-labelledby="orders-tab">
 
                     <h4 class="font-weight-bold mt-0 mb-4">Zamówienia</h4>
-                    <div class="bg-white card mb-4 order-list shadow-sm">
+
+                    <div class="bg-white card mb-4 order-list shadow-sm" *ngFor="let order of orders">
                       <div class="gold-members p-3">
                         <div class="media">
                           <div class="media-body">
                               <span class="float-right font-weight-bold">
                                 <fa-icon [icon]="['fas', 'truck-loading']"> </fa-icon>
-                                Odbiór: 15:31</span>
+                                Odbiór {{order.orderedTime | slice:0:5}}</span>
                             <h6 class="mb-2">
                               <fa-icon [icon]="['fas', 'location-arrow']"> </fa-icon>
-                              <a href="#" class="text-black"> McDonalds Al. Solidarności</a>
+                              <a href="#" class="text-black"> {{order.restoName}}</a>
                             </h6>
                             <hr/>
-                            <p class="text-gray mb-1"><fa-icon [icon]="['fas', 'map-marker-alt']"> </fa-icon> ul. Warszawska 99, 12-324
+                            <p class="text-gray mb-1"><fa-icon [icon]="['fas', 'map-marker-alt']"> </fa-icon> {{order.customerAddress}}
                               <span class="float-right">
                                 <fa-icon [icon]="['far', 'clock']"> </fa-icon>
                                   <span class="font-weight-bold">
-                                    Dostawa: 16:00
+                                    Dostawa {{order.desiredDeliveryTime | slice:0:5}}
                                   </span>
                               </span>
                             </p>
-                            <p class="text-gray mb-3"><fa-icon [icon]="['fas', 'clipboard-list']"> </fa-icon> Nr. zamówienia #25102589748 </p>
-
-
-                              <p class="text-gray mb-1"><fa-icon [icon]="['fas', 'info']" > </fa-icon>
-                                  <span class="text-info"> Poprosze hamburgera bez cebuli, i żeby było ciepłe!!!</span>
-                              </p>
-
-                            <hr/>
-
-                              <div class="float-right">
-                                <a class="btn btn-sm btn-outline-primary" href="#"><fa-icon [icon]="['fas', 'headset']" > </fa-icon> Pomoc</a>
-                                <a class="btn btn-sm btn-primary btn-primary px-2" href="#"><fa-icon [icon]="['far', 'check-circle']" > </fa-icon> Potwierdź dostarczenie</a>
-                              </div>
-                              <a class="btn btn-sm btn-outline-primary px-2" href="#"><fa-icon [icon]="['fas', 'phone-alt']" > </fa-icon> Zadzwoń do klienta</a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-
-
-                    <div class="bg-white card mb-4 order-list shadow-sm" [hidden]="isFinished">
-                      <div class="gold-members p-3">
-                        <div class="media">
-                          <div class="media-body">
-                              <span class="float-right font-weight-bold">
-                                <fa-icon [icon]="['fas', 'truck-loading']"> </fa-icon>
-                                Odbiór: 12:01</span>
-                            <h6 class="mb-2">
-                              <fa-icon [icon]="['fas', 'location-arrow']"> </fa-icon>
-                              <a href="#" class="text-black"> Kebab Kielce, ul. Warszawska</a>
-                            </h6>
-                            <hr/>
-                            <p class="text-gray mb-1"><fa-icon [icon]="['fas', 'map-marker-alt']"> </fa-icon> ul. Klonowa 99, 12-324
-                              <span class="float-right">
-                                <fa-icon [icon]="['far', 'clock']"> </fa-icon>
-                                  <span class="font-weight-bold">
-                                    Dostawa: 13:00
-                                  </span>
-                              </span>
-                            </p>
-                            <p class="text-gray mb-3"><fa-icon [icon]="['fas', 'clipboard-list']"> </fa-icon> Nr. zamówienia #25102589748 </p>
+                            <p class="text-gray mb-3"><fa-icon [icon]="['fas', 'clipboard-list']"> </fa-icon> ID: {{order.orderId}}#{{order.orderPrice}} </p>
 
 
                             <p class="text-gray mb-1"><fa-icon [icon]="['fas', 'info']" > </fa-icon>
@@ -112,7 +72,7 @@
 
                             <div class="float-right">
                               <button type="button" class="btn btn-sm btn-outline-primary" (click)="openCallCoordinator(contentCallCoordinator)"><fa-icon [icon]="['fas', 'headset']" > </fa-icon> Pomoc</button>
-                              <button type="button" class="btn btn-sm btn-primary btn-primary px-2" (click)="toggleDisplay()"><fa-icon [icon]="['far', 'check-circle']" > </fa-icon> Potwierdź dostarczenie</button>
+                              <button type="button" class="btn btn-sm btn-primary btn-primary px-2" (click)="finishDeliveryOrder(order)"><fa-icon [icon]="['far', 'check-circle']" > </fa-icon> Potwierdź dostarczenie</button>
                             </div>
                             <button type="button" class="btn btn-sm btn-outline-primary px-2" (click)="openCallTheClient(contentCallTheClient)"><fa-icon [icon]="['fas', 'phone-alt']" > </fa-icon> Zadzwoń do klienta</button>
                           </div>
@@ -127,7 +87,7 @@
                           </div>
 
                           <div class="modal-body">
-                            123-432-235
+                            {{order.phoneNumber}}
                           </div>
 
                           <div class="modal-footer">

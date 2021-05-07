@@ -2,14 +2,11 @@ body {
   min-height: 100vh;
   background-color: #FFFFFF;
   font-family: 'Trebuchet MS', sans-serif;
-  /*background-image: url("/../../assets/kebabGif.gif");*/
 }
 label {
   display: block;
   font: .9rem 'Fira Sans', sans-serif;
 }
-
-
 
 .center {
   display: flex;

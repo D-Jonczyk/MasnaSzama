@@ -83,7 +83,6 @@ import {RouterModule} from "@angular/router";
      OverviewComponent,
      OrderItemComponent,
      ListRestoComponent,
-     RestaurantMenuUpdatePanelComponent,
 
   ],
   imports: [
@@ -94,7 +93,6 @@ import {RouterModule} from "@angular/router";
     ReactiveFormsModule,
     NgbModule,
     FontAwesomeModule,
-    //RouterModule.forRoot(appRoutes)    // kompilujemy, usuwamy, kompilujemy 2 raz, działa i wklejamy na nowo XD
   ],
   bootstrap: [AppComponent],
   providers: [CurrencyPipe, MenuMakerService, OrderService]
