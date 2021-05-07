@@ -41,6 +41,8 @@ public interface OrderRepo extends CrudRepository<Order, Long> {
 
     @Modifying
     @Transactional
-    @Query("update Order o set o.orderStatus.statusId = 4 where o.orderId = ?1")
+    @Query("update Order o " +
+            "set o.orderStatus.statusId = 4 " +
+            "where o.orderId = ?1")
     void updateOrderStatus(Long orderId);
 }
