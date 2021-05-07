@@ -54,6 +54,10 @@ export class MainComponent implements OnInit {
     this.router.navigateByUrl('/main');
   }
 
+  goToRestaurantMenu(): void {
+    this.router.navigateByUrl('/restaurant-menu-update-panel');
+  }
+
   ngOnInit(): void {
   }
 
@@ -76,7 +80,6 @@ export class MainComponent implements OnInit {
   openScrollableContent(longContent) {
     this.modalService.open(longContent, { scrollable: true });
   }
-
 
   get address(): string {
     return this.restaurantSummaryService.address;

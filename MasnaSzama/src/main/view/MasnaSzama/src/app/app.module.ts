@@ -43,6 +43,8 @@ import { OptionsComponent } from './admin-panel/options/options.component';
 import { OverviewComponent } from './admin-panel/overview/overview.component';
 import { OrderItemComponent } from './admin-panel/overview/order-item/order-item.component';
 import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
+import { RestaurantMenuUpdatePanelComponent } from './Restaurant/restaurant-menu-update-panel/restaurant-menu-update-panel.component';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -60,6 +62,7 @@ import { ListRestoComponent } from './admin-panel/list-resto/list-resto.componen
     NavigationComponent,
     OrderCheckoutComponent,
     MenuMakerComponent,
+    RestaurantMenuUpdatePanelComponent,
 
 // Client modules
      ClientAdressComponent,
@@ -80,6 +83,7 @@ import { ListRestoComponent } from './admin-panel/list-resto/list-resto.componen
      OverviewComponent,
      OrderItemComponent,
      ListRestoComponent,
+     RestaurantMenuUpdatePanelComponent,
 
   ],
   imports: [
@@ -90,7 +94,7 @@ import { ListRestoComponent } from './admin-panel/list-resto/list-resto.componen
     ReactiveFormsModule,
     NgbModule,
     FontAwesomeModule,
-     RouterModule.forRoot(appRoutes)    // kompilujemy, usuwamy, kompilujemy 2 raz, działa i wklejamy na nowo XD
+    //RouterModule.forRoot(appRoutes)    // kompilujemy, usuwamy, kompilujemy 2 raz, działa i wklejamy na nowo XD
   ],
   bootstrap: [AppComponent],
   providers: [CurrencyPipe, MenuMakerService, OrderService]

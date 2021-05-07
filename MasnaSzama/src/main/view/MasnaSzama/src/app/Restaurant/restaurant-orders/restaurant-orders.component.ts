@@ -19,7 +19,7 @@ export class RestaurantOrdersComponent implements OnInit {
     library.addIcons(faCheck);
   }
 
-  private restaurantOrders: RestaurantOrders[] = [];
+  restaurantOrders: RestaurantOrders[] = [];
 
   ngOnInit(): void {
     this.getOrders();

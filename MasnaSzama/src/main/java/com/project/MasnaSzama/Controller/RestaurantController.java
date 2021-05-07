@@ -28,10 +28,10 @@ public class RestaurantController {
 
         return restaurantService.getRestaurantsByCity(city);
     }
-
     @GetMapping(path = "/getmeals")
     public List<RestaurantMealDTO> getMeals(@RequestParam Long id){
 
         return restaurantService.getMealsByRestaurantId(id);
     }
+
 }
