@@ -60,6 +60,7 @@ const routes: Routes = [
   {path: 'navigation', component: NavigationComponent},
   {path: 'orderhistory', component: CourierOrderhistoryComponent},
   {path: 'list-resto', component: ListRestoComponent},
+  {path: 'order-checkout', component: OrderCheckoutComponent},
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
