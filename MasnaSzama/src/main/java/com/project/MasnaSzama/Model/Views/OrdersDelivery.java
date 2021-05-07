@@ -17,16 +17,19 @@ public class OrdersDelivery {
     private String customerAddress;
     private Long phoneNumber;
 
-    private final String orderedTime = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
-    private final String desiredDeliveryTime = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
+    private String orderedTime = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
+    private String desiredDeliveryTime = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
 
-    public OrdersDelivery(Long orderId, Long courierId, Integer orderPrice, String restoName, String customerAddress, Long phoneNumber) {
+    public OrdersDelivery(Long orderId, Long courierId, Integer orderPrice, String restoName,
+                          String customerAddress, Long phoneNumber, String orderedTime, String desiredDeliveryTime) {
         this.orderId = orderId;
         this.courierId = courierId;
         this.orderPrice = orderPrice;
         this.restoName = restoName;
         this.customerAddress = customerAddress;
         this.phoneNumber = phoneNumber;
+        this.orderedTime = orderedTime;
+        this.desiredDeliveryTime = desiredDeliveryTime;
     }
 
     public OrdersDelivery() {

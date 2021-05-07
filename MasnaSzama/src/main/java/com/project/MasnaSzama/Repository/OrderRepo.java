@@ -4,13 +4,19 @@ import com.project.MasnaSzama.DTO.OrdersDTO;
 import com.project.MasnaSzama.DTO.RestaurantOrdersDTO;
 import com.project.MasnaSzama.Model.Order.Order;
 import com.project.MasnaSzama.Model.Views.OrdersDelivery;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
 public interface OrderRepo extends CrudRepository<Order, Long> {
+
+    Order findOrderByOrderId(Long id);
+
     @Query(value = "SELECT new com.project.MasnaSzama.DTO.OrdersDTO" +
     "(o.orderId, o.tip, o.customer.personId)" +
     "FROM Order o " +
@@ -27,8 +33,14 @@ public interface OrderRepo extends CrudRepository<Order, Long> {
     List<RestaurantOrdersDTO> getOrdersByRestaurantId(Long restaurantId);
 
     @Query(value = "SELECT new com.project.MasnaSzama.Model.Views.OrdersDelivery" +
-                    "(od.orderId, od.courierId, od.orderPrice, od.restoName, od.customerAddress, od.phoneNumber) " +
+                    "(od.orderId, od.courierId, od.orderPrice, od.restoName, od.customerAddress, " +
+                    " od.phoneNumber, od.orderedTime, od.desiredDeliveryTime) " +
                     "FROM OrdersDelivery od " +
                     "WHERE od.courierId = ?1")
     List<OrdersDelivery> getOrdersToDeliverByCourierId(Long courierId);
+
+    @Modifying
+    @Transactional
+    @Query("update Order o set o.orderStatus.statusId = 4 where o.orderId = ?1")
+    void updateOrderStatus(Long orderId);
 }

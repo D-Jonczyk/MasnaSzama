@@ -3,6 +3,7 @@ package com.project.MasnaSzama.Service;
 import com.project.MasnaSzama.DTO.OrdersDTO;
 import com.project.MasnaSzama.DTO.RestaurantOrdersDTO;
 import com.project.MasnaSzama.Model.Order.Order;
+import com.project.MasnaSzama.Model.Order.Status;
 import com.project.MasnaSzama.Model.Views.OrdersDelivery;
 import com.project.MasnaSzama.Repository.OrderRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,4 +36,7 @@ public class OrderService {
         return orderRepo.getOrdersToDeliverByCourierId(courierId);
     }
 
+    public void updateOrderStatus(Long orderId){
+        orderRepo.updateOrderStatus(orderId);
+    }
 }
