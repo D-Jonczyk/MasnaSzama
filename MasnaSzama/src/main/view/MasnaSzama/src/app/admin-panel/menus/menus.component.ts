@@ -12,17 +12,17 @@ export class MenusComponent implements OnInit {
   menuCreatorForm: FormGroup;
   constructor(private menuMakerService: MenuMakerService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.menuCreatorForm = new FormGroup({
-      'name': new FormControl('', [Validators.required]),
+      name: new FormControl('', [Validators.required]),
     });
   }
 
-  reset() {
+  reset(): void {
     this.menuCreatorForm.reset();
   }
 
-  onSubmit() {
+  onSubmit(): void {
     const menuName = {menuName: this.menuCreatorForm.value.name};
 
     console.log(menuName);

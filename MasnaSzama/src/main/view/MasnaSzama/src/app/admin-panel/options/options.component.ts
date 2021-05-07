@@ -15,7 +15,7 @@ export class OptionsComponent implements OnInit {
   constructor(private menuMakerService: MenuMakerService,
               private formBuilder: FormBuilder) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.optionCreatorForm = this.formBuilder.group({
       name: '',
       optionsArray: this.formBuilder.array([this.createOption()]),
@@ -32,7 +32,7 @@ export class OptionsComponent implements OnInit {
     });
   }
 
-  onAddOption() {
+  onAddOption(): void {
     this.optionsArray = this.optionCreatorForm.get('optionsArray') as FormArray;
     this.optionsArray.push(this.createOption());
     console.log(this.optionsArray);
