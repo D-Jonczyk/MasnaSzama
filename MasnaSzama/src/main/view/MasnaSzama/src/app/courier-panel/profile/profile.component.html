@@ -12,8 +12,7 @@
   <div class="row">
     <div class="col-lg-3 float-left">
       <div class="left-navbar text-center">
-        <h4 class="mb-0"> Witaj Kurierze!</h4>
-        <!-- <a [routerLink]="['/courier-panel']"> -->
+        <h4 class="mb-0"> Witaj {{courierProfile.firstName}}!</h4>
         <nav>
           <button class="start-shift" [hidden]="isWorking" (click)="toggleShiftButton()"><fa-icon [icon]="['far', 'play-circle']"  > </fa-icon> Zacznij zmianę</button>
           <button class="start-shift" [hidden]="!isWorking" (click)="toggleShiftButton()"><fa-icon [icon]="['far', 'pause-circle']"  > </fa-icon> Zakończ zmianę</button>
@@ -34,42 +33,44 @@
 
     <!-- content -->
     <div class="col-lg-9">
-      <div class="card-box col-lg-9">
+      <div class="card-box col-lg-12">
 
         <div class="container bootstrap snippets bootdey">
           <h4 class="font-weight-bold mt-0">Profil kuriera</h4>
           <hr>
           <div class="row">
-
             <!-- edit form column -->
-            <div class="col-md-9 personal-info">
+            <div class="col-md-7 personal-info">
               <div class="alert alert-info alert-dismissable" [hidden]="isClicked">
                 <a class="panel-close close" data-dismiss="alert" (click)="toggleDisplay()">×</a>
                 Pomyślnie zaktualizowano dane.
               </div>
 
-              <form class="form-horizontal" role="form">
+              <form class="form-horizontal" role="form" #editForm="ngForm">
+                <input type="hidden" ngModel="{{editProfile?.personId}}" name="personId" class="form-control" id="personId">
+                <input type="hidden" ngModel="{{editProfile?.numberOfDeliveries}}" name="numberOfDeliveries" class="form-control" id="numberOfDeliveries">
+                <input type="hidden" ngModel="{{editProfile?.averageDeliveryTime}}" name="averageDeliveryTime" class="form-control" id="averageDeliveryTime">
                 <div class="form-group">
-                  <label class="col-lg-3 control-label">Imię:</label>
+                  <label class="col-lg-8 control-label">Imię:</label>
                   <div class="col-lg-8">
                     <label>
-                      <input class="form-control" type="text" value="imie kuriera">
+                      <input class="form-control" ngModel="{{editProfile?.firstName}}" id="firstName" name="firstName" type="text" required>
                     </label>
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="col-lg-3 control-label">Nazwisko:</label>
+                  <label class="col-lg-8 control-label">Nazwisko:</label>
                   <div class="col-lg-8">
                     <label>
-                      <input class="form-control" type="text" value="nazwisko kuriera">
+                      <input class="form-control" ngModel="{{editProfile?.lastName}}" id="lastName" name="lastName" type="text" required>
                     </label>
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="col-lg-8 control-label">Adres e-mail:</label>
-                  <div class="col-lg-8">
+                  <div class="col-lg-12">
                     <label>
-                      <input class="form-control" type="text" value="kurier@masnaszama.pl">
+                      <input class="form-control" ngModel="{{editProfile?.emailAddress}}" id="emailAddress" name="emailAddress" type="email" readonly>
                     </label>
                   </div>
                 </div>
@@ -77,25 +78,38 @@
                   <label class="col-lg-8 control-label">Numer telefonu:</label>
                   <div class="col-lg-8">
                     <label>
-                      <input class="form-control" type="text" value="">
+                      <input class="form-control" value="{{courierProfile.phoneNumber}}" ngModel="{{editProfile?.phoneNumber}}" id="phoneNumber" name="phoneNumber" type="text" required>
                     </label>
                   </div>
                 </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Pojazd:</label>
-                  <div class="col-lg-8">
-                    <div class="ui-select">
-                      <select id="user_time_zone" class="form-control">
-                        <option value="scooter">Skuter</option>
-                        <option value="bike">Rower</option>
-                      </select>
-                    </div>
-                  </div>
+                <div class="form-check-label col-lg-8">
+                  <button (click)="onEditProfile(editForm.value)" class="btn btn-outline-primary">Zatwierdź zmiany</button>
                 </div>
               </form>
             </div>
+
+            <div class="col-md-5 personal-info">
+              <div class="form-group">
+                <label class="col-lg-12 control-label">Średni czas dostaw:</label>
+                <div class="col-lg-8">
+                  <label>
+                    <input class="form-control" ngModel="{{courierProfile?.averageDeliveryTime}}" name="averageDeliveryTime" type="text" readonly>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-lg-12 control-label">Liczba wszystkich dostaw:</label>
+                <div class="col-lg-8">
+                  <label>
+                    <input class="form-control" ngModel="{{courierProfile?.numberOfDeliveries}}" name="numberOfDeliveries" type="text" readonly>
+                  </label>
+                </div>
+              </div>
+
+            </div>
           </div>
-          <button type="button" class="btn btn-outline-primary offset-0" (click)="toggleDisplay()">Zatwierdź zmiany</button>
+
         </div>
 
         <hr>

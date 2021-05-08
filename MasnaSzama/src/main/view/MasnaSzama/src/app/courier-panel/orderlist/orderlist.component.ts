@@ -32,7 +32,7 @@ export class OrderlistComponent implements OnInit {
   closeResult = '';
   fas = 'fas';
   links = LINKS;
-  courierId = 201;
+  courierId = 206;
   public orders: DeliveryOrder[];
   public completedOrder: Order;
 
@@ -77,6 +77,14 @@ export class OrderlistComponent implements OnInit {
         alert(error.message);
       }
     );
+  }
+
+  openConfirmDelivery(content): void {
+    this.modalService.open(content, {ariaLabelledBy: 'modal-call-client'}).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+    }, (reason) => {
+      this.closeResult = `Dismissed ${OrderlistComponent.getDismissReason(reason)}`;
+    });
   }
 
   openCallTheClient(content): void {
