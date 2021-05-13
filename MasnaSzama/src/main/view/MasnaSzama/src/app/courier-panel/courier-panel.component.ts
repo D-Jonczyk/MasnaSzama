@@ -4,13 +4,13 @@ import {FaIconLibrary} from '@fortawesome/angular-fontawesome';
 import {faPlayCircle} from '@fortawesome/free-regular-svg-icons';
 import {
   faCalendarAlt, faComments,
-  faFingerprint,
-  faHandMiddleFinger, faHistory,
+  faHistory,
   faListAlt,
   faLocationArrow, faQuestionCircle,
   faSearch,
   faUserCircle
 } from '@fortawesome/free-solid-svg-icons';
+
 
 export const LINKS: object[] = [
   { title: 'Nawigacja', fragment: '/navigation', icon: 'location-arrow' },

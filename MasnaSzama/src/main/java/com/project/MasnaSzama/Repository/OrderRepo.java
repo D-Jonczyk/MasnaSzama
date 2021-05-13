@@ -7,11 +7,9 @@ import com.project.MasnaSzama.Model.Views.OrdersDelivery;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.query.Param;
 
 import javax.transaction.Transactional;
 import java.util.List;
-import java.util.Optional;
 
 public interface OrderRepo extends CrudRepository<Order, Long> {
 
@@ -41,6 +39,8 @@ public interface OrderRepo extends CrudRepository<Order, Long> {
 
     @Modifying
     @Transactional
-    @Query("update Order o set o.orderStatus.statusId = 4 where o.orderId = ?1")
+    @Query("update Order o " +
+            "set o.orderStatus.statusId = 4 " +
+            "where o.orderId = ?1")
     void updateOrderStatus(Long orderId);
 }

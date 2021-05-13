@@ -29,6 +29,7 @@ import { OptionsComponent } from './admin-panel/options/options.component';
 import { OverviewComponent } from './admin-panel/overview/overview.component';
 import { CategoriesComponent } from './admin-panel/categories/categories.component';
 import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
+import {RestaurantMenuUpdatePanelComponent} from "./Restaurant/restaurant-menu-update-panel/restaurant-menu-update-panel.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/main', pathMatch: 'full'},
@@ -41,12 +42,14 @@ const routes: Routes = [
   {path: 'main', component: MainComponent},
   {path: 'orderlist', component: OrderlistComponent},
   {path: 'restaurant-orders', component: RestaurantOrdersComponent},
+  {path: 'order-checkout', component: OrderCheckoutComponent},
   {path: 'restaurant-menu/:id', component: RestaurantMenuComponent},
   {path: 'support', component: SupportComponent},
   {path: 'categories', component: CategoriesComponent},
   {path: 'items', component: ItemsComponent },
   {path: 'menus', component: MenusComponent },
   {path: 'options', component: OptionsComponent },
+  {path: 'restaurant-menu-update-panel', component: RestaurantMenuUpdatePanelComponent },
   {path: 'overview', component: OverviewComponent },
   {path: '', component:OverviewComponent},
   // Client Paths
