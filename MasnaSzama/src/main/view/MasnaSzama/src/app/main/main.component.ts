@@ -5,6 +5,7 @@ import {FormBuilder} from '@angular/forms';
 import {Router} from '@angular/router';
 import {RestaurantSummaryService} from '../Restaurant/restaurant-summary-service/restaurant-summary.service';
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
+import {LoginServiceService} from "./login-service/login-service.service";
 
 @Component({
   selector: 'app-main',
@@ -20,7 +21,7 @@ export class MainComponent implements OnInit {
     adr: ''
   });
   loginForm = this.formBuilder.group({
-    adr: ''
+    email:'',password:''
   });
   registerForm = this.formBuilder.group({
     adr: ''
@@ -29,9 +30,18 @@ export class MainComponent implements OnInit {
   constructor(private formBuilder: FormBuilder,
               private router: Router,
               private restaurantSummaryService: RestaurantSummaryService,
-              private modalService: NgbModal)
+              private modalService: NgbModal,
+              private loginService: LoginServiceService)
   { }
 
+  //Test login and register
+  goToLoginAcc(): void {
+    this.router.navigateByUrl('/login-account');
+  }
+  goToRegisterAcc(): void {
+    this.router.navigateByUrl('/register-account');
+  }
+  //END
   btnClick(): void {
     this.router.navigateByUrl('/courier-panel');
   }
@@ -48,6 +58,7 @@ export class MainComponent implements OnInit {
     this.router.navigateByUrl('/client-panel');
   }
   loginAcc(): void {
+    this.loginService.postLogin(this.loginForm.get("email").value.toString(),this.loginForm.get("password").value.toString());
     this.router.navigateByUrl('/client-panel');
   }
   registerAcc(): void {

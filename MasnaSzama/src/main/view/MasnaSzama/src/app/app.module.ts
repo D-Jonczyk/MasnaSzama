@@ -45,6 +45,8 @@ import { OrderItemComponent } from './admin-panel/overview/order-item/order-item
 import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
 import { RestaurantMenuUpdatePanelComponent } from './Restaurant/restaurant-menu-update-panel/restaurant-menu-update-panel.component';
 import {RouterModule} from "@angular/router";
+import { LoginAccountComponent } from './login-account/login-account.component';
+import { RegisterAccountComponent } from './register-account/register-account.component';
 
 @NgModule({
   declarations: [
@@ -83,6 +85,8 @@ import {RouterModule} from "@angular/router";
      OverviewComponent,
      OrderItemComponent,
      ListRestoComponent,
+     LoginAccountComponent,
+     RegisterAccountComponent,
 
   ],
   imports: [

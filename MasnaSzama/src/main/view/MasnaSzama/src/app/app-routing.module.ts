@@ -31,6 +31,9 @@ import { CategoriesComponent } from './admin-panel/categories/categories.compone
 import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
 import {RestaurantMenuUpdatePanelComponent} from "./Restaurant/restaurant-menu-update-panel/restaurant-menu-update-panel.component";
 
+import { LoginAccountComponent } from './login-account/login-account.component';
+import { RegisterAccountComponent } from './register-account/register-account.component';
+
 const routes: Routes = [
   {path: '', redirectTo: '/main', pathMatch: 'full'},
   {path: 'main', component: MainComponent},
@@ -64,6 +67,8 @@ const routes: Routes = [
   {path: 'orderhistory', component: CourierOrderhistoryComponent},
   {path: 'list-resto', component: ListRestoComponent},
   {path: 'order-checkout', component: OrderCheckoutComponent},
+  {path: 'login-account', component: LoginAccountComponent},
+  {path: 'register-account', component: RegisterAccountComponent},
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -22,4 +22,10 @@ public class ClientService {
         List<ClientDTO> user=clientRepo.getUserLogin();
         return user;
     }
+
+
+    public ClientDTO postUserLogin(ClientDTO clientDTO) {
+        ClientDTO user=clientRepo.postUserLogin(clientDTO.getEmailAdress(),clientDTO.getPassword());
+        return user;
+    }
 }

@@ -26,4 +26,9 @@ public class ClientController {
         return clientService.getUserLogin();
     }
 
+    @PostMapping(path = "/postLogin")
+    public ClientDTO postUserLogin(ClientDTO clientDTO) {
+        return (ClientDTO) clientService.postUserLogin(clientDTO);
+    }
+
 }

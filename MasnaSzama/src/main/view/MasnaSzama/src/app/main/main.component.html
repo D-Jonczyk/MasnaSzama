@@ -5,7 +5,15 @@
   <nav>
 
     <div class="row">
+      <!-- Test login and register-->
+      <div class="col-3">
+        <button class="btn btn-info" (click)="goToLoginAcc();">Login account</button>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-info" (click)="goToRegisterAcc();">Register Account</button>
+      </div>
 
+      <!-- Test login and register-->
       <div class="col-3">
         <button class="btn btn-info" (click)="btnClick();">Courier Panel</button>
       </div>
@@ -28,7 +36,6 @@
       </div>
       <!--login form -->
       <ng-template #login let-modal>
-
         <div class="modalCol">
           <h4 class="modal-title">Zaloguj sie za pomoca swojego konta! </h4>
         </div>
@@ -37,10 +44,10 @@
           <div>
             <form  [formGroup]="loginForm" (ngSubmit)="modal.close('Close click')">
               <div class="center">
-                <input type="text" placeholder="Email" name="clientEmail" id="clientEmail" maxlength="16" minlength="8" required>
+                <input formControlName="email" type="text" placeholder="Email" name="clientEmail" id="clientEmail" maxlength="150" minlength="8" required>
               </div>
               <div class="center">
-                <input type="password" placeholder="Haslo" name="psswordClient" id="psswordClient" maxlength="16" minlength="8" required>
+                <input formControlName="password" type="password" placeholder="Haslo" name="psswordClient" id="psswordClient" maxlength="16" minlength="8" required>
               </div>
 
               <hr class="loginHr">
