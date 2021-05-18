@@ -92,6 +92,7 @@ import {WeekPipe} from './courier-panel/Schedule/show-schedule/week.pipe';
     ReactiveFormsModule,
     NgbModule,
     FontAwesomeModule,
+
   ],
   bootstrap: [AppComponent],
   providers: [CurrencyPipe, MenuMakerService, OrderService]
