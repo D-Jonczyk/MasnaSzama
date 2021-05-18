@@ -1,14 +1,14 @@
 package com.project.MasnaSzama.DTO;
 
-public class ClientDTO {
+public class UserDTO {
     private String userName;
     private String password;
 
-    public ClientDTO(String emailAdress, String password) {
-        this.userName = emailAdress;
+    public UserDTO(String userName, String password) {
+        this.userName = userName;
         this.password = password;
     }
-    public String getEmailAdress(){return userName;}
+    public String getUserName(){return userName;}
     public String getPassword(){return password;}
 }
 

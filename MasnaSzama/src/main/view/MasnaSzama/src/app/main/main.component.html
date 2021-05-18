@@ -5,15 +5,11 @@
   <nav>
 
     <div class="row">
-      <!-- Test login and register-->
+
       <div class="col-3">
         <button class="btn btn-info" (click)="goToLoginAcc();">Login account</button>
       </div>
-      <div class="col-3">
-        <button class="btn btn-info" (click)="goToRegisterAcc();">Register Account</button>
-      </div>
 
-      <!-- Test login and register-->
       <div class="col-3">
         <button class="btn btn-info" (click)="btnClick();">Courier Panel</button>
       </div>
@@ -30,109 +26,8 @@
         <button class="btn btn-info" (click)="goToRestaurantMenu();">Restaurant menu update panel</button>
       </div>
 
-      <div class="col-3">
-        <!--login button in main -->
-        <button class="btn btn-info" (click)="openLogin(login)">Zaloguj</button>
-      </div>
-      <!--login form -->
-      <ng-template #login let-modal>
-        <div class="modalCol">
-          <h4 class="modal-title">Zaloguj sie za pomoca swojego konta! </h4>
-        </div>
 
-        <div class="modal-body">
-          <div>
-            <form  [formGroup]="loginForm" (ngSubmit)="modal.close('Close click')">
-              <div class="center">
-                <input formControlName="email" type="text" placeholder="Email" name="clientEmail" id="clientEmail" maxlength="150" minlength="8" required>
-              </div>
-              <div class="center">
-                <input formControlName="password" type="password" placeholder="Haslo" name="psswordClient" id="psswordClient" maxlength="16" minlength="8" required>
-              </div>
 
-              <hr class="loginHr">
-              <p class="centerText">lub </p>
-              <!--Facebook logo-->
-              <img class="displayed" [src]="logoFacebook" alt="logoFacebook">
-
-              <div class="centerText">
-              <p >Nie masz konta na MasnejSzamie? </p>
-
-                <!--register button in login from -->
-                <button class="astext" (click)="openRegister(register)">Utworz konto</button>
-
-                <!--register form -->
-                <ng-template #register let-modal>
-                  <div class="modalCol">
-                    <h4 class="modal-title">Zarejestruj sie! </h4>
-                  </div>
-                  <div class="modal-body">
-                    <div class="containerRegister">
-                      <form  [formGroup]="registerForm" (ngSubmit)="registerAcc()">
-                        <div class="container">
-                          <input type="text" placeholder="Imie" name="clientName" id="clientName" maxlength="16" minlength="8" required>
-                          <input type="text" placeholder="Nazwisko" name="clientSurname" id="clientSurname"  maxlength="16" minlength="8" required>
-                          <input type="text" placeholder="Adres email" name="emailAdress" id="emailAdress" maxlength="24" minlength="8" required>
-                          <input type="password" placeholder="Haslo" name="psw" id="psw" maxlength="16" minlength="8" required>
-                          <input type="password" placeholder="Powtorz haslo" name="psw-repeat" id="psw-repeat" maxlength="16" minlength="8"  required>
-                          <hr>
-                          <label>
-                            <input type="checkbox">
-                            Rejestrujac konto akceptujesz
-                            <button class="astext"  (click)="openScrollableContent(longContent)"> regulamin</button>
-                            oraz polityke prywatnosci MasnaSzama.pl
-                          </label>
-
-                          <!-- Statute modal -->
-                          <ng-template #longContent let-modal>
-                            <div class="modalCol">
-                              <h4 class="modal-title">Regulamin MasnaSzama.pl</h4>
-                            </div>
-                            <div class="statuteBody">
-                              <object class="statuteObject" data="/assets/statute.txt"></object>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="submit" class="clientBtn" (click)="modal.close('accept statute')">Akceptuje</button>
-                            </div>
-                          </ng-template>
-                          <!-- Finish Statute modal -->
-
-                          <!-- Modal info register-->
-                          <ng-template #registerInfo let-modal>
-                            <div class="modalCol">
-                              <h4>Zarejestrowano pomyslnie</h4>
-                            </div>
-                            <div class="centerText">
-                              <p>Twoje konto zostalo pomyslnie zarejestrowane</p>
-                              <p>  <a href="#">wroc do strony glownej</a></p>
-                              <p> aby zalogowac sie na swoje konto.</p>
-                            </div>
-                          </ng-template>
-                          <!--Finish  Modal info register-->
-
-                          <button type="submit" class="clientBtn" (click)="openRegisterInfo(registerInfo); modal.close('Register')">Zarejestruj</button>
-                        </div>
-                        <div class="centerText">
-                          <p>  <a href="#">Wroc do strony glownej.</a></p>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </ng-template>
-                <!--finish register form -->
-              </div>
-
-                <!--login form buttons -->
-                <button type="submit" class="clientBtn" (click)="loginAcc();">Zaloguj</button>
-              <div class="centerText">
-                <p>  <a href="#">Wroc do strony glownej.</a></p>
-              </div>
-
-            </form>
-          </div>
-        </div>
-      </ng-template>
-      <!--finish login form -->
     </div>
 
   </nav>

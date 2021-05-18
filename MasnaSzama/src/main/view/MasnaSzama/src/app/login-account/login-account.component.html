@@ -1,1 +1,30 @@
-<p>login-account works!</p>
+<div id="center" >
+    <div class="modalCol">
+      <h4 class="modal-title">Zaloguj sie za pomoca swojego konta! </h4>
+    </div>
+    <form  [formGroup]="loginForm" >
+      <div class="center">
+        <input formControlName="userName" type="text" placeholder="Nazwa" name="clientEmail" id="clientEmail" maxlength="150" minlength="8" required>
+      </div>
+      <div class="center">
+        <input formControlName="password" type="password" placeholder="Haslo" name="psswordClient" id="psswordClient" maxlength="16" minlength="8" required>
+      </div>
+      <hr>
+      <p class="centerText">lub </p>
+      <!--Facebook logo-->
+      <img class="displayed" [src]="logoFacebook" alt="logoFacebook">
+
+      <div class="centerText">
+        <p >Nie masz konta na MasnejSzamie? </p>
+
+        <!--register button in login from -->
+        <button class="astext" (click)="goToRegisterAcc()">Utworz konto</button>
+      </div>
+
+      <button type="submit" class="clientBtn" (click)="loginAcc();">Zaloguj</button>
+      <div class="centerText">
+        <p>  <a href="#">Wroc do strony glownej.</a></p>
+      </div>
+    </form>
+</div>
+
