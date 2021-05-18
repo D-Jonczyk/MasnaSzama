@@ -93,6 +93,7 @@ import {RouterModule} from "@angular/router";
     ReactiveFormsModule,
     NgbModule,
     FontAwesomeModule,
+
   ],
   bootstrap: [AppComponent],
   providers: [CurrencyPipe, MenuMakerService, OrderService]
