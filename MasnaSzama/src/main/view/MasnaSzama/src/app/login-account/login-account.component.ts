@@ -5,7 +5,8 @@ import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {HttpErrorResponse} from '@angular/common/http';
 import {CourierProfile} from "../courier-panel/profile/courier-profile";
 import {AccountService} from "./account-service";
-
+import {Observable} from "rxjs";
+import {Account} from "./account";
 
 @Component({
   selector: 'app-login-account',
@@ -14,6 +15,7 @@ import {AccountService} from "./account-service";
 })
 export class LoginAccountComponent implements OnInit {
   logoFacebook:string="assets/facebook-logo.png";
+
 
   loginForm = this.formBuilder.group({
     userName:'',password:''
@@ -30,6 +32,11 @@ export class LoginAccountComponent implements OnInit {
 
   }
 
+  loginAcc():void{
+    this.accountService.getAccount(
+      this.loginForm.get('userName').value.toString(),
+    this.loginForm.get('password').value.toString() );
+  }
 
   goToRegisterAcc(): void {
     this.router.navigateByUrl('/register-account');
