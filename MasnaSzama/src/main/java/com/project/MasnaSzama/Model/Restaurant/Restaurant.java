@@ -10,9 +10,15 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@Table(name = "restaurant")
 public class Restaurant {
+
+    public Restaurant() {
+
+    }
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    //@GeneratedValue(strategy = GenerationType.AUTO)
     private Long restaurantId;
 
     @OneToOne(cascade = CascadeType.ALL)
@@ -23,7 +29,7 @@ public class Restaurant {
     private String description;
     private Integer averageOpinion;
 
-    @OneToMany(mappedBy = "restaurant")
+    @OneToMany(mappedBy = "restaurant", fetch = FetchType.EAGER)
     private Set<Order> orders = new HashSet<>();
 
     @ManyToMany(cascade = { CascadeType.ALL })

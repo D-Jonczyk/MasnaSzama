@@ -1,5 +1,6 @@
 package com.project.MasnaSzama.Model.Order;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.project.MasnaSzama.Model.Payment.Payment;
 import com.project.MasnaSzama.Model.Person.Employee.Courier;
 import com.project.MasnaSzama.Model.Person.Customer;
@@ -19,11 +20,11 @@ public class Order {
     private String desiredDeliveryTime = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    //@GeneratedValue(strategy = GenerationType.AUTO)
     private Long orderId;
 
     @ManyToOne
-    @JoinColumn(name = "restaurant_id", nullable = false)
+    @JoinColumn(name = "restaurant_id")
     private Restaurant restaurant;
 
     @ManyToMany
@@ -35,7 +36,7 @@ public class Order {
     Set<Courier> couriers = new HashSet<>();
 
     @ManyToOne
-    @JoinColumn(name="customer_id", nullable=false)
+    @JoinColumn(name="customer_id")
     private Customer customer;
 
     @OneToMany(mappedBy = "order")
@@ -46,11 +47,11 @@ public class Order {
     }
 
     @OneToOne
-    @JoinColumn(name="payment_id", nullable=false)
+    @JoinColumn(name="payment_id")
     private Payment payment;
 
     @OneToOne
-    @JoinColumn(name="status_id", nullable=false)
+    @JoinColumn(name="status_id")
     private Status orderStatus;
 
     public void setOrdersMeals(Set<OrdersMeals> ordersMeals) {
@@ -58,7 +59,7 @@ public class Order {
     }
 
     public Order(){
-        super();
+
     }
 
     public Long getOrderId() {
@@ -93,6 +94,36 @@ public class Order {
         this.couriers = couriers;
     }
 
+    @JsonProperty(value = "restaurantId")
+    public Restaurant getRestaurant() {
+        return restaurant;
+    }
+
+    @JsonProperty(value = "restaurantId")
+    public void setRestaurant(Restaurant restaurant) {
+        this.restaurant = restaurant;
+    }
+
+    @JsonProperty(value = "customerId")
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    @JsonProperty(value = "customerId")
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    @JsonProperty(value = "paymentId")
+    public Payment getPayment() {
+        return payment;
+    }
+
+    @JsonProperty(value = "paymentId")
+    public void setPayment(Payment payment) {
+        this.payment = payment;
+    }
+
     public String getOrderedTime() {
         return orderedTime;
     }
@@ -116,4 +147,8 @@ public class Order {
     public void setOrderStatus(Status orderStatus) {
         this.orderStatus = orderStatus;
     }
+
+
+
+
 }

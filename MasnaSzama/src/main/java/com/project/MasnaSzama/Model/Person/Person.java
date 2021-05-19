@@ -8,7 +8,12 @@ import java.io.Serializable;
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Person implements Serializable {
-    @GeneratedValue(strategy= GenerationType.AUTO)
+
+    public Person() {
+
+    }
+
+   // @GeneratedValue(strategy= GenerationType.AUTO)
     @Id
     @Column(nullable = false)
     protected Long personId;
@@ -54,5 +59,13 @@ public class Person implements Serializable {
     }
     public void setEmailAddress(String emailAddress) {
         this.emailAddress = emailAddress;
+    }
+
+    public UserAccount getUserAccount() {
+        return userAccount;
+    }
+
+    public void setUserAccount(UserAccount userAccount) {
+        this.userAccount = userAccount;
     }
 }
