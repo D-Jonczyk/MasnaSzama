@@ -31,7 +31,7 @@ export class ItemsComponent implements OnInit {
       'instructionsText': new FormControl()
     });
 
-    /*React out to service to fetch available Categories*/
+
     this.menuMakerService
       .getCategories()
       .subscribe((response) => {

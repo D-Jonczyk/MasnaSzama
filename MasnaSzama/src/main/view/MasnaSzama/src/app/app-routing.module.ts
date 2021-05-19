@@ -29,7 +29,7 @@ import { OptionsComponent } from './admin-panel/options/options.component';
 import { OverviewComponent } from './admin-panel/overview/overview.component';
 import { CategoriesComponent } from './admin-panel/categories/categories.component';
 import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
-import {RestaurantMenuUpdatePanelComponent} from "./Restaurant/restaurant-menu-update-panel/restaurant-menu-update-panel.component";
+import {RestaurantMenuUpdatePanelComponent} from './admin-panel/restaurant-menu-update-panel/restaurant-menu-update-panel.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/main', pathMatch: 'full'},
