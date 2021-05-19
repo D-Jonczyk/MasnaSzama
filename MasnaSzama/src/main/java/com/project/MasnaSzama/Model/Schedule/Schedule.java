@@ -22,10 +22,12 @@ public class Schedule {
     @ManyToMany(mappedBy = "schedules")
     private Set<Employee> employees = new HashSet<>();
 
-    private String dateCreated = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
-    private String startTime = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
-    private String endTime = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
+    private String dateCreated = new java.text.SimpleDateFormat("dd-MM-yyyy").format(new java.util.Date());
+    private String startTime = new java.text.SimpleDateFormat("HH:mm:ss").format(new java.util.Date());
+    private String endTime = new java.text.SimpleDateFormat("HH:mm:ss").format(new java.util.Date());
+    private String fullDate = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
     private String otherDetails;
+    private Integer weekNumber;
 
     public Schedule(){
         super();
@@ -81,5 +83,13 @@ public class Schedule {
 
     public void setOtherDetails(String otherDetails) {
         this.otherDetails = otherDetails;
+    }
+
+    public String getFullDate() {
+        return fullDate;
+    }
+
+    public void setFullDate(String fullDate) {
+        this.fullDate = fullDate;
     }
 }

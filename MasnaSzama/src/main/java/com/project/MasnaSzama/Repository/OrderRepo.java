@@ -23,7 +23,7 @@ public interface OrderRepo extends CrudRepository<Order, Long> {
 
     // Test
     @Query(value = "SELECT new com.project.MasnaSzama.DTO.RestaurantOrdersDTO" +
-                    "(o.orderId, m.name) " +
+                    "(o.orderId, m.mealName) " +
             "FROM Order o " +
             "JOIN OrdersMeals om ON om.order.orderId = o.orderId " +
             "JOIN Meal m ON m.mealId = om.meal.mealId " +

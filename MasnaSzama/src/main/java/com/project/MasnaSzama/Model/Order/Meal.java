@@ -14,7 +14,7 @@ public class Meal {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long mealId;
 
-    private String name;
+    private String mealName;
     private BigDecimal price;
 
     @ManyToMany(mappedBy = "meal")
@@ -38,16 +38,16 @@ public class Meal {
         return mealId;
     }
 
-    public String getName() {
-        return name;
+    public String getMealName() {
+        return mealName;
     }
 
     public BigDecimal getPrice() {
         return price;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setMealName(String mealName) {
+        this.mealName = mealName;
     }
 
     public void setPrice(BigDecimal price) {

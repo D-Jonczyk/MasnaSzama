@@ -13,7 +13,6 @@
     <div class="col-lg-3 float-left">
       <div class="left-navbar text-center">
         <h4 class="mb-0"> Witaj Kurierze!</h4>
-        <!-- <a [routerLink]="['/courier-panel']"> -->
         <nav>
           <button class="start-shift"><fa-icon [icon]="['far', 'play-circle']"> </fa-icon> Zacznij zmianę</button>
           <hr/>
@@ -35,7 +34,11 @@
     <div class="col-lg-9">
       <div class="card-box col-lg-9">
           <div class="container">
-            <h3 class="text-center">Grafik (tydzień {{ currentDate | date: 'w' }})</h3>
+            <h3 class="text-center">
+              <fa-icon [icon]="['fas', 'chevron-circle-left']" class="px-3" (click)="scrollWeekSchedule(-1)"> </fa-icon>
+              Grafik (tydzień {{ weekNumber }})
+              <fa-icon [icon]="['fas', 'chevron-circle-right']" class="px-3" (click)="scrollWeekSchedule(1)"> </fa-icon>
+            </h3>
             <div class="row">
               <div class="col-md-12">
                 <div class="panel panel-default">
@@ -46,63 +49,29 @@
                       <table class="table table-striped table-hover">
                         <thead class="thead-dark">
                         <tr>
-                          <th scope="col">Dzień</th>
-                          <th scope="col">Start</th>
-                          <th scope="col">Koniec</th>
-                          <th scope="col">Dyspozycyjność</th>
+                          <th scope="col" class="text-sm-center">Dzień</th>
+                          <th scope="col" class="text-sm-center">Start</th>
+                          <th scope="col" class="text-sm-center">Koniec</th>
                         </tr>
                         </thead>
                         <tbody>
-                          <tr *ngFor="let number of numbers">
-                            <td class="col-lg-4">{{ firstDayOfTheWeek.setDate(first + number)| date: 'EEEE, MMMM d' }}</td>
-                            <td>{{startTime.hour + ':' + startTime.minute}}</td>
-                            <td>{{endTime.hour + ':' + endTime.minute}}</td>
+                          <tr *ngFor="let day of weeklyCourierSchedule" >
 
-                            <ng-template #content let-modal>
-                              <div class="modal-header">
-                                <h4 class="modal-title" id="modal-basic-title">Dodaj godziny pracy</h4>
-                                <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
+                            <td class="col-sm-6">{{ day.fullDate | date: 'EEEE, MMMM d' }}</td>
 
-                              <div class="modal-body">
-                                <table class="table table-striped table-hover">
-                                  <thead class="thead-dark">
-                                  <tr>
-                                    <th scope="col">Start</th>
-                                    <th scope="col">Koniec</th>
-                                  </tr>
-                                  </thead>
-                                  <tbody>
-                                  <tr>
-                                    <td>
-                                      <ngb-timepicker [(ngModel)]="startTime"
-                                                      [hourStep]="hourStep" [minuteStep]="minuteStep"></ngb-timepicker>
-                                    </td>
-                                    <td>
-                                      <ngb-timepicker [(ngModel)]="endTime"
-                                                      [hourStep]="hourStep" [minuteStep]="minuteStep"></ngb-timepicker>
-                                    </td>
-                                  </tr>
-                                  </tbody>
-                                </table>
-                              </div>
+                            <td class="badge-success text-sm-center font-weight-bolder">{{day.startTime}}</td>
+                            <td class="badge-primary text-sm-center font-weight-bolder">{{day.endTime}}</td>
 
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Zapisz</button>
-                              </div>
-                            </ng-template>
-
-                            <td class="col-lg-2"><button class="btn btn-sm btn-block btn-primary" (click)="open(content)">Dodaj</button></td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
+
           </div>
 
       </div> <!-- end tab-content -->

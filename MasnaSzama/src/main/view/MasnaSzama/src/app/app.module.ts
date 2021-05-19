@@ -9,7 +9,6 @@ import { AdminPanelComponent} from './admin-panel/admin-panel.component';
 import { RestaurantSummaryComponent } from './Restaurant/restaurant-summary/restaurant-summary.component';
 import { MainComponent } from './main/main.component';
 import { ShowScheduleComponent } from './courier-panel/Schedule/show-schedule/show-schedule.component';
-import { SendAvailabilitiesComponent } from './courier-panel/Schedule/send-availabilities/send-availabilities.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProfileComponent } from './courier-panel/profile/profile.component';
 import { OrderlistComponent } from './courier-panel/orderlist/orderlist.component';
@@ -44,7 +43,8 @@ import { OverviewComponent } from './admin-panel/overview/overview.component';
 import { OrderItemComponent } from './admin-panel/overview/order-item/order-item.component';
 import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
 import { RestaurantMenuUpdatePanelComponent } from './Restaurant/restaurant-menu-update-panel/restaurant-menu-update-panel.component';
-import {RouterModule} from "@angular/router";
+import {WeekPipe} from './courier-panel/Schedule/show-schedule/week.pipe';
+
 
 @NgModule({
   declarations: [
@@ -54,7 +54,6 @@ import {RouterModule} from "@angular/router";
     RestaurantSummaryComponent,
     MainComponent,
     ShowScheduleComponent,
-    SendAvailabilitiesComponent,
     ProfileComponent,
     OrderlistComponent,
     RestaurantMenuComponent,
@@ -83,7 +82,7 @@ import {RouterModule} from "@angular/router";
      OverviewComponent,
      OrderItemComponent,
      ListRestoComponent,
-
+     WeekPipe,
   ],
   imports: [
     BrowserModule,
@@ -93,6 +92,7 @@ import {RouterModule} from "@angular/router";
     ReactiveFormsModule,
     NgbModule,
     FontAwesomeModule,
+
   ],
   bootstrap: [AppComponent],
   providers: [CurrencyPipe, MenuMakerService, OrderService]

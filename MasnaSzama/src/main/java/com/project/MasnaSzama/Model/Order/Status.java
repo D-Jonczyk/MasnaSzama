@@ -9,7 +9,7 @@ import javax.persistence.Table;
 @Table(name = "status_")
 public class Status {
     private Long statusId;
-    private String name;
+    private String statusName;
 
     @OneToOne(mappedBy="orderStatus")
     private Order order;
@@ -18,12 +18,12 @@ public class Status {
 
     }
 
-    public String getName() {
-        return name;
+    public String getStatusName() {
+        return statusName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setStatusName(String statusName) {
+        this.statusName = statusName;
     }
 
     public void setStatusId(Long id) {
