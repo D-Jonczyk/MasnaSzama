@@ -1,0 +1,41 @@
+<html>
+<body>
+<div class="container-fluid">
+
+  <div class="row justify-content-center">
+    <div class="col-5 "> <!--menu-->
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th scope="col">Nazwa</th>
+          <th scope="col">Opis</th>
+          <th scope="col">Cena</th>
+          <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let meal of meals$ | async">
+          <td class="align-middle"><input type="text" value="{{meal.name}}"></td>
+          <td class="align-middle"><input type="text" value="{{meal.name}}"></td>
+          <td class="align-middle"><input type="text" value="{{meal.price}}"></td>
+          <td class="align-middle">
+
+            <button type="button" class="btn" (click)="deleteFromOrder(meal.id)">Usuń</button>
+
+          </td>
+        </tr>
+        </tbody>
+
+      </table>
+
+      <button type="button" class="btn">Zapisz zmiany</button>
+      <button type="button" class="btn">Dodaj</button>
+    </div> <!-- menu end -->
+
+  </div> <!-- row end -->
+
+</div> <!-- container end -->
+</body>
+</html>
+
+
