@@ -11,7 +11,7 @@ public interface UserRepo extends CrudRepository<Customer, Long> {
 
 
     @Query(value = "SELECT new com.project.MasnaSzama.DTO.UserDTO" +
-            "(u.lastName)"+
+            "(u.userName, u.password)"+
             "FROM UserAccount u "+
             "WHERE u.userName =?1 and u.password = ?2 ")
     UserDTO getUserLogin(String userName,String password);

@@ -1,4 +1,4 @@
-/*
+
 package com.project.MasnaSzama;
 
 import org.springframework.context.annotation.Bean;
@@ -26,12 +26,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .password("admin1")
                 .roles("ADMIN")
                 .build();
-        UserDetails courier = User.withDefaultPasswordEncoder()
-                .username("courier")
-                .password("courier1")
-                .roles("COURIER")
-                .build();
-        return new InMemoryUserDetailsManager(userDetails, admin, courier);
+        return new InMemoryUserDetailsManager(userDetails, admin);
         }
 
     @Override
@@ -47,4 +42,3 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
 }
-*/
