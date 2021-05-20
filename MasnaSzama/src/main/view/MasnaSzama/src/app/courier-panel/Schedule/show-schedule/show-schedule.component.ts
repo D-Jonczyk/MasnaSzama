@@ -4,7 +4,7 @@ import {FaIconLibrary} from '@fortawesome/angular-fontawesome';
 import {faPlayCircle} from '@fortawesome/free-regular-svg-icons';
 import {ModalDismissReasons, NgbModal, NgbTimeStruct} from '@ng-bootstrap/ng-bootstrap';
 import {
-  faCalendarAlt, faComments,
+  faCalendarAlt, faChevronCircleLeft, faChevronCircleRight, faComments,
   faFingerprint,
   faHandMiddleFinger, faHistory,
   faListAlt,
@@ -13,6 +13,10 @@ import {
   faUserCircle
 } from '@fortawesome/free-solid-svg-icons';
 import { LINKS } from '../../courier-panel.component';
+import {DaySchedule} from './day-schedule';
+import {CourierScheduleService} from './courier-schedule.service';
+import {HttpErrorResponse} from '@angular/common/http';
+import {WeekPipe} from './week.pipe';
 
 @Component({
   selector: 'app-show-schedule',
@@ -20,11 +24,7 @@ import { LINKS } from '../../courier-panel.component';
   styleUrls: ['../../courier-panel.component.css', './show-schedule.component.css']
 })
 export class ShowScheduleComponent implements OnInit {
-  constructor(public route: ActivatedRoute, private library: FaIconLibrary, private modalService: NgbModal) {
-    library.addIcons(faPlayCircle, faHandMiddleFinger,
-      faFingerprint, faSearch, faListAlt, faLocationArrow, faCalendarAlt, faUserCircle, faQuestionCircle,
-      faComments, faHistory);
-  }
+  courierId = 294;
   closeResult = '';
   links = LINKS;
   startTime: NgbTimeStruct = {hour: 13, minute: 30, second: 0};
@@ -32,19 +32,26 @@ export class ShowScheduleComponent implements OnInit {
   hourStep = 1;
   minuteStep = 15;
   secondStep = 30;
+  public weekNumber: number;
+
+  firstDayOfTheWeek: Date = new Date();
+  public currentWeekDays: Date[] = new Array(7).fill(new Date());
 
   currentDate = new Date();
-  iterationDate: Date = new Date();
   first = this.currentDate.getDate() - this.currentDate.getDay();
-  last = this.first + 6;
-
-  firstDayOfTheWeek = new Date(this.currentDate.setDate(this.first));
-  lastDayOfTheWeek = new Date(this.currentDate.setDate(this.last));
 
   diff = 1;
-  months: string[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-  days: string[] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  numbers: number[] = [1, 2, 3, 4, 5, 6, 7];
+  numbers: number[] = [0, 1, 2, 3, 4, 5, 6];
+
+  weeklyCourierSchedule: DaySchedule[];
+
+  constructor(public route: ActivatedRoute, private library: FaIconLibrary, private modalService: NgbModal,
+              private courierScheduleService: CourierScheduleService) {
+    library.addIcons(faPlayCircle, faHandMiddleFinger,
+      faFingerprint, faSearch, faListAlt, faLocationArrow, faCalendarAlt, faUserCircle, faQuestionCircle,
+      faComments, faHistory, faChevronCircleLeft, faChevronCircleRight);
+  }
+
   private static getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
       return 'by pressing ESC';
@@ -55,7 +62,38 @@ export class ShowScheduleComponent implements OnInit {
     }
   }
 
+  public scrollWeekSchedule(direction: number): void {
+    this.weekNumber += direction;
+    this.getWeeklyCourierSchedule(this.courierId, this.weekNumber);
+  }
+
+  public getWeekNumber(d: Date, delta: number): number {
+    return WeekPipe.getWeekNumber(d) + delta;
+  }
+
+  private setCurrentWeekDays(): void {
+    for (const i of this.numbers) {
+      this.firstDayOfTheWeek.setDate(this.first + i);
+      this.currentWeekDays[i] = JSON.parse(JSON.stringify(this.firstDayOfTheWeek));
+      console.log(i);
+    }
+  }
+
+  public getWeeklyCourierSchedule(courierId: number, weekNumber: number): void {
+    this.courierScheduleService.getWeeklyCourierSchedule(courierId, weekNumber).subscribe(
+      (response: DaySchedule[]) => {
+        this.weeklyCourierSchedule = response;
+      },
+      (error: HttpErrorResponse) => {
+        alert(error.message);
+      }
+    );
+  }
+
   ngOnInit(): void {
+    this.getWeeklyCourierSchedule(this.courierId, this.getWeekNumber(new Date(), 0));
+    this.setCurrentWeekDays();
+    this.weekNumber = WeekPipe.getWeekNumber(new Date());
   }
 
   open(content): void {

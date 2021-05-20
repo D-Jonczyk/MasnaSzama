@@ -1,501 +1,501 @@
-restaurant_id,average_opinion,description,name,address_id
-1,3.7,archive,Pei Wei,957
-2,3.6,conglomeration,Burger King,189
-3,2.6,leading edge,Taco Bell,278
-4,2.5,5th generation,Jack In The Box,39
-5,3.8,Digitized,Whataburger,825
-6,2.1,success,Farmer Boys,461
-7,2.3,Multi-tiered,McDonald's,257
-8,3.6,moderator,SONIC Drive In,535
-9,3.1,function,Wendy's,485
-10,2.6,Compatible,Jersey Mike's Subs,15
-11,2.1,4th generation,Pollo Tropical,371
-12,1.4,complexity,Panda Express,113
-13,2.9,discrete,Hamburger King,167
-14,1.4,collaboration,Pizza Hut,616
-15,3.8,array,Pei Wei,239
-16,4.0,Versatile,Taco Bell,590
-17,3.2,Right-sized,Taco John's,725
-18,3.2,Digitized,Papa Johns,396
-19,2.0,algorithm,Samurai Sam's,865
-20,3.2,Face to face,Rally's,922
-21,3.5,matrix,Chick-fil-A,361
-22,3.0,5th generation,Hardee's,936
-23,1.2,Inverse,McDonald's,677
-24,1.1,heuristic,Pei Wei,485
-25,1.3,knowledge user,Jack In The Box,466
-26,2.4,solution-oriented,Pop-A-Nugget,348
-27,1.9,Streamlined,Taco Bell,139
-28,1.8,zero tolerance,Popeyes,786
-29,2.5,Profit-focused,Long John Silver's,743
-30,1.4,contingency,Hardee's,273
-31,3.7,Open-architected,Taco Bell,470
-32,4.0,application,McDonald's,804
-33,2.3,executive,Slim Chickens,384
-34,1.6,support,El Pollo Loco,570
-35,2.4,contextually-based,Taco John's,643
-36,4.0,installation,Smashburger,332
-37,1.8,heuristic,SONIC Drive In,939
-38,3.8,portal,Dairy Queen,670
-39,1.3,Public-key,Sarku Japan,686
-40,3.7,Face to face,McDonald's,376
-41,1.1,function,Arby's,696
-42,2.7,website,SONIC Drive In,949
-43,2.4,encoding,Rally's,992
-44,3.0,Quality-focused,Taco Time,589
-45,2.5,Object-based,Chick-fil-A,300
-46,1.2,adapter,Chick-fil-A,497
-47,2.2,hub,Sarku Japan,991
-48,1.2,Ameliorated,Taco John's,728
-49,1.5,open system,Pei Wei,574
-50,2.8,Optional,Pollo Tropical,868
-51,2.6,Configurable,Smashburger,994
-52,3.8,Self-enabling,Quiznos,597
-53,1.1,Intuitive,Jimmy John's,388
-54,1.2,moratorium,Pollo Tropical,518
-55,2.6,Re-engineered,Popeyes,249
-56,3.0,modular,Sarku Japan,751
-57,3.8,Multi-lateral,McDonald's,964
-58,1.2,contextually-based,Papa Johns,601
-59,3.7,multimedia,Samurai Sam's,45
-60,1.1,analyzer,Jimmy John's,788
-61,1.0,Cross-group,Smashburger,918
-62,1.9,static,Hardee's,916
-63,3.3,knowledge user,Steak 'n Shake,256
-64,1.5,ability,El Pollo Loco,457
-65,3.6,full-range,Domino's Pizza,791
-66,3.0,Function-based,Arby's,545
-67,2.1,radical,Steak 'n Shake,169
-68,2.7,hub,Hardee's,143
-69,3.6,budgetary management,Frisch's Big Boy,370
-70,3.8,superstructure,Burger King,566
-71,3.7,parallelism,Papa Gino's,57
-72,3.8,asynchronous,Skyline Chili,540
-73,1.6,alliance,Pei Wei,114
-74,3.9,Distributed,Wendy's,286
-75,3.8,24/7,Popeyes Louisiana Kitchen,55
-76,3.0,explicit,Taco Bell,142
-77,2.7,Realigned,Burger King,506
-78,1.2,contingency,Popeyes,785
-79,2.8,hierarchy,Frisch's Big Boy,151
-80,2.9,internet solution,Taco John's,335
-81,2.2,approach,Jersey Mike's Subs,620
-82,2.0,needs-based,El Pollo Loco,462
-83,2.1,emulation,Penguin Point,4
-84,2.8,logistical,Jimmy John's,113
-85,1.3,flexibility,Samurai Sam's,635
-86,3.3,6th generation,Sarku Japan,204
-87,4.0,productivity,El Pollo Loco,646
-88,1.0,Enhanced,Domino's Pizza,796
-89,1.4,Upgradable,Chick-fil-A,225
-90,1.9,transitional,Domino's Pizza,188
-91,3.5,Object-based,Sarku Japan,409
-92,1.0,asynchronous,Jimmy John's,147
-93,3.4,challenge,Panda Express,847
-94,3.1,complexity,Jersey Mike's Subs,178
-95,1.1,empowering,Qdoba Mexican Grill,374
-96,2.9,Decentralized,KFC,108
-97,1.8,Multi-tiered,Jack In The Box,447
-98,3.3,open system,Long John Silver's,146
-99,1.7,contextually-based,Arby's,516
-100,3.0,Implemented,Hardee's,994
-101,3.5,Distributed,El Pollo Loco,844
-102,3.5,User-friendly,Whataburger,801
-103,1.1,matrix,Steak 'n Shake,705
-104,1.7,intangible,Wendy's,797
-105,1.1,complexity,Fresh City,473
-106,2.3,zero administration,Slim Chickens,546
-107,3.1,dedicated,Mocha Express,898
-108,2.0,foreground,Burger King,162
-109,3.2,Optimized,Long John Silver's,182
-110,2.6,Persistent,Arby's,788
-111,2.8,Universal,Subway,800
-112,1.6,context-sensitive,Popeyes,404
-113,3.5,ability,Starbucks,368
-114,3.0,well-modulated,Wendy's,713
-115,2.4,framework,Fresh City,949
-116,2.8,executive,Dairy Queen,634
-117,3.1,Cross-platform,Steak 'n Shake,912
-118,2.3,customer loyalty,Steak 'n Shake,557
-119,1.9,Profound,Taco John's,500
-120,1.5,definition,Qdoba Mexican Grill,234
-121,2.9,Programmable,SONIC Drive In,419
-122,3.6,real-time,Pop-A-Nugget,114
-123,3.2,workforce,Dairy Queen,659
-124,3.9,foreground,Starbucks,16
-125,2.6,collaboration,Skyline Chili,211
-126,1.8,encoding,Arby's,149
-127,1.3,Integrated,Pei Wei,146
-128,2.4,time-frame,Papa Johns,638
-129,4.0,archive,Fresh City,226
-130,3.5,info-mediaries,Arby's,90
-131,2.1,optimal,Jack In The Box,38
-132,1.4,initiative,Taco John's,426
-133,2.2,Cloned,OMG! Rotisserie,642
-134,3.4,Distributed,Steak 'n Shake,88
-135,3.5,Compatible,Chick-fil-A,93
-136,1.6,open architecture,Panda Express,324
-137,2.2,Object-based,Steak 'n Shake,832
-138,1.2,Up-sized,Rally's,420
-139,2.6,Inverse,Quiznos,647
-140,3.8,superstructure,Dairy Queen,382
-141,3.6,Ameliorated,Qdoba Mexican Grill,575
-142,2.4,Re-contextualized,SONIC Drive In,786
-143,1.3,flexibility,OMG! Rotisserie,495
-144,3.4,utilisation,Arby's,79
-145,2.4,Triple-buffered,Jimmy John's,500
-146,4.0,Reactive,Jimmy John's,420
-147,2.2,Function-based,Mocha Express,837
-148,3.3,database,Papa Johns,405
-149,1.1,Function-based,Wendy's,864
-150,3.4,optimizing,Hardee's,415
-151,3.4,Monitored,Wendy's,879
-152,1.1,moratorium,Subway,645
-153,1.8,internet solution,Pop-A-Nugget,808
-154,2.3,concept,Penguin Point,172
-155,2.1,framework,Jack In The Box,257
-156,3.9,attitude,Hardee's,16
-157,1.5,needs-based,Farmer Boys,862
-158,2.3,modular,Panda Express,212
-159,1.3,Grass-roots,Taco John's,332
-160,2.7,Grass-roots,Hardee's,326
-161,3.2,encoding,Papa Gino's,631
-162,1.2,bandwidth-monitored,Domino's Pizza,607
-163,2.2,interactive,Mocha Express,924
-164,3.1,Synergistic,Starbucks,746
-165,2.6,Enterprise-wide,Slim Chickens,707
-166,1.1,clear-thinking,Subway,752
-167,3.3,Mandatory,Hardee's,768
-168,3.8,protocol,Smashburger,579
-169,2.1,Fundamental,Wendy's,130
-170,1.1,analyzer,Skyline Chili,154
-171,3.1,Re-contextualized,Mocha Express,886
-172,1.9,complexity,Jimmy John's,406
-173,2.0,Open-architected,Pei Wei,600
-174,2.4,Multi-tiered,Wendy's,476
-175,1.8,migration,Pop-A-Nugget,338
-176,3.5,support,Wendy's,126
-177,2.5,Function-based,Taco Bell,558
-178,3.3,cohesive,Long John Silver's,415
-179,3.7,Intuitive,Jack In The Box,277
-180,4.0,Open-architected,Panda Express,265
-181,1.0,methodical,Whataburger,322
-182,1.2,Upgradable,OMG! Rotisserie,494
-183,3.0,optimizing,Taco Bell,560
-184,2.6,24/7,SONIC Drive In,611
-185,2.8,Operative,Chick-fil-A,166
-186,3.8,Re-contextualized,Subway,379
-187,4.0,homogeneous,Whataburger,350
-188,2.6,Enterprise-wide,Sarku Japan,426
-189,2.9,Total,Burger King,441
-190,1.1,Enhanced,Farmer Boys,195
-191,2.7,Multi-channelled,Pizza Hut,952
-192,3.3,Quality-focused,Mocha Express,321
-193,1.9,scalable,Dairy Queen,602
-194,1.1,website,Fresh City,880
-195,3.2,adapter,KFC,700
-196,2.4,open system,Domino's Pizza,713
-197,3.6,radical,Slim Chickens,220
-198,2.2,zero tolerance,Slim Chickens,333
-199,1.7,interface,Jimmy John's,196
-200,2.0,approach,Taco Time,448
-201,1.5,eco-centric,Smashburger,844
-202,1.9,artificial intelligence,McDonald's,8
-203,2.9,data-warehouse,Domino's Pizza,556
-204,1.4,firmware,Hardee's,51
-205,3.9,Cross-platform,Chick-fil-A,211
-206,3.8,value-added,Hamburger King,784
-207,1.9,Polarised,El Pollo Loco,943
-208,3.8,groupware,Pollo Tropical,206
-209,2.5,throughput,Popeyes Louisiana Kitchen,876
-210,3.2,content-based,Pop-A-Nugget,980
-211,2.1,Robust,Wendy's,863
-212,1.5,product,Subway,557
-213,2.1,Horizontal,Smashburger,836
-214,3.6,ability,Papa Johns,27
-215,1.8,Inverse,Steak 'n Shake,788
-216,1.3,moderator,OMG! Rotisserie,280
-217,3.6,eco-centric,Jimmy John's,544
-218,1.7,Horizontal,Panda Express,850
-219,1.7,Digitized,Quiznos,681
-220,1.1,standardization,Slim Chickens,250
-221,2.2,Operative,Skyline Chili,346
-222,2.8,Re-engineered,Papa Johns,155
-223,3.0,multimedia,Jimmy John's,919
-224,1.6,User-friendly,Frisch's Big Boy,855
-225,2.1,full-range,OMG! Rotisserie,816
-226,2.5,moratorium,Pizza Hut,847
-227,2.1,groupware,McDonald's,610
-228,2.4,grid-enabled,Farmer Boys,270
-229,1.9,transitional,Jimmy John's,688
-230,2.7,interactive,Pizza Hut,842
-231,1.6,Multi-tiered,Slim Chickens,935
-232,3.7,fresh-thinking,SONIC Drive In,706
-233,2.5,mission-critical,Jack In The Box,715
-234,3.5,multimedia,Burger King,550
-235,1.9,Stand-alone,Whataburger,196
-236,2.7,knowledge base,Jimmy John's,549
-237,1.8,Cloned,Jimmy John's,520
-238,2.7,Open-source,Mocha Express,204
-239,1.9,Synergistic,OMG! Rotisserie,723
-240,4.0,Stand-alone,Sammy Carry-Out,740
-241,3.3,Stand-alone,Smashburger,387
-242,2.3,open architecture,Jack In The Box,103
-243,1.6,explicit,Panda Express,927
-244,1.4,solution,Whataburger,546
-245,1.9,instruction set,Jack In The Box,427
-246,2.4,collaboration,Pop-A-Nugget,675
-247,3.3,Multi-lateral,Jack In The Box,406
-248,1.9,Assimilated,Pop-A-Nugget,69
-249,1.9,Devolved,Whataburger,461
-250,2.7,methodology,Rally's,68
-251,1.6,Team-oriented,Rally's,434
-252,2.0,function,Frisch's Big Boy,797
-253,3.6,policy,Frisch's Big Boy,146
-254,1.3,multi-tasking,Subway,809
-255,3.8,methodical,Dairy Queen,632
-256,2.9,protocol,Hamburger King,485
-257,1.2,productivity,Jimmy John's,165
-258,3.9,encompassing,Quiznos,829
-259,2.7,superstructure,Farmer Boys,157
-260,2.9,Function-based,Pizza Hut,805
-261,2.0,well-modulated,Popeyes,433
-262,1.2,framework,Peking Wok,737
-263,3.2,4th generation,Taco John's,603
-264,3.6,attitude-oriented,Taco John's,240
-265,3.8,heuristic,Taco Bell,831
-266,2.7,strategy,Papa Gino's,450
-267,2.5,approach,Fresh City,128
-268,3.7,support,OMG! Rotisserie,753
-269,3.5,analyzing,Skyline Chili,384
-270,3.9,Balanced,Taco Bell,996
-271,2.7,reciprocal,SONIC Drive In,279
-272,1.7,Face to face,El Pollo Loco,304
-273,3.4,Visionary,Pei Wei,574
-274,1.8,optimizing,Pei Wei,247
-275,1.2,application,Qdoba Mexican Grill,361
-276,2.0,functionalities,Penguin Point,362
-277,1.2,Monitored,Jack In The Box,999
-278,1.2,directional,Starbucks,841
-279,2.7,Object-based,SONIC Drive In,950
-280,1.6,maximized,Domino's Pizza,857
-281,3.4,well-modulated,Papa Gino's,596
-282,3.5,service-desk,Popeyes,821
-283,1.8,foreground,Taco Bell,665
-284,3.2,contextually-based,Taco John's,297
-285,2.5,background,Papa Gino's,235
-286,1.8,Distributed,Whataburger,481
-287,3.5,bifurcated,Panda Express,256
-288,1.1,hierarchy,Long John Silver's,958
-289,3.3,empowering,Popeyes,821
-290,2.1,application,Fresh City,924
-291,2.4,Enhanced,McDonald's,107
-292,1.1,Configurable,Quiznos,812
-293,3.6,Synchronised,Skyline Chili,111
-294,2.8,5th generation,OMG! Rotisserie,345
-295,3.1,customer loyalty,Sarku Japan,901
-296,1.3,solution,Domino's Pizza,316
-297,3.7,Devolved,Slim Chickens,749
-298,2.7,migration,Papa Gino's,785
-299,1.3,open architecture,Wendy's,191
-300,2.0,service-desk,Farmer Boys,255
-301,2.4,data-warehouse,El Pollo Loco,93
-302,3.0,Open-source,Papa Johns,228
-303,3.2,holistic,Popeyes,655
-304,3.5,matrices,Peking Wok,795
-305,1.8,well-modulated,Frisch's Big Boy,122
-306,1.6,Stand-alone,OMG! Rotisserie,766
-307,2.2,Graphic Interface,Slim Chickens,310
-308,1.6,Triple-buffered,Domino's Pizza,185
-309,3.3,database,Penguin Point,221
-310,1.3,software,OMG! Rotisserie,42
-311,1.5,synergy,Starbucks,928
-312,1.4,moratorium,Hardee's,186
-313,2.8,encoding,Arby's,705
-314,3.9,Customizable,Subway,221
-315,1.6,5th generation,Wendy's,325
-316,1.6,Expanded,Slim Chickens,795
-317,3.4,coherent,Hamburger King,212
-318,1.7,national,Sammy Carry-Out,483
-319,4.0,projection,Mocha Express,873
-320,3.9,Customer-focused,Long John Silver's,341
-321,3.6,zero defect,Hamburger King,947
-322,1.6,motivating,Long John Silver's,598
-323,1.5,Pre-emptive,SONIC Drive In,781
-324,3.1,Triple-buffered,Penguin Point,389
-325,3.9,high-level,Papa Gino's,227
-326,2.8,definition,Peking Wok,605
-327,3.1,success,Quiznos,467
-328,2.1,transitional,Subway,873
-329,1.4,Stand-alone,Smashburger,19
-330,1.6,customer loyalty,Hamburger King,105
-331,2.0,Balanced,Peking Wok,971
-332,3.5,time-frame,Rally's,870
-333,2.4,well-modulated,El Pollo Loco,600
-334,2.3,fault-tolerant,Mocha Express,728
-335,1.6,Open-source,Long John Silver's,497
-336,1.1,Polarised,Arby's,695
-337,2.3,workforce,Peking Wok,419
-338,2.3,motivating,Samurai Sam's,832
-339,3.9,Intuitive,Taco John's,253
-340,3.7,analyzer,Popeyes,110
-341,1.5,directional,Hardee's,570
-342,1.9,Customer-focused,Steak 'n Shake,574
-343,2.8,Quality-focused,Samurai Sam's,952
-344,4.0,user-facing,Quiznos,615
-345,1.6,fresh-thinking,Subway,882
-346,2.3,Open-source,Farmer Boys,464
-347,1.3,24 hour,El Pollo Loco,750
-348,2.5,open system,Sammy Carry-Out,16
-349,1.6,Right-sized,Quiznos,5
-350,2.8,intranet,Popeyes Louisiana Kitchen,32
-351,1.4,intranet,Papa Johns,384
-352,2.8,access,Starbucks,309
-353,1.2,benchmark,Hamburger King,323
-354,3.0,array,Penguin Point,984
-355,2.2,system engine,Popeyes Louisiana Kitchen,381
-356,3.6,hierarchy,Farmer Boys,362
-357,2.2,product,Panda Express,371
-358,2.5,Focused,Quiznos,333
-359,3.3,forecast,Jimmy John's,900
-360,2.0,product,Pizza Hut,837
-361,1.0,Phased,Sammy Carry-Out,329
-362,3.6,collaboration,Smashburger,379
-363,2.4,approach,Taco Bell,428
-364,3.1,24 hour,Slim Chickens,230
-365,3.4,Enterprise-wide,Jimmy John's,651
-366,1.9,array,Quiznos,15
-367,3.8,Reactive,El Pollo Loco,860
-368,1.1,infrastructure,Smashburger,558
-369,3.1,Vision-oriented,El Pollo Loco,258
-370,2.0,Organized,KFC,550
-371,3.4,3rd generation,Hardee's,492
-372,2.9,local,Slim Chickens,947
-373,3.4,Enterprise-wide,Rally's,672
-374,3.8,Function-based,Sarku Japan,998
-375,3.0,well-modulated,Starbucks,721
-376,3.7,6th generation,SONIC Drive In,136
-377,3.4,motivating,Arby's,885
-378,1.8,service-desk,McDonald's,362
-379,3.5,application,Whataburger,25
-380,1.3,systemic,Sammy Carry-Out,446
-381,1.2,global,KFC,655
-382,2.5,Quality-focused,Taco John's,150
-383,2.2,Horizontal,Panda Express,893
-384,2.4,paradigm,Panda Express,81
-385,2.7,focus group,Jimmy John's,453
-386,2.2,methodology,Whataburger,643
-387,1.0,foreground,Frisch's Big Boy,479
-388,3.0,ability,Frisch's Big Boy,430
-389,3.7,next generation,Peking Wok,67
-390,1.1,maximized,Rally's,281
-391,2.5,homogeneous,Slim Chickens,760
-392,1.3,data-warehouse,Frisch's Big Boy,71
-393,3.6,collaboration,Hardee's,925
-394,2.6,Compatible,Rally's,801
-395,3.1,system engine,Smashburger,121
-396,3.9,multimedia,Papa Johns,298
-397,1.7,Assimilated,Slim Chickens,36
-398,1.4,attitude-oriented,Taco Bell,550
-399,2.6,groupware,Jimmy John's,175
-400,3.6,regional,Domino's Pizza,142
-401,1.1,standardization,Skyline Chili,527
-402,1.5,Customer-focused,El Pollo Loco,757
-403,2.6,forecast,Papa Gino's,607
-404,1.1,solution-oriented,OMG! Rotisserie,437
-405,1.8,Extended,Burger King,495
-406,3.5,eco-centric,Pei Wei,820
-407,2.1,local,Pollo Tropical,626
-408,2.1,Upgradable,Slim Chickens,218
-409,1.8,methodical,Burger King,492
-410,3.3,intangible,Burger King,955
-411,2.6,content-based,Pollo Tropical,812
-412,1.6,Inverse,Jersey Mike's Subs,186
-413,3.7,Realigned,Taco John's,997
-414,3.2,matrix,Qdoba Mexican Grill,898
-415,3.0,budgetary management,Popeyes,754
-416,3.9,heuristic,Jersey Mike's Subs,523
-417,2.2,upward-trending,Papa Gino's,918
-418,2.9,task-force,Jersey Mike's Subs,390
-419,2.1,radical,Hardee's,953
-420,2.7,circuit,Jersey Mike's Subs,789
-421,3.5,collaboration,Taco Time,912
-422,2.4,full-range,Slim Chickens,104
-423,2.2,Synchronised,Taco John's,809
-424,3.7,clear-thinking,Pollo Tropical,846
-425,1.1,Adaptive,Skyline Chili,862
-426,2.9,Advanced,Fresh City,793
-427,2.7,mobile,Popeyes Louisiana Kitchen,200
-428,3.4,zero administration,Taco John's,878
-429,3.8,Face to face,Peking Wok,335
-430,2.3,optimizing,Sammy Carry-Out,555
-431,1.8,Networked,Popeyes Louisiana Kitchen,570
-432,2.1,User-friendly,Arby's,207
-433,1.1,Implemented,Jimmy John's,748
-434,2.2,Compatible,Papa Johns,884
-435,2.4,fault-tolerant,Jersey Mike's Subs,733
-436,2.0,policy,Taco Bell,405
-437,1.2,Graphical User Interface,KFC,613
-438,2.4,Total,Popeyes,765
-439,3.0,Cross-platform,Arby's,373
-440,1.6,intranet,Mocha Express,361
-441,1.5,multimedia,El Pollo Loco,883
-442,3.4,eco-centric,Steak 'n Shake,473
-443,1.9,implementation,Skyline Chili,134
-444,2.4,superstructure,Hardee's,75
-445,1.2,Right-sized,Sammy Carry-Out,215
-446,1.1,attitude-oriented,Taco Time,164
-447,3.1,neural-net,Mocha Express,378
-448,3.4,high-level,Fresh City,617
-449,1.3,monitoring,Steak 'n Shake,125
-450,1.4,Versatile,Arby's,485
-451,1.8,4th generation,Domino's Pizza,299
-452,3.5,protocol,Panda Express,886
-453,2.8,asymmetric,Taco Bell,867
-454,1.8,Monitored,Arby's,875
-455,2.9,actuating,Arby's,496
-456,2.8,info-mediaries,Peking Wok,128
-457,3.1,exuding,Taco Time,543
-458,2.3,cohesive,Jack In The Box,295
-459,1.4,Upgradable,Qdoba Mexican Grill,114
-460,1.7,Versatile,Pollo Tropical,717
-461,1.3,client-driven,Peking Wok,329
-462,2.0,actuating,Taco Time,116
-463,2.4,Triple-buffered,Slim Chickens,841
-464,3.2,Reactive,Arby's,569
-465,3.4,parallelism,Whataburger,801
-466,2.7,fault-tolerant,Hardee's,174
-467,2.0,middleware,Quiznos,33
-468,2.6,Re-engineered,Fresh City,271
-469,3.4,explicit,Popeyes,204
-470,3.9,Graphical User Interface,Jack In The Box,803
-471,3.4,functionalities,Penguin Point,551
-472,3.4,Face to face,Qdoba Mexican Grill,301
-473,1.1,Persistent,El Pollo Loco,443
-474,1.7,high-level,Popeyes,645
-475,2.6,Realigned,Taco Bell,78
-476,1.6,responsive,Rally's,888
-477,1.3,Expanded,Pollo Tropical,712
-478,3.5,data-warehouse,Hardee's,114
-479,4.0,Sharable,Wendy's,927
-480,2.4,portal,Starbucks,443
-481,3.7,discrete,Long John Silver's,504
-482,3.2,asymmetric,Jersey Mike's Subs,219
-483,1.1,clear-thinking,Pizza Hut,661
-484,2.7,complexity,Taco John's,479
-485,2.1,homogeneous,Hamburger King,215
-486,2.6,non-volatile,Hardee's,518
-487,3.3,instruction set,Pizza Hut,471
-488,3.6,dynamic,Sarku Japan,361
-489,2.7,paradigm,Subway,570
-490,3.3,Multi-lateral,Taco John's,478
-491,3.2,foreground,Popeyes Louisiana Kitchen,421
-492,2.8,bifurcated,Fresh City,12
-493,1.9,project,Panda Express,494
-494,2.7,Business-focused,Samurai Sam's,990
-495,2.0,interactive,Pollo Tropical,178
-496,2.4,local,Pizza Hut,320
-497,3.1,archive,Taco Bell,416
-498,1.1,systemic,Chick-fil-A,326
-499,3.3,emulation,Popeyes,374
-500,2.5,Monitored,Papa Gino's,737
+restaurant_id,average_opinion,restaurant_description,restaurant_name,address_id
+1,2.7,background,Wendy's,615
+2,3.8,Grass-roots,Samurai Sam's,779
+3,2.9,intangible,KFC,522
+4,3.1,Profound,Smashburger,218
+5,3.8,knowledge base,Peking Wok,187
+6,2.5,attitude-oriented,Pei Wei,523
+7,2.0,implementation,Burger King,216
+8,2.8,access,Pizza Hut,266
+9,3.6,moratorium,Samurai Sam's,370
+10,2.5,optimizing,Popeyes Louisiana Kitchen,832
+11,3.6,coherent,Chick-fil-A,311
+12,3.3,executive,Sammy Carry-Out,134
+13,2.6,neutral,Quiznos,575
+14,3.3,Assimilated,Fresh City,564
+15,2.6,parallelism,KFC,445
+16,2.2,Advanced,Wendy's,459
+17,3.0,Fully-configurable,Papa Johns,740
+18,3.7,Right-sized,Dairy Queen,403
+19,3.0,high-level,Chick-fil-A,387
+20,2.2,static,El Pollo Loco,207
+21,2.9,Virtual,Pollo Tropical,866
+22,3.8,intermediate,Jimmy John's,964
+23,3.1,analyzer,Whataburger,934
+24,3.0,challenge,Pollo Tropical,950
+25,2.6,empowering,El Pollo Loco,158
+26,2.5,algorithm,Chick-fil-A,997
+27,3.4,Future-proofed,Dairy Queen,832
+28,2.8,Inverse,Qdoba Mexican Grill,806
+29,2.7,extranet,Steak 'n Shake,459
+30,2.9,maximized,Frisch's Big Boy,618
+31,2.4,moderator,Pei Wei,300
+32,2.4,Graphical User Interface,El Pollo Loco,487
+33,3.2,systemic,Fresh City,172
+34,4.0,Re-engineered,McDonald's,167
+35,2.3,capacity,El Pollo Loco,165
+36,2.9,matrices,Sarku Japan,839
+37,2.9,dedicated,Popeyes Louisiana Kitchen,424
+38,3.7,fault-tolerant,Jersey Mike's Subs,157
+39,2.4,Fundamental,Dairy Queen,245
+40,2.8,initiative,McDonald's,886
+41,2.4,Proactive,Subway,995
+42,2.5,Cloned,Chick-fil-A,202
+43,3.4,homogeneous,Taco Time,756
+44,3.9,Compatible,McDonald's,165
+45,3.3,Seamless,Jersey Mike's Subs,529
+46,2.0,solution-oriented,Fresh City,960
+47,3.9,architecture,McDonald's,593
+48,2.1,Integrated,Qdoba Mexican Grill,581
+49,3.4,knowledge user,Sarku Japan,191
+50,3.1,utilisation,OMG! Rotisserie,141
+51,3.4,user-facing,Penguin Point,826
+52,3.4,client-server,Long John Silver's,845
+53,3.0,methodical,Burger King,121
+54,3.0,Intuitive,McDonald's,427
+55,3.9,multi-state,El Pollo Loco,33
+56,2.4,local area network,Sammy Carry-Out,542
+57,3.8,leverage,Sammy Carry-Out,369
+58,3.6,client-driven,Hamburger King,867
+59,2.0,mobile,Dairy Queen,389
+60,3.4,Optimized,Taco John's,695
+61,2.2,initiative,Sammy Carry-Out,741
+62,2.3,protocol,OMG! Rotisserie,977
+63,2.1,neural-net,McDonald's,338
+64,2.9,local,Long John Silver's,221
+65,2.2,Advanced,Qdoba Mexican Grill,635
+66,3.2,systematic,Arby's,776
+67,2.1,collaboration,Sarku Japan,199
+68,2.2,approach,Quiznos,976
+69,2.7,responsive,Popeyes Louisiana Kitchen,989
+70,2.3,Devolved,Starbucks,32
+71,2.9,support,KFC,786
+72,3.9,Object-based,Burger King,24
+73,3.6,algorithm,Arby's,146
+74,2.2,fault-tolerant,Fresh City,465
+75,2.5,attitude,Jimmy John's,772
+76,2.4,capability,Skyline Chili,123
+77,3.9,Multi-tiered,Slim Chickens,505
+78,2.7,success,Skyline Chili,531
+79,2.8,neural-net,Fresh City,70
+80,2.2,Integrated,Dairy Queen,417
+81,2.4,toolset,Taco Time,241
+82,3.1,matrix,Hardee's,198
+83,3.2,groupware,Domino's Pizza,63
+84,3.7,website,Popeyes Louisiana Kitchen,923
+85,2.2,Networked,Hardee's,82
+86,2.2,Cloned,Papa Gino's,568
+87,3.5,firmware,Hardee's,343
+88,2.2,bi-directional,Papa Gino's,753
+89,2.6,hybrid,Subway,220
+90,3.2,Seamless,Quiznos,584
+91,2.4,homogeneous,Taco Time,343
+92,3.1,Visionary,Peking Wok,72
+93,2.6,Vision-oriented,Whataburger,253
+94,2.4,knowledge base,Starbucks,249
+95,2.7,Versatile,Subway,109
+96,2.5,encompassing,Quiznos,172
+97,4.0,fault-tolerant,Samurai Sam's,521
+98,4.0,dedicated,Jimmy John's,520
+99,2.8,Optional,Slim Chickens,998
+100,2.0,Customer-focused,Pollo Tropical,868
+101,3.0,intranet,Samurai Sam's,145
+102,3.7,radical,Taco Bell,773
+103,3.1,intranet,Peking Wok,578
+104,3.2,asymmetric,Starbucks,712
+105,3.9,6th generation,Pop-A-Nugget,645
+106,2.6,composite,Papa Gino's,369
+107,3.8,access,Mocha Express,120
+108,3.6,logistical,Popeyes,449
+109,2.0,optimal,McDonald's,993
+110,2.1,moderator,Taco John's,930
+111,3.3,Proactive,Long John Silver's,764
+112,3.0,composite,Slim Chickens,292
+113,3.7,knowledge user,McDonald's,557
+114,3.1,directional,Sammy Carry-Out,52
+115,3.7,benchmark,Sarku Japan,808
+116,2.8,Horizontal,Panda Express,994
+117,3.5,Sharable,Popeyes,647
+118,2.6,non-volatile,Jersey Mike's Subs,600
+119,2.6,Polarised,Long John Silver's,579
+120,3.5,system-worthy,Jimmy John's,878
+121,3.9,help-desk,Starbucks,259
+122,2.6,client-server,Sammy Carry-Out,149
+123,2.6,Enhanced,SONIC Drive In,157
+124,2.7,throughput,Jimmy John's,669
+125,2.9,homogeneous,Jersey Mike's Subs,232
+126,2.8,complexity,Popeyes,891
+127,2.5,real-time,Papa Johns,140
+128,2.1,Enhanced,Quiznos,182
+129,2.6,Fully-configurable,Jack In The Box,677
+130,3.7,Upgradable,Frisch's Big Boy,719
+131,2.5,Adaptive,Chick-fil-A,114
+132,3.8,User-centric,KFC,218
+133,3.4,Future-proofed,Sammy Carry-Out,320
+134,2.1,Multi-lateral,Pei Wei,656
+135,2.3,Diverse,Pei Wei,82
+136,3.3,maximized,Subway,268
+137,3.6,framework,Popeyes,691
+138,2.2,superstructure,Penguin Point,732
+139,3.8,standardization,Burger King,368
+140,2.7,solution,Papa Gino's,261
+141,2.2,complexity,El Pollo Loco,916
+142,3.0,orchestration,Hamburger King,133
+143,3.1,Synergized,Steak 'n Shake,68
+144,2.8,empowering,KFC,390
+145,3.7,eco-centric,Peking Wok,22
+146,3.8,Grass-roots,Panda Express,205
+147,3.2,tangible,Sarku Japan,238
+148,2.6,Sharable,Jack In The Box,299
+149,2.3,methodology,Long John Silver's,43
+150,3.6,empowering,Chick-fil-A,751
+151,3.3,Multi-lateral,Hamburger King,702
+152,3.1,background,Pei Wei,247
+153,2.3,Graphical User Interface,Domino's Pizza,822
+154,2.0,solution-oriented,Pollo Tropical,199
+155,2.5,radical,Panda Express,305
+156,2.8,leading edge,Whataburger,445
+157,3.0,Public-key,Dairy Queen,211
+158,2.1,flexibility,Sammy Carry-Out,533
+159,2.1,neural-net,Hardee's,194
+160,3.6,directional,Chick-fil-A,404
+161,3.9,Grass-roots,Qdoba Mexican Grill,451
+162,3.8,value-added,Burger King,1
+163,2.3,Managed,Taco John's,973
+164,3.3,Team-oriented,Steak 'n Shake,372
+165,2.1,Diverse,Smashburger,25
+166,3.8,Virtual,Popeyes Louisiana Kitchen,918
+167,3.4,intranet,KFC,31
+168,2.6,Customer-focused,Jimmy John's,939
+169,2.9,contingency,Whataburger,245
+170,2.4,4th generation,Burger King,319
+171,2.4,Triple-buffered,Penguin Point,619
+172,2.5,zero administration,SONIC Drive In,228
+173,3.6,Inverse,Sammy Carry-Out,725
+174,3.9,neural-net,Samurai Sam's,797
+175,2.6,Optional,Jimmy John's,239
+176,3.4,Realigned,Fresh City,993
+177,3.8,data-warehouse,Samurai Sam's,461
+178,3.2,non-volatile,Mocha Express,986
+179,2.3,instruction set,Jimmy John's,919
+180,2.5,tangible,Arby's,727
+181,2.0,hybrid,Whataburger,408
+182,2.6,Profit-focused,Jersey Mike's Subs,325
+183,3.7,interactive,Popeyes,320
+184,2.8,Progressive,Pollo Tropical,436
+185,3.7,bifurcated,Taco Time,311
+186,3.0,portal,Chick-fil-A,205
+187,2.2,flexibility,El Pollo Loco,82
+188,3.4,Progressive,Whataburger,46
+189,3.8,open system,Sarku Japan,599
+190,3.5,extranet,Skyline Chili,481
+191,3.1,optimizing,Hardee's,328
+192,2.6,grid-enabled,SONIC Drive In,74
+193,2.2,non-volatile,Taco Time,644
+194,2.2,Proactive,Slim Chickens,741
+195,2.5,function,Samurai Sam's,791
+196,3.5,non-volatile,Long John Silver's,350
+197,2.9,national,Taco Bell,500
+198,2.3,Grass-roots,Jersey Mike's Subs,935
+199,2.2,real-time,Rally's,617
+200,2.4,zero tolerance,Papa Gino's,433
+201,2.5,24 hour,Jimmy John's,842
+202,2.9,needs-based,Qdoba Mexican Grill,160
+203,3.2,Monitored,Steak 'n Shake,331
+204,3.4,Fully-configurable,Hardee's,288
+205,3.1,Streamlined,KFC,604
+206,3.8,Multi-channelled,Quiznos,414
+207,2.7,holistic,Slim Chickens,199
+208,2.9,non-volatile,Pop-A-Nugget,303
+209,3.5,intermediate,Pei Wei,849
+210,3.1,website,Wendy's,298
+211,2.3,well-modulated,Jimmy John's,315
+212,2.4,Balanced,Taco Time,865
+213,3.3,intangible,Taco John's,879
+214,3.8,next generation,Penguin Point,492
+215,2.6,uniform,Pei Wei,586
+216,2.7,process improvement,El Pollo Loco,597
+217,2.7,Cross-group,Qdoba Mexican Grill,56
+218,3.1,24/7,SONIC Drive In,141
+219,2.7,static,Jack In The Box,971
+220,2.8,Operative,Wendy's,430
+221,3.6,analyzing,Jack In The Box,115
+222,2.4,6th generation,Jersey Mike's Subs,238
+223,2.3,Multi-channelled,Rally's,422
+224,3.0,mobile,McDonald's,689
+225,3.3,parallelism,Steak 'n Shake,457
+226,2.1,Phased,KFC,576
+227,3.9,utilisation,OMG! Rotisserie,690
+228,3.5,Team-oriented,Jack In The Box,200
+229,2.4,logistical,Papa Johns,219
+230,2.2,moderator,Skyline Chili,641
+231,3.3,moratorium,Mocha Express,988
+232,3.9,capacity,SONIC Drive In,556
+233,2.1,value-added,Peking Wok,301
+234,3.0,firmware,Popeyes Louisiana Kitchen,873
+235,2.5,leverage,Hamburger King,321
+236,2.9,initiative,Fresh City,95
+237,3.0,parallelism,Popeyes,126
+238,3.5,full-range,Wendy's,372
+239,2.6,Reactive,Papa Gino's,448
+240,3.3,system-worthy,Chick-fil-A,861
+241,2.6,local area network,KFC,858
+242,2.9,even-keeled,SONIC Drive In,414
+243,3.2,Decentralized,Penguin Point,567
+244,2.4,neural-net,Wendy's,625
+245,2.9,leading edge,Burger King,342
+246,3.8,5th generation,SONIC Drive In,853
+247,2.4,hierarchy,Pop-A-Nugget,69
+248,2.1,empowering,Hamburger King,604
+249,3.3,adapter,Hardee's,749
+250,2.7,Switchable,El Pollo Loco,847
+251,2.4,hub,Wendy's,554
+252,3.0,Expanded,El Pollo Loco,486
+253,3.5,time-frame,Hardee's,860
+254,2.3,matrix,Long John Silver's,116
+255,2.3,Vision-oriented,OMG! Rotisserie,799
+256,3.4,interface,Jimmy John's,872
+257,2.9,Universal,Taco John's,187
+258,3.1,function,Frisch's Big Boy,129
+259,3.7,support,Dairy Queen,216
+260,3.6,client-driven,Samurai Sam's,184
+261,2.4,Grass-roots,Chick-fil-A,811
+262,3.6,parallelism,OMG! Rotisserie,398
+263,3.7,Switchable,Jack In The Box,404
+264,2.9,Programmable,Hamburger King,232
+265,2.3,database,Skyline Chili,2
+266,3.0,bottom-line,Papa Gino's,888
+267,2.3,Ergonomic,Skyline Chili,297
+268,3.7,Business-focused,El Pollo Loco,209
+269,3.8,analyzing,KFC,637
+270,2.3,even-keeled,Peking Wok,362
+271,2.5,exuding,Pop-A-Nugget,460
+272,4.0,tangible,Quiznos,556
+273,3.1,intermediate,McDonald's,461
+274,3.1,pricing structure,Subway,814
+275,2.5,context-sensitive,Mocha Express,970
+276,2.2,encryption,Hardee's,943
+277,2.7,cohesive,Papa Gino's,952
+278,3.4,Quality-focused,Sarku Japan,697
+279,3.5,executive,Starbucks,938
+280,3.8,Innovative,Frisch's Big Boy,71
+281,2.2,orchestration,Arby's,311
+282,3.6,time-frame,Taco John's,169
+283,2.2,forecast,Papa Gino's,546
+284,2.6,Organic,Whataburger,803
+285,3.2,paradigm,Jack In The Box,866
+286,3.7,approach,Chick-fil-A,92
+287,3.7,empowering,Sammy Carry-Out,228
+288,3.7,success,Taco John's,608
+289,2.5,eco-centric,Pizza Hut,429
+290,2.8,open system,Frisch's Big Boy,785
+291,2.9,architecture,Popeyes,179
+292,2.8,functionalities,Hardee's,607
+293,3.8,Self-enabling,Hardee's,141
+294,3.3,Public-key,Hardee's,993
+295,3.8,context-sensitive,Qdoba Mexican Grill,150
+296,2.6,Polarised,Chick-fil-A,590
+297,2.7,utilisation,Hamburger King,68
+298,2.7,utilisation,Peking Wok,766
+299,3.0,Secured,Mocha Express,588
+300,3.6,tertiary,Pollo Tropical,695
+301,2.3,3rd generation,Rally's,213
+302,2.0,composite,McDonald's,640
+303,3.0,Optional,Popeyes Louisiana Kitchen,143
+304,2.3,Triple-buffered,Steak 'n Shake,100
+305,2.0,encompassing,Jimmy John's,912
+306,2.1,Cross-platform,Steak 'n Shake,562
+307,2.5,Assimilated,Skyline Chili,714
+308,2.1,alliance,Quiznos,625
+309,3.1,Integrated,Jimmy John's,872
+310,3.5,leading edge,Popeyes Louisiana Kitchen,792
+311,2.6,analyzer,Burger King,18
+312,3.7,logistical,Pollo Tropical,254
+313,2.3,leading edge,Starbucks,905
+314,3.3,multi-tasking,Taco John's,50
+315,2.1,context-sensitive,Dairy Queen,770
+316,2.8,parallelism,Pop-A-Nugget,341
+317,3.4,Object-based,Papa Johns,42
+318,3.7,Persevering,Skyline Chili,218
+319,3.1,web-enabled,Mocha Express,190
+320,2.1,demand-driven,McDonald's,424
+321,3.4,bandwidth-monitored,Popeyes Louisiana Kitchen,544
+322,3.6,Synergized,Hardee's,168
+323,2.7,Balanced,Slim Chickens,451
+324,2.6,mission-critical,Arby's,590
+325,2.8,content-based,Long John Silver's,443
+326,2.1,Right-sized,Smashburger,607
+327,3.7,flexibility,Peking Wok,850
+328,2.8,cohesive,Qdoba Mexican Grill,914
+329,3.2,algorithm,Fresh City,598
+330,3.3,eco-centric,Whataburger,640
+331,3.2,contingency,Dairy Queen,18
+332,2.9,Secured,Popeyes Louisiana Kitchen,743
+333,2.2,motivating,Hardee's,551
+334,3.6,bi-directional,Rally's,398
+335,3.7,value-added,Burger King,876
+336,3.6,solution,Smashburger,855
+337,2.8,logistical,Jimmy John's,376
+338,3.2,instruction set,Popeyes,567
+339,3.6,Realigned,McDonald's,898
+340,3.4,5th generation,Pizza Hut,866
+341,2.9,hybrid,Hardee's,66
+342,2.3,object-oriented,Smashburger,719
+343,2.7,Devolved,Hardee's,911
+344,2.7,Innovative,Arby's,386
+345,2.7,Team-oriented,Rally's,966
+346,3.8,protocol,Burger King,629
+347,2.5,empowering,Rally's,347
+348,3.4,Cross-platform,Taco Bell,485
+349,3.7,Extended,Subway,990
+350,2.9,Fundamental,Samurai Sam's,201
+351,2.4,Focused,Domino's Pizza,809
+352,2.9,dedicated,Pollo Tropical,134
+353,3.3,uniform,Pop-A-Nugget,835
+354,2.5,moratorium,Rally's,385
+355,2.4,eco-centric,Arby's,720
+356,2.9,Re-contextualized,Whataburger,117
+357,3.0,radical,Jimmy John's,97
+358,2.3,background,Sarku Japan,366
+359,3.7,Automated,McDonald's,478
+360,3.7,Open-source,Pollo Tropical,656
+361,3.4,Diverse,Hamburger King,435
+362,2.8,maximized,Jimmy John's,868
+363,2.9,flexibility,KFC,205
+364,3.2,Team-oriented,OMG! Rotisserie,883
+365,2.7,Multi-tiered,Pei Wei,786
+366,3.6,artificial intelligence,SONIC Drive In,281
+367,3.6,Face to face,El Pollo Loco,948
+368,3.2,access,Fresh City,432
+369,2.9,capacity,Taco Time,738
+370,2.6,Organic,Sammy Carry-Out,190
+371,3.8,Implemented,Domino's Pizza,472
+372,3.4,intranet,Arby's,679
+373,3.8,hierarchy,KFC,310
+374,2.9,Open-architected,McDonald's,322
+375,2.3,holistic,Hamburger King,500
+376,3.9,human-resource,Hamburger King,309
+377,3.2,complexity,Wendy's,490
+378,3.1,protocol,Quiznos,716
+379,3.7,Organic,Starbucks,250
+380,3.3,Multi-channelled,Arby's,274
+381,2.7,zero defect,Samurai Sam's,402
+382,3.2,Proactive,Smashburger,42
+383,3.7,Ameliorated,Panda Express,623
+384,2.2,coherent,Fresh City,303
+385,2.3,architecture,Arby's,193
+386,3.1,standardization,Subway,963
+387,3.2,software,Frisch's Big Boy,122
+388,2.2,tangible,Quiznos,823
+389,2.7,Switchable,Samurai Sam's,803
+390,2.3,standardization,Hamburger King,990
+391,4.0,initiative,Fresh City,825
+392,2.2,foreground,Skyline Chili,407
+393,2.8,clear-thinking,Chick-fil-A,626
+394,2.1,tangible,Taco John's,490
+395,2.4,Cross-group,Burger King,155
+396,3.7,Progressive,Pei Wei,850
+397,2.4,task-force,OMG! Rotisserie,777
+398,3.4,moderator,Dairy Queen,954
+399,2.5,solution-oriented,Hamburger King,179
+400,3.9,Programmable,Taco Time,355
+401,3.2,challenge,Arby's,237
+402,2.3,foreground,Jersey Mike's Subs,723
+403,2.1,intangible,Taco Bell,440
+404,2.1,context-sensitive,Samurai Sam's,586
+405,3.9,analyzing,Sammy Carry-Out,993
+406,2.2,Team-oriented,Dairy Queen,914
+407,3.1,next generation,Papa Gino's,44
+408,2.3,task-force,McDonald's,972
+409,2.2,modular,Farmer Boys,903
+410,2.7,transitional,Popeyes,530
+411,3.5,support,Papa Johns,214
+412,3.3,Monitored,Domino's Pizza,973
+413,2.0,Multi-layered,Domino's Pizza,20
+414,3.3,Ergonomic,Long John Silver's,120
+415,2.4,Networked,Fresh City,380
+416,3.7,tangible,SONIC Drive In,348
+417,3.8,Universal,Slim Chickens,707
+418,3.1,Balanced,Pizza Hut,215
+419,2.4,architecture,Frisch's Big Boy,578
+420,2.4,alliance,McDonald's,982
+421,3.0,value-added,SONIC Drive In,297
+422,4.0,Organized,Steak 'n Shake,278
+423,3.8,Public-key,Arby's,253
+424,2.4,responsive,Wendy's,910
+425,3.9,product,Rally's,154
+426,2.0,value-added,Qdoba Mexican Grill,465
+427,2.1,intermediate,McDonald's,631
+428,2.1,Enterprise-wide,Chick-fil-A,282
+429,2.5,Digitized,Sarku Japan,399
+430,2.2,Exclusive,Wendy's,840
+431,2.1,Customer-focused,El Pollo Loco,393
+432,3.5,installation,Papa Gino's,538
+433,2.4,global,Penguin Point,146
+434,3.7,global,SONIC Drive In,851
+435,3.9,non-volatile,Jersey Mike's Subs,777
+436,2.4,maximized,Penguin Point,251
+437,3.6,bottom-line,Penguin Point,463
+438,3.1,policy,Jersey Mike's Subs,133
+439,3.2,Streamlined,Pei Wei,522
+440,2.6,adapter,Whataburger,764
+441,3.0,Seamless,Dairy Queen,100
+442,3.7,monitoring,Peking Wok,939
+443,2.3,Horizontal,Pop-A-Nugget,162
+444,2.8,Multi-tiered,SONIC Drive In,56
+445,3.1,zero tolerance,Pop-A-Nugget,516
+446,3.8,Monitored,Pizza Hut,407
+447,3.7,conglomeration,Papa Gino's,582
+448,3.3,encryption,Sammy Carry-Out,857
+449,3.2,Focused,Hamburger King,923
+450,2.6,Focused,Hardee's,692
+451,2.7,Configurable,Domino's Pizza,37
+452,2.7,firmware,Papa Johns,311
+453,2.9,Object-based,Panda Express,259
+454,2.1,structure,Fresh City,927
+455,2.3,multimedia,OMG! Rotisserie,698
+456,2.9,local,OMG! Rotisserie,325
+457,3.9,foreground,Mocha Express,416
+458,3.1,Programmable,Popeyes,589
+459,3.1,reciprocal,Rally's,899
+460,3.7,even-keeled,Pizza Hut,954
+461,3.5,capacity,Popeyes Louisiana Kitchen,779
+462,2.4,utilisation,Fresh City,347
+463,3.0,architecture,Skyline Chili,907
+464,3.3,alliance,McDonald's,69
+465,3.7,infrastructure,Samurai Sam's,412
+466,3.5,database,Papa Gino's,539
+467,3.9,optimal,Skyline Chili,753
+468,3.2,6th generation,Arby's,286
+469,2.5,Ergonomic,Panda Express,876
+470,3.1,fault-tolerant,Frisch's Big Boy,133
+471,3.7,logistical,Taco Bell,754
+472,3.7,product,Whataburger,896
+473,4.0,discrete,Papa Johns,386
+474,2.4,open architecture,Fresh City,65
+475,3.5,Advanced,Fresh City,688
+476,2.2,Customizable,Popeyes,713
+477,2.9,mobile,Farmer Boys,509
+478,3.5,capability,Arby's,168
+479,4.0,asymmetric,Taco Time,13
+480,2.6,open architecture,Jersey Mike's Subs,224
+481,2.1,executive,Hardee's,613
+482,3.5,optimal,Skyline Chili,873
+483,2.4,Innovative,Domino's Pizza,407
+484,3.0,framework,Taco Time,451
+485,2.2,function,KFC,805
+486,4.0,service-desk,Long John Silver's,373
+487,3.1,Multi-lateral,Sammy Carry-Out,910
+488,2.3,directional,Hamburger King,760
+489,3.8,heuristic,Qdoba Mexican Grill,175
+490,3.5,maximized,Taco John's,794
+491,3.0,human-resource,Wendy's,19
+492,3.5,database,Pizza Hut,999
+493,3.5,foreground,Wendy's,909
+494,2.3,didactic,Starbucks,999
+495,2.7,needs-based,Skyline Chili,448
+496,3.9,Innovative,Jersey Mike's Subs,761
+497,3.2,intranet,Steak 'n Shake,530
+498,3.2,context-sensitive,Pollo Tropical,862
+499,3.1,methodical,Peking Wok,696
+500,2.8,needs-based,Sammy Carry-Out,371

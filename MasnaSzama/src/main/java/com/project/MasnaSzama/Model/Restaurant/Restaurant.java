@@ -19,8 +19,8 @@ public class Restaurant {
     @JoinColumn(name = "address_id", nullable = false)
     private Address address;
 
-    private String name;
-    private String description;
+    private String restaurantName;
+    private String restaurantDescription;
     private Integer averageOpinion;
 
     @OneToMany(mappedBy = "restaurant")
@@ -42,12 +42,12 @@ public class Restaurant {
         return address;
     }
 
-    public String getName() {
-        return name;
+    public String getRestaurantName() {
+        return restaurantName;
     }
 
-    public String getDescription() {
-        return description;
+    public String getRestaurantDescription() {
+        return restaurantDescription;
     }
 
     public Set<Order> getOrders() {

@@ -44,6 +44,8 @@ import { OverviewComponent } from './admin-panel/overview/overview.component';
 import { OrderItemComponent } from './admin-panel/overview/order-item/order-item.component';
 import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
 import { RestaurantMenuUpdatePanelComponent } from './Restaurant/restaurant-menu-update-panel/restaurant-menu-update-panel.component';
+import {WeekPipe} from './courier-panel/Schedule/show-schedule/week.pipe';
+
 import {RouterModule} from "@angular/router";
 import { LoginAccountComponent } from './login-account/login-account.component';
 import { RegisterAccountComponent } from './register-account/register-account.component';
@@ -88,6 +90,7 @@ import { RegisterAccountComponent } from './register-account/register-account.co
      LoginAccountComponent,
      RegisterAccountComponent,
     FavoriteRestaurantComponent,
+     WeekPipe,
   ],
   imports: [
     BrowserModule,
@@ -97,6 +100,7 @@ import { RegisterAccountComponent } from './register-account/register-account.co
     ReactiveFormsModule,
     NgbModule,
     FontAwesomeModule,
+
   ],
   bootstrap: [AppComponent],
   providers: [CurrencyPipe, MenuMakerService, OrderService]

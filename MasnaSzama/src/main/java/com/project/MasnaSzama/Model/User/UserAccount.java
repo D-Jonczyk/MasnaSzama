@@ -7,7 +7,7 @@ import javax.persistence.*;
 @Entity
 public class UserAccount extends Person{
     private String userName;
-    private String password;
+    private String userPassword;
     private String registeredDate;
     private String lastLogin;
 
@@ -19,12 +19,12 @@ public class UserAccount extends Person{
         this.userName = userName;
     }
 
-    public String getPassword() {
-        return password;
+    public String getUserPassword() {
+        return userPassword;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
     }
 
     public String getRegisteredDate() {

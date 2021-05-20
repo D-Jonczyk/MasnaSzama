@@ -1,1 +1,77 @@
-<p>courier-orderhistory works!</p>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <title></title>
+</head>
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-3 float-left">
+      <div class="left-navbar text-center">
+        <h4 class="mb-0"> Witaj Kurierze!</h4>
+        <!-- <a [routerLink]="['/courier-panel']"> -->
+        <nav>
+          <button class="start-shift"><fa-icon [icon]="['far', 'play-circle']"> </fa-icon> Zacznij zmianę</button>
+          <hr/>
+          <ul ngbNav>
+            <li class="btn-block border-white" [ngbNavItem]="link.fragment" *ngFor="let link of links">
+
+              <a ngbNavLink data-toggle="collapse" [routerLink]="[link.fragment]" routerLinkActive="active" class="float-left">
+                <fa-icon class="float-left" icon="{{ link.icon }}"> </fa-icon> {{ link.title }}
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <router-outlet> </router-outlet>
+
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="col-lg-9">
+      <div class="card-box col-lg-10">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="tab-pane active show" id="orders" role="tabpanel" aria-labelledby="orders-tab">
+
+                <h4 class="font-weight-bold mt-0 mb-4 text-sm-center">Historia zamówień</h4>
+
+                <table class="table table-striped">
+                  <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Status</th>
+                    <th scope="col" class="col-sm-3">Data</th>
+                    <th scope="col" class="col-lg-4">Restauracja</th>
+                    <th scope="col" class="text-sm-center">Numer zamówienia</th>
+                    <th scope="col" class="text-sm-center">Godzina dostarczenia</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr *ngFor="let order of finishedOrders; index as i">
+                    <th scope="row">{{ i + 1 }}</th>
+                    <td class="text-sm-center"> <fa-icon [icon]="['fas', 'check-circle']"> </fa-icon></td>
+                    <td>{{ order.orderedTime | date: 'MMMM d'}}</td>
+                    <td>{{ order.restoName}}</td>
+                    <td class="text-sm-center">{{ order.orderId}}</td>
+                    <td class="text-sm-center">{{ order.deliveredTime | slice:0:5}}</td>
+                  </tr>
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- end tab-content -->
+    </div> <!-- end card-box-->
+  </div> <!-- end col -->
+</div>
+</body>
+</html>
