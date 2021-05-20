@@ -22,11 +22,11 @@ import { LINKS } from '../client-panel.component';
 })
 export class FavoriteRestaurantComponent implements OnInit {
 
-  titel = 'Ulubione restauracje klienta';
+  titel = 'Ulubione restauracje';
   faCoffee = faCoffee;
   fas = 'fas';
   links=LINKS;
-  accountIcon:string="assets/account-icon.png";
+  accountIcon:string="assets/image/account-icon.png";
 
   constructor(public route: ActivatedRoute, public library: FaIconLibrary,
   ) {

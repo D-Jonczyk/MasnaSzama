@@ -14,7 +14,7 @@ import {Account} from "./account";
   styleUrls: ['./login-account.component.css']
 })
 export class LoginAccountComponent implements OnInit {
-  logoFacebook:string="assets/facebook-logo.png";
+  logoFacebook:string="assets/image/facebook-logo.png";
 
 
   loginForm = this.formBuilder.group({
@@ -35,7 +35,7 @@ export class LoginAccountComponent implements OnInit {
   loginAcc():void{
     this.accountService.getAccount(
       this.loginForm.get('userName').value.toString(),
-    this.loginForm.get('password').value.toString() );
+      this.loginForm.get('password').value.toString() );
   }
 
   goToRegisterAcc(): void {

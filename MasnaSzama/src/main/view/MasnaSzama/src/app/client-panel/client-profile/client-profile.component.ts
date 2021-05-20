@@ -11,6 +11,7 @@ import {
   faUserCircle
 } from '@fortawesome/free-solid-svg-icons';
 import { LINKS } from '../client-panel.component';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 
 
@@ -21,11 +22,13 @@ import { LINKS } from '../client-panel.component';
 })
 export class ClientProfileComponent implements OnInit {
   titel = 'Profil Klienta';
-  accountIcon:string="assets/account-icon.png";
+  accountIcon:string="assets/image/account-icon.png";
 
   links=LINKS;
 
-  constructor(private library: FaIconLibrary) {
+  constructor(private library: FaIconLibrary,
+              private http: HttpClient) {
+
     library.addIcons(faPlayCircle, faSearch,
       faListAlt, faLocationArrow, faCalendarAlt, faUserCircle, faQuestionCircle,
       faComments, faHistory);
@@ -33,5 +36,6 @@ export class ClientProfileComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 
 }

@@ -23,7 +23,7 @@ export class ClientAdressComponent implements OnInit {
 
   titel = 'Panel Klienta';
   public customers: Customer[];
-  accountIcon:string="assets/account-icon.png";
+  accountIcon:string="assets/image/account-icon.png";
   links=LINKS;
 
   constructor(private library: FaIconLibrary) {

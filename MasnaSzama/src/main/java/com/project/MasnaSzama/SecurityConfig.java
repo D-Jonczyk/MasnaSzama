@@ -1,4 +1,4 @@
-
+/*
 package com.project.MasnaSzama;
 
 import org.springframework.context.annotation.Bean;
@@ -42,3 +42,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
 }
+*/

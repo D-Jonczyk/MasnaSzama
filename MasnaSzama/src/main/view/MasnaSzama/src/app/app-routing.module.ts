@@ -10,7 +10,7 @@ import {OrderlistComponent} from './courier-panel/orderlist/orderlist.component'
 import {RestaurantMenuComponent} from './Restaurant/restaurant-menu/restaurant-menu.component';
 import { RestaurantOrdersComponent} from './Restaurant/restaurant-orders/restaurant-orders.component';
 import {NavigationComponent} from './courier-panel/navigation/navigation.component';
-
+import {FavoriteRestaurantComponent} from "./client-panel/favorite-restaurant/favorite-restaurant.component";
 // client imports
 import {ClientPanelComponent} from './client-panel/client-panel.component';
 import { ClientAdressComponent } from './client-panel/client-adress/client-adress.component';
@@ -69,6 +69,7 @@ const routes: Routes = [
   {path: 'order-checkout', component: OrderCheckoutComponent},
   {path: 'login-account', component: LoginAccountComponent},
   {path: 'register-account', component: RegisterAccountComponent},
+  {path: 'favorite-restaurant', component: FavoriteRestaurantComponent},
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

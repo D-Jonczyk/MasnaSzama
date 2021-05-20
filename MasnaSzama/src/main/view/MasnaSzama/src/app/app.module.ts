@@ -18,7 +18,7 @@ import {CurrencyPipe, Location} from '@angular/common';
 import { MenuMakerService } from './admin-panel/menu-maker.service';
 import { OrderService } from './admin-panel/overview/order.service';
 import { MenuMakerComponent } from './admin-panel/menu-maker.component';
-
+import {FavoriteRestaurantComponent} from "./client-panel/favorite-restaurant/favorite-restaurant.component";
 // Client imports
 import { ClientAdressComponent } from './client-panel/client-adress/client-adress.component';
 import { ClientProfileComponent } from './client-panel/client-profile/client-profile.component';
@@ -87,7 +87,7 @@ import { RegisterAccountComponent } from './register-account/register-account.co
      ListRestoComponent,
      LoginAccountComponent,
      RegisterAccountComponent,
-
+    FavoriteRestaurantComponent,
   ],
   imports: [
     BrowserModule,
