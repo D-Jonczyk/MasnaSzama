@@ -1,0 +1,5 @@
+ALTER TABLE schedule DROP COLUMN week_number;
+
+ALTER TABLE schedule ADD week_number INTEGER
+GENERATED ALWAYS AS (WEEK(full_date))
+VIRTUAL NOT NULL;

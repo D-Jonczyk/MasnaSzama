@@ -1,4 +1,4 @@
-restaurant_id,average_opinion,description,name,address_id
+restaurant_id,average_opinion,restaurant_description,restaurant_name,address_id
 1,2.7,background,Wendy's,615
 2,3.8,Grass-roots,Samurai Sam's,779
 3,2.9,intangible,KFC,522

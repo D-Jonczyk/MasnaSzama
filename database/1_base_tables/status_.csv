@@ -1,4 +1,4 @@
-status_id,name
+status_id,status_name
 1,requested
 2,being_prepared
 3,delivery
