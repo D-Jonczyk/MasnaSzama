@@ -1,17 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import {FaIconLibrary} from '@fortawesome/angular-fontawesome';
-import {faPlayCircle} from '@fortawesome/free-regular-svg-icons';
+import {faCheckCircle, faClock, faPlayCircle} from '@fortawesome/free-regular-svg-icons';
 import {
-  faCalendarAlt, faComments, faCrown,
-  faFingerprint,
-  faHandMiddleFinger, faHistory,
-  faListAlt,
-  faLocationArrow, faQuestionCircle,
-  faSearch, faSignOutAlt,
-  faUserCircle
+  faCalendarAlt,  faCheckSquare, faClipboardList,  faCoffee, faComments, faFingerprint, faHandMiddleFinger,
+  faHeadset, faHistory,  faInfo, faListAlt,  faLocationArrow,  faMapMarkerAlt, faPhoneAlt, faQuestionCircle, faSearch,
+  faSquare,  faTruckLoading, faUserCircle, faSignOutAlt,faCrown
 } from '@fortawesome/free-solid-svg-icons';
 
 import {Customer} from '../Person/customer';
+import {faGithub, faMedium} from "@fortawesome/free-brands-svg-icons";
 
 
 export const LINKS: object[] = [
@@ -37,9 +34,9 @@ export class ClientPanelComponent implements OnInit {
   links=LINKS;
 
   constructor(private library: FaIconLibrary) {
-    library.addIcons(faPlayCircle, faSearch,
-      faListAlt, faLocationArrow, faCalendarAlt, faUserCircle, faQuestionCircle,
-      faComments, faHistory, faSignOutAlt, faCrown);
+    library.addIcons(faSquare, faCheckSquare, faMedium, faGithub, faClock, faMapMarkerAlt, faLocationArrow, faInfo, faTruckLoading,
+      faClipboardList, faHeadset, faPhoneAlt, faCheckCircle, faPlayCircle, faListAlt, faLocationArrow,
+      faCalendarAlt, faUserCircle, faQuestionCircle, faComments, faHistory,faSignOutAlt,faCrown);
   }
 
   ngOnInit(): void {

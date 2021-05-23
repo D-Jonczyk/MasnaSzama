@@ -2,16 +2,16 @@ package com.project.MasnaSzama.DTO;
 
 public class UserDTO {
     private String userName;
-    private String password;
+    private String userPassword;
 
 
-    public UserDTO(String userName, String password) {
+    public UserDTO(String userName, String userPassword) {
         this.userName = userName;
-        this.password = password;
+        this.userPassword = userPassword;
 
     }
     public String getUserName(){return userName;}
-   public String getPassword(){return password;}
+   public String getUserPassword(){return userPassword;}
 
 }
 

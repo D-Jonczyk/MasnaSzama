@@ -9,19 +9,19 @@ import {CourierProfile} from "../courier-panel/profile/courier-profile";
   providedIn: 'root'
 })
 export class AccountService {
-  //http://localhost:8080/client/getLogin?userName=Pawel&password=jebaccie
-  private loginUrl = 'http://localhost:8080/client/getLogin?userName=Pawel&password=jebaccie';
+  //http://localhost:8080/client/getLogin?userName=Pawel&password=pawel
+  private loginUrl = 'http://localhost:8080/client/getLogin?userName=Pawel&password=pawel';
   userName: string;
-  password: string;
+  userPassword: string;
 
   constructor(private http: HttpClient) {
   }
 
 
-  getAccount(userName, password): Observable<Account> {
+  getAccount(userName, userPassword): Observable<Account> {
     const params = new HttpParams()
       .set('userName', userName)
-      .set('password', password);
+      .set('userPassword', userPassword);
       return this.http.get<Account>(this.loginUrl); // {params} short form of {params:params}
   //  return this.http.get<Account>(this.loginUrl + userName + "&password=" + password); // {params} short form of {params:params}
 

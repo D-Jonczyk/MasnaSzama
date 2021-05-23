@@ -11,10 +11,10 @@ public interface UserRepo extends CrudRepository<Customer, Long> {
 
 
     @Query(value = "SELECT new com.project.MasnaSzama.DTO.UserDTO" +
-            "(u.userName, u.password)"+
+            "(u.userName, u.userPassword)"+
             "FROM UserAccount u "+
-            "WHERE u.userName =?1 and u.password = ?2 ")
-    UserDTO getUserLogin(String userName,String password);
+            "WHERE u.userName =?1 and u.userPassword = ?2 ")
+    UserDTO getUserLogin(String userName,String userPassword);
 
 }
 

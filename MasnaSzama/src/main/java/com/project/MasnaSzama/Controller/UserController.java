@@ -17,8 +17,8 @@ public class UserController {
     }
 
     @GetMapping(path = "/getLogin")
-    public UserDTO getUserLogin(@RequestParam String userName, @RequestParam String password) {
-        return (UserDTO) userService.getUserLogin(userName, password);
+    public UserDTO getUserLogin(@RequestParam String userName, @RequestParam String userPassword) {
+        return (UserDTO) userService.getUserLogin(userName, userPassword);
     }
 
 

@@ -17,8 +17,8 @@ public class UserService {
         this.userRepo = userRepo;
     }
 
-    public UserDTO getUserLogin(String userName,String password) {
-        return userRepo.getUserLogin(userName, password);
+    public UserDTO getUserLogin(String userName,String userPassword) {
+        return userRepo.getUserLogin(userName, userPassword);
 
     }
 }
