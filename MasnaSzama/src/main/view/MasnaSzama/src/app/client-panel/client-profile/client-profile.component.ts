@@ -11,7 +11,11 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {faGithub, faMedium} from "@fortawesome/free-brands-svg-icons";
 import {NgbModal, NgbModalConfig} from "@ng-bootstrap/ng-bootstrap";
 import {AngularFireStorage} from '@angular/fire/storage'
-
+import {concat, defer} from "rxjs";
+import {finalize, ignoreElements} from "rxjs/operators";
+import firebase from 'firebase/app';
+import 'firebase/storage';
+import {unwrapLazyLoadHelperCall} from "@angular/localize/src/tools/src/source_file_utils";  // <----
 
 @Component({
   selector: 'app-client-profile',
@@ -26,6 +30,7 @@ export class ClientProfileComponent implements OnInit {
   selectFile: File = null;
   links=LINKS;
   filePath:String
+  public selectedFile: FileList;
 
   constructor(private library: FaIconLibrary,
               private afStorage: AngularFireStorage,
@@ -55,11 +60,24 @@ export class ClientProfileComponent implements OnInit {
       }
     }
   }
+  getUrlLink(){
+
+
+  }
   uploadImage(){
-    console.log(this.filePath)
     this.accPomLink = '/accLink' + new Date().getTime() + Math.random();
-    this.afStorage.upload('/accImg' + this.accPomLink, this.filePath)
-    this.accLink = this.accPomLink;
+    console.log(this.filePath);
+    var filePath = '/accImg' + this.accPomLink;
+    const fileRef = this.afStorage.ref(filePath);
+    this.afStorage.upload(filePath, this.filePath).snapshotChanges().pipe(
+      finalize(()=>{
+        fileRef.getDownloadURL().subscribe((url) => {
+          this.accLink = url;
+        })
+      })
+    ).subscribe();
+
+
 
   }
 
