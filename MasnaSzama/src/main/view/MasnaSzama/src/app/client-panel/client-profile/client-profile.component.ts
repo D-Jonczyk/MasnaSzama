@@ -57,9 +57,10 @@ export class ClientProfileComponent implements OnInit {
   }
   uploadImage(){
     console.log(this.filePath)
-    this.accPomLink = '/accLink'+Math.random();
-    this.afStorage.upload('/accImg' + this.accPomLink, this.filePath);
+    this.accPomLink = '/accLink' + new Date().getTime() + Math.random();
+    this.afStorage.upload('/accImg' + this.accPomLink, this.filePath)
     this.accLink = this.accPomLink;
+
   }
 
   accLinkChange(){
