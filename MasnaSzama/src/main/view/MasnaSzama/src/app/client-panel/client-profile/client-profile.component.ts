@@ -10,7 +10,7 @@ import { LINKS } from '../client-panel.component';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {faGithub, faMedium} from "@fortawesome/free-brands-svg-icons";
 import {NgbModal, NgbModalConfig} from "@ng-bootstrap/ng-bootstrap";
-
+import {AngularFireStorage} from '@angular/fire/storage'
 
 
 @Component({
@@ -21,11 +21,14 @@ import {NgbModal, NgbModalConfig} from "@ng-bootstrap/ng-bootstrap";
 })
 export class ClientProfileComponent implements OnInit {
   titel = 'Profil Klienta';
-  accountIcon:string="assets/image/account-icon.png";
-  selectedFile: File = null;
+  accLink:string ='assets/image/account-icon.png';
+  accPomLink:string='assets/image/account-icon.png';
+  selectFile: File = null;
   links=LINKS;
+  filePath:String
 
   constructor(private library: FaIconLibrary,
+              private afStorage: AngularFireStorage,
               private http: HttpClient,
               config: NgbModalConfig, private modalService: NgbModal) {
     config.backdrop = 'static';
@@ -40,27 +43,34 @@ export class ClientProfileComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  upload(event) {
+    this.filePath = event.target.files[0]
+  }
+  openImage(event){
+    if(event.target.files){
+      var reader = new FileReader()
+      reader.readAsDataURL(event.target.files[0])
+      reader.onload = (event:any) =>{
+          this.accPomLink = event.target.result;
+      }
+    }
+  }
+  uploadImage(){
+    console.log(this.filePath)
+    this.accPomLink = '/accLink'+Math.random();
+    this.afStorage.upload('/accImg' + this.accPomLink, this.filePath);
+    this.accLink = this.accPomLink;
+  }
+
+  accLinkChange(){
+    this.accPomLink='assets/image/account-icon.png'
+  }
+
   open(content) {
     this.modalService.open(content);
   }
 
-  accLink:string ='assets/image/account-icon.png';
-  selectFiles(event) {
 
-    var reader = new FileReader() ;
-      reader.readAsDataURL(event.target.files[0]);
-      reader.onload = (event: any) => {
-        this.accLink = event.target.result;
-      }
-    }
 
-  // onFileSelected(event){
-  // this.selectedFile = <File>event.target.files[0];
-  // }
-
-  // onUpload(){
-  //     const fd = new FormData();
-  //     fd.append('image', this.selectedFile, this.selectedFile.name);
-  // }
 
 }

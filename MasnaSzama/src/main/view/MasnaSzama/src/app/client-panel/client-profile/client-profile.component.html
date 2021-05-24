@@ -58,15 +58,16 @@
 <ng-template #changeImg let-c="close" let-d="dismiss">
   <div class="modal-header">
     <h4 class="modal-title" id="modal-basic-title">Wybierz zdjęcie które checsz  dodać!</h4>
-
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click');accLinkChange()">
+      <span aria-hidden="true">&times;</span>
+    </button>
   </div>
   <div class="modal-body">
-<!--        <input type="file" (change)="onFileSelected($event)">-->
-      <img class="displayed" [src]="accLink">
-      <input type="file" class=" btn btn-success btn-sm "(change)="selectFiles($event)">
+    <img class="displayed" [src]="accPomLink" alt="accountIcon">
+    <input type="file" (change)="openImage($event); upload($event)" accept=".png,.jpg" />
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="c('Save click'); ">Zapisz zdjecie</button>
+    <button type="button" class="btn btn-outline-dark" (click)="c('Save click');uploadImage(); ">Zapisz zdjecie</button>
   </div>
 </ng-template>
 <!--finish change image -->
@@ -85,7 +86,7 @@
 
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Zapisz</button>
+    <button type="button" class="btn btn-outline-dark" (click)="c('Save click');">Zapisz</button>
   </div>
 </ng-template>
 
