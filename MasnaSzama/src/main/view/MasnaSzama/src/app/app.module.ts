@@ -24,7 +24,6 @@ import { ClientProfileComponent } from './client-panel/client-profile/client-pro
 import { OrderHistoryComponent } from './client-panel/order-history/order-history.component';
 import { ClientPanelComponent } from './client-panel/client-panel.component';
 import { LogoutComponent } from './client-panel/logout/logout.component';
-import { UploadComponent } from './client-panel/upload/upload.component';
 
 
 import { RestaurantOrdersComponent } from './Restaurant/restaurant-orders/restaurant-orders.component';
@@ -75,7 +74,7 @@ import {AngularFireModule} from '@angular/fire'
      OrderHistoryComponent,
      ClientProfileComponent,
      LogoutComponent,
-     UploadComponent,
+
      SupportComponent,
      OrderCheckoutComponent,
      ChatComponent,

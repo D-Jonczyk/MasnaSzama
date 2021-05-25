@@ -10,6 +10,12 @@ public class UserAccount extends Person{
     private String userPassword;
     private String registeredDate;
     private String lastLogin;
+    private String imgUrl ;
+
+    public String getImgUrl() { return imgUrl; }
+
+    public void setImgUrl(String imgUrl) { this.imgUrl = imgUrl; }
+
 
     public String getUserName() {
         return userName;

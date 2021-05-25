@@ -18,6 +18,7 @@ import {ClientProfileService} from "./client-profile-service";
 import {ClientProfile} from "./client-profile";
 import {CourierProfile} from "../../courier-panel/profile/courier-profile";
 import {CourierProfileService} from "../../courier-panel/profile/courier-profile.service";
+import {ClientPanelService} from "../client-panel-service";
 
 @Component({
   selector: 'app-client-profile',
@@ -27,7 +28,9 @@ import {CourierProfileService} from "../../courier-panel/profile/courier-profile
 })
 export class ClientProfileComponent implements OnInit {
   titel = 'Profil Klienta';
-  accLink:string ='assets/image/account-icon.png';
+  public accountIcon = this.clientPanelService.accLink;
+  public clientName = this.clientPanelService.clientName;
+  public clientSurname = this.clientPanelService.clientSurname;
   accPomLink:string='assets/image/account-icon.png';
   links=LINKS;
   filePath:String
@@ -40,6 +43,7 @@ export class ClientProfileComponent implements OnInit {
               private afStorage: AngularFireStorage,
               private clientProfileService: ClientProfileService,
               private http: HttpClient,
+              private clientPanelService: ClientPanelService,
               config: NgbModalConfig, private modalService: NgbModal) {
     config.backdrop = 'static';
     config.keyboard = false;
@@ -75,14 +79,15 @@ export class ClientProfileComponent implements OnInit {
     this.afStorage.upload(filePath, this.filePath).snapshotChanges().pipe(
       finalize(()=>{
         fileRef.getDownloadURL().subscribe((url) => {
-          this.accLink = url;
+          this.accountIcon = url;
+          this.accPomLink=url;
         })
       })
     ).subscribe();
   }
 
   accLinkChange(){
-    this.accPomLink=this.clientProfile.password;
+    this.accountIcon = this.clientPanelService.accLink;
   }
 
   open(content) {

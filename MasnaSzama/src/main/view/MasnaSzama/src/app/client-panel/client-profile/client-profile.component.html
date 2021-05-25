@@ -14,8 +14,9 @@
       <div class="left-navbar text-center">
 
         <nav>
-          <img class="displayed" [src]="accLink" alt="accountIcon">
-          <h4 class="mb-0"> {{clientProfile.lastName}} {{clientProfile.firstName}}</h4>
+          <img class="displayed" [src]="accountIcon" alt="accountIcon">
+          <h4>Witaj</h4>
+          <h4 class="mb-0"> {{clientProfile.firstName}} {{clientProfile.lastName}} !</h4>
           <hr/>
           <ul ngbNav>
             <li class="btn-block border-white" [ngbNavItem]="link.fragment" *ngFor="let link of links">

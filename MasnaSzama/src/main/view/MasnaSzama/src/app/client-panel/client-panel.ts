@@ -1,4 +1,4 @@
-export class ClientProfile {
+export class ClientPanel {
   personId: number;
   emailAddress: string;
   firstName: string;

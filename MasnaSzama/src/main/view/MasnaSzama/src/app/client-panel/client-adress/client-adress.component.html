@@ -16,7 +16,8 @@
         <!-- <a [routerLink]="['/courier-panel']"> -->
         <nav>
           <img class="displayed" [src]="accountIcon" alt="accountIcon">
-          <h4 class="mb-0"> Imie i nazwisko klienta</h4>
+          <h4>Witaj</h4>
+          <h4 class="mb-0"> {{clientName}} {{clientSurname}} !</h4>
           <hr/>
           <ul ngbNav>
             <li class="btn-block border-white" [ngbNavItem]="link.fragment" *ngFor="let link of links">
