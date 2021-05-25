@@ -15,4 +15,12 @@ public class Customer extends Person{
 
     @OneToMany(mappedBy="customer")
     private Set<Order> orders;
+
+    public Customer(){
+        super();
+    }
+    public Customer(String firstName, String lastName){
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 }

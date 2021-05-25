@@ -14,9 +14,8 @@
       <div class="left-navbar text-center">
 
         <nav>
-
           <img class="displayed" [src]="accLink" alt="accountIcon">
-          <h4 class="mb-0"> Imie i nazwisko klienta</h4>
+          <h4 class="mb-0"> {{clientProfile.lastName}} {{clientProfile.firstName}}</h4>
           <hr/>
           <ul ngbNav>
             <li class="btn-block border-white" [ngbNavItem]="link.fragment" *ngFor="let link of links">
@@ -43,7 +42,7 @@
               <p class="display-4 text-center astext" (click)="open(changeImg)">Edytuj swoj awatar</p>
               <p></p>
             <hr>
-              <p class="display-4 text-center astext" (click)="open(changeData)">Edytuj swoje dane</p>
+              <p class="display-4 text-center astext" (click)="open(changeData); getClientProfile()">Edytuj swoje dane</p>
               <p></p>
             <hr>
             </div>
@@ -81,10 +80,16 @@
     </button>
   </div>
   <div class="modal-body">
-
-
-
+    <label class="col-lg-8 control-label">Nazwisko:</label>
+    <div class="col-lg-8">
+      <label>
+        <input class="form-control" ngModel="{{clientProfile.lastName}}" id="lastName" name="lastName" type="text" required>
+      </label>
+    </div>
   </div>
+
+
+
   <div class="modal-footer">
     <button type="button" class="btn btn-outline-dark" (click)="c('Save click');">Zapisz</button>
   </div>

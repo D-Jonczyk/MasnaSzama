@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 import {FaIconLibrary} from '@fortawesome/angular-fontawesome';
 import {faCheckCircle, faClock, faPlayCircle} from '@fortawesome/free-regular-svg-icons';
 import {
@@ -7,15 +8,16 @@ import {
   faSquare,  faTruckLoading, faUserCircle, faSignOutAlt,faCrown
 } from '@fortawesome/free-solid-svg-icons';
 import { LINKS } from '../client-panel.component';
-import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {HttpClient, HttpClientModule, HttpErrorResponse} from "@angular/common/http";
 import {faGithub, faMedium} from "@fortawesome/free-brands-svg-icons";
 import {NgbModal, NgbModalConfig} from "@ng-bootstrap/ng-bootstrap";
 import {AngularFireStorage} from '@angular/fire/storage'
-import {concat, defer} from "rxjs";
 import {finalize, ignoreElements} from "rxjs/operators";
-import firebase from 'firebase/app';
 import 'firebase/storage';
-import {unwrapLazyLoadHelperCall} from "@angular/localize/src/tools/src/source_file_utils";  // <----
+import {ClientProfileService} from "./client-profile-service";
+import {ClientProfile} from "./client-profile";
+import {CourierProfile} from "../../courier-panel/profile/courier-profile";
+import {CourierProfileService} from "../../courier-panel/profile/courier-profile.service";
 
 @Component({
   selector: 'app-client-profile',
@@ -27,13 +29,16 @@ export class ClientProfileComponent implements OnInit {
   titel = 'Profil Klienta';
   accLink:string ='assets/image/account-icon.png';
   accPomLink:string='assets/image/account-icon.png';
-  selectFile: File = null;
   links=LINKS;
   filePath:String
   public selectedFile: FileList;
+  public clientProfile = new ClientProfile();
+  public editProfile = new ClientProfile();
+  public clientId = 301;
 
   constructor(private library: FaIconLibrary,
               private afStorage: AngularFireStorage,
+              private clientProfileService: ClientProfileService,
               private http: HttpClient,
               config: NgbModalConfig, private modalService: NgbModal) {
     config.backdrop = 'static';
@@ -46,6 +51,7 @@ export class ClientProfileComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.getClientProfile();
   }
 
   upload(event) {
@@ -60,10 +66,7 @@ export class ClientProfileComponent implements OnInit {
       }
     }
   }
-  getUrlLink(){
 
-
-  }
   uploadImage(){
     this.accPomLink = '/accLink' + new Date().getTime() + Math.random();
     console.log(this.filePath);
@@ -76,19 +79,40 @@ export class ClientProfileComponent implements OnInit {
         })
       })
     ).subscribe();
-
-
-
   }
 
   accLinkChange(){
-    this.accPomLink='assets/image/account-icon.png'
+    this.accPomLink=this.clientProfile.password;
   }
 
   open(content) {
     this.modalService.open(content);
   }
 
+  // public onEditProfile(courier: CourierProfile): void {
+  //   this.clientProfileService.editCourierProfile(courier).subscribe(
+  //     (response: CourierProfile) => {
+  //       console.log(response);
+  //       this.getClientProfile();
+  //     },
+  //     (error: HttpErrorResponse) => {
+  //       alert(error.message);
+  //       this.getClientProfile();
+  //     }
+  //   );
+  // }
+
+  getClientProfile(): void {
+    this.clientProfileService.getClientProfile(this.clientId).subscribe(
+      (response: ClientProfile) => {
+        this.clientProfile = response;
+        this.editProfile = this.clientProfile;
+      },
+      (error: HttpErrorResponse) => {
+        alert(error.message);
+      }
+    );
+  }
 
 
 

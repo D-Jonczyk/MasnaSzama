@@ -1,0 +1,25 @@
+import {Injectable} from '@angular/core';
+import {ClientProfile} from './client-profile';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ClientProfileService {
+
+  private clientProfileUrl = 'http://localhost:8080/client/find/';
+ // private editProfileUrl = 'http://localhost:8080/client/update';
+  constructor(private http: HttpClient) {
+  }
+
+  getClientProfile(clientId): Observable<ClientProfile> {
+    return this.http.get<ClientProfile>(this.clientProfileUrl + clientId);
+  }
+  // editClientProfile(client: ClientProfile): Observable<ClientProfile> {
+  //   console.log('personId: ', client.personId, 'phoneNumber: ',
+  //     client.phoneNumber, 'firstName', client.firstName, 'lastName: ', client.lastName);
+  //   return this.http.put<ClientProfile>(this.editProfileUrl, client);
+  // }
+
+}
