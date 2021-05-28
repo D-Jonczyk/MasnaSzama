@@ -33,8 +33,10 @@ export class RestaurantMenuUpdatePanelComponent implements OnInit {
     this.meals$ = this.restaurantMenuService.getMeals(42);
   }
 
-  deleteFromOrder(id): void {
-    console.log(id);
-    this.restaurantMenuService.deleteMeal(id);
+  deleteFromOrder(mealId): void {
+    console.log(mealId);
+    this.restaurantMenuService.deleteMeal(mealId);
+
   }
+
 }
