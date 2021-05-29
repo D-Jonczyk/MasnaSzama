@@ -17,7 +17,6 @@ import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import { LINKS } from '../courier-panel.component';
 import {DeliveryOrder} from './delivery-order';
 import {DeliveryOrderService} from './delivery-order.service';
-import {Observable} from 'rxjs';
 import {HttpErrorResponse} from '@angular/common/http';
 import {Order} from '../../Order/order';
 
@@ -27,12 +26,12 @@ import {Order} from '../../Order/order';
   styleUrls: ['../courier-panel.component.css', './orderlist.component.css']
 })
 export class OrderlistComponent implements OnInit {
-  isFinished = false;
+
   faCoffee = faCoffee;
   closeResult = '';
   fas = 'fas';
   links = LINKS;
-  courierId = 206;
+  courierId = 221;
   public orders: DeliveryOrder[];
   public completedOrder: Order;
 
@@ -80,7 +79,7 @@ export class OrderlistComponent implements OnInit {
   }
 
   openConfirmDelivery(content): void {
-    this.modalService.open(content, {ariaLabelledBy: 'modal-call-client'}).result.then((result) => {
+    this.modalService.open(content, {ariaLabelledBy: 'modal-confirm-delivery'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
       this.closeResult = `Dismissed ${OrderlistComponent.getDismissReason(reason)}`;

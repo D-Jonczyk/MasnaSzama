@@ -20,7 +20,7 @@ public class Address {
 
     private String city;
     private String street;
-    private Integer number;
+    private Integer flatNumber;
 
     public Long getAddressId() {
         return addressId;
@@ -28,5 +28,45 @@ public class Address {
 
     public void setAddressId(Long addressId) {
         this.addressId = addressId;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public Restaurant getRestaurant() {
+        return restaurant;
+    }
+
+    public void setRestaurant(Restaurant restaurant) {
+        this.restaurant = restaurant;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public Integer getFlatNumber() {
+        return flatNumber;
+    }
+
+    public void setFlatNumber(Integer flatNumber) {
+        this.flatNumber = flatNumber;
     }
 }

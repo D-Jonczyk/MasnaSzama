@@ -2,7 +2,7 @@
 
   <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
 
-     <form [formGroup]="optionCreatorForm" (ngSubmit)="onSubmit()">
+     <form [formGroup]="optionCreatorForm">
 
        <div class="form-group">
          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/6227/restaurant-list-logo.png" width="30" height="30" class="d-inline-block align-top" alt="Dodaj restaurację">
@@ -11,8 +11,7 @@
            id="categories"
            formControlName="category"
            class="form-control">
-           <option *ngFor="let category of categories"
-                   [ngValue]="category">{{category.categoryName}} </option>
+
          </select>
        </div>
 
@@ -21,7 +20,7 @@
           class="btn btn-info"
           type="button"
           (click)="onAddOption()">Dodaj ofertę</button>
-        <div *ngFor="let optionControl of optionCreatorForm.get('optionsArray').controls; let i=index">
+        <div *ngFor="let optionControl of optionCreatorForm.get('optionsArray'); let i=index">
           <div [formGroupName]="i">
             <input formControlName="optionName" placeholder="Nazwa i opis">
             <input formControlName="optionPrice" placeholder="Cena">
@@ -52,7 +51,7 @@
       </div>
 
       <button class="btn btn-primary" type="submit">Zapisz</button>
-       <button class="btn btn-primary" type="reset" (click)="reset()">Reset</button>
+       <button class="btn btn-primary" type="reset">Reset</button>
     </form>
 
   </div>

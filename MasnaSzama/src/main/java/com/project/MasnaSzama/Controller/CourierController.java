@@ -1,6 +1,9 @@
 package com.project.MasnaSzama.Controller;
 
 import com.project.MasnaSzama.Model.Person.Employee.Courier;
+import com.project.MasnaSzama.Model.Views.CourierSchedules;
+import com.project.MasnaSzama.Model.Views.OrdersDelivery;
+import com.project.MasnaSzama.Model.Views.OrdersFinished;
 import com.project.MasnaSzama.Service.CourierService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -27,6 +30,18 @@ public class CourierController {
     public ResponseEntity<Courier> getCourierByPersonId(@PathVariable("id") Long personId){
         Courier courier = courierService.findCourierById(personId);
         return new ResponseEntity<>(courier, HttpStatus.OK);
+    }
+
+    @GetMapping("/getSchedule/{courierId}/{weekNumber}")
+    public ResponseEntity<List<CourierSchedules>> getCourierSchedule(@PathVariable("courierId") Long id, @PathVariable("weekNumber") Integer weekNumber) {
+        List<CourierSchedules> courierSchedules = (List<CourierSchedules>) courierService.getCourierSchedule(id, weekNumber);
+        return new ResponseEntity<>(courierSchedules, HttpStatus.OK);
+    }
+
+    @GetMapping("/getDeliveryHistory/{courierId}")
+    public ResponseEntity<List<OrdersFinished>> getDeliveryHistory(@PathVariable("courierId") Long id) {
+        List<OrdersFinished> ordersFinished = (List<OrdersFinished>) courierService.getDeliveryHistory(id);
+        return new ResponseEntity<>(ordersFinished, HttpStatus.OK);
     }
 
     @PostMapping("/add")

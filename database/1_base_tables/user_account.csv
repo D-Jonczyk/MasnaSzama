@@ -1,4 +1,4 @@
-person_id,email_address,first_name,last_name,phone_number,last_login,password,registered_date,user_name
+person_id,email_address,first_name,last_name,phone_number,last_login,user_password,registered_date,user_name
 1,emcterlagh0@census.gov,Eleanor,McTerlagh,3625577021,07/19/2020,R7mjd3,09/05/2020,emcterlagh0
 2,dpennyman1@behance.net,Dari,Pennyman,5645412807,04/18/2021,VYVJq4,02/22/2021,dpennyman1
 3,atinsley2@ebay.com,Alyda,Tinsley,6399203665,01/12/2021,k2cq32YsJ6,03/30/2021,atinsley2

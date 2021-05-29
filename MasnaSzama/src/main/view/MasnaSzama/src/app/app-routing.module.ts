@@ -10,7 +10,7 @@ import {OrderlistComponent} from './courier-panel/orderlist/orderlist.component'
 import {RestaurantMenuComponent} from './Restaurant/restaurant-menu/restaurant-menu.component';
 import { RestaurantOrdersComponent} from './Restaurant/restaurant-orders/restaurant-orders.component';
 import {NavigationComponent} from './courier-panel/navigation/navigation.component';
-
+import {FavoriteRestaurantComponent} from "./client-panel/favorite-restaurant/favorite-restaurant.component";
 // client imports
 import {ClientPanelComponent} from './client-panel/client-panel.component';
 import { ClientAdressComponent } from './client-panel/client-adress/client-adress.component';
@@ -21,7 +21,7 @@ import { UploadComponent } from './client-panel/upload/upload.component';
 import {SupportComponent} from './courier-panel/support/support.component';
 import {ChatComponent} from './courier-panel/chat/chat.component';
 import {CourierOrderhistoryComponent} from './courier-panel/courier-orderhistory/courier-orderhistory.component';
-import {OrderCheckoutComponent} from "./Restaurant/order-checkout/order-checkout.component";
+import {OrderCheckoutComponent} from './Restaurant/order-checkout/order-checkout.component';
 
 import { ItemsComponent } from './admin-panel/items/items.component';
 import { MenusComponent } from './admin-panel/menus/menus.component';
@@ -29,7 +29,10 @@ import { OptionsComponent } from './admin-panel/options/options.component';
 import { OverviewComponent } from './admin-panel/overview/overview.component';
 import { CategoriesComponent } from './admin-panel/categories/categories.component';
 import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
-import {RestaurantMenuUpdatePanelComponent} from './admin-panel/restaurant-menu-update-panel/restaurant-menu-update-panel.component';
+import {RestaurantMenuUpdatePanelComponent} from './Restaurant/restaurant-menu-update-panel/restaurant-menu-update-panel.component';
+
+import { LoginAccountComponent } from './login-account/login-account.component';
+import { RegisterAccountComponent } from './register-account/register-account.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/main', pathMatch: 'full'},
@@ -51,7 +54,6 @@ const routes: Routes = [
   {path: 'options', component: OptionsComponent },
   {path: 'restaurant-menu-update-panel', component: RestaurantMenuUpdatePanelComponent },
   {path: 'overview', component: OverviewComponent },
-  {path: '', component:OverviewComponent},
   // Client Paths
   {path: 'client-panel', component: ClientPanelComponent},
   {path: 'client-adress', component: ClientAdressComponent},
@@ -61,8 +63,12 @@ const routes: Routes = [
   {path: 'upload', component: UploadComponent},
   {path: 'chat', component: ChatComponent},
   {path: 'navigation', component: NavigationComponent},
-  {path: 'orderhistory', component: CourierOrderhistoryComponent},
+  {path: 'courier-orderhistory', component: CourierOrderhistoryComponent},
   {path: 'list-resto', component: ListRestoComponent},
+  {path: 'order-checkout', component: OrderCheckoutComponent},
+  {path: 'login-account', component: LoginAccountComponent},
+  {path: 'register-account', component: RegisterAccountComponent},
+  {path: 'favorite-restaurant', component: FavoriteRestaurantComponent},
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

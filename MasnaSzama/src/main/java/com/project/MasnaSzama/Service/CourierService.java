@@ -2,6 +2,8 @@ package com.project.MasnaSzama.Service;
 
 import com.project.MasnaSzama.Exception.UserNotFoundException;
 import com.project.MasnaSzama.Model.Person.Employee.Courier;
+import com.project.MasnaSzama.Model.Views.CourierSchedules;
+import com.project.MasnaSzama.Model.Views.OrdersFinished;
 import com.project.MasnaSzama.Repository.CourierRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,5 +36,13 @@ public class CourierService {
 
     public Courier addCourier(Courier courier) {
         return courierRepo.save(courier);
+    }
+
+    public Iterable<CourierSchedules> getCourierSchedule(Long courierId, Integer weekNumber) {
+        return courierRepo.getCourierSchedule(courierId, weekNumber);
+    }
+
+    public Iterable<OrdersFinished> getDeliveryHistory(Long courierId) {
+        return courierRepo.getDeliveryHistory(courierId);
     }
 }
