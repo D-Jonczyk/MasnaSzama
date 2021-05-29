@@ -1,6 +1,6 @@
 Inserting into schedule... 
 
-Records: 1000  Deleted: 0  Skipped: 878  Warnings: 2878
+Records: 1000  Deleted: 0  Skipped: 1000  Warnings: 3000
 Level	Code	Message
 Warning	1265	Data truncated for column 'person_id' at row 1
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -15,6 +15,7 @@ Warning	1265	Data truncated for column 'person_id' at row 4
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 4 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 5
+Warning	1062	Duplicate entry '5' for key 'schedule.PRIMARY'
 Warning	1262	Row 5 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 6
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -71,6 +72,7 @@ Warning	1265	Data truncated for column 'person_id' at row 23
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 23 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 24
+Warning	1062	Duplicate entry '24' for key 'schedule.PRIMARY'
 Warning	1262	Row 24 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 25
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -127,6 +129,7 @@ Warning	1265	Data truncated for column 'person_id' at row 42
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 42 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 43
+Warning	1062	Duplicate entry '43' for key 'schedule.PRIMARY'
 Warning	1262	Row 43 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 44
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -186,6 +189,7 @@ Warning	1265	Data truncated for column 'person_id' at row 62
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 62 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 63
+Warning	1062	Duplicate entry '63' for key 'schedule.PRIMARY'
 Warning	1262	Row 63 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 64
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -227,6 +231,7 @@ Warning	1265	Data truncated for column 'person_id' at row 76
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 76 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 77
+Warning	1062	Duplicate entry '77' for key 'schedule.PRIMARY'
 Warning	1262	Row 77 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 78
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -271,6 +276,7 @@ Warning	1265	Data truncated for column 'person_id' at row 91
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 91 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 92
+Warning	1062	Duplicate entry '92' for key 'schedule.PRIMARY'
 Warning	1262	Row 92 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 93
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -291,8 +297,10 @@ Warning	1265	Data truncated for column 'person_id' at row 98
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 98 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 99
+Warning	1062	Duplicate entry '99' for key 'schedule.PRIMARY'
 Warning	1262	Row 99 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 100
+Warning	1062	Duplicate entry '100' for key 'schedule.PRIMARY'
 Warning	1262	Row 100 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 101
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -349,11 +357,13 @@ Warning	1265	Data truncated for column 'person_id' at row 118
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 118 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 119
+Warning	1062	Duplicate entry '119' for key 'schedule.PRIMARY'
 Warning	1262	Row 119 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 120
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 120 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 121
+Warning	1062	Duplicate entry '121' for key 'schedule.PRIMARY'
 Warning	1262	Row 121 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 122
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -404,6 +414,7 @@ Warning	1265	Data truncated for column 'person_id' at row 137
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 137 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 138
+Warning	1062	Duplicate entry '138' for key 'schedule.PRIMARY'
 Warning	1262	Row 138 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 139
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -415,6 +426,7 @@ Warning	1265	Data truncated for column 'person_id' at row 141
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 141 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 142
+Warning	1062	Duplicate entry '142' for key 'schedule.PRIMARY'
 Warning	1262	Row 142 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 143
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -423,6 +435,7 @@ Warning	1265	Data truncated for column 'person_id' at row 144
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 144 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 145
+Warning	1062	Duplicate entry '145' for key 'schedule.PRIMARY'
 Warning	1262	Row 145 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 146
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -455,6 +468,7 @@ Warning	1265	Data truncated for column 'person_id' at row 155
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 155 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 156
+Warning	1062	Duplicate entry '156' for key 'schedule.PRIMARY'
 Warning	1262	Row 156 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 157
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -493,6 +507,7 @@ Warning	1265	Data truncated for column 'person_id' at row 168
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 168 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 169
+Warning	1062	Duplicate entry '169' for key 'schedule.PRIMARY'
 Warning	1262	Row 169 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 170
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -507,6 +522,7 @@ Warning	1265	Data truncated for column 'person_id' at row 173
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 173 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 174
+Warning	1062	Duplicate entry '174' for key 'schedule.PRIMARY'
 Warning	1262	Row 174 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 175
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -527,11 +543,13 @@ Warning	1265	Data truncated for column 'person_id' at row 180
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 180 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 181
+Warning	1062	Duplicate entry '181' for key 'schedule.PRIMARY'
 Warning	1262	Row 181 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 182
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 182 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 183
+Warning	1062	Duplicate entry '183' for key 'schedule.PRIMARY'
 Warning	1262	Row 183 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 184
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -540,18 +558,22 @@ Warning	1265	Data truncated for column 'person_id' at row 185
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 185 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 186
+Warning	1062	Duplicate entry '186' for key 'schedule.PRIMARY'
 Warning	1262	Row 186 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 187
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 187 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 188
+Warning	1062	Duplicate entry '188' for key 'schedule.PRIMARY'
 Warning	1262	Row 188 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 189
+Warning	1062	Duplicate entry '189' for key 'schedule.PRIMARY'
 Warning	1262	Row 189 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 190
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 190 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 191
+Warning	1062	Duplicate entry '191' for key 'schedule.PRIMARY'
 Warning	1262	Row 191 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 192
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -560,6 +582,7 @@ Warning	1265	Data truncated for column 'person_id' at row 193
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 193 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 194
+Warning	1062	Duplicate entry '194' for key 'schedule.PRIMARY'
 Warning	1262	Row 194 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 195
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -640,6 +663,7 @@ Warning	1265	Data truncated for column 'person_id' at row 220
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 220 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 221
+Warning	1062	Duplicate entry '221' for key 'schedule.PRIMARY'
 Warning	1262	Row 221 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 222
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -672,6 +696,7 @@ Warning	1265	Data truncated for column 'person_id' at row 231
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 231 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 232
+Warning	1062	Duplicate entry '232' for key 'schedule.PRIMARY'
 Warning	1262	Row 232 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 233
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -713,6 +738,7 @@ Warning	1265	Data truncated for column 'person_id' at row 245
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 245 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 246
+Warning	1062	Duplicate entry '246' for key 'schedule.PRIMARY'
 Warning	1262	Row 246 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 247
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -730,6 +756,7 @@ Warning	1265	Data truncated for column 'person_id' at row 251
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 251 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 252
+Warning	1062	Duplicate entry '252' for key 'schedule.PRIMARY'
 Warning	1262	Row 252 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 253
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -750,6 +777,7 @@ Warning	1265	Data truncated for column 'person_id' at row 258
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 258 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 259
+Warning	1062	Duplicate entry '259' for key 'schedule.PRIMARY'
 Warning	1262	Row 259 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 260
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -761,8 +789,10 @@ Warning	1265	Data truncated for column 'person_id' at row 262
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 262 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 263
+Warning	1062	Duplicate entry '263' for key 'schedule.PRIMARY'
 Warning	1262	Row 263 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 264
+Warning	1062	Duplicate entry '264' for key 'schedule.PRIMARY'
 Warning	1262	Row 264 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 265
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -792,6 +822,7 @@ Warning	1265	Data truncated for column 'person_id' at row 273
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 273 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 274
+Warning	1062	Duplicate entry '274' for key 'schedule.PRIMARY'
 Warning	1262	Row 274 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 275
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -887,6 +918,7 @@ Warning	1265	Data truncated for column 'person_id' at row 305
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 305 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 306
+Warning	1062	Duplicate entry '306' for key 'schedule.PRIMARY'
 Warning	1262	Row 306 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 307
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -901,6 +933,7 @@ Warning	1265	Data truncated for column 'person_id' at row 310
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 310 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 311
+Warning	1062	Duplicate entry '311' for key 'schedule.PRIMARY'
 Warning	1262	Row 311 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 312
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -966,8 +999,10 @@ Warning	1265	Data truncated for column 'person_id' at row 332
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 332 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 333
+Warning	1062	Duplicate entry '333' for key 'schedule.PRIMARY'
 Warning	1262	Row 333 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 334
+Warning	1062	Duplicate entry '334' for key 'schedule.PRIMARY'
 Warning	1262	Row 334 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 335
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
@@ -991,38 +1026,3 @@ Warning	1265	Data truncated for column 'person_id' at row 341
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
 Warning	1262	Row 341 was truncated; it contained more data than there were input columns
 Warning	1265	Data truncated for column 'person_id' at row 342
-Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
-Warning	1262	Row 342 was truncated; it contained more data than there were input columns
-Warning	1265	Data truncated for column 'person_id' at row 343
-Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
-Warning	1262	Row 343 was truncated; it contained more data than there were input columns
-Warning	1265	Data truncated for column 'person_id' at row 344
-Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
-Warning	1262	Row 344 was truncated; it contained more data than there were input columns
-Warning	1265	Data truncated for column 'person_id' at row 345
-Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
-Warning	1262	Row 345 was truncated; it contained more data than there were input columns
-Warning	1265	Data truncated for column 'person_id' at row 346
-Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
-Warning	1262	Row 346 was truncated; it contained more data than there were input columns
-Warning	1265	Data truncated for column 'person_id' at row 347
-Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
-Warning	1262	Row 347 was truncated; it contained more data than there were input columns
-Warning	1265	Data truncated for column 'person_id' at row 348
-Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
-Warning	1262	Row 348 was truncated; it contained more data than there were input columns
-Warning	1265	Data truncated for column 'person_id' at row 349
-Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
-Warning	1262	Row 349 was truncated; it contained more data than there were input columns
-Warning	1265	Data truncated for column 'person_id' at row 350
-Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
-Warning	1262	Row 350 was truncated; it contained more data than there were input columns
-Warning	1265	Data truncated for column 'person_id' at row 351
-Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
-Warning	1262	Row 351 was truncated; it contained more data than there were input columns
-Warning	1265	Data truncated for column 'person_id' at row 352
-Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
-Warning	1262	Row 352 was truncated; it contained more data than there were input columns
-Warning	1265	Data truncated for column 'person_id' at row 353
-Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`schedule`, CONSTRAINT `FKr21mu7uvqxeulcq97awwme6dh` FOREIGN KEY (`person_id`) REFERENCES `coordinator` (`person_id`))
-Warning	1262	Row 353 was truncated; it contained more data than there were input columns

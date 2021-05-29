@@ -1,7 +1,8 @@
 Inserting into employees_schedules... 
 
-Records: 1000  Deleted: 0  Skipped: 872  Warnings: 872
+Records: 1000  Deleted: 0  Skipped: 1000  Warnings: 1000
 Level	Code	Message
+Warning	1062	Duplicate entry '313-502' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -10,6 +11,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '398-311' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -18,10 +20,14 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '309-755' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '257-181' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '247-752' for key 'employees_schedules.PRIMARY'
+Warning	1062	Duplicate entry '377-145' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -38,8 +44,10 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '200-367' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '255-515' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -84,13 +92,19 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '235-719' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '216-145' for key 'employees_schedules.PRIMARY'
+Warning	1062	Duplicate entry '201-965' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '208-259' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '286-739' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '351-739' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -101,11 +115,13 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '368-877' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '337-169' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -117,6 +133,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '380-613' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -133,9 +150,11 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '209-679' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '280-371' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -145,6 +164,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '342-504' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -152,12 +172,14 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '278-688' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '345-882' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -170,8 +192,10 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '388-847' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '211-274' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -196,6 +220,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '362-915' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -209,6 +234,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '273-191' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -217,6 +243,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '333-494' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -232,15 +259,19 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '277-385' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '282-965' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '228-877' for key 'employees_schedules.PRIMARY'
+Warning	1062	Duplicate entry '234-847' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -250,17 +281,22 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '378-189' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '248-510' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '220-333' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '243-815' for key 'employees_schedules.PRIMARY'
+Warning	1062	Duplicate entry '218-815' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -269,28 +305,36 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '214-872' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '346-221' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '245-679' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '303-99' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '349-791' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '358-546' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '275-570' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '232-246' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -298,6 +342,8 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '203-877' for key 'employees_schedules.PRIMARY'
+Warning	1062	Duplicate entry '369-311' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -305,6 +351,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '200-635' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -314,6 +361,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '310-735' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -328,23 +376,30 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '268-679' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '370-77' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '285-263' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '399-510' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '211-410' for key 'employees_schedules.PRIMARY'
+Warning	1062	Duplicate entry '333-367' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '287-5' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -369,15 +424,20 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '220-371' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '321-993' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '280-174' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '376-63' for key 'employees_schedules.PRIMARY'
+Warning	1062	Duplicate entry '343-99' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -390,10 +450,13 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '384-449' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '363-485' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '322-847' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -408,6 +471,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '345-755' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -418,17 +482,21 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '295-744' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '271-922' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '392-528' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '319-774' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -440,15 +508,19 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '363-138' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '314-246' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '248-724' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '336-735' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -462,12 +534,14 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '204-517' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '217-869' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -478,26 +552,33 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '233-468' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '385-535' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '315-504' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '309-600' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '285-24' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '340-791' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '351-410' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -511,7 +592,9 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '244-121' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '326-719' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -528,9 +611,13 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '381-510' for key 'employees_schedules.PRIMARY'
+Warning	1062	Duplicate entry '339-605' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '228-570' for key 'employees_schedules.PRIMARY'
+Warning	1062	Duplicate entry '323-385' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -540,9 +627,12 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '211-924' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '225-527' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '341-590' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -552,10 +642,13 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '244-517' for key 'employees_schedules.PRIMARY'
+Warning	1062	Duplicate entry '315-967' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '328-399' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -567,6 +660,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '271-724' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -579,11 +673,14 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '232-882' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '395-232' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '319-429' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -593,6 +690,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '374-528' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -602,6 +700,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '257-724' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -617,12 +716,16 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '285-121' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '264-790' for key 'employees_schedules.PRIMARY'
+Warning	1062	Duplicate entry '218-264' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '253-798' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -644,11 +747,14 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '353-169' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '398-688' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '316-744' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -659,6 +765,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '274-169' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -674,6 +781,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '229-221' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -695,6 +803,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '303-884' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -705,11 +814,13 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '343-264' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '229-433' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -754,6 +865,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '313-717' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -767,12 +879,15 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '395-676' for key 'employees_schedules.PRIMARY'
+Warning	1062	Duplicate entry '282-371' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '266-181' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -803,17 +918,21 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '234-814' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '288-504' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '386-429' for key 'employees_schedules.PRIMARY'
+Warning	1062	Duplicate entry '324-221' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -825,6 +944,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '272-915' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -838,10 +958,14 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '302-334' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '208-528' for key 'employees_schedules.PRIMARY'
+Warning	1062	Duplicate entry '386-259' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '208-605' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -851,6 +975,7 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '395-605' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
@@ -866,11 +991,14 @@ Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '302-174' for key 'employees_schedules.PRIMARY'
+Warning	1062	Duplicate entry '213-872' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
+Warning	1062	Duplicate entry '327-735' for key 'employees_schedules.PRIMARY'
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
 Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`employees_schedules`, CONSTRAINT `FK10s12t3sg6vs86430jowmcsi0` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`))
