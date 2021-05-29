@@ -29,7 +29,7 @@ import { OptionsComponent } from './admin-panel/options/options.component';
 import { OverviewComponent } from './admin-panel/overview/overview.component';
 import { CategoriesComponent } from './admin-panel/categories/categories.component';
 import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
-import {RestaurantMenuUpdatePanelComponent} from './Restaurant/restaurant-menu-update-panel/restaurant-menu-update-panel.component';
+//import {RestaurantMenuUpdatePanelComponent} from './Restaurant/restaurant-menu-update-panel/restaurant-menu-update-panel.component';
 
 import { LoginAccountComponent } from './login-account/login-account.component';
 import { RegisterAccountComponent } from './register-account/register-account.component';
@@ -52,7 +52,7 @@ const routes: Routes = [
   {path: 'items', component: ItemsComponent },
   {path: 'menus', component: MenusComponent },
   {path: 'options', component: OptionsComponent },
-  {path: 'restaurant-menu-update-panel', component: RestaurantMenuUpdatePanelComponent },
+  //{path: 'restaurant-menu-update-panel', component: RestaurantMenuUpdatePanelComponent },
   {path: 'overview', component: OverviewComponent },
   // Client Paths
   {path: 'client-panel', component: ClientPanelComponent},
