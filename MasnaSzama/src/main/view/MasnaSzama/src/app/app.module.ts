@@ -92,7 +92,7 @@ import { RestaurantMenuUpdatePanelComponent} from './admin-panel/restaurant-menu
     ReactiveFormsModule,
     NgbModule,
     FontAwesomeModule,
-     RouterModule.forRoot(appRoutes)
+    //RouterModule.forRoot(appRoutes)
   ],
   bootstrap: [AppComponent],
   providers: [CurrencyPipe, MenuMakerService, OrderService]
