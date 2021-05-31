@@ -3,22 +3,36 @@
       <h4 class="modal-title">Zarejestruj sie! </h4>
     </div>
 
-        <form  [formGroup]="registerForm" (ngSubmit)="registerAcc()">
-          <div class="center">
-            <input type="text" placeholder="Imie" name="clientName" id="clientName" maxlength="16" minlength="8" required>
+        <form role="form" (submit)="registerAcc()">
+            <input type="hidden" name="personId" id="personId"
+                   [(ngModel)]="registerRequest.person.personId"
+                    value="1001">
+          <div class="center form-group">
+            <label for="firstName"></label>
+            <input type="text" placeholder="Imie" name="firstName" id="firstName"
+                   [(ngModel)]="registerRequest.person.firstName" maxlength="16" minlength="8" required>
           </div>
-          <div class="center">
-            <input type="text" placeholder="Nazwisko" name="clientSurname" id="clientSurname"  maxlength="16" minlength="8" required>
+          <div class="center form-group">
+            <label for="lastName"></label>
+            <input type="text" placeholder="Nazwisko" name="lastName" id="lastName"
+                   [(ngModel)]="registerRequest.person.lastName" maxlength="16" minlength="8" required>
           </div>
-          <div class="center">
-            <input type="text" placeholder="Adres email" name="emailAdress" id="emailAdress" maxlength="24" minlength="8" required>
+          <div class="center form-group">
+            <label for="emailAddress"></label>
+            <input type="text" placeholder="Adres email" name="emailAddress" id="emailAddress"
+                   [(ngModel)]="registerRequest.emailAddress" maxlength="24" minlength="8" required>
           </div>
-          <div class="center">
-          <input type="password" placeholder="Haslo" name="psw" id="psw" maxlength="16" minlength="8" required>
+          <div class="center form-group">
+            <label for="userName"></label>
+            <input type="text" placeholder="Nazwa użytkownika" name="userName" id="userName"
+                   [(ngModel)]="registerRequest.userName" maxlength="16" minlength="8" required>
           </div>
-          <div class="center">
-            <input type="password" placeholder="Powtorz haslo" name="psw-repeat" id="psw-repeat" maxlength="16" minlength="8"  required>
+          <div class="center form-group">
+            <label for="userPassword"></label>
+            <input type="password" placeholder="Haslo" name="userPassword" id="userPassword"
+                   [(ngModel)]="registerRequest.userPassword" maxlength="16" minlength="8" required>
           </div>
+
             <hr>
             <label>
               <input type="checkbox">
@@ -54,7 +68,7 @@
             </ng-template>
             <!--Finish  Modal info register-->
           <div class="center">
-            <button type="submit" class="clientBtn" (click)="openRegisterInfo(registerInfo); ">Zarejestruj</button>
+            <button type="submit" class="clientBtn btn btn-primary">Zarejestruj</button>
           </div>
           <div class="centerText">
             <p>  <a href="#">Wroc do strony glownej.</a></p>

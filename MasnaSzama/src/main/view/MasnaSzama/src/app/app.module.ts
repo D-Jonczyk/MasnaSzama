@@ -17,7 +17,7 @@ import {CurrencyPipe, Location} from '@angular/common';
 import { MenuMakerService } from './admin-panel/menu-maker.service';
 import { OrderService } from './admin-panel/overview/order.service';
 import { MenuMakerComponent } from './admin-panel/menu-maker.component';
-import {FavoriteRestaurantComponent} from "./client-panel/favorite-restaurant/favorite-restaurant.component";
+import {FavoriteRestaurantComponent} from './client-panel/favorite-restaurant/favorite-restaurant.component';
 // Client imports
 import { ClientAdressComponent } from './client-panel/client-adress/client-adress.component';
 import { ClientProfileComponent } from './client-panel/client-profile/client-profile.component';
@@ -45,9 +45,9 @@ import { ListRestoComponent } from './admin-panel/list-resto/list-resto.componen
 import {WeekPipe} from './courier-panel/Schedule/show-schedule/week.pipe';
 import { RestaurantMenuUpdatePanelComponent} from './admin-panel/restaurant-menu-update-panel/restaurant-menu-update-panel.component';
 
-import {RouterModule} from "@angular/router";
 import { LoginAccountComponent } from './login-account/login-account.component';
 import { RegisterAccountComponent } from './register-account/register-account.component';
+import {AppService} from './app.service';
 
 @NgModule({
   declarations: [
@@ -101,7 +101,7 @@ import { RegisterAccountComponent } from './register-account/register-account.co
     //RouterModule.forRoot(appRoutes)
   ],
   bootstrap: [AppComponent],
-  providers: [CurrencyPipe, MenuMakerService, OrderService]
+  providers: [AppService, CurrencyPipe, MenuMakerService, OrderService]
 })
 export class AppModule
 {

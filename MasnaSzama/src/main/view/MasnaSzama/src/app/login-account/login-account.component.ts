@@ -1,12 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder} from '@angular/forms';
 import {Router} from '@angular/router';
-import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
-import {HttpErrorResponse} from '@angular/common/http';
-import {CourierProfile} from "../courier-panel/profile/courier-profile";
-import {AccountService} from "./account-service";
-import {Observable} from "rxjs";
-import {Account} from "./account";
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {AccountService} from './account-service';
+import {HttpClient} from '@angular/common/http';
+import {AppService} from '../app.service';
 
 @Component({
   selector: 'app-login-account',
@@ -14,33 +12,29 @@ import {Account} from "./account";
   styleUrls: ['./login-account.component.css']
 })
 export class LoginAccountComponent implements OnInit {
-  logoFacebook:string="assets/image/facebook-logo.png";
+  logoFacebook = 'assets/image/facebook-logo.png';
 
-
-  loginForm = this.formBuilder.group({
-    userName:'',password:''
-  });
-
-
+  credentials = {username: '', password: ''};
 
   constructor(private formBuilder: FormBuilder,
               private router: Router,
               private modalService: NgbModal,
-              private accountService: AccountService) { }
+              private accountService: AccountService,
+              private http: HttpClient,
+              private app: AppService) { }
 
   ngOnInit(): void {
 
   }
 
-  loginAcc():void{
-    this.accountService.getAccount(
-      this.loginForm.get('userName').value.toString(),
-      this.loginForm.get('password').value.toString() );
+  login() {
+    this.app.authenticate(this.credentials, () => {
+      this.router.navigateByUrl('/');
+    });
+    return false;
   }
 
   goToRegisterAcc(): void {
     this.router.navigateByUrl('/register-account');
   }
-
-
 }
