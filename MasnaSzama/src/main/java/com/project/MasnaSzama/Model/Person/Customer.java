@@ -11,7 +11,7 @@ import java.util.Set;
 public class Customer extends Person{
 
     public Customer() {
-        super();
+
     }
 
     @OneToOne
@@ -21,9 +21,7 @@ public class Customer extends Person{
     @OneToMany(mappedBy="customer", fetch = FetchType.EAGER)
     private Set<Order> orders;
 
-    public Customer(){
-        super();
-    }
+
     public Customer(String firstName, String lastName){
         this.firstName = firstName;
         this.lastName = lastName;
