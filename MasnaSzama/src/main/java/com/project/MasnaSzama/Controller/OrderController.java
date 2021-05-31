@@ -57,5 +57,4 @@ public class OrderController {
         orderService.createNewOrder(newOrder);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
 }

@@ -17,17 +17,28 @@ public class Restaurant {
 
     }
 
-    @Id
+    public Restaurant(Long restaurantId) {
+        this.restaurantId = restaurantId;
+    }
+
+
     //@GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
     private Long restaurantId;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id", nullable = false)
     private Address address;
 
+    @OneToOne(mappedBy = "restaurant")
+    private OpeningHours openingHours;
+
     private String restaurantName;
     private String restaurantDescription;
     private Integer averageOpinion;
+    private Integer deliveryTime;
+    private Integer deliveryCost;
+    private Integer minOrderCost;
 
     @OneToMany(mappedBy = "restaurant", fetch = FetchType.EAGER)
     private Set<Order> orders = new HashSet<>();
@@ -66,5 +77,29 @@ public class Restaurant {
 
     public Integer getAverageOpinion() {
         return averageOpinion;
+    }
+
+    public Integer getDeliveryTime() {
+        return deliveryTime;
+    }
+
+    public void setDeliveryTime(Integer deliveryTime) {
+        this.deliveryTime = deliveryTime;
+    }
+
+    public Integer getDeliveryCost() {
+        return deliveryCost;
+    }
+
+    public void setDeliveryCost(Integer deliveryCost) {
+        this.deliveryCost = deliveryCost;
+    }
+
+    public Integer getMinOrderCost() {
+        return minOrderCost;
+    }
+
+    public void setMinOrderCost(Integer minOrderCost) {
+        this.minOrderCost = minOrderCost;
     }
 }

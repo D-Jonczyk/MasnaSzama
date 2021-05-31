@@ -19,6 +19,10 @@ public class Payment {
 
     }
 
+//    public Payment(Long paymentId) {
+//        this.paymentId = paymentId;
+//    }
+
     public Payment(Long paymentId, Order orders, Date paymentDate) {
         this.paymentId = paymentId;
         this.orders = orders;

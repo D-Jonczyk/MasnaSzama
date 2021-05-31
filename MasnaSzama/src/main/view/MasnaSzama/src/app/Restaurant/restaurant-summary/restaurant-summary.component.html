@@ -30,6 +30,10 @@
           <label class="custom-control-label" for="freeDelivery">Bezpłatna dostawa</label>
         </div>
 
+        <hr>
+
+        <button type="button" class="btn" (click)="backToPreviousPage();">Powrót</button>
+
       </div> <!-- form-group end -->
     </div> <!-- left-menu end -->
 
@@ -41,15 +45,22 @@
           <th scope="col">Nazwa</th>
           <th scope="col">Opis</th>
           <th scope="col">Opinia</th>
+          <th scope="col">Czas dostawy</th>
+          <th scope="col">Koszt dostawy</th>
+          <th scope="col">Min. kwota zamówienia</th>
         </tr>
         </thead>
         <tbody>
-        <tr routerLink="/restaurant-menu/{{restaurant.id}}"
-            *ngFor="let restaurant of restaurants$ | async">
+        <tr *ngFor="let restaurant of restaurants$ | async"
+            (click)="gotoRestaurantMenu(restaurant.id, restaurant.minOrderCost)">
+
           <td class="align-middle"><img src="favicon.ico"></td>
           <td class="align-middle">{{restaurant.name}}</td>
           <td class="align-middle">{{restaurant.description}}</td>
           <td class="align-middle">{{restaurant.averageOpinion}}</td>
+          <td class="align-middle"> <fa-icon icon="clock"></fa-icon>&nbsp;{{restaurant.deliveryTime}}</td>
+          <td class="align-middle"> <fa-icon icon="bicycle"></fa-icon>&nbsp;{{restaurant.deliveryCost}}</td>
+          <td class="align-middle"> <fa-icon icon="shopping-bag"></fa-icon>&nbsp;{{restaurant.minOrderCost}}</td>
         </tr>
         </tbody>
 

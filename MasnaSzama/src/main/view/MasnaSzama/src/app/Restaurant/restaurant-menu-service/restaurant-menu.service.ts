@@ -10,6 +10,7 @@ export class RestaurantMenuService {
 
   private mealUrl = 'http://localhost:8080/restaurant/getmeals?id=';
   totalCost: number;
+  minOrderCost: number;
 
   constructor(
     private http: HttpClient) { }

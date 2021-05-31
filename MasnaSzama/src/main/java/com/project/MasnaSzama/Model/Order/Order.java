@@ -19,6 +19,22 @@ public class Order {
     private String orderedTime = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
     private String desiredDeliveryTime = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
 
+
+//    public Order(Integer tip, Integer orderPrice, String orderedTime,
+//                 String desiredDeliveryTime, Long orderId,
+//                 Restaurant restaurant, Customer customer,
+//                 Payment payment, Status orderStatus) {
+//        this.tip = tip;
+//        this.orderPrice = orderPrice;
+//        this.orderedTime = orderedTime;
+//        this.desiredDeliveryTime = desiredDeliveryTime;
+//        this.orderId = orderId;
+//        this.restaurant = restaurant;
+//        this.customer = customer;
+//        this.payment = payment;
+//        this.orderStatus = orderStatus;
+//    }
+
     @Id
     //@GeneratedValue(strategy = GenerationType.AUTO)
     private Long orderId;

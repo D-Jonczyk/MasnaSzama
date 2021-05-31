@@ -14,7 +14,8 @@ import java.util.List;
 public interface RestaurantRepository extends CrudRepository<Restaurant, Long> {
 
     @Query(value =  "SELECT new com.project.MasnaSzama.DTO.RestaurantSummaryDTO" +
-                    "(r.restaurantId, r.restaurantName, r.restaurantDescription, r.averageOpinion)" +
+                    "(r.restaurantId, r.restaurantName, r.restaurantDescription, " +
+                    "r.averageOpinion, r.deliveryTime, r.deliveryCost, r.minOrderCost)" +
                     "FROM Restaurant r " +
                     "JOIN Address a ON a.addressId = r.address.addressId " +
                     "WHERE a.city = ?1")
@@ -26,6 +27,7 @@ public interface RestaurantRepository extends CrudRepository<Restaurant, Long> {
                     "JOIN m.restaurants r " +
                     "WHERE r.restaurantId = ?1")
     List<RestaurantMealDTO> getMealsByRestaurantId(Long id);
+
 }
 
 

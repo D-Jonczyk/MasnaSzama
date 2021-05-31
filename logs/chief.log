@@ -1,7 +1,0 @@
-Inserting into chief... 
-Level	Code	Message
-Warning	1261	Row 1 doesn't contain data for all columns
-Warning	1261	Row 1 doesn't contain data for all columns
-Warning	1261	Row 1 doesn't contain data for all columns
-Warning	1261	Row 1 doesn't contain data for all columns
-Error	1062	Duplicate entry '1' for key 'person.PRIMARY'
