@@ -1,5 +1,4 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
 import {FaIconLibrary} from '@fortawesome/angular-fontawesome';
 import {faCheckCircle, faClock, faPlayCircle} from '@fortawesome/free-regular-svg-icons';
 import {
@@ -16,8 +15,6 @@ import {finalize, ignoreElements} from "rxjs/operators";
 import 'firebase/storage';
 import {ClientProfileService} from "./client-profile-service";
 import {ClientProfile} from "./client-profile";
-import {CourierProfile} from "../../courier-panel/profile/courier-profile";
-import {CourierProfileService} from "../../courier-panel/profile/courier-profile.service";
 import {ClientPanelService} from "../client-panel-service";
 
 @Component({
@@ -36,9 +33,9 @@ export class ClientProfileComponent implements OnInit {
   filePath:String
   public selectedFile: FileList;
   public clientProfile = new ClientProfile();
-  public editProfile = new ClientProfile();
   public clientId = 301;
-
+  public editProfile = new ClientProfile();
+  public guard = 0;
   constructor(private library: FaIconLibrary,
               private afStorage: AngularFireStorage,
               private clientProfileService: ClientProfileService,
@@ -59,10 +56,11 @@ export class ClientProfileComponent implements OnInit {
   }
 
   upload(event) {
-    this.filePath = event.target.files[0]
+    this.filePath = event.target.files[0];
+    this.guard = 1;
   }
   openImage(event){
-    if(event.target.files){
+    if(event.target.files && this.guard == 1){
       var reader = new FileReader()
       reader.readAsDataURL(event.target.files[0])
       reader.onload = (event:any) =>{
@@ -72,6 +70,7 @@ export class ClientProfileComponent implements OnInit {
   }
 
   uploadImage(){
+    if(this.guard == 1) {
     this.accPomLink = '/accLink' + new Date().getTime() + Math.random();
     console.log(this.filePath);
     var filePath = '/accImg' + this.accPomLink;
@@ -79,13 +78,18 @@ export class ClientProfileComponent implements OnInit {
     this.afStorage.upload(filePath, this.filePath).snapshotChanges().pipe(
       finalize(()=>{
         fileRef.getDownloadURL().subscribe((url) => {
-          this.accountIcon = url;
-          this.accPomLink=url;
+
+            this.accountIcon = url;
+            this.accPomLink=url;
+
+
+
+
         })
       })
     ).subscribe();
+   }
   }
-
   accLinkChange(){
     this.accountIcon = this.clientPanelService.accLink;
   }
@@ -94,18 +98,32 @@ export class ClientProfileComponent implements OnInit {
     this.modalService.open(content);
   }
 
-  // public onEditProfile(courier: CourierProfile): void {
-  //   this.clientProfileService.editCourierProfile(courier).subscribe(
-  //     (response: CourierProfile) => {
-  //       console.log(response);
-  //       this.getClientProfile();
-  //     },
-  //     (error: HttpErrorResponse) => {
-  //       alert(error.message);
-  //       this.getClientProfile();
-  //     }
-  //   );
-  // }
+  public onEditProfile(client: ClientProfile): void {
+    this.clientProfileService.editClientProfile(client).subscribe(
+      (response: ClientProfile) => {
+        console.log(response);
+        this.getClientProfile();
+      },
+      (error: HttpErrorResponse) => {
+        alert(error.message);
+        this.getClientProfile();
+      }
+    );
+  }
+
+  public loadImageData(client: ClientProfile): void {
+    this.clientProfileService.loadImageProfile(client).subscribe(
+      (response: ClientProfile) => {
+        console.log(response);
+        this.getClientProfile();
+        this.clientProfile.imgUrl=this.accountIcon;
+      },
+      (error: HttpErrorResponse) => {
+        alert(error.message);
+        this.getClientProfile();
+      }
+    );
+  }
 
   getClientProfile(): void {
     this.clientProfileService.getClientProfile(this.clientId).subscribe(

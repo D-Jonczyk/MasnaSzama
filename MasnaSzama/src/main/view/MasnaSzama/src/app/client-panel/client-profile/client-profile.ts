@@ -4,7 +4,9 @@ export class ClientProfile {
   firstName: string;
   lastName: string;
   phoneNumber: number;
-  password:string;
   imgUrl:string;
-
+  lastLogin:string;
+  registeredDate:string;
+  userName:string;
+  userPassword:string;
 }

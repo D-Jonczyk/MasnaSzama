@@ -2,6 +2,7 @@ package com.project.MasnaSzama.Service;
 
 import com.project.MasnaSzama.Exception.UserNotFoundException;
 import com.project.MasnaSzama.Model.Person.Customer;
+import com.project.MasnaSzama.Model.Person.Employee.Courier;
 import com.project.MasnaSzama.Model.User.UserAccount;
 import com.project.MasnaSzama.DTO.UserDTO;
 import com.project.MasnaSzama.Repository.User.UserRepo;
@@ -29,4 +30,12 @@ public class UserService {
         return userRepo.findUserAccountByPersonId(personId)
                 .orElseThrow(() -> new UserNotFoundException("User by id " + personId + "was not found."));
     }
+
+    public UserAccount updatedUser(UserAccount userAccount) {
+        return userRepo.save(userAccount);
+    }
+    public UserAccount imageUser (UserAccount userAccount) {
+        return userRepo.save(userAccount);
+    }
+
 }

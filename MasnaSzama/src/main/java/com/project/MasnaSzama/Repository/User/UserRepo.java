@@ -21,6 +21,7 @@ public interface UserRepo extends CrudRepository<UserAccount, Long> {
     UserDTO getUserLogin(String userName,String userPassword);
 
 
+
 }
 
 

@@ -1,6 +1,7 @@
 package com.project.MasnaSzama.Controller;
 
 import com.project.MasnaSzama.Model.Person.Customer;
+import com.project.MasnaSzama.Model.Person.Employee.Courier;
 import com.project.MasnaSzama.Model.User.UserAccount;
 import com.project.MasnaSzama.DTO.UserDTO;
 import com.project.MasnaSzama.Service.UserService;
@@ -31,4 +32,15 @@ public class UserController {
         return new ResponseEntity<>(userAccount, HttpStatus.OK);
     }
 
+    @PutMapping("/update")
+    public ResponseEntity<UserAccount> updatedUser(@RequestBody UserAccount userAccount) {
+        UserAccount updatedUser = userService.updatedUser(userAccount);
+        return new ResponseEntity<>(updatedUser, HttpStatus.OK);
+    }
+
+    @PutMapping("/loadImage")
+    public ResponseEntity<UserAccount> loadImageUser(@RequestBody UserAccount userAccount) {
+        UserAccount imageUser = userService.imageUser(userAccount);
+        return new ResponseEntity<>(imageUser, HttpStatus.OK);
+    }
 }
