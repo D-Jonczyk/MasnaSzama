@@ -43,7 +43,6 @@ export class MainComponent implements OnInit {
     this.router.navigateByUrl('/client-panel');
   }
 
-
   goToRestaurantMenu(): void {
     this.router.navigateByUrl('/restaurant-menu-update-panel');
   }

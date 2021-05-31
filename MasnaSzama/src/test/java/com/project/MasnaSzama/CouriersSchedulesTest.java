@@ -26,15 +26,11 @@ public class CouriersSchedulesTest {
             schedules.add(new Schedule(sched));
         }
 
-        for (String cour : courierData) {
-            Courier courier = new Courier(cour.split(" ")[0],
-                                          cour.split(" ")[1]);
-
      //       assertEquals(0, courier.getCouriersSchedules().size());
       //      courier.setCouriersSchedules(schedules);
-            session.persist(courier);
+         //   session.persist(courier);
 
-            assertNotNull(courier);
+         //   assertNotNull(courier);
         }
     }
-}
+

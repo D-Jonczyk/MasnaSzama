@@ -33,9 +33,10 @@ export class RestaurantMenuUpdatePanelComponent implements OnInit {
     this.meals$ = this.restaurantMenuService.getMeals(42);
   }
 
-  deleteFromOrder(name): void {
-    let removeIndex = this.orderMeals.findIndex(meal => meal.name === name);
-    console.log(removeIndex);
-    this.orderMeals.splice(removeIndex, 1);
+  deleteFromOrder(mealId): void {
+    console.log(mealId);
+    this.restaurantMenuService.deleteMeal(mealId);
+
   }
+
 }

@@ -3,7 +3,6 @@ import {FormBuilder, FormControl, Validators} from "@angular/forms";
 import {FaIconLibrary} from "@fortawesome/angular-fontawesome";
 import {faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 import {Location} from "@angular/common";
-import {RestaurantMenuService} from "../restaurant-menu-service/restaurant-menu.service";
 
 @Component({
   selector: 'app-order-checkout',
@@ -25,10 +24,10 @@ export class OrderCheckoutComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder,
               private library: FaIconLibrary,
-              private restaurantMenu: RestaurantMenuService,
+             // private restaurantMenu: RestaurantMenuService,
               private location: Location) {
     library.addIcons(faShoppingCart);
-    this.totalCost = restaurantMenu.totalCost;
+    //this.totalCost = restaurantMenu.totalCost;
   }
 
   ngOnInit(): void {
