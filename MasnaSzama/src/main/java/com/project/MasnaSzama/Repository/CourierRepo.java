@@ -13,6 +13,10 @@ import java.util.Optional;
 public interface CourierRepo extends CrudRepository<Courier, Long> {
     void deleteCourierByPersonId(Long personId);
 
+    @Query(value = "SELECT new com.project.MasnaSzama.Model.Person.Employee.Courier" +
+    "(c.firstName, c.lastName, c.phoneNumber, c.averageDeliveryTime, c.numberOfDeliveries) " +
+    "FROM Courier c " +
+    "WHERE c.personId = ?1")
     Optional<Courier> findCourierByPersonId(Long personId);
 
     @Query(value = "SELECT new com.project.MasnaSzama.Model.Views.CourierSchedules" +

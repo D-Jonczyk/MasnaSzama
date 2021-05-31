@@ -21,19 +21,16 @@ export class CategoriesComponent implements OnInit {
       menusControlArray: new FormArray([], [Validators.required]),
     });
 
-
-    /*React out to service to fetch available Menus*/
     this.menuMakerService
       .getMenus()
       .subscribe((response) => {
         console.log(response.message);
         this.menus = response.data;
         console.log(this.menus);
-        this.addCheckboxes(); /*generate list of menu checkbox*/
+        this.addCheckboxes();
       });
   }
 
-  /*Loop through menus array and create control array for reactive form usage*/
   private addCheckboxes(): void {
     this.menus.map(() => {
       const control = new FormControl();

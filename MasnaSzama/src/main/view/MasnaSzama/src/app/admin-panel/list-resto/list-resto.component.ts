@@ -20,7 +20,7 @@ public collection:any= [];
   deleteResto(resto){
     this.collection.splice(resto.id,-1)
     this.commonService.deleteResto(resto).subscribe((result)=>{
-      console.log("Data is Deleted Successfull !", result)
+      console.log("Dane wykasowane", result)
       this.alert= true;
     })
   }

@@ -17,12 +17,14 @@ public class Courier extends Employee {
     private Set<Order> orders = new HashSet<>();
 
     public Courier(){
-        super();
     }
 
-    public Courier(String firstName, String lastName){
+    public Courier(String firstName, String lastName, Long phoneNumber, Integer averageDeliveryTime, Integer numberOfDeliveries){
         this.firstName = firstName;
         this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.averageDeliveryTime = averageDeliveryTime;
+        this.numberOfDeliveries = numberOfDeliveries;
     }
 
     public Integer getAverageDeliveryTime() {
@@ -39,5 +41,13 @@ public class Courier extends Employee {
 
     public void setNumberOfDeliveries(Integer numberOfDeliveries) {
         this.numberOfDeliveries = numberOfDeliveries;
+    }
+
+    public Set<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(Set<Order> orders) {
+        this.orders = orders;
     }
 }

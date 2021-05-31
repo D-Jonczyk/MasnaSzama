@@ -7,7 +7,7 @@ CREATE TRIGGER customer_person_ai AFTER INSERT ON customer
 
 FOR EACH ROW 
 BEGIN
-	INSERT INTO person(person_id, email_address, first_name, phone_number) VALUES(new.person_id, new.email_address, new.first_name, new.phone_number);
+	INSERT INTO person(person_id, first_name, phone_number) VALUES(new.person_id, new.first_name, new.phone_number);
 END 
 //
 
@@ -17,7 +17,7 @@ CREATE TRIGGER employee_person_ai AFTER INSERT ON employee
 
 FOR EACH ROW 
 BEGIN
-	INSERT INTO person(person_id, email_address, first_name, phone_number) VALUES(new.person_id, new.email_address, new.first_name, new.phone_number);
+	INSERT INTO person(person_id, first_name, phone_number) VALUES(new.person_id, new.first_name, new.phone_number);
 END 
 //
 
@@ -27,7 +27,7 @@ CREATE TRIGGER courier_employee_ai AFTER INSERT ON courier
 
 FOR EACH ROW 
 BEGIN
-	INSERT INTO employee(person_id, email_address, first_name, phone_number) VALUES(new.person_id, new.email_address, new.first_name, new.phone_number);
+	INSERT INTO employee(person_id, first_name, phone_number) VALUES(new.person_id, new.first_name, new.phone_number);
 END
 //
 
@@ -36,7 +36,7 @@ CREATE TRIGGER cook_employee_ai AFTER INSERT ON cook
 
 FOR EACH ROW 
 BEGIN
-	INSERT INTO employee(person_id, email_address, first_name, phone_number) VALUES(new.person_id, new.email_address, new.first_name, new.phone_number);
+	INSERT INTO employee(person_id, first_name, phone_number) VALUES(new.person_id, new.first_name, new.phone_number);
 END 
 //
 
@@ -45,7 +45,7 @@ CREATE TRIGGER chief_person_ai AFTER INSERT ON chief
 
 FOR EACH ROW 
 BEGIN
-	INSERT INTO person(person_id, email_address, first_name, phone_number) VALUES(new.person_id, new.email_address, new.first_name, new.phone_number);
+	INSERT INTO person(person_id, first_name, phone_number) VALUES(new.person_id, new.first_name, new.phone_number);
 END 
 //
 
@@ -54,7 +54,7 @@ CREATE TRIGGER admin_person_ai AFTER INSERT ON admin
 
 FOR EACH ROW 
 BEGIN
-	INSERT INTO person(person_id, email_address, first_name, phone_number) VALUES(new.person_id, new.email_address, new.first_name, new.phone_number);
+	INSERT INTO person(person_id, first_name, phone_number) VALUES(new.person_id, new.first_name, new.phone_number);
 END 
 //
 
@@ -63,7 +63,7 @@ CREATE TRIGGER coordinator_person_ai AFTER INSERT ON coordinator
 
 FOR EACH ROW 
 BEGIN
-	INSERT INTO person(person_id, email_address, first_name, phone_number) VALUES(new.person_id, new.email_address, new.first_name, new.phone_number);
+	INSERT INTO person(person_id, first_name, phone_number) VALUES(new.person_id, new.first_name, new.phone_number);
 END 
 //
 DELIMITER ;

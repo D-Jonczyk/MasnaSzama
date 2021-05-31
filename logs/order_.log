@@ -1,5 +1,0 @@
-Inserting into order_... 
-
-Records: 1000  Deleted: 0  Skipped: 1  Warnings: 1
-Level	Code	Message
-Warning	1452	Cannot add or update a child row: a foreign key constraint fails (`masnaszama`.`order_`, CONSTRAINT `FKbcqs50rf794der0iy0h6c0mgd` FOREIGN KEY (`customer_id`) REFERENCES `customer` (`person_id`))

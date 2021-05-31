@@ -26,7 +26,7 @@ public class Order {
     @JoinColumn(name = "restaurant_id", nullable = false)
     private Restaurant restaurant;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
             name = "couriers_orders",
             joinColumns = {@JoinColumn(name = "order_id")},
@@ -34,7 +34,7 @@ public class Order {
     )
     Set<Courier> couriers = new HashSet<>();
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="customer_id", nullable=false)
     private Customer customer;
 

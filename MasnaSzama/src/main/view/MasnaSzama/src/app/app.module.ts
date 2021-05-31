@@ -17,13 +17,14 @@ import {CurrencyPipe, Location} from '@angular/common';
 import { MenuMakerService } from './admin-panel/menu-maker.service';
 import { OrderService } from './admin-panel/overview/order.service';
 import { MenuMakerComponent } from './admin-panel/menu-maker.component';
-import {FavoriteRestaurantComponent} from "./client-panel/favorite-restaurant/favorite-restaurant.component";
+import {FavoriteRestaurantComponent} from './client-panel/favorite-restaurant/favorite-restaurant.component';
 // Client imports
 import { ClientAdressComponent } from './client-panel/client-adress/client-adress.component';
 import { ClientProfileComponent } from './client-panel/client-profile/client-profile.component';
 import { OrderHistoryComponent } from './client-panel/order-history/order-history.component';
 import { ClientPanelComponent } from './client-panel/client-panel.component';
 import { LogoutComponent } from './client-panel/logout/logout.component';
+import { UploadComponent } from './client-panel/upload/upload.component';
 
 
 import { RestaurantOrdersComponent } from './Restaurant/restaurant-orders/restaurant-orders.component';
@@ -41,15 +42,12 @@ import { OptionsComponent } from './admin-panel/options/options.component';
 import { OverviewComponent } from './admin-panel/overview/overview.component';
 import { OrderItemComponent } from './admin-panel/overview/order-item/order-item.component';
 import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
-import { RestaurantMenuUpdatePanelComponent } from './Restaurant/restaurant-menu-update-panel/restaurant-menu-update-panel.component';
 import {WeekPipe} from './courier-panel/Schedule/show-schedule/week.pipe';
+import { RestaurantMenuUpdatePanelComponent} from './admin-panel/restaurant-menu-update-panel/restaurant-menu-update-panel.component';
 
-import {RouterModule} from "@angular/router";
 import { LoginAccountComponent } from './login-account/login-account.component';
 import { RegisterAccountComponent } from './register-account/register-account.component';
-
-import {AngularFireStorageModule} from '@angular/fire/storage'
-import {AngularFireModule} from '@angular/fire'
+import {AppService} from './app.service';
 
 @NgModule({
   declarations: [
@@ -66,7 +64,6 @@ import {AngularFireModule} from '@angular/fire'
     NavigationComponent,
     OrderCheckoutComponent,
     MenuMakerComponent,
-    RestaurantMenuUpdatePanelComponent,
 
 // Client modules
      ClientAdressComponent,
@@ -74,7 +71,7 @@ import {AngularFireModule} from '@angular/fire'
      OrderHistoryComponent,
      ClientProfileComponent,
      LogoutComponent,
-
+     UploadComponent,
      SupportComponent,
      OrderCheckoutComponent,
      ChatComponent,
@@ -91,6 +88,7 @@ import {AngularFireModule} from '@angular/fire'
      RegisterAccountComponent,
     FavoriteRestaurantComponent,
      WeekPipe,
+     RestaurantMenuUpdatePanelComponent,
   ],
   imports: [
     BrowserModule,
@@ -100,20 +98,10 @@ import {AngularFireModule} from '@angular/fire'
     ReactiveFormsModule,
     NgbModule,
     FontAwesomeModule,
-    AngularFireModule.initializeApp({
-      apiKey: "AIzaSyC7CWGYVLRrx4jwmsC426nkEw99Wj9jEgs",
-      authDomain: "masnaszamcia.firebaseapp.com",
-      databaseURL: "https://masnaszamcia-default-rtdb.europe-west1.firebasedatabase.app",
-      projectId: "masnaszamcia",
-      storageBucket: "masnaszamcia.appspot.com",
-      messagingSenderId: "833793167737",
-      appId: "1:833793167737:web:6367af96965d4cc78d1fa8",
-      measurementId: "G-Y8L2GJBD96"
-    }),
-    AngularFireStorageModule,
+    //RouterModule.forRoot(appRoutes)
   ],
   bootstrap: [AppComponent],
-  providers: [CurrencyPipe, MenuMakerService, OrderService]
+  providers: [AppService, CurrencyPipe, MenuMakerService, OrderService]
 })
 export class AppModule
 {

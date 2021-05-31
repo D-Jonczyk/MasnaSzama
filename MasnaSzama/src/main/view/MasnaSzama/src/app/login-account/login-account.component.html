@@ -2,12 +2,16 @@
     <div class="modalCol">
       <h4 class="modal-title">Zaloguj sie za pomoca swojego konta! </h4>
     </div>
-    <form  [formGroup]="loginForm" >
-      <div class="center">
-        <input formControlName="userName" type="text" placeholder="Nazwa" name="clientEmail" id="clientEmail" maxlength="150" minlength="8" required>
+    <form role="form" (submit)="login()" >
+      <div class="center form-group">
+        <label for="username">Username: </label>
+        <input type="text" class="form-control" id="username"
+               name="username" [(ngModel)]="credentials.username"/>
       </div>
-      <div class="center">
-        <input formControlName="password" type="password" placeholder="Haslo" name="psswordClient" id="psswordClient" maxlength="16" minlength="8" required>
+      <div class="center form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password"
+               name="password" [(ngModel)]="credentials.password"/>
       </div>
       <hr>
       <p class="centerText">lub </p>
@@ -21,7 +25,7 @@
         <button class="astext" (click)="goToRegisterAcc()">Utworz konto</button>
       </div>
 
-      <button type="submit" class="clientBtn" (click)="loginAcc()">Zaloguj</button>
+      <button type="submit" class="clientBtn btn btn-primary">Zaloguj</button>
       <div class="centerText">
         <p>  <a href="#">Wroc do strony glownej.</a></p>
       </div>
