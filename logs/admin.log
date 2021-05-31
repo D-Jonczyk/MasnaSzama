@@ -1,9 +1,0 @@
-Inserting into admin... 
-
-Records: 5  Deleted: 0  Skipped: 5  Warnings: 5
-Level	Code	Message
-Warning	1062	Duplicate entry '1' for key 'admin.PRIMARY'
-Warning	1062	Duplicate entry '2' for key 'admin.PRIMARY'
-Warning	1062	Duplicate entry '3' for key 'admin.PRIMARY'
-Warning	1062	Duplicate entry '4' for key 'admin.PRIMARY'
-Warning	1062	Duplicate entry '5' for key 'admin.PRIMARY'
