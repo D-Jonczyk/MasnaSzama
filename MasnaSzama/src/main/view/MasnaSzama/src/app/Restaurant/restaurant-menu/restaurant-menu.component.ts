@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {RestaurantMenuService} from "../restaurant-menu-service/restaurant-menu.service";
 import {Observable} from "rxjs";
 import {Meal} from "../model/meal.model";
 import {FaIconLibrary} from "@fortawesome/angular-fontawesome";
@@ -18,7 +17,6 @@ export class RestaurantMenuComponent implements OnInit {
   total: number;
 
   constructor(private route: ActivatedRoute,
-              private restaurantMenuService: RestaurantMenuService,
               public library: FaIconLibrary) {
     library.addIcons(faPlusSquare, faTrashAlt, faShoppingCart);
   }
@@ -31,20 +29,20 @@ export class RestaurantMenuComponent implements OnInit {
 
   getMenu(): void {
     const id = +this.route.snapshot.paramMap.get('id');
-    this.meals$ = this.restaurantMenuService.getMeals(id);
+    //this.meals$ = this.restaurantMenuService.getMeals(id);
   }
 
   addToOrder(meal): void {
     this.orderMeals.push(meal);
     this.total += this.orderMeals[this.orderMeals.length - 1].price;
-    this.restaurantMenuService.totalCost = this.total;
+    //this.restaurantMenuService.totalCost = this.total;
   }
 
   deleteFromOrder(id): void {
     let removeIndex = this.orderMeals.findIndex(meal => meal.id === id);
     this.total = this.total - this.orderMeals[removeIndex].price;
     this.orderMeals.splice(removeIndex, 1);
-    this.restaurantMenuService.totalCost = this.total;
+   // this.restaurantMenuService.totalCost = this.total;
   }
 
   checkOrder(): void {

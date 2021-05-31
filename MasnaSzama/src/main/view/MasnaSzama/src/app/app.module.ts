@@ -17,7 +17,7 @@ import {CurrencyPipe, Location} from '@angular/common';
 import { MenuMakerService } from './admin-panel/menu-maker.service';
 import { OrderService } from './admin-panel/overview/order.service';
 import { MenuMakerComponent } from './admin-panel/menu-maker.component';
-
+import {FavoriteRestaurantComponent} from "./client-panel/favorite-restaurant/favorite-restaurant.component";
 // Client imports
 import { ClientAdressComponent } from './client-panel/client-adress/client-adress.component';
 import { ClientProfileComponent } from './client-panel/client-profile/client-profile.component';
@@ -42,9 +42,12 @@ import { OptionsComponent } from './admin-panel/options/options.component';
 import { OverviewComponent } from './admin-panel/overview/overview.component';
 import { OrderItemComponent } from './admin-panel/overview/order-item/order-item.component';
 import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
-import { RestaurantMenuUpdatePanelComponent } from './Restaurant/restaurant-menu-update-panel/restaurant-menu-update-panel.component';
 import {WeekPipe} from './courier-panel/Schedule/show-schedule/week.pipe';
+import { RestaurantMenuUpdatePanelComponent} from './admin-panel/restaurant-menu-update-panel/restaurant-menu-update-panel.component';
 
+import {RouterModule} from "@angular/router";
+import { LoginAccountComponent } from './login-account/login-account.component';
+import { RegisterAccountComponent } from './register-account/register-account.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +64,6 @@ import {WeekPipe} from './courier-panel/Schedule/show-schedule/week.pipe';
     NavigationComponent,
     OrderCheckoutComponent,
     MenuMakerComponent,
-    RestaurantMenuUpdatePanelComponent,
 
 // Client modules
      ClientAdressComponent,
@@ -82,7 +84,11 @@ import {WeekPipe} from './courier-panel/Schedule/show-schedule/week.pipe';
      OverviewComponent,
      OrderItemComponent,
      ListRestoComponent,
+     LoginAccountComponent,
+     RegisterAccountComponent,
+    FavoriteRestaurantComponent,
      WeekPipe,
+     RestaurantMenuUpdatePanelComponent,
   ],
   imports: [
     BrowserModule,
@@ -92,7 +98,7 @@ import {WeekPipe} from './courier-panel/Schedule/show-schedule/week.pipe';
     ReactiveFormsModule,
     NgbModule,
     FontAwesomeModule,
-
+    //RouterModule.forRoot(appRoutes)
   ],
   bootstrap: [AppComponent],
   providers: [CurrencyPipe, MenuMakerService, OrderService]

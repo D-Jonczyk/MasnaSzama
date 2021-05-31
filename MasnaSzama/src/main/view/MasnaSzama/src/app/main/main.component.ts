@@ -6,6 +6,7 @@ import {Router} from '@angular/router';
 import {RestaurantSummaryService} from '../Restaurant/restaurant-summary-service/restaurant-summary.service';
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -13,24 +14,21 @@ import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 })
 export class MainComponent implements OnInit {
 
-
-  logoFacebook:string="assets/facebook-logo.png";
-
   addressForm = this.formBuilder.group({
-    adr: ''
-  });
-  loginForm = this.formBuilder.group({
-    adr: ''
-  });
-  registerForm = this.formBuilder.group({
     adr: ''
   });
 
   constructor(private formBuilder: FormBuilder,
               private router: Router,
               private restaurantSummaryService: RestaurantSummaryService,
-              private modalService: NgbModal)
+              private modalService: NgbModal,
+            )
   { }
+
+
+  goToLoginAcc(): void {
+    this.router.navigateByUrl('/login-account');
+  }
 
   btnClick(): void {
     this.router.navigateByUrl('/courier-panel');
@@ -47,12 +45,7 @@ export class MainComponent implements OnInit {
   goToClient(): void {
     this.router.navigateByUrl('/client-panel');
   }
-  loginAcc(): void {
-    this.router.navigateByUrl('/client-panel');
-  }
-  registerAcc(): void {
-    this.router.navigateByUrl('/main');
-  }
+
 
   goToRestaurantMenu(): void {
     this.router.navigateByUrl('/restaurant-menu-update-panel');
@@ -66,20 +59,6 @@ export class MainComponent implements OnInit {
     this.router.navigateByUrl('/restaurant-summary');
   }
 
-  openLogin(login) {
-    this.modalService.open(login, { centered: true });
-  }
-  openRegister(register) {
-    this.modalService.open(register, { centered: true });
-  }
-  openRegisterInfo(registerInfo) {
-    this.modalService.open(registerInfo, { centered: true });
-  }
-
-
-  openScrollableContent(longContent) {
-    this.modalService.open(longContent, { scrollable: true });
-  }
 
   get address(): string {
     return this.restaurantSummaryService.address;

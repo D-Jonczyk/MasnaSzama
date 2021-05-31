@@ -32,3 +32,4 @@ export class MenusComponent implements OnInit {
     this.menuCreatorForm.reset();
   }
 }
+

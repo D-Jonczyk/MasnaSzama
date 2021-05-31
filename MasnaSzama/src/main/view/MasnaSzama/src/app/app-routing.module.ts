@@ -10,7 +10,7 @@ import {OrderlistComponent} from './courier-panel/orderlist/orderlist.component'
 import {RestaurantMenuComponent} from './Restaurant/restaurant-menu/restaurant-menu.component';
 import { RestaurantOrdersComponent} from './Restaurant/restaurant-orders/restaurant-orders.component';
 import {NavigationComponent} from './courier-panel/navigation/navigation.component';
-
+import {FavoriteRestaurantComponent} from "./client-panel/favorite-restaurant/favorite-restaurant.component";
 // client imports
 import {ClientPanelComponent} from './client-panel/client-panel.component';
 import { ClientAdressComponent } from './client-panel/client-adress/client-adress.component';
@@ -29,7 +29,10 @@ import { OptionsComponent } from './admin-panel/options/options.component';
 import { OverviewComponent } from './admin-panel/overview/overview.component';
 import { CategoriesComponent } from './admin-panel/categories/categories.component';
 import { ListRestoComponent } from './admin-panel/list-resto/list-resto.component';
-import {RestaurantMenuUpdatePanelComponent} from './Restaurant/restaurant-menu-update-panel/restaurant-menu-update-panel.component';
+import {RestaurantMenuUpdatePanelComponent} from './admin-panel/restaurant-menu-update-panel/restaurant-menu-update-panel.component';
+
+import { LoginAccountComponent } from './login-account/login-account.component';
+import { RegisterAccountComponent } from './register-account/register-account.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/main', pathMatch: 'full'},
@@ -62,6 +65,10 @@ const routes: Routes = [
   {path: 'navigation', component: NavigationComponent},
   {path: 'courier-orderhistory', component: CourierOrderhistoryComponent},
   {path: 'list-resto', component: ListRestoComponent},
+  {path: 'order-checkout', component: OrderCheckoutComponent},
+  {path: 'login-account', component: LoginAccountComponent},
+  {path: 'register-account', component: RegisterAccountComponent},
+  {path: 'favorite-restaurant', component: FavoriteRestaurantComponent},
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
