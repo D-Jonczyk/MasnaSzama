@@ -33,8 +33,8 @@ import java.math.BigInteger;
 
             Long mealId = meal.getMealId();
             BigDecimal price = meal.getPrice();
-            String name = meal.getMealName();
-            this.mealRestaurantsRepo.updateMealByMealId(mealId,price,name);
+            String mealName = meal.getMealName();
+            this.mealRestaurantsRepo.updateMealByMealId(mealId,price,mealName);
 
         }
     }
