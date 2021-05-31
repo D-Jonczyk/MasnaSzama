@@ -11,3 +11,15 @@ body {
 .col-6 {
   background-color: #ffffff;
 }
+
+button {
+  background-color: #fea935;
+  color: #FFFFFF;
+  border: 0;
+}
+
+button:hover {
+  background-color: #c48329;
+  color: #FFFFFF;
+  border: 0;
+}

@@ -2,11 +2,13 @@ package com.project.MasnaSzama.Controller;
 
 import com.project.MasnaSzama.DTO.OrdersDTO;
 import com.project.MasnaSzama.DTO.RestaurantOrdersDTO;
+import com.project.MasnaSzama.Model.Order.Meal;
 import com.project.MasnaSzama.Model.Order.Order;
 import com.project.MasnaSzama.Model.Views.OrdersDelivery;
 import com.project.MasnaSzama.Service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -48,4 +50,11 @@ public class OrderController {
         orderService.updateOrderStatus(orderId);
     }
 
+    @PutMapping(path = "/createNewOrder", headers = {
+            "content-type=application/json" }, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<?> createNewOrder(@RequestBody Order newOrder) {
+
+        orderService.createNewOrder(newOrder);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
 }

@@ -18,6 +18,11 @@ public class Status {
 
     }
 
+   /* public Status(Long statusId, String statusName) {
+        this.statusId = statusId;
+        this.statusName = statusName;
+    }*/
+
     public String getStatusName() {
         return statusName;
     }

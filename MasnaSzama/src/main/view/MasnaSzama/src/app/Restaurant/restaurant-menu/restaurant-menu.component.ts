@@ -44,4 +44,9 @@ export class RestaurantMenuComponent implements OnInit {
     this.orderMeals.splice(removeIndex, 1);
    // this.restaurantMenuService.totalCost = this.total;
   }
+
+  checkOrder(): void {
+    // check if order cost is greater than min order cost
+    // check if order is not null
+  }
 }
