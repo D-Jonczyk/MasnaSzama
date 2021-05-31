@@ -14,9 +14,9 @@
       <div class="left-navbar text-center">
 
         <nav>
-
-          <img class="displayed" [src]="accLink" alt="accountIcon">
-          <h4 class="mb-0"> Imie i nazwisko klienta</h4>
+          <img class="displayed" [src]="accountIcon" alt="accountIcon">
+          <h4>Witaj</h4>
+          <h4 class="mb-0"> {{clientProfile.firstName}} {{clientProfile.lastName}} !</h4>
           <hr/>
           <ul ngbNav>
             <li class="btn-block border-white" [ngbNavItem]="link.fragment" *ngFor="let link of links">
@@ -43,7 +43,7 @@
               <p class="display-4 text-center astext" (click)="open(changeImg)">Edytuj swoj awatar</p>
               <p></p>
             <hr>
-              <p class="display-4 text-center astext" (click)="open(changeData)">Edytuj swoje dane</p>
+              <p class="display-4 text-center astext" (click)="open(changeData); getClientProfile()">Edytuj swoje dane</p>
               <p></p>
             <hr>
             </div>
@@ -58,15 +58,17 @@
 <ng-template #changeImg let-c="close" let-d="dismiss">
   <div class="modal-header">
     <h4 class="modal-title" id="modal-basic-title">Wybierz zdjęcie które checsz  dodać!</h4>
-
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click');accLinkChange()">
+      <span aria-hidden="true">&times;</span>
+    </button>
   </div>
   <div class="modal-body">
-<!--        <input type="file" (change)="onFileSelected($event)">-->
-      <img class="displayed" [src]="accLink">
-      <input type="file" class=" btn btn-success btn-sm "(change)="selectFiles($event)">
+    <img class="displayed" [src]="accPomLink" alt="accountIcon">
+    <input type="file" (change)="upload($event); openImage($event) " accept=".png,.jpg" />
+    <button type="button" class="btn btn-outline-dark" (click)=" uploadImage(); ">Zapisz zdjecie</button>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="c('Save click'); ">Zapisz zdjecie</button>
+    <button type="button" class="btn btn-outline-dark" (click)="c('Save click');loadImageData(clientProfile)">Wroc</button>
   </div>
 </ng-template>
 <!--finish change image -->
@@ -80,12 +82,65 @@
     </button>
   </div>
   <div class="modal-body">
+    <div class="col-lg-8">
+      <form class="form-horizontal" role="form" #editForm="ngForm">
+        <input type="hidden" ngModel="{{editProfile?.personId}}" name="personId" class="form-control" id="personId">
 
+        <input type="hidden" ngModel="{{editProfile?.userPassword}}" name="userPassword" class="form-control" id="userPassword">
+        <input type="hidden" ngModel="{{editProfile?.lastLogin}}" name="lastLogin" class="form-control" id="lastLogin">
+        <input type="hidden" ngModel="{{editProfile?.registeredDate}}" name="registeredDate" class="form-control" id="registeredDate">
+        <input type="hidden" ngModel="{{editProfile?.imgUrl}}" name="imgUrl"  class="form-control" id="imgUrl" >
 
-
+        <div class="form-group">
+          <label class="col-lg-8 control-label">Imię:</label>
+          <div class="col-lg-8">
+            <label>
+              <input class="form-control" ngModel="{{editProfile?.firstName}}" id="firstName" name="firstName" type="text" required>
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-8 control-label">Nazwisko:</label>
+          <div class="col-lg-8">
+            <label>
+              <input class="form-control" ngModel="{{editProfile?.lastName}}" id="lastName" name="lastName" type="text" required>
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-8 control-label">Nazwa użytkownika:</label>
+          <div class="col-lg-8">
+            <label>
+              <input class="form-control" ngModel="{{editProfile?.userName}}" id="userName" name="userName"  type="text" required>
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-8 control-label">Adres e-mail:</label>
+          <div class="col-lg-12">
+            <label>
+              <input class="form-control" ngModel="{{editProfile?.emailAddress}}" id="emailAddress" name="emailAddress" type="email" readonly>
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-8 control-label">Numer telefonu:</label>
+          <div class="col-lg-8">
+            <label>
+              <input class="form-control" value="{{clientProfile.phoneNumber}}" ngModel="{{editProfile?.phoneNumber}}" id="phoneNumber" name="phoneNumber" type="text" required>
+            </label>
+          </div>
+        </div>
+        <div class="form-check-label col-lg-8">
+          <button (click)="onEditProfile(editForm.value)" class="btn btn-outline-primary">Zatwierdź zmiany</button>
+        </div>
+      </form>
+    </div>
   </div>
+
+
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Zapisz</button>
+    <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Zakoncz</button>
   </div>
 </ng-template>
 

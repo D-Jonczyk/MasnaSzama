@@ -17,7 +17,6 @@ import { ClientAdressComponent } from './client-panel/client-adress/client-adres
 import { ClientProfileComponent } from './client-panel/client-profile/client-profile.component';
 import { OrderHistoryComponent } from './client-panel/order-history/order-history.component';
 import { LogoutComponent } from './client-panel/logout/logout.component';
-import { UploadComponent } from './client-panel/upload/upload.component';
 import {SupportComponent} from './courier-panel/support/support.component';
 import {ChatComponent} from './courier-panel/chat/chat.component';
 import {CourierOrderhistoryComponent} from './courier-panel/courier-orderhistory/courier-orderhistory.component';
@@ -60,7 +59,6 @@ const routes: Routes = [
   {path: 'client-profile', component: ClientProfileComponent},
   {path: 'order-history', component: OrderHistoryComponent},
   {path: 'logout', component: LogoutComponent},
-  {path: 'upload', component: UploadComponent},
   {path: 'chat', component: ChatComponent},
   {path: 'navigation', component: NavigationComponent},
   {path: 'courier-orderhistory', component: CourierOrderhistoryComponent},

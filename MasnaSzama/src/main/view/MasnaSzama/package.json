@@ -15,6 +15,7 @@
     "@angular/common": "~11.2.3",
     "@angular/compiler": "^11.2.3",
     "@angular/core": "~11.2.3",
+    "@angular/fire": "^6.1.5",
     "@angular/forms": "~11.2.3",
     "@angular/localize": "~11.2.3",
     "@angular/platform-browser": "~11.2.3",
@@ -29,13 +30,14 @@
     "@ng-bootstrap/ng-bootstrap": "^9.1.0",
     "@types/googlemaps": "^3.43.3",
     "bootstrap": "^4.6.0",
+    "firebase": "^8.6.2",
     "jquery": "^3.6.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.1102.6",
+    "@angular-devkit/build-angular": "^0.1102.13",
     "@angular/cli": "~11.2.2",
     "@angular/compiler-cli": "^11.2.9",
     "@types/jasmine": "~3.6.0",

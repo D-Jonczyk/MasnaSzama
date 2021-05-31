@@ -9,6 +9,8 @@ import {FaIconLibrary} from '@fortawesome/angular-fontawesome';
 import {faGithub, faMedium} from '@fortawesome/free-brands-svg-icons';
 import {faCheckCircle, faClock, faPlayCircle} from '@fortawesome/free-regular-svg-icons';
 import { LINKS } from '../client-panel.component';
+import {ClientPanelService} from "../client-panel-service";
+
 
 
 
@@ -22,9 +24,14 @@ export class OrderHistoryComponent implements OnInit {
   faCoffee = faCoffee;
   fas = 'fas';
   links=LINKS;
-  accountIcon:string="assets//image/account-icon.png";
 
-  constructor(public route: ActivatedRoute, public library: FaIconLibrary,
+  public accountIcon = this.clientPanelService.accLink;
+  public clientName = this.clientPanelService.clientName;
+  public clientSurname = this.clientPanelService.clientSurname;
+
+  constructor(public route: ActivatedRoute,
+              public library: FaIconLibrary,
+              private clientPanelService: ClientPanelService
               ) {
     library.addIcons(faSquare, faCheckSquare, faMedium, faGithub, faClock, faMapMarkerAlt, faLocationArrow, faInfo, faTruckLoading,
       faClipboardList, faHeadset, faPhoneAlt, faCheckCircle, faPlayCircle, faListAlt, faLocationArrow,
@@ -32,6 +39,7 @@ export class OrderHistoryComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
   }
 
 }

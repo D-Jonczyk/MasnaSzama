@@ -7,11 +7,15 @@ import {
   faSquare,  faTruckLoading, faUserCircle, faSignOutAlt,faCrown
 } from '@fortawesome/free-solid-svg-icons';
 import { LINKS } from '../client-panel.component';
-import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {HttpClient, HttpClientModule, HttpErrorResponse} from "@angular/common/http";
 import {faGithub, faMedium} from "@fortawesome/free-brands-svg-icons";
 import {NgbModal, NgbModalConfig} from "@ng-bootstrap/ng-bootstrap";
-
-
+import {AngularFireStorage} from '@angular/fire/storage'
+import {finalize, ignoreElements} from "rxjs/operators";
+import 'firebase/storage';
+import {ClientProfileService} from "./client-profile-service";
+import {ClientProfile} from "./client-profile";
+import {ClientPanelService} from "../client-panel-service";
 
 @Component({
   selector: 'app-client-profile',
@@ -21,12 +25,22 @@ import {NgbModal, NgbModalConfig} from "@ng-bootstrap/ng-bootstrap";
 })
 export class ClientProfileComponent implements OnInit {
   titel = 'Profil Klienta';
-  accountIcon:string="assets/image/account-icon.png";
-  selectedFile: File = null;
+  public accountIcon = this.clientPanelService.accLink;
+  public clientName = this.clientPanelService.clientName;
+  public clientSurname = this.clientPanelService.clientSurname;
+  accPomLink:string='assets/image/account-icon.png';
   links=LINKS;
-
+  filePath:String
+  public selectedFile: FileList;
+  public clientProfile = new ClientProfile();
+  public clientId = 301;
+  public editProfile = new ClientProfile();
+  public guard = 0;
   constructor(private library: FaIconLibrary,
+              private afStorage: AngularFireStorage,
+              private clientProfileService: ClientProfileService,
               private http: HttpClient,
+              private clientPanelService: ClientPanelService,
               config: NgbModalConfig, private modalService: NgbModal) {
     config.backdrop = 'static';
     config.keyboard = false;
@@ -38,29 +52,91 @@ export class ClientProfileComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.getClientProfile();
+  }
+
+  upload(event) {
+    this.filePath = event.target.files[0];
+    this.guard = 1;
+  }
+  openImage(event){
+    if(event.target.files && this.guard == 1){
+      var reader = new FileReader()
+      reader.readAsDataURL(event.target.files[0])
+      reader.onload = (event:any) =>{
+          this.accPomLink = event.target.result;
+      }
+    }
+  }
+
+  uploadImage(){
+    if(this.guard == 1) {
+    this.accPomLink = '/accLink' + new Date().getTime() + Math.random();
+    console.log(this.filePath);
+    var filePath = '/accImg' + this.accPomLink;
+    const fileRef = this.afStorage.ref(filePath);
+    this.afStorage.upload(filePath, this.filePath).snapshotChanges().pipe(
+      finalize(()=>{
+        fileRef.getDownloadURL().subscribe((url) => {
+
+            this.accountIcon = url;
+            this.accPomLink=url;
+
+
+
+
+        })
+      })
+    ).subscribe();
+   }
+  }
+  accLinkChange(){
+    this.accountIcon = this.clientPanelService.accLink;
   }
 
   open(content) {
     this.modalService.open(content);
   }
 
-  accLink:string ='assets/image/account-icon.png';
-  selectFiles(event) {
-
-    var reader = new FileReader() ;
-      reader.readAsDataURL(event.target.files[0]);
-      reader.onload = (event: any) => {
-        this.accLink = event.target.result;
+  public onEditProfile(client: ClientProfile): void {
+    this.clientProfileService.editClientProfile(client).subscribe(
+      (response: ClientProfile) => {
+        console.log(response);
+        this.getClientProfile();
+      },
+      (error: HttpErrorResponse) => {
+        alert(error.message);
+        this.getClientProfile();
       }
-    }
+    );
+  }
 
-  // onFileSelected(event){
-  // this.selectedFile = <File>event.target.files[0];
-  // }
+  public loadImageData(client: ClientProfile): void {
+    this.clientProfileService.loadImageProfile(client).subscribe(
+      (response: ClientProfile) => {
+        console.log(response);
+        this.getClientProfile();
+        this.clientProfile.imgUrl=this.accountIcon;
+      },
+      (error: HttpErrorResponse) => {
+        alert(error.message);
+        this.getClientProfile();
+      }
+    );
+  }
 
-  // onUpload(){
-  //     const fd = new FormData();
-  //     fd.append('image', this.selectedFile, this.selectedFile.name);
-  // }
+  getClientProfile(): void {
+    this.clientProfileService.getClientProfile(this.clientId).subscribe(
+      (response: ClientProfile) => {
+        this.clientProfile = response;
+        this.editProfile = this.clientProfile;
+      },
+      (error: HttpErrorResponse) => {
+        alert(error.message);
+      }
+    );
+  }
+
+
 
 }
