@@ -44,7 +44,7 @@ public class UserAccount implements UserDetails, Serializable {
     private Role userRole;
     private Boolean locked = false;
     private Boolean enabled = true;
-
+    private String imgUrl ;
     public UserAccount(String userName,
                        String emailAddress,
                        String userPassword,
@@ -57,7 +57,8 @@ public class UserAccount implements UserDetails, Serializable {
         this.userRole = userRole;
     }
 
-    @ManyToOne(fetch = FetchType.LAZY)
+
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "person_id", nullable = false)
     private Person person;
 
@@ -152,4 +153,7 @@ public class UserAccount implements UserDetails, Serializable {
     public void setPerson(Person person) {
         this.person = person;
     }
+    public String getImgUrl() { return imgUrl; }
+
+    public void setImgUrl(String imgUrl) { this.imgUrl = imgUrl; }
 }

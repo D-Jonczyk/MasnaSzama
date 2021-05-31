@@ -13,7 +13,7 @@ import java.util.Set;
 public class Person implements Serializable {
 
     @Id
-    @GeneratedValue
+
     @Column(nullable = false)
     protected Long personId;
     @Column(nullable = false)
