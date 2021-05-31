@@ -16,8 +16,8 @@ export class ClientProfileService {
   constructor(private http: HttpClient) {
   }
 
-  getClientProfile(clientId): Observable<ClientProfile> {
-    return this.http.get<ClientProfile>(this.clientProfileUrl + clientId);
+  getClientProfile(userName): Observable<ClientProfile> {
+    return this.http.get<ClientProfile>(this.clientProfileUrl + userName);
   }
 
   editClientProfile(client: ClientProfile): Observable<ClientProfile> {
