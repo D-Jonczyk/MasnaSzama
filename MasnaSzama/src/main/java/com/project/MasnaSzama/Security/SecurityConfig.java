@@ -1,6 +1,5 @@
 package com.project.MasnaSzama.Security;
 
-import com.project.MasnaSzama.Model.User.Role;
 import com.project.MasnaSzama.Service.UserAccountService;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -17,12 +16,16 @@ import org.springframework.web.cors.CorsConfiguration;
 import static com.project.MasnaSzama.Model.User.Role.COURIER;
 
 @Configuration
-@AllArgsConstructor
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private final PasswordEncoder passwordEncoder;
     private final UserAccountService userAccountService;
+
+    public SecurityConfig(PasswordEncoder passwordEncoder, UserAccountService userAccountService) {
+        this.passwordEncoder = passwordEncoder;
+        this.userAccountService = userAccountService;
+    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {

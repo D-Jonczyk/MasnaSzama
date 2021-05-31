@@ -38,6 +38,21 @@ export class RestaurantMenuService {
           });
           this.getMeals(this.restId);
   }
-  }
 
+  updateMeal(meal):void{
+
+    this.http.put<Meal>('http://localhost:8080/meal/update' ,meal)
+    .subscribe({
+                next: data => {
+                    this.status = 'Update successful';
+                },
+                error: error => {
+                    this.errorMessage = error.message;
+                    console.error('There was an error!', error);
+                }
+            });
+
+
+  }
+}
 
