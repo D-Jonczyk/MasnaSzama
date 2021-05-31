@@ -25,8 +25,8 @@ export class FavoriteRestaurantComponent implements OnInit {
   titel = 'Ulubione restauracje';
   faCoffee = faCoffee;
   fas = 'fas';
-  links=LINKS;
-  accountIcon:string="assets/image/account-icon.png";
+  links = LINKS;
+  accountIcon:string = 'assets/image/account-icon.png';
 
   constructor(public route: ActivatedRoute, public library: FaIconLibrary,
   ) {

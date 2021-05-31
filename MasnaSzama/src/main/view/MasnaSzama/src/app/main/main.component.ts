@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {Observable} from 'rxjs';
-import {RestaurantSummary} from '../Restaurant/model/restaurant-summary.model';
 import {FormBuilder} from '@angular/forms';
 import {Router} from '@angular/router';
 import {RestaurantSummaryService} from '../Restaurant/restaurant-summary-service/restaurant-summary.service';
-import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 
 @Component({
@@ -21,8 +19,7 @@ export class MainComponent implements OnInit {
   constructor(private formBuilder: FormBuilder,
               private router: Router,
               private restaurantSummaryService: RestaurantSummaryService,
-              private modalService: NgbModal,
-            )
+              private modalService: NgbModal)
   { }
 
 
@@ -30,7 +27,7 @@ export class MainComponent implements OnInit {
     this.router.navigateByUrl('/login-account');
   }
 
-  btnClick(): void {
+  goToCourierPanel(): void {
     this.router.navigateByUrl('/courier-panel');
   }
 

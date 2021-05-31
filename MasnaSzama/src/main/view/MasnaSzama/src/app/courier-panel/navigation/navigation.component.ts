@@ -1,77 +1,34 @@
-import {Component, OnInit, AfterViewInit, ViewChild, ElementRef, Injectable} from '@angular/core';
+import {Component} from '@angular/core';
+import {LINKS} from '../courier-panel.component';
 import {ActivatedRoute} from '@angular/router';
 import {FaIconLibrary} from '@fortawesome/angular-fontawesome';
-import {faPlayCircle} from '@fortawesome/free-regular-svg-icons';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {DeliveryOrderService} from '../orderlist/delivery-order.service';
+import {
+  faCalendarAlt,
+  faCheckSquare,
+  faClipboardList, faComments, faHeadset, faHistory,
+  faInfo, faListAlt,
+  faLocationArrow,
+  faMapMarkerAlt, faPhoneAlt, faQuestionCircle,
+  faSquare,
+  faTruckLoading, faUserCircle
+} from '@fortawesome/free-solid-svg-icons';
+import {faGithub, faMedium} from '@fortawesome/free-brands-svg-icons';
+import {faCheckCircle, faClock, faPlayCircle} from '@fortawesome/free-regular-svg-icons';
+
 
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
   styleUrls: ['../courier-panel.component.css', './navigation.component.css']
 })
-export class NavigationComponent implements AfterViewInit {
-  @ViewChild('mapContainer', { static: false }) gmap: ElementRef;
-  map: google.maps.Map;
-  lat = 40.73061;
-  lng = -73.935242;
-  marker: any;
-  // Coordinates to set the center of the map
-  coordinates = new google.maps.LatLng(this.lat, this.lng);
+export class NavigationComponent {
+  links = LINKS;
 
-  mapOptions: google.maps.MapOptions = {
-    center: this.coordinates,
-    zoom: 8
-  };
-
-  links = [
-    { title: 'Nawigacja', fragment: '/navigation' },
-    { title: 'Lista zamówień', fragment: '/orderlist'},
-    { title: 'Grafik', fragment: '/show-schedule'},
-    { title: 'Mój profil', fragment: '/profile'},
-    { title: 'Wsparcie kuriera', fragment: '/support'}
-  ];
-
-  ngAfterViewInit(): void {
-    this.initMap();
+  constructor(public route: ActivatedRoute, public library: FaIconLibrary) {
+    library.addIcons(faSquare, faCheckSquare, faMedium, faGithub, faClock, faMapMarkerAlt, faLocationArrow, faInfo, faTruckLoading,
+      faClipboardList, faHeadset, faPhoneAlt, faCheckCircle, faPlayCircle, faListAlt, faLocationArrow,
+      faCalendarAlt, faUserCircle, faQuestionCircle, faComments, faHistory);
   }
-
-  initMap(): void {
-    this.map = new google.maps.Map(this.gmap.nativeElement, this.mapOptions);
-
-    // Default Marker
-    const marker = new google.maps.Marker({
-      position: this.coordinates,
-      map: this.map,
-      title: 'Hello World!'
-    });
-
-
-    // Adding Click event to default marker
-    this.marker.addListener('click', () => {
-      const infoWindow = new google.maps.InfoWindow({
-        content: this.marker.getTitle()
-      });
-      infoWindow.open(this.marker.getMap(), this.marker);
-    });
-
-    // Adding default marker to map
-    this.marker.setMap(this.map);
-
-    // Adding other markers
-    this.loadAllMarkers();
-  }
-
-  loadAllMarkers(): void {
-      // creating a new info window with markers info
-      const infoWindow = new google.maps.InfoWindow({
-        content: this.marker.getTitle()
-      });
-
-      // Add click event to open info window on marker
-      this.marker.addListener('click', () => {
-        infoWindow.open(this.marker.getMap(), this.marker);
-      });
-
-      // Adding marker to google map
-      this.marker.setMap(this.map);
-    }
 }
