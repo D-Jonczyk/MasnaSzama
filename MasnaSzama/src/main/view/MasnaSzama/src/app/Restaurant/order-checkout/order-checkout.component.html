@@ -26,9 +26,11 @@
             <hr>
 
             <div class="text-center">
-              <button type="submit" class="btn">Zamawiam i płacę({{totalCost | currency:'PLN'}})<fa-icon icon="shopping-cart"></fa-icon></button>
+              <button type="submit" class="btn" (click)="addNewOrder()">Zamawiam i płacę({{totalCost | currency:'PLN'}})<fa-icon icon="shopping-cart"></fa-icon></button>
               <!-- redirect to payment system -->
             </div>
+
+            <hr>
 
             <button type="button" class="btn" (click)="backToPreviousPage();">Powrót</button>
 
@@ -39,3 +41,36 @@
   </div>
 </body>
 </html>
+
+<!--<form class="form-horizontal" role="form" #editForm="ngForm">-->
+<!--  <input type="hidden" ngModel="{{editProfile?.personId}}" name="personId" class="form-control" id="personId">-->
+<!--  <input type="hidden" ngModel="{{editProfile?.numberOfDeliveries}}" name="numberOfDeliveries" class="form-control" id="numberOfDeliveries">-->
+<!--  <input type="hidden" ngModel="{{editProfile?.averageDeliveryTime}}" name="averageDeliveryTime" class="form-control" id="averageDeliveryTime">-->
+<!--  <div class="form-group">-->
+<!--    <label class="col-lg-8 control-label">Imię:</label>-->
+<!--    <div class="col-lg-8">-->
+<!--      <label>-->
+<!--        <input class="form-control" ngModel="{{editProfile?.firstName}}" id="firstName" name="firstName" type="text" required>-->
+<!--      </label>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <label class="col-lg-8 control-label">Nazwisko:</label>-->
+<!--    <div class="col-lg-8">-->
+<!--      <label>-->
+<!--        <input class="form-control" ngModel="{{editProfile?.lastName}}" id="lastName" name="lastName" type="text" required>-->
+<!--      </label>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <label class="col-lg-8 control-label">Numer telefonu:</label>-->
+<!--    <div class="col-lg-8">-->
+<!--      <label>-->
+<!--        <input class="form-control" value="{{courierProfile.phoneNumber}}" ngModel="{{editProfile?.phoneNumber}}" id="phoneNumber" name="phoneNumber" type="text" required>-->
+<!--      </label>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="form-check-label col-lg-8">-->
+<!--    <button (click)="onEditProfile(editForm.value)" class="btn btn-outline-primary">Zatwierdź zmiany</button>-->
+<!--  </div>-->
+<!--</form>-->

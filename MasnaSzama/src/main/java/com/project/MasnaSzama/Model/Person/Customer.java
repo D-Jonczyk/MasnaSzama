@@ -11,10 +11,10 @@ import java.util.Set;
 public class Customer extends Person{
 
     public Customer() {
-
+        super();
     }
 
-    @OneToOne
+    @OneToOne(mappedBy = "customer")
     @JoinColumn(name = "address_id", nullable = false)
     private Address address;
 

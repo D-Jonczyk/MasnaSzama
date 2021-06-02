@@ -13,7 +13,7 @@ import java.util.Set;
 public class Person implements Serializable {
 
     @Id
-    @GeneratedValue
+    //@GeneratedValue
     @Column(nullable = false)
     protected Long personId;
     @Column(nullable = false)
@@ -22,8 +22,8 @@ public class Person implements Serializable {
     @Column(nullable = false)
     protected Long phoneNumber;
 
-    @OneToMany(mappedBy = "person")
-    private Set<UserAccount> userAccounts = new HashSet<>();
+    @OneToOne(mappedBy = "person")
+    private UserAccount userAccounts;
 
     public Long getPersonId() {
         return personId;
@@ -49,10 +49,13 @@ public class Person implements Serializable {
     public void setPhoneNumber(Long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-    public Set<UserAccount> getUserAccounts() {
+
+    public UserAccount getUserAccounts() {
         return userAccounts;
     }
-    public void setUserAccounts(Set<UserAccount> userAccounts) {
+
+    public void setUserAccounts(UserAccount userAccounts) {
         this.userAccounts = userAccounts;
     }
 }
+

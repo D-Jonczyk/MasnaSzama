@@ -4,6 +4,8 @@ import com.project.MasnaSzama.DTO.OrdersDTO;
 import com.project.MasnaSzama.DTO.RestaurantOrdersDTO;
 import com.project.MasnaSzama.Model.Order.Meal;
 import com.project.MasnaSzama.Model.Order.Order;
+import com.project.MasnaSzama.Model.Order.OrdersMeals;
+import com.project.MasnaSzama.Model.Person.Employee.Courier;
 import com.project.MasnaSzama.Model.Views.OrdersDelivery;
 import com.project.MasnaSzama.Service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,8 +55,41 @@ public class OrderController {
     @PutMapping(path = "/createNewOrder", headers = {
             "content-type=application/json" }, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> createNewOrder(@RequestBody Order newOrder) {
+        System.out.println("Klient-----------------------");
+    System.out.println(newOrder.getCustomer());
 
         orderService.createNewOrder(newOrder);
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
+    @PutMapping(path = "/createNewOrderMeals", headers = {
+            "content-type=application/json" }, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<?> createNewOrderMeals(@RequestBody List<OrdersMeals> newOrderMeals) {
+
+
+        System.out.println(newOrderMeals.get(0).getOrder());
+        System.out.println(newOrderMeals.get(0).getOrderMealId());
+        System.out.println(newOrderMeals.get(0).getMeal());
+        System.out.println(newOrderMeals.get(0).getOpinion());
+
+        orderService.createNewOrderMeals(newOrderMeals);
+        return new ResponseEntity<>(HttpStatus.OK);
+
+    }
+
+
+//    @PostMapping(path = "/createNewOrder", headers = { "content-type=application/json" },
+//            consumes = MediaType.APPLICATION_JSON_VALUE)
+//    public ResponseEntity<?> createNewOrder(@RequestBody Order newOrder) {
+//
+//        orderService.createNewOrder(newOrder);
+//        return new ResponseEntity<>(HttpStatus.OK);
+//    }
+
+//    @PutMapping(path = "/createNewOrder")
+//    public ResponseEntity<Order> createNewOrder(@RequestBody Order newOrder) {
+//
+//        Order order = orderService.createNewOrder(newOrder);
+//        return new ResponseEntity<>(order, HttpStatus.OK);
+//    }
 }

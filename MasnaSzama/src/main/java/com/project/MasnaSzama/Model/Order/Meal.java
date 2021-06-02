@@ -54,4 +54,23 @@ public class Meal {
         this.price = price;
     }
 
+    public void setMealId(Long mealId) {
+        this.mealId = mealId;
+    }
+
+    public Set<Restaurant> getRestaurants() {
+        return restaurants;
+    }
+
+    public void setRestaurants(Set<Restaurant> restaurants) {
+        this.restaurants = restaurants;
+    }
+
+    public Request getRequest() {
+        return request;
+    }
+
+    public void setRequest(Request request) {
+        this.request = request;
+    }
 }

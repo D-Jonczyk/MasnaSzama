@@ -12,10 +12,12 @@ public class Address {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long addressId;
 
-    @OneToOne(mappedBy = "address")
+   // @OneToOne(mappedBy = "address")
+    @OneToOne
     private Customer customer;
 
-    @OneToOne(mappedBy = "address")
+    //@OneToOne(mappedBy = "address")
+    @OneToOne
     private Restaurant restaurant;
 
     private String city;

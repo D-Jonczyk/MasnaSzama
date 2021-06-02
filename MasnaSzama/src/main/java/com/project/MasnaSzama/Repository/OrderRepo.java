@@ -7,6 +7,7 @@ import com.project.MasnaSzama.Model.Views.OrdersDelivery;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
 
 import javax.transaction.Transactional;
 import java.util.List;
@@ -43,4 +44,11 @@ public interface OrderRepo extends CrudRepository<Order, Long> {
             "set o.orderStatus.statusId = 4 " +
             "where o.orderId = ?1")
     void updateOrderStatus(Long orderId);
+
+    @Modifying
+    @Transactional
+    @Query(value = "insert into masnaszama.order_ (order_id, desired_delivery_time, order_price, ordered_time, tip, customer_id, status_id, payment_id, restaurant_id) " +
+            " values (:#{#order.orderId}, :#{#order.desiredDeliveryTime}, :#{#order.orderPrice}, :#{#order.orderedTime}, :#{#order.tip}, :#{#order.customer}, :#{#order.orderStatus}, :#{#order.payment}, :#{#order.restaurant})", nativeQuery = true)
+    void createNewOrder(@Param("order") Order order);
+
 }

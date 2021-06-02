@@ -35,8 +35,13 @@ public class Order {
 //        this.orderStatus = orderStatus;
 //    }
 
+    public Order(Long orderId)
+    {
+        this.orderId = orderId;
+    }
+
     @Id
-    //@GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long orderId;
 
     @ManyToOne
@@ -52,7 +57,7 @@ public class Order {
     Set<Courier> couriers = new HashSet<>();
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="customer_id", nullable=false)
+    @JoinColumn(name="customer_id") //, nullable=false)
     private Customer customer;
 
     @OneToMany(mappedBy = "order")

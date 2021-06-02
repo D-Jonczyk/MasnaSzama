@@ -26,7 +26,8 @@ public class Restaurant {
     @Id
     private Long restaurantId;
 
-    @OneToOne(cascade = CascadeType.ALL)
+//    @OneToOne(cascade = CascadeType.ALL)
+@OneToOne(mappedBy = "restaurant")
     @JoinColumn(name = "address_id", nullable = false)
     private Address address;
 

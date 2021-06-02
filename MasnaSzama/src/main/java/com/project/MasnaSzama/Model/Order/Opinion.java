@@ -10,7 +10,7 @@ public class Opinion {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long opinionId;
 
-    @OneToOne(mappedBy="opinion")
+    @OneToOne(mappedBy="opinion", cascade = CascadeType.ALL, orphanRemoval = true)
     private OrdersMeals ordersMeals;
 
     private int rating;
@@ -47,4 +47,6 @@ public class Opinion {
     public void setOpinionComment(String opinionComment) {
         this.opinionComment = opinionComment;
     }
+
+
 }
