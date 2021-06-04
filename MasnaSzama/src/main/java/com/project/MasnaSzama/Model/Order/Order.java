@@ -60,14 +60,10 @@ public class Order {
     @JoinColumn(name="customer_id") //, nullable=false)
     private Customer customer;
 
-    @OneToMany(mappedBy = "order")
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private Set<OrdersMeals> ordersMeals = new HashSet<>();
 
-    public Set<OrdersMeals> getOrdersMeals() {
-        return ordersMeals;
-    }
-
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="payment_id")
     private Payment payment;
 
@@ -75,8 +71,19 @@ public class Order {
     @JoinColumn(name="status_id")
     private Status orderStatus;
 
+    @JsonProperty(value = "orderMeals")
+    public Set<OrdersMeals> getOrdersMeals() {
+        return ordersMeals;
+    }
+
+    @JsonProperty(value = "orderMeals")
     public void setOrdersMeals(Set<OrdersMeals> ordersMeals) {
+
         this.ordersMeals = ordersMeals;
+
+        for (OrdersMeals orderMeal : ordersMeals) {
+            orderMeal.setOrder(this);
+        }
     }
 
     public Order(){

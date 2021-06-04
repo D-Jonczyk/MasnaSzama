@@ -1,5 +1,7 @@
 package com.project.MasnaSzama.Model.Order;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.project.MasnaSzama.Model.Request.Request;
 import com.project.MasnaSzama.Model.Restaurant.Restaurant;
 
@@ -10,6 +12,11 @@ import java.util.Set;
 
 @Entity
 public class Meal {
+
+    public Meal() {
+
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long mealId;
@@ -20,8 +27,8 @@ public class Meal {
     @ManyToMany(mappedBy = "meal")
     private Set<Restaurant> restaurants;
 
-    @OneToOne(mappedBy = "meal")
-    private Request request;
+//    @OneToOne(mappedBy = "meal")
+//    private Request request;
 
     @OneToMany(mappedBy = "meal")
     private Set<OrdersMeals> ordersMeals = new HashSet<>();
@@ -34,43 +41,51 @@ public class Meal {
         this.ordersMeals = ordersMeals;
     }
 
+    @JsonProperty(value = "mealId")
     public Long getMealId() {
         return mealId;
     }
 
-    public String getMealName() {
-        return mealName;
-    }
-
-    public BigDecimal getPrice() {
-        return price;
-    }
-
-    public void setMealName(String mealName) {
-        this.mealName = mealName;
-    }
-
-    public void setPrice(BigDecimal price) {
-        this.price = price;
-    }
-
+    @JsonProperty(value = "mealId")
     public void setMealId(Long mealId) {
         this.mealId = mealId;
     }
 
+    @JsonProperty(value = "mealName")
+    public String getMealName() {
+        return mealName;
+    }
+
+    @JsonProperty(value = "mealName")
+    public void setMealName(String mealName) {
+        this.mealName = mealName;
+    }
+
+    @JsonProperty(value = "price")
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    @JsonProperty(value = "price")
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+
+    @JsonProperty(value = "restaurant")
     public Set<Restaurant> getRestaurants() {
         return restaurants;
     }
 
+    @JsonProperty(value = "restaurant")
     public void setRestaurants(Set<Restaurant> restaurants) {
         this.restaurants = restaurants;
     }
 
-    public Request getRequest() {
+/*    public Request getRequest() {
         return request;
     }
 
     public void setRequest(Request request) {
         this.request = request;
-    }
+    }*/
 }

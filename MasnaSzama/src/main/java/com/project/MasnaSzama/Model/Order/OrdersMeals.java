@@ -13,11 +13,11 @@ public class OrdersMeals {
     @Column(name = "order_meal_id")
     private Long orderMealId;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne() //cascade = CascadeType.ALL
     @JoinColumn(name = "order_id")
     private Order order;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne() //cascade = CascadeType.ALL
     @JoinColumn(name = "meal_id")
     private Meal meal;
 

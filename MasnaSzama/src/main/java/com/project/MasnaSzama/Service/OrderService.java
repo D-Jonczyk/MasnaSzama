@@ -55,6 +55,10 @@ public class OrderService {
         orderRepo.createNewOrder(newOrder);
     }
 
+    public void createNewOrderTest(Order newOrder) {
+        orderRepo.save(newOrder);
+    }
+
     public void createNewOrderMeals(List<OrdersMeals> ordersMeals) {
 
         ordersMealsRepo.saveAll(ordersMeals);

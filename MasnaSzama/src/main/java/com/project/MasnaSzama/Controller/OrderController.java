@@ -58,7 +58,11 @@ public class OrderController {
         System.out.println("Klient-----------------------");
     System.out.println(newOrder.getCustomer());
 
-        orderService.createNewOrder(newOrder);
+        // Working fine
+        //orderService.createNewOrder(newOrder);
+
+        orderService.createNewOrderTest(newOrder);
+
         return new ResponseEntity<>(HttpStatus.OK);
     }
 

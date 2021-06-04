@@ -21,9 +21,9 @@ public class Request {
     @JoinColumn (name= "admin_id", nullable=false)
     private Admin admin;
 
-    @OneToOne
+    /*@OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "meal_id", nullable = false)
-    private Meal meal;
+    private Meal meal;*/
 
     public Long getRequestId() {
         return requestId;
@@ -65,11 +65,11 @@ public class Request {
         this.admin = admin;
     }
 
-    public Meal getMeal() {
+   /* public Meal getMeal() {
         return meal;
     }
 
     public void setMeal(Meal meal) {
         this.meal = meal;
-    }
+    }*/
 }
