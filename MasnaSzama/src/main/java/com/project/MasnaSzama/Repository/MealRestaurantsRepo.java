@@ -15,8 +15,8 @@ public interface MealRestaurantsRepo extends CrudRepository<Meal,Long> {
 
     @Modifying
     @Transactional
-    @Query(value = "UPDATE meal m SET m.name=?3, m.price=?2 WHERE m.meal_id=?1", nativeQuery = true)
-    void updateMealByMealId(Long mealId, BigDecimal price, String name);
+    @Query(value = "UPDATE meal m SET m.meal_name=?3, m.price=?2 WHERE m.meal_id=?1", nativeQuery = true)
+    void updateMealByMealId(Long mealId, BigDecimal price, String mealName);
 
 
 
